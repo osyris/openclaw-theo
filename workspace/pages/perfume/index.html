@@ -194,7 +194,7 @@ const gradients = [
 
 let perfumes = [];
 
-fetch('perfumes.json')
+fetch('/pages/perfume/perfumes.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => { perfumes = data; initApp(); })
   .catch(err => {
