@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771124408877,
+      "updatedAtMs": 1771210809350,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,12 +24,12 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771210800000,
-        "lastRunAtMs": 1771124400016,
+        "nextRunAtMs": 1771297200000,
+        "lastRunAtMs": 1771210800013,
         "lastStatus": "ok",
-        "lastDurationMs": 8861,
+        "lastDurationMs": 9337,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771210800010
+        "runningAtMs": 1771297200015
       }
     }
   ]
