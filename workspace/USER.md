@@ -8,7 +8,8 @@
 ## Natalia
 - **Telegram:** @natalia_katsalukha (id: 448934333)
 - **What to call her:** Наталия
-- **Timezone:** UTC+8 (based on message timing, -20° winter → likely Russia/Siberia?)
+- **Timezone:** UTC+2 (confirmed 2026-02-18)
+- **Дети:** Артём, Антон
 - **Notes:** Любит тепло и заботу 😁, назвала меня Тео
 
 ## Context
