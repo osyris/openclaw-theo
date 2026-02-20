@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771383610826,
+      "updatedAtMs": 1771470009073,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,12 +24,37 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771470000000,
-        "lastRunAtMs": 1771383600026,
+        "nextRunAtMs": 1771556400000,
+        "lastRunAtMs": 1771470000007,
         "lastStatus": "ok",
-        "lastDurationMs": 10800,
+        "lastDurationMs": 9066,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771470000004
+        "runningAtMs": 1771556400009
+      }
+    },
+    {
+      "id": "fe1ff47f-29d7-454c-9477-368f4228c28b",
+      "agentId": "main",
+      "name": "Напоминание: план на неделю",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771486851245,
+      "updatedAtMs": 1771486851245,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-22T17:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии, что нужно составить план на следующую неделю (23–28 февраля). Заготовки уже есть в memory/next-week-feb23.md. Напиши ей тёплое напоминание."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771779600000
       }
     }
   ]
