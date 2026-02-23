@@ -70,4 +70,18 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## iCloud Calendar
+
+**Календари Наталии:**
+- Coaching, Семья ⚠️, Work, Artjom, ToDo, Anton, Trainings, Экспонента, Lashes, Koolitus, Кинетический аналитик, Home, Голос, Travel, Напоминания ⚠️, Наш ⚠️
+
+**ВАЖНО:** При добавлении события в календарь — ВСЕГДА спрашивай, в какой именно календарь добавить, если это не указано явно в сообщении.
+
+**Команда:**
+```bash
+cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject python3 ical.py <command> [args]
+```
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
