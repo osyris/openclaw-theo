@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📓 Планер — неделя 16-22 февраля</title>
+    <title>📓 Планер — неделя 23 февраля – 1 марта</title>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -195,7 +195,7 @@
 <body>
     <div class="header">
         <h1>Планер</h1>
-        <div class="week-label">неделя 16 – 22 февраля 2026</div>
+        <div class="week-label">23 февраля – 1 марта 2026</div>
     </div>
 
     <div class="container" id="planner"></div>
@@ -205,67 +205,54 @@
     <script>
         const days = [
             {
-                key: 'mon', label: 'Понедельник', date: '16 февраля', tags: [],
-                tasks: []
-            },
-            {
-                key: 'tue', label: 'Вторник', date: '17 февраля', tags: [],
-                tasks: []
-            },
-            {
-                key: 'wed', label: 'Среда', date: '18 февраля', tags: [],
-                tasks: [
-                    { time: "9:00–9:30", emoji: "🍳", name: "Завтрак", done: true },
-                    { time: "10:00–11:00", emoji: "🦷", name: "Ортодонт", done: true },
-                    { time: "11:00–11:30", emoji: "📞", name: "Записать детей к зубному", done: true },
-                    { time: "11:30–12:00", emoji: "💳", name: "Заказать Антону карточку", done: true },
-                    { time: "12:00–12:50", emoji: "🇬🇧", name: "Урок английского", done: true },
-                    { time: "12:50–13:30", emoji: "🍽️", name: "Обед", done: true },
-                    { time: "13:30–15:00", emoji: "🏠", name: "Встреча с хозяйкой", done: true },
-                    { time: "15:30–16:00", emoji: "🏥", name: "Рентген Артёму", done: true },
-                    { time: "18:00–19:00", emoji: "📝", name: "Подготовка к встрече с Юрой", done: true },
-                    { time: "19:00–19:30", emoji: "📱", name: "Скрипт звонка Теле2", done: true },
-                ]
-            },
-            {
-                key: 'thu', label: 'Четверг', date: '19 февраля', tags: [],
-                tasks: [
-                    { time: "9:00–11:00", emoji: "📰", name: "Материалы по блогу + система хранения", done: true },
-                    { time: "11:00–11:30", emoji: "🍳", name: "Завтрак" },
-                    { time: "11:30–13:30", emoji: "🤝", name: "Встреча с Юрой" },
-                    { time: "13:30–14:30", emoji: "🏋️", name: "Спорт" },
-                    { time: "14:30–16:00", emoji: "📰", name: "Продолжить блог / задачи" },
-                    { time: "16:00–16:30", emoji: "🍽️", name: "Обед" },
-                    { time: "16:30–17:00", emoji: "✉️", name: "Написать Лёше по поводу рублей" },
-                    { time: "17:00–18:30", emoji: "🌴", name: "Бали — доработать", subtasks: [
-                        "Аренда мотика",
-                        "Активности",
-                        "Спросить у Кости пожелания",
-                        "Места покушать",
-                        "Массаж"
-                    ]},
-                    { time: "18:30", emoji: "🧱", name: "Выставка Лего" },
-                    { time: "23:00", emoji: "😴", name: "Сон" },
-                ]
-            },
-            {
-                key: 'fri', label: 'Пятница', date: '20 февраля',
+                key: 'mon', label: 'Понедельник', date: '23 февраля',
                 tags: [{ text: 'Работа', type: 'work' }],
                 tasks: [
-                    { time: "9:30–21:00", emoji: "📦", name: "Теле2 — инвентура" },
+                    { time: "9:30–21:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
                 ]
             },
             {
-                key: 'sat', label: 'Суббота', date: '21 февраля',
+                key: 'tue', label: 'Вторник', date: '24 февраля',
                 tags: [{ text: 'Работа', type: 'work' }],
                 tasks: [
-                    { time: "9:30–21:00", emoji: "💼", name: "Теле2" },
+                    { time: "9:30–19:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
                 ]
             },
             {
-                key: 'sun', label: 'Воскресенье', date: '22 февраля',
-                tags: [{ text: 'Выходной', type: 'off' }],
-                tasks: []
+                key: 'wed', label: 'Среда', date: '25 февраля',
+                tags: [{ text: 'Работа', type: 'work' }],
+                tasks: [
+                    { time: "9:30–21:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
+                    { time: "9:45–10:15", emoji: "🦷", name: "Ортодонт", subtasks: ["A. H. Tammsaare tee 56"] },
+                ]
+            },
+            {
+                key: 'thu', label: 'Четверг', date: '26 февраля',
+                tags: [{ text: 'Работа', type: 'work' }],
+                tasks: [
+                    { time: "9:30–18:00", emoji: "💼", name: "Tele2 Lasnamäe Centrum" },
+                ]
+            },
+            {
+                key: 'fri', label: 'Пятница', date: '27 февраля',
+                tags: [{ text: '🎂 ДР Артёма!', type: 'off' }],
+                tasks: [
+                    { time: "12:20–14:20", emoji: "💆", name: "Массаж лица", subtasks: ["Lastekodu 35"] },
+                ]
+            },
+            {
+                key: 'sat', label: 'Суббота', date: '28 февраля',
+                tags: [],
+                tasks: [
+                    { time: "10:30–11:30", emoji: "🇬🇧", name: "English lesson", subtasks: ["Niine põik 3"] },
+                ]
+            },
+            {
+                key: 'sun', label: 'Воскресенье', date: '1 марта',
+                tags: [],
+                tasks: [
+                    { time: "19:00–21:00", emoji: "✨", name: "Ресницы (Юля Ага)" },
+                ]
             }
         ];
 
