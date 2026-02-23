@@ -139,6 +139,58 @@
       "state": {
         "nextRunAtMs": 1772697600000
       }
+    },
+    {
+      "id": "d5a1007b-4610-4338-94af-5e7a770cd61c",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: триал 58518075",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771857957541,
+      "updatedAtMs": 1771857957541,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-07T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Tele2 триал: 58518075, услуга Закрыть номер — 28 дней истекают. Напомни Наталии: связаться с клиентом или закрыть услугу!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772870400000
+      }
+    },
+    {
+      "id": "22442f12-b359-46a9-88aa-9e6484d9c670",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: триал 56831273",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771857957577,
+      "updatedAtMs": 1771857957577,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-13T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Tele2 триал: 56831273, услуга Телевидение + DigiGaiti — 28 дней истекают. Напомни Наталии: связаться с клиентом или закрыть услугу!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773388800000
+      }
     }
   ]
 }
