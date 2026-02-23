@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele2 — Trial Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: #f5f0eb;
+            min-height: 100vh;
+            padding: 0;
+        }
+        .header {
+            background: #4a0e1c;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'Forum', serif;
+            font-weight: 400;
+            font-size: 2.8rem;
+            color: #f5f0eb;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.8rem;
+            color: rgba(245, 240, 235, 0.5);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+        }
+        .stats {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            flex: 1;
+            background: #fff;
+            border-radius: 4px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid rgba(74, 14, 28, 0.08);
+        }
+        .stat-number {
+            font-family: 'Forum', serif;
+            font-size: 2rem;
+            color: #4a0e1c;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: #8a7268;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        .section-title {
+            font-family: 'Forum', serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #4a0e1c;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(74, 14, 28, 0.15);
+            margin-bottom: 14px;
+            margin-top: 28px;
+        }
+        .trial-card {
+            background: #fff;
+            border-radius: 4px;
+            padding: 16px 18px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(74, 14, 28, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .trial-card.urgent {
+            border-left: 3px solid #c0392b;
+        }
+        .trial-card.ok {
+            border-left: 3px solid #8a7268;
+        }
+        .trial-card.closed {
+            border-left: 3px solid #b5a99d;
+            opacity: 0.5;
+        }
+        .trial-info {
+            flex: 1;
+        }
+        .trial-id {
+            font-weight: 700;
+            color: #2a2025;
+            font-size: 1rem;
+        }
+        .trial-service {
+            font-size: 0.85rem;
+            color: #8a7268;
+            margin-top: 2px;
+        }
+        .trial-dates {
+            font-size: 0.8rem;
+            color: #b5a99d;
+            margin-top: 4px;
+        }
+        .trial-badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .badge-active {
+            background: rgba(74, 14, 28, 0.08);
+            color: #4a0e1c;
+        }
+        .badge-urgent {
+            background: #c0392b;
+            color: #fff;
+        }
+        .badge-closed {
+            background: #e8e2dc;
+            color: #8a7268;
+        }
+        .days-left {
+            font-family: 'Forum', serif;
+            font-size: 1.4rem;
+            color: #4a0e1c;
+            text-align: center;
+            min-width: 50px;
+        }
+        .days-left small {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.6rem;
+            color: #8a7268;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .empty-message {
+            color: #8a7268;
+            font-style: italic;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.95rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(74, 14, 28, 0.25);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: 'Forum', serif;
+        }
+        @media (max-width: 480px) {
+            .header { padding: 36px 20px 32px; }
+            .header h1 { font-size: 2rem; letter-spacing: 4px; }
+            .container { padding: 16px 12px 32px; }
+            .stats { flex-direction: row; gap: 8px; }
+            .stat-card { padding: 12px 8px; }
+            .stat-number { font-size: 1.6rem; }
+            .trial-card { padding: 12px 14px; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tele2</h1>
+        <div class="subtitle">trial tracker</div>
+    </div>
+
+    <div class="container">
+        <div class="stats" id="stats"></div>
+        <div id="urgent-section"></div>
+        <div id="active-section"></div>
+        <div id="closed-section"></div>
+    </div>
+
+    <div class="footer">обновлено <span id="updated"></span></div>
+
+    <script>
+        // Тео обновляет этот блок
+        const TRIALS_DATA = {
+            updated: "23.02.2026",
+            trials: [
+                // {
+                //     id: "+372 5551234",       // номер телефона или личный код
+                //     service: "Tele2 Liitumispakett", // услуга
+                //     startDate: "2026-02-23",  // начало триала
+                //     status: "active"          // active | closed
+                // },
+            ]
+        };
+
+        const TRIAL_DAYS = 28;
+
+        function daysBetween(d1, d2) {
+            return Math.ceil((d2 - d1) / (1000 * 60 * 60 * 24));
+        }
+
+        function formatDate(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00');
+            const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
+            return `${d.getDate()} ${months[d.getMonth()]}`;
+        }
+
+        function render() {
+            const today = new Date();
+            today.setHours(0,0,0,0);
+
+            let active = 0, urgent = 0, closed = 0;
+            const urgentTrials = [];
+            const activeTrials = [];
+            const closedTrials = [];
+
+            TRIALS_DATA.trials.forEach(t => {
+                const start = new Date(t.startDate + 'T00:00:00');
+                const deadline = new Date(start);
+                deadline.setDate(deadline.getDate() + TRIAL_DAYS);
+                const daysLeft = daysBetween(today, deadline);
+
+                const trial = { ...t, start, deadline, daysLeft };
+
+                if (t.status === 'closed') {
+                    closed++;
+                    closedTrials.push(trial);
+                } else if (daysLeft <= 5) {
+                    urgent++;
+                    urgentTrials.push(trial);
+                } else {
+                    active++;
+                    activeTrials.push(trial);
+                }
+            });
+
+            // Stats
+            document.getElementById('stats').innerHTML = `
+                <div class="stat-card"><div class="stat-number">${active + urgent}</div><div class="stat-label">Активных</div></div>
+                <div class="stat-card"><div class="stat-number">${urgent}</div><div class="stat-label">Срочных</div></div>
+                <div class="stat-card"><div class="stat-number">${closed}</div><div class="stat-label">Закрыто</div></div>
+            `;
+
+            // Urgent
+            if (urgentTrials.length) {
+                document.getElementById('urgent-section').innerHTML =
+                    '<div class="section-title">🔴 Срочные</div>' +
+                    urgentTrials.map(t => renderCard(t, 'urgent')).join('');
+            } else {
+                document.getElementById('urgent-section').innerHTML = '';
+            }
+
+            // Active
+            if (activeTrials.length) {
+                document.getElementById('active-section').innerHTML =
+                    '<div class="section-title">Активные</div>' +
+                    activeTrials.map(t => renderCard(t, 'ok')).join('');
+            } else if (!urgentTrials.length && !closedTrials.length) {
+                document.getElementById('active-section').innerHTML =
+                    '<div class="empty-message">Нет активных триалов — скажи Тео, чтобы добавить ☀️</div>';
+            } else {
+                document.getElementById('active-section').innerHTML = '';
+            }
+
+            // Closed
+            if (closedTrials.length) {
+                document.getElementById('closed-section').innerHTML =
+                    '<div class="section-title">Закрытые</div>' +
+                    closedTrials.slice(0, 10).map(t => renderCard(t, 'closed')).join('');
+            } else {
+                document.getElementById('closed-section').innerHTML = '';
+            }
+
+            document.getElementById('updated').textContent = TRIALS_DATA.updated;
+        }
+
+        function renderCard(t, type) {
+            const badgeClass = type === 'urgent' ? 'badge-urgent' : type === 'closed' ? 'badge-closed' : 'badge-active';
+            const badgeText = type === 'urgent' ? (t.daysLeft <= 0 ? 'Просрочен' : `${t.daysLeft} дн`) :
+                              type === 'closed' ? 'Закрыт' : `${t.daysLeft} дн`;
+
+            return `
+                <div class="trial-card ${type}">
+                    <div class="days-left">
+                        ${type !== 'closed' ? t.daysLeft : '—'}
+                        ${type !== 'closed' ? '<small>дней</small>' : ''}
+                    </div>
+                    <div class="trial-info">
+                        <div class="trial-id">${t.id}</div>
+                        <div class="trial-service">${t.service}</div>
+                        <div class="trial-dates">Старт: ${formatDate(t.startDate)} → Дедлайн: ${formatDate(t.deadline.toISOString().slice(0,10))}</div>
+                    </div>
+                    <span class="trial-badge ${badgeClass}">${badgeText}</span>
+                </div>`;
+        }
+
+        render();
+    </script>
+</body>
+</html>

@@ -61,6 +61,58 @@
         "lastError": "cron announce delivery failed",
         "consecutiveErrors": 1
       }
+    },
+    {
+      "id": "50af5351-d2d4-4925-bd9c-a2f0801aab0b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Проверка дней рождения",
+      "enabled": true,
+      "createdAtMs": 1771851067505,
+      "updatedAtMs": 1771851067505,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Прочитай файл /data/workspace/memory/birthdays.md. Проверь, совпадает ли сегодняшняя дата с каким-то днём рождения (сравни день и месяц). Если да — отправь Наталии поздравительное напоминание: '🎂 Сегодня день рождения у [имя]! Не забудь поздравить!' Если сегодня нет дней рождения — НЕ отправляй ничего, просто завершись молча."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771912800000
+      }
+    },
+    {
+      "id": "e43c0ad5-3552-4d20-9d1e-d963561e3290",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Напоминание: Juuste Akadeemia",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771851413928,
+      "updatedAtMs": 1771851413928,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-19T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии: записаться в Juuste Akadeemia (juusteakadeemia.ee) — диагностика и лечение выпадения волос. Она планировала обратиться после отпуска."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773907200000
+      }
     }
   ]
 }
