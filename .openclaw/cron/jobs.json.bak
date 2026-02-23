@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771729208472,
+      "updatedAtMs": 1771815608903,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,12 +24,42 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771815600000,
-        "lastRunAtMs": 1771729200019,
+        "nextRunAtMs": 1771902000000,
+        "lastRunAtMs": 1771815600020,
         "lastStatus": "ok",
-        "lastDurationMs": 8453,
+        "lastDurationMs": 8883,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771815600014
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "2e869d64-870b-4d8f-80a2-0b9a889d127d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Тестовое напоминание",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771833318632,
+      "updatedAtMs": 1771833622388,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-23T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Отправь Наталии тестовое напоминание: '🔔 Тест! Напоминание работает. Поставь Антону причину на пропуски!'"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1771833600029,
+        "lastStatus": "error",
+        "lastDurationMs": 22359,
+        "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
       }
     }
   ]
