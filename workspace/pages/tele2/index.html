@@ -64,91 +64,180 @@
             letter-spacing: 1px;
             margin-top: 4px;
         }
+        .date-group-title {
+            font-family: 'Forum', serif;
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: #4a0e1c;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 14px 0 8px;
+            border-bottom: 1px solid rgba(74, 14, 28, 0.1);
+            margin-bottom: 10px;
+            margin-top: 8px;
+        }
         .section-title {
             font-family: 'Forum', serif;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: #4a0e1c;
             letter-spacing: 2px;
             text-transform: uppercase;
             padding-bottom: 10px;
             border-bottom: 1px solid rgba(74, 14, 28, 0.15);
             margin-bottom: 14px;
-            margin-top: 28px;
+            margin-top: 32px;
         }
-        .trial-card {
+        .trial-row {
             background: #fff;
             border-radius: 4px;
-            padding: 16px 18px;
-            margin-bottom: 10px;
+            padding: 14px 16px;
+            margin-bottom: 6px;
             border: 1px solid rgba(74, 14, 28, 0.08);
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.15s;
+            user-select: none;
         }
-        .trial-card.urgent {
+        .trial-row:hover {
+            background: #faf6f2;
+        }
+        .trial-row:active {
+            background: #f5efe8;
+        }
+        .trial-row.urgent {
             border-left: 3px solid #c0392b;
         }
-        .trial-card.ok {
+        .trial-row.ok {
             border-left: 3px solid #8a7268;
         }
-        .trial-card.closed {
-            border-left: 3px solid #b5a99d;
+        .trial-row.closed {
+            border-left: 3px solid #d4ccc4;
             opacity: 0.5;
         }
-        .trial-info {
-            flex: 1;
-        }
-        .trial-id {
+        .trial-row-id {
             font-weight: 700;
             color: #2a2025;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            flex: 1;
         }
-        .trial-service {
-            font-size: 0.85rem;
+        .trial-row-service {
+            font-size: 0.82rem;
             color: #8a7268;
-            margin-top: 2px;
         }
-        .trial-dates {
-            font-size: 0.8rem;
-            color: #b5a99d;
-            margin-top: 4px;
+        .trial-row-days {
+            font-family: 'Forum', serif;
+            font-size: 1.1rem;
+            color: #4a0e1c;
+            min-width: 36px;
+            text-align: center;
         }
-        .trial-badge {
-            font-size: 0.7rem;
+        .trial-row-days small {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.55rem;
+            color: #8a7268;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .trial-badge-sm {
+            font-size: 0.65rem;
             font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 12px;
+            padding: 3px 8px;
+            border-radius: 10px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             white-space: nowrap;
         }
-        .badge-active {
-            background: rgba(74, 14, 28, 0.08);
-            color: #4a0e1c;
+        .badge-active { background: rgba(74, 14, 28, 0.08); color: #4a0e1c; }
+        .badge-urgent { background: #c0392b; color: #fff; }
+        .badge-closed { background: #e8e2dc; color: #8a7268; }
+
+        /* Detail modal */
+        .overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(42, 32, 37, 0.5);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-        .badge-urgent {
-            background: #c0392b;
-            color: #fff;
+        .overlay.open {
+            display: flex;
         }
-        .badge-closed {
-            background: #e8e2dc;
-            color: #8a7268;
+        .detail-card {
+            background: #fff;
+            border-radius: 6px;
+            padding: 32px 28px;
+            max-width: 420px;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
         }
-        .days-left {
-            font-family: 'Forum', serif;
+        .detail-close {
+            position: absolute;
+            top: 16px;
+            right: 18px;
             font-size: 1.4rem;
-            color: #4a0e1c;
-            text-align: center;
-            min-width: 50px;
+            color: #b5a99d;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
         }
-        .days-left small {
-            display: block;
-            font-family: 'Nunito', sans-serif;
-            font-size: 0.6rem;
+        .detail-close:hover { color: #4a0e1c; }
+        .detail-id {
+            font-family: 'Forum', serif;
+            font-size: 1.6rem;
+            color: #4a0e1c;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(74, 14, 28, 0.06);
+        }
+        .detail-row:last-child { border-bottom: none; }
+        .detail-label {
+            font-size: 0.8rem;
             color: #8a7268;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        .detail-value {
+            font-weight: 600;
+            color: #2a2025;
+            font-size: 0.95rem;
+        }
+        .detail-value.urgent-text { color: #c0392b; }
+        .detail-btn {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #4a0e1c;
+            color: #f5f0eb;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+        .detail-btn:hover { background: #3a0a16; }
+        .detail-btn.closed-btn {
+            background: #e8e2dc;
+            color: #8a7268;
+            cursor: default;
         }
         .empty-message {
             color: #8a7268;
@@ -166,38 +255,14 @@
             text-transform: uppercase;
             font-family: 'Forum', serif;
         }
-        .checkbox {
-            width: 28px;
-            height: 28px;
-            border: 2px solid #4a0e1c;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            flex-shrink: 0;
-            transition: all 0.2s;
-        }
-        .checkbox span {
-            color: transparent;
-            font-size: 14px;
-            font-weight: 700;
-            transition: all 0.2s;
-        }
-        .checkbox:hover {
-            background: rgba(74, 14, 28, 0.1);
-        }
-        .checkbox:hover span {
-            color: #4a0e1c;
-        }
         @media (max-width: 480px) {
             .header { padding: 36px 20px 32px; }
             .header h1 { font-size: 2rem; letter-spacing: 4px; }
             .container { padding: 16px 12px 32px; }
-            .stats { flex-direction: row; gap: 8px; }
+            .stats { gap: 8px; }
             .stat-card { padding: 12px 8px; }
             .stat-number { font-size: 1.6rem; }
-            .trial-card { padding: 12px 14px; gap: 10px; }
+            .detail-card { padding: 24px 20px; }
         }
     </style>
 </head>
@@ -209,12 +274,14 @@
 
     <div class="container">
         <div class="stats" id="stats"></div>
-        <div id="urgent-section"></div>
-        <div id="active-section"></div>
-        <div id="closed-section"></div>
+        <div id="content"></div>
     </div>
 
     <div class="footer">обновлено <span id="updated"></span></div>
+
+    <div class="overlay" id="overlay" onclick="if(event.target===this)closeDetail()">
+        <div class="detail-card" id="detail"></div>
+    </div>
 
     <script>
         // Тео обновляет этот блок
@@ -231,6 +298,7 @@
         };
 
         const TRIAL_DAYS = 28;
+        const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
 
         function daysBetween(d1, d2) {
             return Math.ceil((d2 - d1) / (1000 * 60 * 60 * 24));
@@ -238,120 +306,161 @@
 
         function formatDate(dateStr) {
             const d = new Date(dateStr + 'T00:00:00');
-            const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
+            return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+        }
+
+        function formatDateShort(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00');
             return `${d.getDate()} ${months[d.getMonth()]}`;
         }
 
+        function getDeadline(startDate) {
+            const d = new Date(startDate + 'T00:00:00');
+            d.setDate(d.getDate() + TRIAL_DAYS);
+            return d.toISOString().slice(0, 10);
+        }
+
+        function applyLocalState() {
+            const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
+            TRIALS_DATA.trials.forEach(t => {
+                if (closed.includes(t.id)) t.status = 'closed';
+            });
+        }
+
         function render() {
+            applyLocalState();
             const today = new Date();
             today.setHours(0,0,0,0);
 
-            let active = 0, urgent = 0, closed = 0;
-            const urgentTrials = [];
-            const activeTrials = [];
-            const closedTrials = [];
+            let activeCount = 0, urgentCount = 0, closedCount = 0;
+            const activeByDate = {};
+            const closedList = [];
 
             TRIALS_DATA.trials.forEach(t => {
                 const start = new Date(t.startDate + 'T00:00:00');
                 const deadline = new Date(start);
                 deadline.setDate(deadline.getDate() + TRIAL_DAYS);
                 const daysLeft = daysBetween(today, deadline);
-
-                const trial = { ...t, start, deadline, daysLeft };
+                t._daysLeft = daysLeft;
+                t._deadline = deadline.toISOString().slice(0, 10);
 
                 if (t.status === 'closed') {
-                    closed++;
-                    closedTrials.push(trial);
+                    closedCount++;
+                    closedList.push(t);
                 } else if (daysLeft <= 5) {
-                    urgent++;
-                    urgentTrials.push(trial);
+                    urgentCount++;
+                    const key = t.startDate;
+                    if (!activeByDate[key]) activeByDate[key] = [];
+                    activeByDate[key].push({ ...t, urgent: true });
                 } else {
-                    active++;
-                    activeTrials.push(trial);
+                    activeCount++;
+                    const key = t.startDate;
+                    if (!activeByDate[key]) activeByDate[key] = [];
+                    activeByDate[key].push({ ...t, urgent: false });
                 }
             });
 
             // Stats
             document.getElementById('stats').innerHTML = `
-                <div class="stat-card"><div class="stat-number">${active + urgent}</div><div class="stat-label">Активных</div></div>
-                <div class="stat-card"><div class="stat-number">${urgent}</div><div class="stat-label">Срочных</div></div>
-                <div class="stat-card"><div class="stat-number">${closed}</div><div class="stat-label">Закрыто</div></div>
+                <div class="stat-card"><div class="stat-number">${activeCount + urgentCount}</div><div class="stat-label">Активных</div></div>
+                <div class="stat-card"><div class="stat-number">${urgentCount}</div><div class="stat-label">Срочных</div></div>
+                <div class="stat-card"><div class="stat-number">${closedCount}</div><div class="stat-label">Закрыто</div></div>
             `;
 
-            // Urgent
-            if (urgentTrials.length) {
-                document.getElementById('urgent-section').innerHTML =
-                    '<div class="section-title">🔴 Срочные</div>' +
-                    urgentTrials.map(t => renderCard(t, 'urgent')).join('');
-            } else {
-                document.getElementById('urgent-section').innerHTML = '';
-            }
+            // Active grouped by date
+            const sortedDates = Object.keys(activeByDate).sort();
+            let html = '';
 
-            // Active
-            if (activeTrials.length) {
-                document.getElementById('active-section').innerHTML =
-                    '<div class="section-title">Активные</div>' +
-                    activeTrials.map(t => renderCard(t, 'ok')).join('');
-            } else if (!urgentTrials.length && !closedTrials.length) {
-                document.getElementById('active-section').innerHTML =
-                    '<div class="empty-message">Нет активных триалов — скажи Тео, чтобы добавить ☀️</div>';
-            } else {
-                document.getElementById('active-section').innerHTML = '';
+            if (sortedDates.length) {
+                sortedDates.forEach(date => {
+                    html += `<div class="date-group-title">📅 ${formatDate(date)}</div>`;
+                    activeByDate[date].forEach(t => {
+                        const type = t.urgent ? 'urgent' : 'ok';
+                        const badgeClass = t.urgent ? 'badge-urgent' : 'badge-active';
+                        const badgeText = t._daysLeft <= 0 ? 'Просрочен' : `${t._daysLeft} дн`;
+                        html += `
+                            <div class="trial-row ${type}" onclick="showDetail('${t.id}')">
+                                <div class="trial-row-days">${t._daysLeft}<small>дней</small></div>
+                                <div class="trial-row-id">${t.id}</div>
+                                <div class="trial-row-service">${t.service}</div>
+                                <span class="trial-badge-sm ${badgeClass}">${badgeText}</span>
+                            </div>`;
+                    });
+                });
+            } else if (!closedList.length) {
+                html = '<div class="empty-message">Нет активных триалов — скажи Тео, чтобы добавить ☀️</div>';
             }
 
             // Closed
-            if (closedTrials.length) {
-                document.getElementById('closed-section').innerHTML =
-                    '<div class="section-title">Закрытые</div>' +
-                    closedTrials.slice(0, 10).map(t => renderCard(t, 'closed')).join('');
-            } else {
-                document.getElementById('closed-section').innerHTML = '';
+            if (closedList.length) {
+                html += '<div class="section-title">Закрытые</div>';
+                closedList.forEach(t => {
+                    html += `
+                        <div class="trial-row closed" onclick="showDetail('${t.id}')">
+                            <div class="trial-row-days">—</div>
+                            <div class="trial-row-id">${t.id}</div>
+                            <div class="trial-row-service">${t.service}</div>
+                            <span class="trial-badge-sm badge-closed">Закрыт</span>
+                        </div>`;
+                });
             }
 
+            document.getElementById('content').innerHTML = html;
             document.getElementById('updated').textContent = TRIALS_DATA.updated;
         }
 
-        function renderCard(t, type) {
-            const badgeClass = type === 'urgent' ? 'badge-urgent' : type === 'closed' ? 'badge-closed' : 'badge-active';
-            const badgeText = type === 'urgent' ? (t.daysLeft <= 0 ? 'Просрочен' : `${t.daysLeft} дн`) :
-                              type === 'closed' ? 'Закрыт' : `${t.daysLeft} дн`;
+        function showDetail(id) {
+            const t = TRIALS_DATA.trials.find(x => x.id === id);
+            if (!t) return;
 
-            return `
-                <div class="trial-card ${type}">
-                    <div class="days-left">
-                        ${type !== 'closed' ? t.daysLeft : '—'}
-                        ${type !== 'closed' ? '<small>дней</small>' : ''}
-                    </div>
-                    <div class="trial-info">
-                        <div class="trial-id">${t.id}</div>
-                        <div class="trial-service">${t.service}</div>
-                        <div class="trial-dates">Старт: ${formatDate(t.startDate)} → Дедлайн: ${formatDate(t.deadline.toISOString().slice(0,10))}</div>
-                    </div>
-                    <span class="trial-badge ${badgeClass}">${badgeText}</span>
-                    ${type !== 'closed' ? `<div class="checkbox" onclick="event.stopPropagation(); toggleTrial('${t.id}')"><span>✓</span></div>` : ''}
-                </div>`;
+            const deadline = getDeadline(t.startDate);
+            const isClosed = t.status === 'closed';
+            const daysClass = t._daysLeft <= 5 && !isClosed ? 'urgent-text' : '';
+
+            document.getElementById('detail').innerHTML = `
+                <button class="detail-close" onclick="closeDetail()">✕</button>
+                <div class="detail-id">${t.id}</div>
+                <div class="detail-row">
+                    <span class="detail-label">Услуга</span>
+                    <span class="detail-value">${t.service}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Старт</span>
+                    <span class="detail-value">${formatDate(t.startDate)}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Дедлайн (28 дн)</span>
+                    <span class="detail-value ${daysClass}">${formatDate(deadline)}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Осталось</span>
+                    <span class="detail-value ${daysClass}">${isClosed ? '—' : (t._daysLeft <= 0 ? 'Просрочен' : t._daysLeft + ' дней')}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Статус</span>
+                    <span class="detail-value">${isClosed ? 'Закрыт' : 'Активен'}</span>
+                </div>
+                ${isClosed
+                    ? '<button class="detail-btn closed-btn">Закрыт</button>'
+                    : `<button class="detail-btn" onclick="closeTrial('${t.id}')">Закрыть триал</button>`
+                }
+            `;
+            document.getElementById('overlay').classList.add('open');
         }
 
-        function toggleTrial(id) {
-            const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
-            if (!closed.includes(id)) {
-                if (confirm(`Закрыть триал ${id}?`)) {
-                    closed.push(id);
-                    localStorage.setItem('tele2-closed', JSON.stringify(closed));
-                    render();
-                }
+        function closeDetail() {
+            document.getElementById('overlay').classList.remove('open');
+        }
+
+        function closeTrial(id) {
+            if (confirm('Закрыть триал ' + id + '?')) {
+                const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
+                if (!closed.includes(id)) closed.push(id);
+                localStorage.setItem('tele2-closed', JSON.stringify(closed));
+                closeDetail();
+                render();
             }
         }
-
-        // Apply local closed state
-        const origRender = render;
-        render = function() {
-            const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
-            TRIALS_DATA.trials.forEach(t => {
-                if (closed.includes(t.id)) t.status = 'closed';
-            });
-            origRender();
-        };
 
         render();
     </script>
