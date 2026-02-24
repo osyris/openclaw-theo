@@ -29,7 +29,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 8883,
         "consecutiveErrors": 0,
-        "lastDelivered": false
+        "lastDelivered": false,
+        "runningAtMs": 1771902000026
       }
     },
     {
@@ -122,7 +123,7 @@
       "enabled": true,
       "deleteAfterRun": true,
       "createdAtMs": 1771857226050,
-      "updatedAtMs": 1771857226050,
+      "updatedAtMs": 1771858254224,
       "schedule": {
         "kind": "at",
         "at": "2026-03-05T08:00:00.000Z"
@@ -148,7 +149,7 @@
       "enabled": true,
       "deleteAfterRun": true,
       "createdAtMs": 1771857957541,
-      "updatedAtMs": 1771857957541,
+      "updatedAtMs": 1771858254254,
       "schedule": {
         "kind": "at",
         "at": "2026-03-07T08:00:00.000Z"
@@ -174,7 +175,7 @@
       "enabled": true,
       "deleteAfterRun": true,
       "createdAtMs": 1771857957577,
-      "updatedAtMs": 1771857957577,
+      "updatedAtMs": 1771858254313,
       "schedule": {
         "kind": "at",
         "at": "2026-03-13T08:00:00.000Z"
@@ -190,6 +191,318 @@
       },
       "state": {
         "nextRunAtMs": 1773388800000
+      }
+    },
+    {
+      "id": "be956a9b-2a0b-4473-a536-cc1955dcf22b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 55997790",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858202421,
+      "updatedAtMs": 1771858254285,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-13T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 55997790 (создана 13.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773388800000
+      }
+    },
+    {
+      "id": "b7f6e767-c1e5-4084-b639-6c9fea472994",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 5229913",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858202461,
+      "updatedAtMs": 1771858254361,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-17T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 5229913 (создана 17.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773734400000
+      }
+    },
+    {
+      "id": "029d7776-d0df-449f-8218-cc77a4fa4479",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть ТВ+DigiKaitse 58507365",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858202506,
+      "updatedAtMs": 1771858254340,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-17T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть телевидение + DigiKaitse, номер 58507365 (создана 17.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773734400000
+      }
+    },
+    {
+      "id": "3cde14b2-3d3e-4bcb-a08e-f8bf70321a5e",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 50305150025",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858340446,
+      "updatedAtMs": 1771858340446,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-20T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, личный код 50305150025 (создана 20.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773993600000
+      }
+    },
+    {
+      "id": "bf01ed7a-148e-4ef2-b5ce-05a1bcca0f77",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 60306224925",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858340486,
+      "updatedAtMs": 1771858340486,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-20T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, личный код 60306224925 (создана 20.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773993600000
+      }
+    },
+    {
+      "id": "23a00574-6857-42e3-8fa5-f75a03d09d55",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть DigiKaitse 55953690",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858429649,
+      "updatedAtMs": 1771858429649,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-21T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть DigiKaitse, номер 55953690 (создана 21.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774080000000
+      }
+    },
+    {
+      "id": "88f23e52-340b-4dec-9a56-42c316b675f7",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 39901070232",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858429673,
+      "updatedAtMs": 1771858429673,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-21T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 39901070232 (создана 21.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774080000000
+      }
+    },
+    {
+      "id": "bf81ef87-bbc4-413d-b353-38962b52dacf",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 38111100233",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858429696,
+      "updatedAtMs": 1771858429696,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-21T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 38111100233 (создана 21.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774080000000
+      }
+    },
+    {
+      "id": "01c4c4e5-efd6-4876-a1d0-80b5a40402e8",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку фирма 11903610",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858488469,
+      "updatedAtMs": 1771858488469,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-23T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку (фирма), рег. номер 11903610 (создана 23.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774252800000
+      }
+    },
+    {
+      "id": "5a39031b-6e6f-4158-b743-0226269ff80c",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть телевидение 58508061",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858488492,
+      "updatedAtMs": 1771858488492,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-23T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть телевидение, номер 58508061 (создана 23.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774252800000
+      }
+    },
+    {
+      "id": "8f88265d-77c3-4461-9018-1aefa366dbf9",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 35902140258",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771858592921,
+      "updatedAtMs": 1771858592921,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-23T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, личный код 35902140258 (создана 23.02). Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774252800000
+      }
+    },
+    {
+      "id": "1e9c1b07-b36f-49f9-bca9-bfd13f66814d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Задача: перепроверить ТВ + DigiBox",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771862389581,
+      "updatedAtMs": 1771862422379,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-24T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание на сегодня! Перепроверить подключение к телевидению и добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер дигибокса: 500061327\nНапомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771920000000
       }
     }
   ]
