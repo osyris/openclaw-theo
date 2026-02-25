@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771815608903,
+      "updatedAtMs": 1771902012253,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,13 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771902000000,
-        "lastRunAtMs": 1771815600020,
+        "nextRunAtMs": 1771988400000,
+        "lastRunAtMs": 1771902000030,
         "lastStatus": "ok",
-        "lastDurationMs": 8883,
+        "lastDurationMs": 12223,
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1771902000026
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "runningAtMs": 1771988400013
       }
     },
     {
@@ -70,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1771851067505,
+      "updatedAtMs": 1771912809375,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -86,7 +88,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771912800000
+        "nextRunAtMs": 1771999200000,
+        "lastRunAtMs": 1771912800053,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 9322,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -480,29 +489,166 @@
       }
     },
     {
-      "id": "1e9c1b07-b36f-49f9-bca9-bfd13f66814d",
+      "id": "52de8f42-a2ff-450b-9e9a-d084628f4747",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Задача: перепроверить ТВ + DigiBox",
+      "name": "Tele2: закрыть телевидение 56941671",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1771862389581,
-      "updatedAtMs": 1771862422379,
+      "createdAtMs": 1771944922880,
+      "updatedAtMs": 1771944944985,
       "schedule": {
         "kind": "at",
-        "at": "2026-02-24T08:00:00.000Z"
+        "at": "2026-03-02T08:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "🔔 Напоминание на сегодня! Перепроверить подключение к телевидению и добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер дигибокса: 500061327\nНапомни Наталии!"
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть телевидение, номер 56941671. Напомни Наталии!"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771920000000
+        "nextRunAtMs": 1772438400000
+      }
+    },
+    {
+      "id": "aed0bd38-f035-4cb5-9cb0-9d6fa6b74958",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 35178836957504",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771944922910,
+      "updatedAtMs": 1771944945046,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-02T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 35178836957504. Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772438400000
+      }
+    },
+    {
+      "id": "b0a63b62-bbea-4889-a051-ff9e3c3b7d73",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Вечерний чекпоинт 21:30",
+      "enabled": true,
+      "createdAtMs": 1771956626928,
+      "updatedAtMs": 1771961440157,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 19 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Вечерний чекпоинт для Наталии. Прочитай файлы memory/YYYY-MM-DD.md за сегодня и посмотри список крон-задач (cron list). Собери все задачи, напоминания и дела, которые были запланированы на сегодня и отправь Наталии сообщение-чеклист: 'Вечерний чекпоинт ✅' со списком всех дел дня. Спроси, всё ли сделано или нужно что-то перенести на завтра."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772047800000,
+        "lastRunAtMs": 1771961400036,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 40121,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "9160652a-06a5-4590-a8d5-d352fcf70d12",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Задача: перепроверить ТВ + DigiBox (перенос)",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771961602698,
+      "updatedAtMs": 1771961602698,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-25T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание (перенос со вчера)! Перепроверить подключение к телевидению и добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер: 500061327\nНапомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772006400000
+      }
+    },
+    {
+      "id": "38f09c55-9066-4990-8200-e52f05b0d26d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Задача: клиент из Швеции — ТЗ",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771961602730,
+      "updatedAtMs": 1771961602730,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-25T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание на сегодня! Клиент из Швеции — техническое задание. Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772006400000
+      }
+    },
+    {
+      "id": "c52debed-e16b-4c34-a64d-d73b61076a95",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Украшения для пирсинга для Арины",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1771961742649,
+      "updatedAtMs": 1771961742649,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-25T11:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Посмотреть сайты с украшениями для пирсинга для Арины. Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772017200000
       }
     }
   ]

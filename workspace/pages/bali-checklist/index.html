@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌴 Бали — Чеклист сборов</title>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #4a0e1c;
+  --primary-light: #6b1f30;
+  --bg: #f5f0eb;
+  --bg-card: #ffffff;
+  --text: #2c2c2c;
+  --text-light: #6b5e5e;
+  --accent: #c4956a;
+  --green: #4a7c59;
+  --border: #e0d6cc;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+.header { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:#fff; padding:2rem 1.5rem 1.5rem; text-align:center; position:sticky; top:0; z-index:100; }
+.header h1 { font-family:'Forum',serif; font-size:1.8rem; margin-bottom:.3rem; }
+.header .subtitle { font-size:.9rem; opacity:.85; margin-bottom:1rem; }
+.progress-wrap { background:rgba(255,255,255,.2); border-radius:20px; height:12px; overflow:hidden; max-width:400px; margin:0 auto; }
+.progress-bar { height:100%; background:linear-gradient(90deg,var(--accent),#e8c9a0); border-radius:20px; transition:width .4s ease; }
+.progress-text { font-size:.8rem; margin-top:.4rem; opacity:.9; }
+.container { max-width:700px; margin:0 auto; padding:1rem; }
+.section { background:var(--bg-card); border-radius:16px; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,.06); overflow:hidden; }
+.section-header { display:flex; align-items:center; gap:.6rem; padding:1rem 1.2rem; cursor:pointer; user-select:none; border-bottom:1px solid var(--border); }
+.section-header:hover { background:rgba(74,14,28,.03); }
+.section-icon { font-size:1.4rem; }
+.section-title { font-family:'Forum',serif; font-size:1.2rem; color:var(--primary); flex:1; }
+.section-count { font-size:.75rem; color:var(--text-light); background:var(--bg); padding:2px 8px; border-radius:10px; }
+.section-arrow { transition:transform .3s; font-size:.8rem; color:var(--text-light); }
+.section.collapsed .section-arrow { transform:rotate(-90deg); }
+.section.collapsed .section-body { display:none; }
+.section-body { padding:.5rem 0; }
+.subsection { padding:.3rem 1.2rem .5rem; }
+.subsection-title { font-size:.8rem; font-weight:700; color:var(--primary-light); text-transform:uppercase; letter-spacing:.5px; margin:.6rem 0 .3rem; padding-bottom:.2rem; border-bottom:1px dashed var(--border); }
+.item { display:flex; align-items:flex-start; gap:.7rem; padding:.45rem 1.2rem; transition:background .15s; }
+.item:hover { background:rgba(74,14,28,.02); }
+.item input[type=checkbox] { display:none; }
+.checkmark { width:22px; height:22px; min-width:22px; border:2px solid var(--border); border-radius:6px; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:all .2s; margin-top:1px; }
+.item input:checked ~ .checkmark { background:var(--green); border-color:var(--green); }
+.item input:checked ~ .checkmark::after { content:'✓'; color:#fff; font-size:14px; font-weight:700; }
+.item input:checked ~ .item-content .item-name { text-decoration:line-through; opacity:.5; }
+.item-content { flex:1; cursor:pointer; }
+.item-name { font-size:.95rem; line-height:1.3; }
+.item-hint { font-size:.78rem; color:var(--text-light); margin-top:1px; line-height:1.3; }
+.reset-btn { display:block; margin:1.5rem auto 2rem; padding:.6rem 1.5rem; background:none; border:2px solid var(--primary); color:var(--primary); border-radius:10px; font-family:'Nunito',sans-serif; font-size:.85rem; cursor:pointer; transition:all .2s; }
+.reset-btn:hover { background:var(--primary); color:#fff; }
+.footer { text-align:center; padding:1rem; font-size:.75rem; color:var(--text-light); }
+@media(max-width:500px) {
+  .header h1 { font-size:1.5rem; }
+  .item { padding:.4rem 1rem; }
+  .subsection { padding:.3rem 1rem .5rem; }
+  .section-header { padding:.8rem 1rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌴 Бали 2026</h1>
+  <div class="subtitle">3–16 марта · Убуд · Big Dragon Villas</div>
+  <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+  <div class="progress-text" id="progressText"></div>
+</div>
+
+<div class="container" id="app"></div>
+
+<button class="reset-btn" onclick="if(confirm('Сбросить все галочки?')){localStorage.removeItem('bali-checklist');location.reload()}">Сбросить всё</button>
+<div class="footer">Наталия · Бали 2026 🌺</div>
+
+<script>
+const DATA = [
+  { icon:"📋", title:"До поездки — Документы", items:[
+    {n:"Загранпаспорт",h:"Срок действия минимум 6 мес. после возвращения"},
+    {n:"Копии паспорта",h:"Фото в телефоне + бумажная копия отдельно от оригинала"},
+    {n:"Страховка",h:"С покрытием от $50 000, включая эвакуацию. Проверь покрытие мотобайков!"},
+    {n:"Бронь отеля",h:"Big Dragon Villas Ubud — распечатка или PDF"},
+    {n:"Авиабилеты",h:"Электронные билеты в телефоне + распечатка"},
+    {n:"Бронь трансфера",h:"Из аэропорта Ngurah Rai до Убуда (~1.5 часа)"},
+    {n:"Фото на документы",h:"2 шт. на всякий случай (потеря паспорта)"},
+  ]},
+  { icon:"💰", title:"До поездки — Финансы", items:[
+    {n:"Наличные USD",h:"Свежие купюры $50–100 для обмена. Мелкие $1–5 для чаевых"},
+    {n:"Банковская карта",h:"Visa/Mastercard, уведоми банк о поездке!"},
+    {n:"Запасная карта",h:"Второй банк, хранить отдельно от основной"},
+    {n:"Wise / Revolut",h:"Для выгодного курса и переводов"},
+    {n:"Немного IDR наличными",h:"Можно снять в банкомате по прилёту или обменять USD"},
+  ]},
+  { icon:"🏥", title:"До поездки — Здоровье", items:[
+    {n:"Консультация терапевта/тревел-врача",h:"За 4–6 недель до поездки"},
+    {n:"Прививки",h:"Гепатит А+Б, брюшной тиф — уточни у врача"},
+    {n:"Рецепты на лекарства",h:"Если принимаешь что-то постоянно — рецепт на английском"},
+  ]},
+  { icon:"📱", title:"До поездки — Техника", items:[
+    {n:"Адаптер для розеток",h:"Тип C (европейский) — обычно подходит, но проверь"},
+    {n:"Повербанк",h:"20 000 mAh, разрешён в ручную кладь (не в багаж!)"},
+    {n:"Зарядка + кабели",h:"Телефон, часы, наушники — всё проверить"},
+    {n:"Наушники",h:"Для перелёта и йоги"},
+    {n:"Трипод для телефона/камеры",h:"Для фото и видео на Бали"},
+    {n:"Электронная книга / планшет",h:"Для пляжа и вечеров"},
+    {n:"SIM-карта / eSIM",h:"Telkomsel или XL — можно купить в аэропорту. eSIM (Airalo) удобнее"},
+  ]},
+  { icon:"✅", title:"До поездки — Организация", items:[
+    {n:"Установить Grab",h:"Такси, еда, доставка — главное приложение!"},
+    {n:"Установить Google Maps",h:"Скачать офлайн-карту Бали"},
+    {n:"Установить Wise",h:"Для переводов и оплат"},
+    {n:"Заказать трансфер из аэропорта",h:"Или использовать Grab сразу по прилёту"},
+    {n:"Скачать офлайн-переводчик",h:"Google Translate — скачать индонезийский"},
+    {n:"Предупредить банк о поездке",h:"Чтобы карту не заблокировали за рубежом"},
+    {n:"Сохранить адрес отеля на индонезийском",h:"Для таксистов — скриншот с картой"},
+  ]},
+  { icon:"👗", title:"Одежда — Лёгкая", items:[
+    {n:"Хлопковые футболки / топы — 5–6 шт.",h:"Натуральные ткани, жара ~30°C"},
+    {n:"Лёгкие шорты — 3–4 шт.",h:""},
+    {n:"Лёгкое платье / сарафан — 2–3 шт.",h:"На ужин и прогулки"},
+    {n:"Лёгкие брюки / кюлоты — 1–2 шт.",h:"Для храмов и вечеров"},
+    {n:"Юбка миди / макси — 1–2 шт.",h:"Для храмов — закрытые колени"},
+    {n:"Лёгкая кофта / кардиган",h:"Для кондиционеров и вечеров в горах Убуда"},
+    {n:"Пижама",h:"Лёгкая, хлопок"},
+  ]},
+  { icon:"🛕", title:"Одежда — Для храмов", items:[
+    {n:"Саронг — 1–2 шт.",h:"Обязателен для храмов! Можно купить на месте (~$3–5)"},
+    {n:"Топ/футболка с закрытыми плечами",h:"Обязательно для храмов"},
+    {n:"Пояс-шарф (selendang)",h:"Обычно дают на входе в храм, но свой удобнее"},
+  ]},
+  { icon:"👙", title:"Одежда — Пляж и бассейн", items:[
+    {n:"Купальник — 2 шт.",h:"Один сохнет — другой носишь"},
+    {n:"Парео / накидка на пляж",h:""},
+    {n:"Шляпа / панама",h:"Обязательно! Солнце тропическое"},
+    {n:"Солнцезащитные очки",h:"С UV-защитой"},
+  ]},
+  { icon:"👟", title:"Одежда — Обувь", items:[
+    {n:"Удобные сандалии / вьетнамки",h:"Основная обувь — легко снимать (входы в храмы)"},
+    {n:"Кроссовки / трекинговые сандалии",h:"Для рисовых террас и прогулок"},
+    {n:"Лёгкая обувь на вечер",h:"Если планируете рестораны"},
+  ]},
+  { icon:"🌧️", title:"Одежда — От дождя", items:[
+    {n:"Лёгкий дождевик / ветровка",h:"Компактный, сезон дождей заканчивается, но ливни бывают"},
+    {n:"Складной зонт",h:"Компактный, поместится в сумку"},
+    {n:"Непромокаемая сумка / пакет",h:"Для техники во время дождя"},
+  ]},
+  { icon:"🧴", title:"Косметика и гигиена", items:[
+    {n:"Солнцезащитный крем SPF 50+",h:"Водостойкий! Наносить каждые 2 часа. Лучше взять из дома"},
+    {n:"Солнцезащитный спрей для тела",h:"Удобнее крема для тела"},
+    {n:"Бальзам для губ с SPF",h:"Губы тоже обгорают!"},
+    {n:"After-sun / алоэ гель",h:"На случай солнечных ожогов"},
+    {n:"Репеллент от комаров",h:"С DEET 25–30%. Вечером в Убуде — must have!"},
+    {n:"Мицеллярная вода",h:"Минимум косметики — всё растечётся от жары"},
+    {n:"Лёгкий увлажняющий крем",h:"Без жирных текстур"},
+    {n:"Дезодорант",h:"Надёжный антиперспирант"},
+    {n:"Шампунь + кондиционер (мини)",h:"Или взять на месте"},
+    {n:"Резинки и заколки для волос",h:"Волосы наверх — спасение в жару"},
+    {n:"Влажные салфетки",h:"Антибактериальные, для рук и лица"},
+    {n:"Сухой шампунь",h:"Спаситель в жару между мытьём"},
+    {n:"Антибактериальный гель для рук",h:""},
+  ]},
+  { icon:"💊", title:"Аптечка", items:[
+    {n:"Активированный уголь / Энтеросгель",h:"«Балийский живот» — частая история"},
+    {n:"Имодиум (лоперамид)",h:"Средство от диареи — обязательно!"},
+    {n:"Регидрон / электролиты",h:"При обезвоживании от жары или расстройства"},
+    {n:"Смекта",h:"Сорбент при отравлении"},
+    {n:"Нурофен / парацетамол",h:"Жаропонижающее и обезболивающее"},
+    {n:"Антигистаминное (Цетрин, Зодак)",h:"От аллергии, укусов насекомых"},
+    {n:"Антибиотик широкого спектра",h:"Азитромицин — по согласованию с врачом!"},
+    {n:"Пластыри разных размеров",h:"Водостойкие, для мозолей и порезов"},
+    {n:"Антисептик (хлоргексидин / йод)",h:"Любая царапина в тропиках — риск инфекции!"},
+    {n:"Крем с антибиотиком (Банеоцин)",h:"Для ссадин и порезов — в тропиках заживает медленно"},
+    {n:"Средство от укачивания",h:"Если планируете лодки или серпантины"},
+    {n:"Капли для глаз",h:"От сухости (кондиционеры, перелёт)"},
+    {n:"Спазмолитик (Но-шпа)",h:""},
+    {n:"Леденцы от горла",h:"Кондиционеры + жара = простуда"},
+    {n:"Личные лекарства",h:"Если принимаешь что-то постоянно"},
+  ]},
+  { icon:"🧘‍♀️", title:"Для йоги и велнеса", items:[
+    {n:"Леггинсы / шорты для йоги",h:"Дышащая ткань"},
+    {n:"Спортивный топ / майка — 2 шт.",h:""},
+    {n:"Носки для йоги",h:"Нескользящие, с пупырышками"},
+    {n:"Коврик-полотенце для йоги",h:"Тонкий, поверх студийного коврика (гигиена)"},
+    {n:"Бутылка для воды",h:"Многоразовая, пить минимум 2–3 литра в день!"},
+    {n:"Маленькое полотенце",h:"Быстросохнущее, из микрофибры"},
+  ]},
+  { icon:"🎨", title:"Для Nuanu Creative City", items:[
+    {n:"Удобная одежда для мастер-классов",h:"Может испачкаться — не надевай любимое"},
+    {n:"Удобная сумка через плечо",h:"Руки свободны для творчества"},
+    {n:"Блокнот + ручка",h:"Для идей и зарисовок"},
+  ]},
+  { icon:"🎒", title:"Сумки и организация", items:[
+    {n:"Чемодан",h:"Проверь вес и размер по требованиям авиакомпании"},
+    {n:"Рюкзак / сумка для дневных прогулок",h:"Лёгкий, с защитой от дождя"},
+    {n:"Поясная сумка / кросс-боди",h:"Для документов, телефона, денег"},
+    {n:"Пакеты zip-lock (разные размеры)",h:"Для мокрого купальника, защиты техники от дождя"},
+    {n:"Органайзеры для чемодана",h:"Кубики для упаковки — удобно!"},
+    {n:"Замок для чемодана",h:"TSA-замок"},
+  ]},
+  { icon:"📲", title:"Полезные приложения", items:[
+    {n:"Grab — установлено и настроено",h:"Такси, еда. Привязать карту заранее!"},
+    {n:"Google Maps — офлайн-карта скачана",h:"Район Убуда + юг Бали"},
+    {n:"Wise — аккаунт активирован",h:"Для переводов и выгодного курса"},
+    {n:"Google Translate — индонезийский скачан",h:"Офлайн-режим"},
+    {n:"XE Currency — курс валют",h:"IDR сложно считать — много нулей"},
+    {n:"Maps.me — офлайн-карты",h:"Альтернатива Google Maps"},
+    {n:"WhatsApp",h:"Основной мессенджер на Бали, для связи с отелем и гидами"},
+  ]},
+];
+
+const LS_KEY='bali-checklist';
+let state=JSON.parse(localStorage.getItem(LS_KEY)||'{}');
+
+function save(){localStorage.setItem(LS_KEY,JSON.stringify(state));}
+
+function toggle(id){
+  state[id]=!state[id];
+  save();
+  render();
+}
+
+function toggleSection(idx){
+  state['_s'+idx]=!state['_s'+idx];
+  save();
+  renderSections();
+}
+
+function getProgress(){
+  let total=0,done=0;
+  DATA.forEach((s,si)=>s.items.forEach((_,ii)=>{total++;if(state[si+'_'+ii])done++;}));
+  return {total,done};
+}
+
+function render(){
+  const{total,done}=getProgress();
+  const pct=total?Math.round(done/total*100):0;
+  document.getElementById('progressBar').style.width=pct+'%';
+  document.getElementById('progressText').textContent=`${done} из ${total} — ${pct}%`;
+  document.querySelectorAll('.item input[type=checkbox]').forEach(cb=>{
+    cb.checked=!!state[cb.dataset.id];
+  });
+  document.querySelectorAll('.item').forEach(el=>{
+    const cb=el.querySelector('input');
+    if(cb.checked){el.querySelector('.checkmark').classList.add('checked');}
+    else{el.querySelector('.checkmark').classList.remove('checked');}
+  });
+  // update counts
+  DATA.forEach((s,si)=>{
+    const cnt=s.items.filter((_,ii)=>state[si+'_'+ii]).length;
+    const el=document.querySelector(`[data-count="${si}"]`);
+    if(el)el.textContent=`${cnt}/${s.items.length}`;
+  });
+}
+
+function renderSections(){
+  const app=document.getElementById('app');
+  app.innerHTML=DATA.map((s,si)=>{
+    const collapsed=state['_s'+si]?'collapsed':'';
+    return`<div class="section ${collapsed}">
+      <div class="section-header" onclick="toggleSection(${si})">
+        <span class="section-icon">${s.icon}</span>
+        <span class="section-title">${s.title}</span>
+        <span class="section-count" data-count="${si}">0/${s.items.length}</span>
+        <span class="section-arrow">▼</span>
+      </div>
+      <div class="section-body">
+        ${s.items.map((it,ii)=>{
+          const id=si+'_'+ii;
+          return`<label class="item" for="cb${id}">
+            <input type="checkbox" id="cb${id}" data-id="${id}" onchange="toggle('${id}')" ${state[id]?'checked':''}>
+            <div class="checkmark"></div>
+            <div class="item-content">
+              <div class="item-name">${it.n}</div>
+              ${it.h?`<div class="item-hint">${it.h}</div>`:''}
+            </div>
+          </label>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  render();
+}
+
+renderSections();
+</script>
+</body>
+</html>

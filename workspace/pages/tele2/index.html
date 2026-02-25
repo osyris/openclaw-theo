@@ -286,7 +286,7 @@
     <script>
         // Тео обновляет этот блок
         const TRIALS_DATA = {
-            updated: "23.02.2026",
+            updated: "24.02.2026",
             trials: [
                 {
                     id: "4721080328",
@@ -372,6 +372,18 @@
                     startDate: "2026-02-23",
                     status: "active"
                 },
+                {
+                    id: "56941671",
+                    service: "Закрыть телевидение",
+                    startDate: "2026-02-02",
+                    status: "active"
+                },
+                {
+                    id: "35178836957504",
+                    service: "Закрыть страховку",
+                    startDate: "2026-02-02",
+                    status: "active"
+                },
             ]
         };
 
@@ -427,12 +439,12 @@
                     closedList.push(t);
                 } else if (daysLeft <= 5) {
                     urgentCount++;
-                    const key = t.startDate;
+                    const key = t._deadline;
                     if (!activeByDate[key]) activeByDate[key] = [];
                     activeByDate[key].push({ ...t, urgent: true });
                 } else {
                     activeCount++;
-                    const key = t.startDate;
+                    const key = t._deadline;
                     if (!activeByDate[key]) activeByDate[key] = [];
                     activeByDate[key].push({ ...t, urgent: false });
                 }
@@ -451,7 +463,7 @@
 
             if (sortedDates.length) {
                 sortedDates.forEach(date => {
-                    html += `<div class="date-group-title">📅 ${formatDate(date)}</div>`;
+                    html += `<div class="date-group-title">⏰ Дедлайн: ${formatDate(date)}</div>`;
                     activeByDate[date].forEach(t => {
                         const type = t.urgent ? 'urgent' : 'ok';
                         const badgeClass = t.urgent ? 'badge-urgent' : 'badge-active';
