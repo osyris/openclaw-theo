@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771902012253,
+      "updatedAtMs": 1771988408981,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771988400000,
-        "lastRunAtMs": 1771902000030,
+        "nextRunAtMs": 1772074800000,
+        "lastRunAtMs": 1771988400022,
         "lastStatus": "ok",
-        "lastDurationMs": 12223,
+        "lastDurationMs": 8959,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1771988400013
+        "runningAtMs": 1772074800016
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1771912809375,
+      "updatedAtMs": 1771999208675,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +88,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771999200000,
-        "lastRunAtMs": 1771912800053,
+        "nextRunAtMs": 1772085600000,
+        "lastRunAtMs": 1771999200046,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9322,
+        "lastDurationMs": 8629,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -547,7 +547,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1771961440157,
+      "updatedAtMs": 1772047860483,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -563,92 +563,92 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772047800000,
-        "lastRunAtMs": 1771961400036,
+        "nextRunAtMs": 1772134200000,
+        "lastRunAtMs": 1772047800030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40121,
+        "lastDurationMs": 60453,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
     {
-      "id": "9160652a-06a5-4590-a8d5-d352fcf70d12",
+      "id": "53b12f65-d174-4408-b469-7d5ccf26b9af",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Задача: перепроверить ТВ + DigiBox (перенос)",
+      "name": "Tele2: закрыть DigiKaitse 55974862 (3 мес)",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1771961602698,
-      "updatedAtMs": 1771961602698,
+      "createdAtMs": 1772026893962,
+      "updatedAtMs": 1772026893962,
       "schedule": {
         "kind": "at",
-        "at": "2026-02-25T08:00:00.000Z"
+        "at": "2026-05-25T07:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "🔔 Напоминание (перенос со вчера)! Перепроверить подключение к телевидению и добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер: 500061327\nНапомни Наталии!"
+        "message": "🔔 Напоминание! Сегодня истекает 3-месячный триал по задаче Tele2: Закрыть DigiKaitse, номер 55974862 (создана 25.02). Напомни Наталии!"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772006400000
+        "nextRunAtMs": 1779692400000
       }
     },
     {
-      "id": "38f09c55-9066-4990-8200-e52f05b0d26d",
+      "id": "1418b180-d8c4-4c8c-871a-6974a79a4fd6",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Задача: клиент из Швеции — ТЗ",
+      "name": "Tele2: перепроверить ТВ + DigiBox 45404280277",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1771961602730,
-      "updatedAtMs": 1771961602730,
+      "createdAtMs": 1772036473178,
+      "updatedAtMs": 1772036473178,
       "schedule": {
         "kind": "at",
-        "at": "2026-02-25T08:00:00.000Z"
+        "at": "2026-03-14T08:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "🔔 Напоминание на сегодня! Клиент из Швеции — техническое задание. Напомни Наталии!"
+        "message": "🔔 Напоминание! Перепроверить подключение ТВ + добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер: 500061327\nНапомни Наталии!"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772006400000
+        "nextRunAtMs": 1773475200000
       }
     },
     {
-      "id": "c52debed-e16b-4c34-a64d-d73b61076a95",
+      "id": "e0510192-0c6f-4166-aa3e-de16a5256566",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Украшения для пирсинга для Арины",
       "enabled": true,
       "deleteAfterRun": true,
-      "createdAtMs": 1771961742649,
-      "updatedAtMs": 1771961742649,
+      "createdAtMs": 1772052354668,
+      "updatedAtMs": 1772052354668,
       "schedule": {
         "kind": "at",
-        "at": "2026-02-25T11:00:00.000Z"
+        "at": "2026-02-26T11:00:00.000Z"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "🔔 Напоминание! Посмотреть сайты с украшениями для пирсинга для Арины. Напомни Наталии!"
+        "message": "🔔 Напоминание (перенос со вчера)! Посмотреть сайты с украшениями для пирсинга для Арины. Напомни Наталии!"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772017200000
+        "nextRunAtMs": 1772103600000
       }
     }
   ]

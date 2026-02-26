@@ -384,6 +384,19 @@
                     startDate: "2026-02-02",
                     status: "active"
                 },
+                {
+                    id: "55974862",
+                    service: "Закрыть DigiKaitse (3 мес)",
+                    startDate: "2026-02-25",
+                    trialDays: 90,
+                    status: "active"
+                },
+                {
+                    id: "45404280277",
+                    service: "Перепроверить ТВ + DigiBox (с/н 500061327)",
+                    startDate: "2026-02-14",
+                    status: "active"
+                },
             ]
         };
 
@@ -404,9 +417,9 @@
             return `${d.getDate()} ${months[d.getMonth()]}`;
         }
 
-        function getDeadline(startDate) {
+        function getDeadline(startDate, trialDays) {
             const d = new Date(startDate + 'T00:00:00');
-            d.setDate(d.getDate() + TRIAL_DAYS);
+            d.setDate(d.getDate() + (trialDays || TRIAL_DAYS));
             return d.toISOString().slice(0, 10);
         }
 
@@ -429,7 +442,7 @@
             TRIALS_DATA.trials.forEach(t => {
                 const start = new Date(t.startDate + 'T00:00:00');
                 const deadline = new Date(start);
-                deadline.setDate(deadline.getDate() + TRIAL_DAYS);
+                deadline.setDate(deadline.getDate() + (t.trialDays || TRIAL_DAYS));
                 const daysLeft = daysBetween(today, deadline);
                 t._daysLeft = daysLeft;
                 t._deadline = deadline.toISOString().slice(0, 10);
@@ -503,7 +516,7 @@
             const t = TRIALS_DATA.trials.find(x => x.id === id);
             if (!t) return;
 
-            const deadline = getDeadline(t.startDate);
+            const deadline = getDeadline(t.startDate, t.trialDays);
             const isClosed = t.status === 'closed';
             const daysClass = t._daysLeft <= 5 && !isClosed ? 'urgent-text' : '';
 
