@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1771988408981,
+      "updatedAtMs": 1772074808841,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772074800000,
-        "lastRunAtMs": 1771988400022,
+        "nextRunAtMs": 1772161200000,
+        "lastRunAtMs": 1772074800024,
         "lastStatus": "ok",
-        "lastDurationMs": 8959,
+        "lastDurationMs": 8817,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772074800016
+        "runningAtMs": 1772161200036
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1771999208675,
+      "updatedAtMs": 1772085619059,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +88,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772085600000,
-        "lastRunAtMs": 1771999200046,
+        "nextRunAtMs": 1772172000000,
+        "lastRunAtMs": 1772085600066,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8629,
+        "lastDurationMs": 18993,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -547,7 +547,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772047860483,
+      "updatedAtMs": 1772134229864,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -563,11 +563,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772134200000,
-        "lastRunAtMs": 1772047800030,
+        "nextRunAtMs": 1772220600000,
+        "lastRunAtMs": 1772134200036,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 60453,
+        "lastDurationMs": 29828,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -623,32 +623,6 @@
       },
       "state": {
         "nextRunAtMs": 1773475200000
-      }
-    },
-    {
-      "id": "e0510192-0c6f-4166-aa3e-de16a5256566",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Украшения для пирсинга для Арины",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772052354668,
-      "updatedAtMs": 1772052354668,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-02-26T11:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание (перенос со вчера)! Посмотреть сайты с украшениями для пирсинга для Арины. Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772103600000
       }
     }
   ]
