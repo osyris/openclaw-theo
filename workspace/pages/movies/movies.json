@@ -469,5 +469,18 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Love, Rosie",
+    "titleRu": "С любовью, Рози",
+    "year": 2014,
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
+    "poster": "img/love-rosie.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
