@@ -3,7 +3,10 @@
     "title": "Wuthering Heights",
     "titleRu": "Грозовой перевал",
     "year": 2026,
-    "genre": ["Drama", "Romance"],
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
     "poster": "img/wuthering-heights.jpg",
     "status": "watchlist",
     "liked": false,
@@ -12,7 +15,11 @@
   {
     "title": "Трудно быть богом",
     "year": 2026,
-    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
     "poster": "img/hard-to-be-a-god.jpg",
     "status": "watchlist",
     "liked": false,
@@ -22,7 +29,10 @@
     "title": "Jay Kelly",
     "titleRu": "Джей Келли",
     "year": 2025,
-    "genre": ["Comedy", "Drama"],
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
     "poster": "img/jay-kelly.jpg",
     "status": "watchlist",
     "liked": false,
@@ -31,7 +41,11 @@
   {
     "title": "После Фишера. Инквизитор",
     "year": 2026,
-    "genre": ["Thriller", "Crime", "Drama"],
+    "genre": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
     "poster": "img/posle-fishera.jpg",
     "status": "watchlist",
     "liked": false,
@@ -40,7 +54,9 @@
   {
     "title": "Уволить Жору",
     "year": 2026,
-    "genre": ["Comedy"],
+    "genre": [
+      "Comedy"
+    ],
     "poster": "img/uvolit-zhoru.jpg",
     "status": "watchlist",
     "liked": false,
@@ -50,7 +66,10 @@
     "title": "The Housemaid",
     "titleRu": "Горничная",
     "year": 2025,
-    "genre": ["Thriller", "Drama"],
+    "genre": [
+      "Thriller",
+      "Drama"
+    ],
     "poster": "img/the-housemaid.jpg",
     "status": "watchlist",
     "liked": false,
@@ -60,7 +79,10 @@
     "title": "Limitless with Chris Hemsworth",
     "titleRu": "Без границ с Крисом Хемсвортом",
     "year": 2022,
-    "genre": ["Documentary", "Adventure"],
+    "genre": [
+      "Documentary",
+      "Adventure"
+    ],
     "poster": "img/bez-granic.jpg",
     "status": "watchlist",
     "liked": false,
@@ -70,7 +92,11 @@
     "title": "While You Were Sleeping",
     "titleRu": "Пока ты спал",
     "year": 1995,
-    "genre": ["Romance", "Comedy", "Drama"],
+    "genre": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "poster": "img/while-you-were-sleeping.jpg",
     "status": "watchlist",
     "liked": false,
@@ -80,7 +106,10 @@
     "title": "The Holiday",
     "titleRu": "Отпуск по обмену",
     "year": 2006,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/the-holiday.jpg",
     "status": "watchlist",
     "liked": false,
@@ -90,7 +119,11 @@
     "title": "The Family Man",
     "titleRu": "Семьянин",
     "year": 2000,
-    "genre": ["Romance", "Drama", "Fantasy"],
+    "genre": [
+      "Romance",
+      "Drama",
+      "Fantasy"
+    ],
     "poster": "img/the-family-man.jpg",
     "status": "watchlist",
     "liked": false,
@@ -100,7 +133,10 @@
     "title": "Last Christmas",
     "titleRu": "Рождество на двоих",
     "year": 2019,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/last-christmas.jpg",
     "status": "watchlist",
     "liked": false,
@@ -110,7 +146,11 @@
     "title": "Love Actually",
     "titleRu": "Реальная любовь",
     "year": 2003,
-    "genre": ["Romance", "Comedy", "Drama"],
+    "genre": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
     "poster": "img/love-actually.jpg",
     "status": "watchlist",
     "liked": false,
@@ -120,7 +160,10 @@
     "title": "Something from Tiffany's",
     "titleRu": "Что-то от Тиффани",
     "year": 2022,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/something-from-tiffanys.jpg",
     "status": "watchlist",
     "liked": false,
@@ -130,7 +173,10 @@
     "title": "Serendipity",
     "titleRu": "Интуиция",
     "year": 2001,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/serendipity.jpg",
     "status": "watchlist",
     "liked": false,
@@ -140,7 +186,10 @@
     "title": "Holidate",
     "titleRu": "Парадна праздники",
     "year": 2020,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/holidate.jpg",
     "status": "watchlist",
     "liked": false,
@@ -150,7 +199,10 @@
     "title": "Last Holiday",
     "titleRu": "Последний отпуск",
     "year": 2006,
-    "genre": ["Comedy", "Drama"],
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
     "poster": "img/last-holiday.jpg",
     "status": "watchlist",
     "liked": false,
@@ -160,7 +212,10 @@
     "title": "Happiest Season",
     "titleRu": "Самый счастливый сезон",
     "year": 2020,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/happiest-season.jpg",
     "status": "watchlist",
     "liked": false,
@@ -170,7 +225,10 @@
     "title": "Love Hard",
     "titleRu": "Неуловимый аромат любви",
     "year": 2021,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/love-hard.jpg",
     "status": "watchlist",
     "liked": false,
@@ -180,8 +238,234 @@
     "title": "Falling for Christmas",
     "titleRu": "Незабываемое Рождество",
     "year": 2022,
-    "genre": ["Romance", "Comedy"],
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
     "poster": "img/falling-for-christmas.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Eat Pray Love",
+    "titleRu": "Ешь, молись, люби",
+    "year": 2010,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/eat-pray-love.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Original Sin",
+    "titleRu": "Соблазн",
+    "year": 2001,
+    "genre": [
+      "Thriller",
+      "Romance",
+      "Drama"
+    ],
+    "poster": "img/original-sin.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Bridget Jones's Diary",
+    "titleRu": "Дневник Бриджит Джонс",
+    "year": 2001,
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
+    "poster": "img/bridget-jones-diary.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Joy",
+    "titleRu": "Джой",
+    "year": 2015,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/joy.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Under the Tuscan Sun",
+    "titleRu": "Под солнцем Тосканы",
+    "year": 2003,
+    "genre": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/under-the-tuscan-sun.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "The Devil Wears Prada",
+    "titleRu": "Дьявол носит Prada",
+    "year": 2006,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/devil-wears-prada.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Wild",
+    "titleRu": "Дикая",
+    "year": 2014,
+    "genre": [
+      "Drama",
+      "Adventure"
+    ],
+    "poster": "img/wild.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Little Women",
+    "titleRu": "Маленькие женщины",
+    "year": 2019,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/little-women.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "The Notebook",
+    "titleRu": "Дневник памяти",
+    "year": 2004,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "poster": "img/the-notebook.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Breakfast at Tiffany's",
+    "titleRu": "Завтрак у Тиффани",
+    "year": 1961,
+    "genre": [
+      "Romance",
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/breakfast-at-tiffanys.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "A Walk to Remember",
+    "titleRu": "Спеши любить",
+    "year": 2002,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "poster": "img/a-walk-to-remember.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Chocolat",
+    "titleRu": "Шоколад",
+    "year": 2000,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "poster": "img/chocolat.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "The Women",
+    "titleRu": "Женщины",
+    "year": 2008,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/the-women.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "I Don't Know How She Does It",
+    "titleRu": "Я не знаю, как она делает это",
+    "year": 2011,
+    "genre": [
+      "Comedy"
+    ],
+    "poster": "img/i-dont-know-how-she-does-it.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "The Age of Adaline",
+    "titleRu": "Век Адалин",
+    "year": 2015,
+    "genre": [
+      "Romance",
+      "Drama",
+      "Fantasy"
+    ],
+    "poster": "img/age-of-adaline.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "The Dressmaker",
+    "titleRu": "Месть от кутюр",
+    "year": 2015,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/the-dressmaker.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Grace of Monaco",
+    "titleRu": "Принцесса Монако",
+    "year": 2014,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/grace-of-monaco.jpg",
     "status": "watchlist",
     "liked": false,
     "type": "movie"
