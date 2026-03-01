@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кинотека Наталии</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+  :root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --card-hover: #222;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #c0392b;
+    --accent-light: #e74c3c;
+    --accent-glow: rgba(192,57,43,0.4);
+    --gold: #f1c40f;
+    --border: #2a2a2a;
+    --surface: #141414;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; font-weight:300; min-height:100vh; }
+
+  /* Hero */
+  .hero {
+    text-align:center; padding:5rem 1.5rem 3rem;
+    background: linear-gradient(180deg, #1a0a0a 0%, #0d0d0d 100%);
+    position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:600px; height:600px; border-radius:50%;
+    background:radial-gradient(circle, rgba(192,57,43,0.15) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero h1 {
+    font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:4rem;
+    letter-spacing:0.12em; color:var(--accent-light);
+    text-transform:uppercase; text-shadow:0 0 60px var(--accent-glow);
+    position:relative;
+  }
+  .hero p {
+    color:var(--muted); font-size:0.85rem; letter-spacing:0.2em;
+    text-transform:uppercase; margin-top:0.5rem; position:relative;
+  }
+
+  /* Controls */
+  .controls {
+    max-width:1100px; margin:0 auto; padding:1.5rem 1.5rem 0.5rem;
+    display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;
+  }
+  .search-box {
+    flex:1; min-width:200px; padding:0.7rem 1.2rem;
+    border:1px solid var(--border); border-radius:2rem;
+    font-size:0.85rem; font-family:inherit;
+    background:var(--surface); color:var(--text); outline:none;
+    transition:border-color 0.2s;
+  }
+  .search-box:focus { border-color:var(--accent); box-shadow:0 0 15px rgba(192,57,43,0.15); }
+  .search-box::placeholder { color:#555; }
+
+  .filter-btn {
+    padding:0.55rem 1.3rem; border:1px solid var(--border); border-radius:2rem;
+    background:var(--surface); font-size:0.95rem; font-family:'Bebas Neue',sans-serif;
+    cursor:pointer; transition:all 0.2s; color:#777;
+    text-transform:uppercase; letter-spacing:0.1em;
+  }
+  .filter-btn:hover { border-color:var(--accent); color:var(--accent-light); }
+  .filter-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+
+  .genre-filters {
+    max-width:1100px; margin:0 auto; padding:0.5rem 1.5rem;
+    display:flex; flex-wrap:wrap; gap:0.35rem;
+  }
+  .genre-btn {
+    padding:0.3rem 0.8rem; border:1px solid var(--border); border-radius:2rem;
+    background:transparent; font-size:0.72rem; font-family:inherit; font-weight:400;
+    cursor:pointer; transition:all 0.2s; color:#666;
+    text-transform:uppercase; letter-spacing:0.06em;
+  }
+  .genre-btn:hover { border-color:var(--accent); color:var(--accent-light); }
+  .genre-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+
+  .count {
+    width:100%; text-align:right; font-size:0.75rem; color:var(--muted);
+    padding:0.3rem 0; max-width:1100px; margin:0 auto;
+    padding-left:1.5rem; padding-right:1.5rem;
+  }
+
+  /* Grid */
+  .grid {
+    max-width:1100px; margin:0 auto; padding:0.5rem 1.5rem 4rem;
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem;
+  }
+
+  /* Card */
+  .card {
+    background:var(--card); border:1px solid var(--border); border-radius:0.8rem;
+    padding:0; transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;
+    display:flex; overflow:hidden; cursor:default; position:relative;
+  }
+  .card:hover {
+    transform:translateY(-3px);
+    box-shadow:0 8px 40px rgba(192,57,43,0.12);
+    border-color:rgba(192,57,43,0.4);
+  }
+
+  .card-poster {
+    width:120px; min-width:120px; height:180px;
+    background:#111; flex-shrink:0; overflow:hidden; position:relative;
+  }
+  .card-poster img {
+    width:100%; height:100%; object-fit:cover;
+    transition:transform 0.3s;
+  }
+  .card:hover .card-poster img { transform:scale(1.05); }
+  .card-poster .no-poster {
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    font-family:'Bebas Neue',sans-serif; font-size:1.2rem; color:#333;
+    background:linear-gradient(135deg,#1a0a0a,#0d0d0d);
+  }
+
+  .card-body {
+    flex:1; padding:1rem 1rem 0.8rem; display:flex; flex-direction:column; gap:0.4rem; min-width:0;
+  }
+  .card-title {
+    font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700;
+    line-height:1.3; color:#fff;
+  }
+  .card-title-ru {
+    font-size:0.78rem; color:var(--muted); font-style:italic; font-weight:300;
+    line-height:1.3;
+  }
+  .card-year {
+    font-size:0.75rem; color:var(--muted); font-weight:400;
+  }
+  .card-genres {
+    display:flex; flex-wrap:wrap; gap:0.25rem; margin-top:0.2rem;
+  }
+  .card-genre-tag {
+    font-size:0.62rem; padding:0.12rem 0.45rem; border-radius:2rem;
+    background:rgba(192,57,43,0.12); color:var(--accent-light);
+    text-transform:uppercase; letter-spacing:0.04em;
+  }
+  .card-icons {
+    display:flex; gap:0.6rem; margin-top:auto; padding-top:0.5rem;
+    align-items:center;
+  }
+  .card-icon {
+    font-size:1rem; opacity:0.3; transition:opacity 0.2s;
+  }
+  .card-icon.active { opacity:1; }
+  .card-icon.watched { color:#4ecdc4; }
+  .card-icon.liked { color:var(--accent-light); }
+  .card-type-badge {
+    position:absolute; top:0.5rem; left:0.5rem; z-index:2;
+    font-size:0.58rem; padding:0.15rem 0.5rem; border-radius:2rem;
+    background:rgba(78,205,196,0.85); color:#000; font-weight:600;
+    text-transform:uppercase; letter-spacing:0.06em; backdrop-filter:blur(4px);
+  }
+
+  /* Empty state */
+  .empty {
+    grid-column:1/-1; text-align:center; padding:4rem 1rem;
+    color:#444; font-size:0.9rem;
+  }
+  .empty-icon { font-size:3rem; margin-bottom:1rem; opacity:0.3; }
+
+  /* Footer */
+  .footer {
+    text-align:center; padding:2rem; color:#333; font-size:0.7rem;
+    letter-spacing:0.1em; text-transform:uppercase;
+  }
+
+  @media(max-width:600px) {
+    .hero h1 { font-size:2.8rem; }
+    .hero { padding:3.5rem 1rem 2rem; }
+    .grid { grid-template-columns:1fr; }
+    .card-poster { width:100px; min-width:100px; height:150px; }
+    .controls { padding:1rem 1rem 0.5rem; }
+    .genre-filters { padding:0.5rem 1rem; }
+    .count { padding-left:1rem; padding-right:1rem; }
+    .grid { padding:0.5rem 1rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🎬 MOVIE COLLECTION</h1>
+  <p>Фильмы, которые стоит пережить</p>
+</div>
+
+<div class="controls">
+  <input type="text" class="search-box" placeholder="Поиск по названию..." id="search">
+  <button class="filter-btn active" data-filter="all">Все</button>
+  <button class="filter-btn" data-filter="watched">👁 Просмотрено</button>
+  <button class="filter-btn" data-filter="watchlist">📋 Хочу посмотреть</button>
+  <button class="filter-btn" data-filter="liked">❤️ Любимые</button>
+</div>
+
+<div class="genre-filters" id="genreFilters"></div>
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+<div class="footer">Кинотека Наталии · 2026</div>
+
+<script>
+let movies = [];
+let activeFilter = 'all';
+let activeGenre = null;
+let searchQuery = '';
+
+fetch('/pages/movies/movies.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => { movies = data; initApp(); })
+  .catch(() => { movies = []; initApp(); });
+
+function initApp() {
+  renderGenreButtons();
+  renderMovies();
+  document.getElementById('search').addEventListener('input', e => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    renderMovies();
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      renderMovies();
+    });
+  });
+}
+
+function getAllGenres() {
+  const set = new Set();
+  movies.forEach(m => (m.genre || []).forEach(g => set.add(g)));
+  return [...set].sort();
+}
+
+function renderGenreButtons() {
+  const container = document.getElementById('genreFilters');
+  const genres = getAllGenres();
+  if (!genres.length) { container.innerHTML = ''; return; }
+  container.innerHTML = genres.map(g =>
+    `<button class="genre-btn" data-genre="${g}">${g}</button>`
+  ).join('');
+  container.querySelectorAll('.genre-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const genre = btn.dataset.genre;
+      if (activeGenre === genre) {
+        activeGenre = null;
+        btn.classList.remove('active');
+      } else {
+        container.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
+        activeGenre = genre;
+        btn.classList.add('active');
+      }
+      renderMovies();
+    });
+  });
+}
+
+function filterMovies() {
+  return movies.filter(m => {
+    if (activeFilter === 'watched' && m.status !== 'watched') return false;
+    if (activeFilter === 'watchlist' && m.status !== 'watchlist') return false;
+    if (activeFilter === 'liked' && !m.liked) return false;
+    if (activeGenre && !(m.genre || []).includes(activeGenre)) return false;
+    if (searchQuery && !m.title.toLowerCase().includes(searchQuery) && !(m.titleRu && m.titleRu.toLowerCase().includes(searchQuery))) return false;
+    return true;
+  });
+}
+
+function renderMovies() {
+  const filtered = filterMovies();
+  const grid = document.getElementById('grid');
+  document.getElementById('count').textContent = `${filtered.length} из ${movies.length}`;
+
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="empty"><div class="empty-icon">🎬</div>Ничего не найдено</div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(m => {
+    const posterHTML = m.poster
+      ? `<img src="${m.poster}" alt="${m.title}" loading="lazy">`
+      : `<div class="no-poster">🎬</div>`;
+    const genres = (m.genre || []).map(g => `<span class="card-genre-tag">${g}</span>`).join('');
+    const watchedClass = m.status === 'watched' ? 'active' : '';
+    const likedClass = m.liked ? 'active' : '';
+
+    const typeBadge = m.type === 'series' ? `<div class="card-type-badge">📺 сериал</div>` : '';
+
+    return `
+      <div class="card">
+        <div class="card-poster">${typeBadge}${posterHTML}</div>
+        <div class="card-body">
+          <div class="card-title">${m.title}</div>
+          ${m.titleRu ? `<div class="card-title-ru">${m.titleRu}</div>` : ''}
+          <div class="card-year">${m.year || ''}</div>
+          <div class="card-genres">${genres}</div>
+          <div class="card-icons">
+            <span class="card-icon watched ${watchedClass}" title="Просмотрено">👁</span>
+            <span class="card-icon liked ${likedClass}" title="Понравилось">❤️</span>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+</script>
+</body>
+</html>

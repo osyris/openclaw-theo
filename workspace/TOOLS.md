@@ -84,4 +84,35 @@ cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject
 
 ---
 
+---
+
+## Каталог фильмов
+
+**Расположение:** `/data/workspace/pages/movies/`
+**URL:** `nataliakatsalukha.com/pages/movies/`
+
+### Скрипты:
+```bash
+# Найти и скачать постер (Film.ru → TMDB → Wikipedia)
+/data/workspace/pages/movies/poster.sh "<slug-или-название>" "<filename.jpg>"
+
+# Добавить фильм в каталог
+/data/workspace/pages/movies/add.sh "<title>" <year> "<Genre1,Genre2>" "<poster.jpg>" [movie|series] [watchlist|watched]
+```
+
+### Порядок добавления:
+1. Определить фильм/сериал из скриншота
+2. `poster.sh` — попробовать найти постер (slug на film.ru через транслит)
+3. Если не найден — сохранить скриншот пользователя
+4. `add.sh` — добавить в movies.json
+5. По умолчанию: status=watchlist, type=movie
+
+### Источники постеров (приоритет):
+1. **Film.ru** — slug: `{название-транслитом}`, суффиксы `-0`..`-5`
+2. **TMDB** — поиск по англ. названию
+3. **Wikipedia** — `upload.wikimedia.org`
+4. **Скриншот** — fallback
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
