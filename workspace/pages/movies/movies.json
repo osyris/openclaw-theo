@@ -482,5 +482,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Карта желаний",
+    "year": 2026,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/karta-zhelaniy.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
