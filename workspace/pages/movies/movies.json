@@ -494,5 +494,16 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Комментируй это",
+    "year": 2026,
+    "genre": [
+      "Comedy"
+    ],
+    "poster": "img/kommentiruy-eto.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
