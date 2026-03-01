@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772161209573,
+      "updatedAtMs": 1772247608707,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772247600000,
-        "lastRunAtMs": 1772161200062,
+        "nextRunAtMs": 1772334000000,
+        "lastRunAtMs": 1772247600053,
         "lastStatus": "ok",
-        "lastDurationMs": 9511,
+        "lastDurationMs": 8654,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772247600046
+        "runningAtMs": 1772334000048
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772172020828,
+      "updatedAtMs": 1772258405375,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,13 +88,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772258400000,
-        "lastRunAtMs": 1772172000040,
+        "nextRunAtMs": 1772344800000,
+        "lastRunAtMs": 1772258400040,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20788,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 5335,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
@@ -547,7 +547,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772220638552,
+      "updatedAtMs": 1772307026715,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -563,11 +563,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772307000000,
-        "lastRunAtMs": 1772220600036,
+        "nextRunAtMs": 1772393400000,
+        "lastRunAtMs": 1772307000064,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 38516,
+        "lastDurationMs": 26651,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -623,6 +623,84 @@
       },
       "state": {
         "nextRunAtMs": 1773475200000
+      }
+    },
+    {
+      "id": "d10dbbc4-2f32-4524-9836-c6d5bc53bd75",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Костя — гвозди для гвоздестояния",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772279696722,
+      "updatedAtMs": 1772279696722,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-02T12:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание! Попросить Костю привезти гвозди для гвоздестояния. Напомни Наталии!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772452800000
+      }
+    },
+    {
+      "id": "fc1e09bb-9d4b-4937-9bb3-e45b3c3bacb2",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Распечатать визу на Бали",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772309972517,
+      "updatedAtMs": 1772309972517,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-01T07:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии распечатать заново визу на Бали!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772348400000
+      }
+    },
+    {
+      "id": "04ae416f-0af2-4335-81f9-62c1bbf7ef95",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Купить патчи для глаз",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772312108108,
+      "updatedAtMs": 1772312108108,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-01T07:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии купить гелевые патчи для глаз!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772348400000
       }
     }
   ]
