@@ -505,5 +505,19 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Altered Carbon",
+    "titleRu": "Видоизменённый углерод",
+    "year": 2018,
+    "genre": [
+      "Sci-Fi",
+      "Thriller",
+      "Drama"
+    ],
+    "poster": "img/altered-carbon.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
