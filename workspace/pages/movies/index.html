@@ -150,9 +150,12 @@
     align-items:center;
   }
   .card-icon {
-    font-size:1rem; opacity:0.3; transition:opacity 0.2s;
+    font-size:1.1rem; opacity:0.3; transition:all 0.2s; cursor:pointer;
+    user-select:none; padding:0.3rem; border-radius:50%;
   }
+  .card-icon:hover { opacity:0.7; transform:scale(1.2); }
   .card-icon.active { opacity:1; }
+  .card-icon.active:hover { transform:scale(1.2); }
   .card-icon.watched { color:#4ecdc4; }
   .card-icon.liked { color:var(--accent-light); }
   .card-type-badge {
@@ -213,9 +216,34 @@ let activeFilter = 'all';
 let activeGenre = null;
 let searchQuery = '';
 
+// Load user overrides from localStorage
+function loadOverrides() {
+  try { return JSON.parse(localStorage.getItem('movie_overrides') || '{}'); } catch(e) { return {}; }
+}
+function saveOverrides(ov) {
+  localStorage.setItem('movie_overrides', JSON.stringify(ov));
+}
+function applyOverrides() {
+  const ov = loadOverrides();
+  movies.forEach(m => {
+    const key = m.title + '|' + m.year;
+    if (ov[key]) {
+      if (ov[key].status) m.status = ov[key].status;
+      if (ov[key].liked !== undefined) m.liked = ov[key].liked;
+    }
+  });
+}
+function setOverride(m, field, value) {
+  const ov = loadOverrides();
+  const key = m.title + '|' + m.year;
+  if (!ov[key]) ov[key] = {};
+  ov[key][field] = value;
+  saveOverrides(ov);
+}
+
 fetch('/pages/movies/movies.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data => { movies = data; initApp(); })
+  .then(data => { movies = data; applyOverrides(); initApp(); })
   .catch(() => { movies = []; initApp(); });
 
 function initApp() {
@@ -285,7 +313,8 @@ function renderMovies() {
     return;
   }
 
-  grid.innerHTML = filtered.map(m => {
+  grid.innerHTML = filtered.map((m, fi) => {
+    const idx = movies.indexOf(m);
     const posterHTML = m.poster
       ? `<img src="${m.poster}" alt="${m.title}" loading="lazy">`
       : `<div class="no-poster">🎬</div>`;
@@ -304,12 +333,29 @@ function renderMovies() {
           <div class="card-year">${m.year || ''}</div>
           <div class="card-genres">${genres}</div>
           <div class="card-icons">
-            <span class="card-icon watched ${watchedClass}" title="Просмотрено">👁</span>
-            <span class="card-icon liked ${likedClass}" title="Понравилось">❤️</span>
+            <span class="card-icon watched ${watchedClass}" data-idx="${idx}" data-action="watched" title="Просмотрено">👁</span>
+            <span class="card-icon liked ${likedClass}" data-idx="${idx}" data-action="liked" title="Понравилось">❤️</span>
           </div>
         </div>
       </div>`;
   }).join('');
+
+  // Attach click handlers
+  grid.querySelectorAll('.card-icon').forEach(icon => {
+    icon.addEventListener('click', e => {
+      e.stopPropagation();
+      const idx = parseInt(icon.dataset.idx);
+      const m = movies[idx];
+      if (icon.dataset.action === 'watched') {
+        m.status = m.status === 'watched' ? 'watchlist' : 'watched';
+        setOverride(m, 'status', m.status);
+      } else {
+        m.liked = !m.liked;
+        setOverride(m, 'liked', m.liked);
+      }
+      renderMovies();
+    });
+  });
 }
 </script>
 </body>
