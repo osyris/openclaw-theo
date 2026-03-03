@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772334009112,
+      "updatedAtMs": 1772420408628,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772420400000,
-        "lastRunAtMs": 1772334000059,
+        "nextRunAtMs": 1772506800000,
+        "lastRunAtMs": 1772420400053,
         "lastStatus": "ok",
-        "lastDurationMs": 9053,
+        "lastDurationMs": 8575,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772420400044
+        "runningAtMs": 1772506800020
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772344805449,
+      "updatedAtMs": 1772431206431,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +88,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772431200000,
-        "lastRunAtMs": 1772344800052,
+        "nextRunAtMs": 1772517600000,
+        "lastRunAtMs": 1772431200077,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5397,
+        "lastDurationMs": 6354,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -489,65 +489,13 @@
       }
     },
     {
-      "id": "52de8f42-a2ff-450b-9e9a-d084628f4747",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть телевидение 56941671",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771944922880,
-      "updatedAtMs": 1771944944985,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-02T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть телевидение, номер 56941671. Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772438400000
-      }
-    },
-    {
-      "id": "aed0bd38-f035-4cb5-9cb0-9d6fa6b74958",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 35178836957504",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771944922910,
-      "updatedAtMs": 1771944945046,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-02T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 35178836957504. Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772438400000
-      }
-    },
-    {
       "id": "b0a63b62-bbea-4889-a051-ff9e3c3b7d73",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772393429886,
+      "updatedAtMs": 1772479879636,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -563,11 +511,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772479800000,
-        "lastRunAtMs": 1772393400025,
+        "nextRunAtMs": 1772566200000,
+        "lastRunAtMs": 1772479800056,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29861,
+        "lastDurationMs": 79580,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -623,32 +571,6 @@
       },
       "state": {
         "nextRunAtMs": 1773475200000
-      }
-    },
-    {
-      "id": "d10dbbc4-2f32-4524-9836-c6d5bc53bd75",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Костя — гвозди для гвоздестояния",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772279696722,
-      "updatedAtMs": 1772279696722,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-02T12:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Попросить Костю привезти гвозди для гвоздестояния. Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772452800000
       }
     },
     {
