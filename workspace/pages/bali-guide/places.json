@@ -691,5 +691,44 @@
     "lat": -8.513,
     "lng": 115.265,
     "mapUrl": ""
+  },
+  {
+    "name": "Wyah Ubud",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Jl. Goutama, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [
+      "Здоровая кухня"
+    ],
+    "tags": [
+      "завтрак",
+      "кофе",
+      "боулы",
+      "коворкинг"
+    ],
+    "description": "Популярное кафе в Убуде — смузи-боулы, хороший кофе, завтраки и здоровая еда. Стильный интерьер, подходит для работы и отдыха.",
+    "website": null,
+    "instagram": "https://www.instagram.com/wyahubud/",
+    "slug": "",
+    "lat": -8.5085,
+    "lng": 115.263,
+    "mapUrl": "https://www.google.com/maps/search/Wyah+Ubud+Bali"
   }
 ]
