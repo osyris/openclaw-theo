@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772593208806,
+      "updatedAtMs": 1772679624239,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772679600000,
-        "lastRunAtMs": 1772593200027,
+        "nextRunAtMs": 1772766000000,
+        "lastRunAtMs": 1772679600039,
         "lastStatus": "ok",
-        "lastDurationMs": 8779,
+        "lastDurationMs": 24200,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772679600032
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -72,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772604010348,
+      "updatedAtMs": 1772690406673,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772690400000,
-        "lastRunAtMs": 1772604000047,
+        "nextRunAtMs": 1772776800000,
+        "lastRunAtMs": 1772690400114,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10301,
+        "lastDurationMs": 6559,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -122,32 +121,6 @@
       },
       "state": {
         "nextRunAtMs": 1773907200000
-      }
-    },
-    {
-      "id": "2c520722-04bc-4051-89d7-c7664b71d5a5",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: триал 4721080328",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771857226050,
-      "updatedAtMs": 1771858254224,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-05T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Tele2 триал: клиент 4721080328, услуга Страховка — 28 дней истекают. Напомни Наталии: связаться с клиентом или закрыть услугу!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772697600000
       }
     },
     {
@@ -495,7 +468,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772631052422,
+      "updatedAtMs": 1772717433140,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -511,11 +484,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772717400000,
-        "lastRunAtMs": 1772631000023,
+        "nextRunAtMs": 1772803800000,
+        "lastRunAtMs": 1772717400030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 52399,
+        "lastDurationMs": 33110,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
