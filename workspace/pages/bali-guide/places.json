@@ -506,5 +506,41 @@
     "lat": -8.5053108,
     "lng": 115.2582557,
     "mapUrl": "https://maps.app.goo.gl/ceb5aQ1PrtofP3yf9"
+  },
+  {
+    "name": "Blend Cafe Ubud",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "кофе",
+      "завтрак",
+      "смузи"
+    ],
+    "description": "Уютное кафе в Убуде с хорошим кофе, смузи и завтраками.",
+    "website": null,
+    "instagram": "https://www.instagram.com/blendcafeubud/",
+    "slug": "",
+    "lat": -8.5215116,
+    "lng": 115.2569792,
+    "mapUrl": "https://maps.app.goo.gl/X4Fabrgwrxd7LU3Q6"
   }
 ]
