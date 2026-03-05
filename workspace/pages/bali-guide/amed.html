@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏝️ Amed Guide — Восток Бали</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --card-hover: #222;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #27ae60;
+    --accent-light: #2ecc71;
+    --accent-glow: rgba(39,174,96,0.4);
+    --border: #2a2a2a;
+    --surface: #141414;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; font-weight:300; min-height:100vh; }
+  a { color:var(--accent-light); text-decoration:none; transition:color 0.2s; }
+  a:hover { color:#fff; }
+
+  /* Back button */
+  .back-btn {
+    display:inline-flex; align-items:center; gap:0.4rem;
+    padding:0.6rem 1.2rem; margin:1.5rem 1.5rem 0;
+    font-size:0.82rem; color:var(--muted); border:1px solid var(--border);
+    border-radius:2rem; background:var(--surface); transition:all 0.2s;
+    text-decoration:none; font-family:inherit;
+  }
+  .back-btn:hover { border-color:var(--accent); color:var(--accent-light); }
+
+  /* Hero */
+  .hero {
+    text-align:center; padding:4rem 1.5rem 2.5rem;
+    background: linear-gradient(180deg, #0a1a0f 0%, #0d0d0d 100%);
+    position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:600px; height:600px; border-radius:50%;
+    background:radial-gradient(circle, rgba(39,174,96,0.12) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero h1 {
+    font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:4rem;
+    letter-spacing:0.1em; color:var(--accent-light);
+    text-transform:uppercase; text-shadow:0 0 60px var(--accent-glow);
+    position:relative;
+  }
+  .hero .subtitle {
+    color:var(--muted); font-size:0.82rem; letter-spacing:0.15em;
+    text-transform:uppercase; margin-top:0.5rem; position:relative;
+  }
+  .hero .description {
+    max-width:700px; margin:1.5rem auto 0; color:#aaa; font-size:0.9rem;
+    line-height:1.7; position:relative;
+  }
+
+  /* Controls */
+  .controls {
+    max-width:1100px; margin:0 auto; padding:1.5rem 1.5rem 0.5rem;
+    display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;
+  }
+  .search-box {
+    flex:1; min-width:200px; padding:0.7rem 1.2rem;
+    border:1px solid var(--border); border-radius:2rem;
+    font-size:0.85rem; font-family:inherit;
+    background:var(--surface); color:var(--text); outline:none;
+    transition:border-color 0.2s;
+  }
+  .search-box:focus { border-color:var(--accent); box-shadow:0 0 15px rgba(39,174,96,0.15); }
+  .search-box::placeholder { color:#555; }
+
+  .count {
+    font-size:0.78rem; color:var(--muted); padding:0.3rem 0;
+    letter-spacing:0.05em;
+  }
+
+  /* Sections */
+  .section {
+    max-width:1100px; margin:0 auto; padding:0 1.5rem;
+  }
+  .section-title {
+    font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:0.08em;
+    color:var(--accent-light); margin:2rem 0 1rem; padding-bottom:0.5rem;
+    border-bottom:1px solid var(--border); position:relative;
+  }
+  .section-title .section-count {
+    font-family:'Inter',sans-serif; font-size:0.7rem; color:var(--muted);
+    font-weight:400; margin-left:0.5rem; vertical-align:middle;
+  }
+
+  /* Grid */
+  .grid {
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1rem;
+    margin-bottom:1rem;
+  }
+
+  /* Card */
+  .card {
+    background:var(--card); border:1px solid var(--border); border-radius:12px;
+    overflow:hidden; transition:all 0.25s; cursor:default;
+    display:flex; flex-direction:column;
+  }
+  .card:hover { border-color:var(--accent); transform:translateY(-3px); box-shadow:0 8px 30px rgba(39,174,96,0.08); }
+  .card.hidden { display:none; }
+
+  .card-header {
+    padding:1.2rem 1.2rem 0.6rem; display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem;
+  }
+  .card-title {
+    font-family:'Bebas Neue',sans-serif; font-size:1.45rem; letter-spacing:0.04em;
+    color:var(--text); line-height:1.2;
+  }
+  .card-title a { color:inherit; text-decoration:none; }
+  .card-title a:hover { color:var(--accent-light); }
+
+  .card-type {
+    flex-shrink:0; padding:0.2rem 0.7rem; border-radius:2rem;
+    font-size:0.62rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:500;
+    white-space:nowrap;
+  }
+  .type-beach { background:rgba(52,152,219,0.15); color:#3498db; }
+  .type-attraction { background:rgba(241,196,15,0.15); color:#f1c40f; }
+  .type-diving { background:rgba(26,188,156,0.15); color:#1abc9c; }
+  .type-restaurant { background:rgba(39,174,96,0.15); color:#2ecc71; }
+  .type-cafe { background:rgba(52,152,219,0.15); color:#3498db; }
+  .type-spa { background:rgba(155,89,182,0.15); color:#9b59b6; }
+  .type-shop { background:rgba(230,126,34,0.15); color:#e67e22; }
+
+  .card-body { padding:0 1.2rem 1rem; flex:1; }
+
+  .card-meta {
+    display:flex; flex-wrap:wrap; gap:0.3rem 0.8rem; margin-bottom:0.6rem;
+    font-size:0.78rem; color:var(--muted);
+  }
+  .card-meta span { display:inline-flex; align-items:center; gap:0.25rem; }
+
+  .card-desc {
+    font-size:0.82rem; color:#aaa; line-height:1.5; margin-bottom:0.6rem;
+    display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+  }
+
+  .card-tags { display:flex; flex-wrap:wrap; gap:0.25rem; margin-bottom:0.6rem; }
+  .tag {
+    padding:0.15rem 0.5rem; border-radius:2rem; font-size:0.62rem;
+    background:rgba(255,255,255,0.06); color:#888; border:1px solid rgba(255,255,255,0.08);
+  }
+
+  .card-footer {
+    padding:0.6rem 1.2rem; border-top:1px solid var(--border);
+    display:flex; flex-wrap:wrap; gap:0.4rem 0.8rem; align-items:center;
+    font-size:0.72rem;
+  }
+  .card-footer a { color:var(--accent-light); text-decoration:none; }
+  .card-footer a:hover { color:#fff; }
+  .card-footer .address-link { color:var(--muted); }
+  .card-footer .address-link:hover { color:var(--accent-light); }
+
+  .schedule-badge {
+    display:inline-flex; align-items:center; gap:0.3rem; font-size:0.72rem;
+  }
+  .schedule-badge .dot {
+    width:6px; height:6px; border-radius:50%; flex-shrink:0;
+  }
+  .dot-open { background:#2ecc71; box-shadow:0 0 6px rgba(46,204,113,0.5); }
+  .dot-closed { background:#e74c3c; }
+
+  .no-results {
+    text-align:center; padding:3rem; color:var(--muted); font-size:0.9rem;
+    grid-column:1/-1;
+  }
+
+  /* Footer */
+  .page-footer {
+    text-align:center; padding:2rem; font-size:0.72rem; color:#555;
+    border-top:1px solid var(--border); margin-top:2rem;
+  }
+  .page-footer a { color:var(--accent); text-decoration:none; }
+
+  /* Mobile */
+  @media(max-width:700px) {
+    .hero h1 { font-size:2.6rem; }
+    .hero .description { font-size:0.82rem; }
+    .grid { grid-template-columns:1fr; }
+    .section { padding:0 1rem; }
+    .controls { padding:1rem; }
+    .back-btn { margin:1rem 1rem 0; }
+    .section-title { font-size:1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<a href="/pages/bali-guide/" class="back-btn">← Назад к путеводителю</a>
+
+<div class="hero">
+  <h1>🏝️ AMED GUIDE</h1>
+  <p class="subtitle">Восток Бали</p>
+  <p class="description">
+    Амед — тихий уголок на востоке Бали у подножия вулкана Агунг. 
+    Чёрные вулканические пляжи, лучший снорклинг и дайвинг на острове, 
+    солёные террасы, потрясающие рассветы и закаты. Здесь нет толп туристов — 
+    только океан, горы и настоящий балийский покой.
+  </p>
+</div>
+
+<div class="controls">
+  <input type="text" class="search-box" id="search" placeholder="🔍 Поиск по названию...">
+  <span class="count" id="count"></span>
+</div>
+
+<div id="content"></div>
+
+<div class="page-footer">
+  Данные: <a href="https://baliforum.ru" target="_blank">baliforum.ru</a> · Время по Бали (WITA, UTC+8)
+</div>
+
+<script>
+const places = [
+  // 🏖️ Пляжи
+  {
+    section: "beach",
+    name: "Пляж Jemeluk Amed",
+    slug: "plyazh-jemeluk-amed",
+    description: "Один из лучших пляжей Амеда для снорклинга. Чёрный вулканический песок, коралловый риф прямо у берега, спокойная вода и вид на Агунг. Можно арендовать маску и лежак прямо на месте.",
+    address: "Pantai Jemeluk, Jl. Raya Amed, Bunutan, Karangasem",
+    lat: -8.3381438,
+    lng: 115.660296,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["для купания", "снорклинг", "топ 100"],
+    type: "beach",
+    typeLabel: "Пляж",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "free"
+  },
+
+  // 🏔️ Достопримечательности
+  {
+    section: "attraction",
+    name: "Bunutan Viewpoint",
+    slug: "smotrovaya-ploschadka-v-amede",
+    description: "Смотровая площадка на дороге в Амед с панорамным видом на побережье, бухту и вулкан Агунг. Идеальное место для фото на рассвете.",
+    address: "Bunutan, Abang, Karangasem",
+    lat: -8.3661233,
+    lng: 115.674668,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["красивый вид", "природа"],
+    type: "attraction",
+    typeLabel: "Смотровая",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "free"
+  },
+  {
+    section: "attraction",
+    name: "Sunset Point Amed Bali",
+    slug: "sunset-point-amed-bali",
+    description: "Кафе-бар на скале с потрясающим видом на закат и океан. Коктейли, лёгкие закуски и лучший сансет в Амеде. Обязательно к посещению!",
+    address: "Jl. Raya Amed, Bunutan, Karangasem",
+    lat: -8.337917799999998,
+    lng: 115.6629849,
+    schedule: "Ежедневно: 10:00–20:00",
+    scheduleRaw: [{from:"10:00",to:"20:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["красивый вид", "десерты", "алкоголь", "закат"],
+    type: "attraction",
+    typeLabel: "Кафе/Смотровая",
+    website: "https://www.sunsetpointamedbali.com/",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "attraction",
+    name: "Amed Salt Center",
+    slug: "amed-salt-center",
+    description: "Традиционный центр производства морской соли. Можно увидеть, как местные добывают соль старинным способом — выпаривание на бамбуковых желобах. Уникальный культурный опыт.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.3353683,
+    lng: 115.6470397,
+    schedule: "Ежедневно: 09:00–17:00",
+    scheduleRaw: [{from:"09:00",to:"17:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["культура", "история"],
+    type: "attraction",
+    typeLabel: "Достопримечательность",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "free"
+  },
+  {
+    section: "attraction",
+    name: "Lahangan Sweet",
+    slug: null,
+    description: "Знаменитая смотровая площадка с «инстаграмными» качелями и гнёздами на фоне вулкана Агунг и океана. Лучше приезжать рано утром, пока нет облаков.",
+    address: "Bunutan, Abang, Karangasem",
+    lat: -8.4485,
+    lng: 115.6275,
+    schedule: "Ежедневно: 06:00–18:00",
+    scheduleRaw: [{from:"06:00",to:"18:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["красивый вид", "фото", "Агунг"],
+    type: "attraction",
+    typeLabel: "Смотровая",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/pUouFwKMWJfMfXcP7",
+    price: "$"
+  },
+  {
+    section: "attraction",
+    name: "Lempuyang Temple",
+    slug: null,
+    description: "«Ворота в Небеса» — знаменитый храм с раздвоёнными воротами, через которые открывается вид на Агунг. Одна из самых фотографируемых локаций Бали. Будьте готовы к очереди.",
+    address: "Bunutan, Abang, Karangasem",
+    lat: -8.3908,
+    lng: 115.6310,
+    schedule: "Ежедневно: 07:00–17:00",
+    scheduleRaw: [{from:"07:00",to:"17:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["храм", "фото", "Агунг", "must-see"],
+    type: "attraction",
+    typeLabel: "Храм",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/X4dkAtDeLBom2BN16",
+    price: "$"
+  },
+
+  // 🤿 Дайвинг
+  {
+    section: "diving",
+    name: "Pura Vida Diving Bali",
+    slug: "pura-vida-diving-bali-amed",
+    description: "Профессиональный дайвинг-центр в Амеде. Курсы PADI, фан-дайвы, снорклинг-туры. Погружения на риф Jemeluk и к затонувшему кораблю USAT Liberty в Туламбене.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.334199,
+    lng: 115.6413687,
+    schedule: "Ежедневно: 09:00–19:00",
+    scheduleRaw: [{from:"09:00",to:"19:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["под водой", "PADI", "дайвинг"],
+    type: "diving",
+    typeLabel: "Дайвинг",
+    website: "http://www.puravidadivingbali.com/",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "diving",
+    name: "USAT Liberty Shipwreck",
+    slug: null,
+    description: "Затонувший в 1942 году американский транспортный корабль — одно из лучших мест для дайвинга в мире. Корабль лежит всего в 30 м от берега на глубине 5–30 м. Подходит даже для снорклинга!",
+    address: "Tulamben, Karangasem",
+    lat: -8.2745,
+    lng: 115.5930,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["дайвинг", "снорклинг", "must-see", "кораблекрушение"],
+    type: "diving",
+    typeLabel: "Дайвинг-сайт",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/EizZYc1KGZgVijGK8",
+    price: "free"
+  },
+
+  // 🍽️ Рестораны и кафе
+  {
+    section: "food",
+    name: "NEST Restaurant Amed",
+    slug: "nest-restaurant-amed",
+    description: "Уютный ресторан с видом на океан. Хороший выбор завтраков, свежие соки и балийская кухня. Приятная атмосфера для неспешного обеда или ужина.",
+    address: "Jl. Melasti 5, Amed, Biaslantang, Karangasem",
+    lat: -8.332972099999997,
+    lng: 115.635672,
+    schedule: "Ежедневно: 07:30–22:00",
+    scheduleRaw: [{from:"07:30",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: [],
+    type: "restaurant",
+    typeLabel: "Ресторан",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "KopiKota Amed",
+    slug: "kopikota-amed",
+    description: "Атмосферное кафе с отличным кофе и видом на океан. Хорошие завтраки, смузи-боулы и свежая выпечка. Идеальное место для утреннего старта.",
+    address: "Jl. Melasti, Purwakerti, Karangasem",
+    lat: -8.333788100000001,
+    lng: 115.6343117,
+    schedule: "Ежедневно: 08:00–21:00",
+    scheduleRaw: [{from:"08:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["завтрак", "красивый вид", "кофе"],
+    type: "cafe",
+    typeLabel: "Кафе",
+    website: null,
+    instagram: "https://www.instagram.com/kopikotaamed",
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "Good Stuff Cafe & Eco Store",
+    slug: "good-stuff-cafe-eco-store-amed",
+    description: "Эко-кафе с акцентом на здоровое питание. Смузи-боулы, тосты с авокадо, веган-опции. Также работает магазин экологичных товаров.",
+    address: "Jl. Melasti, Purwakerti, Amed, Biaslantang",
+    lat: -8.3354793,
+    lng: 115.6321558,
+    schedule: "Ежедневно: 07:30–22:00",
+    scheduleRaw: [{from:"07:30",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["завтрак", "красивый вид", "ЗОЖ", "кофе"],
+    type: "cafe",
+    typeLabel: "Кафе",
+    website: "https://www.facebook.com/GoodStuffAmed/",
+    instagram: "https://www.instagram.com/goodstuffamed/",
+    mapUrl: null,
+    price: "$"
+  },
+  {
+    section: "food",
+    name: "Amed Resto",
+    slug: "amed-resto",
+    description: "Местный ресторан с видом на море. Свежие морепродукты-гриль, индонезийская кухня по доступным ценам. Отличный варунг для аутентичного опыта.",
+    address: "Bunutan, Jl. Raya Amed, Karangasem",
+    lat: -8.335678999999997,
+    lng: 115.6492715,
+    schedule: "Ежедневно: 07:00–22:00",
+    scheduleRaw: [{from:"07:00",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["морепродукты", "варунг"],
+    type: "restaurant",
+    typeLabel: "Ресторан",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "Amed Kedai Coffee",
+    slug: "amed-kedai-coffee",
+    description: "Уютная кофейня с живой музыкой по вечерам. Хороший выбор кофе, освежающие напитки и лёгкие закуски в расслабленной обстановке.",
+    address: "Amed, Purwakerti, Karangasem",
+    lat: -8.335084199999999,
+    lng: 115.6429494,
+    schedule: "Ежедневно: 07:30–22:00",
+    scheduleRaw: [{from:"07:30",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["живая музыка", "кофе"],
+    type: "cafe",
+    typeLabel: "Кафе",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "St. Bernard Coffee — Amed",
+    slug: "st-bernard-coffee-amed",
+    description: "Specialty-кофейня с отличными завтраками. Профессиональный подход к кофе, свежая выпечка и расслабленная атмосфера.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.3344274,
+    lng: 115.6373199,
+    schedule: "Ежедневно: 07:00–17:00",
+    scheduleRaw: [{from:"07:00",to:"17:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["завтрак", "кофе"],
+    type: "cafe",
+    typeLabel: "Кафе",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "Trattoria Amed",
+    slug: "trattoria-amed",
+    description: "Итальянский ресторан с домашней пастой и пиццей на дровах. Уютная терраса, хорошее вино и вид на океан. Отличный вариант для романтического ужина.",
+    address: "Jl. Karangasem - Seraya, Bunutan, Karangasem",
+    lat: -8.361198199999999,
+    lng: 115.6984687,
+    schedule: "Ежедневно: 11:00–22:00",
+    scheduleRaw: [{from:"11:00",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["завтрак", "алкоголь", "итальянская"],
+    type: "restaurant",
+    typeLabel: "Ресторан",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+
+  // 🧖 СПА
+  {
+    section: "spa",
+    name: "Alala Amed Spa",
+    slug: "alala-amed-spa",
+    description: "Балийский спа с традиционными массажами и процедурами. Расслабляющая обстановка, профессиональные мастера, доступные цены.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.3353213,
+    lng: 115.6517782,
+    schedule: "Ежедневно: 10:00–21:00",
+    scheduleRaw: [{from:"10:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["релакс", "массаж"],
+    type: "spa",
+    typeLabel: "СПА",
+    website: "http://www.alalaamedspa.blogspot.com/",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "spa",
+    name: "Akasha Amed Spa",
+    slug: "akasha-amed-spa",
+    description: "Спа-салон с широким выбором массажей и оздоровительных процедур. Спокойная атмосфера и внимательное обслуживание.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.3350726,
+    lng: 115.6426541,
+    schedule: "Ежедневно: 10:00–20:00",
+    scheduleRaw: [{from:"10:00",to:"20:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["релакс", "массаж"],
+    type: "spa",
+    typeLabel: "СПА",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+
+  // 🛍️ Магазины
+  {
+    section: "shop",
+    name: "Amed Suardana Silver",
+    slug: "amed-suardana-silver",
+    description: "Мастерская серебряных украшений. Можно посмотреть процесс изготовления и купить уникальные изделия ручной работы. Также проводят мастер-классы.",
+    address: "Jl. I Ketut Natih, Purwakerti, Karangasem",
+    lat: -8.333988999999999,
+    lng: 115.6402559,
+    schedule: "Ежедневно: 08:00–21:00",
+    scheduleRaw: [{from:"08:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["серебро", "handmade", "мастер-класс"],
+    type: "shop",
+    typeLabel: "Магазин",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  }
+];
+
+const sections = [
+  { id: "beach", emoji: "🏖️", title: "Пляжи" },
+  { id: "attraction", emoji: "🏔️", title: "Достопримечательности" },
+  { id: "diving", emoji: "🤿", title: "Дайвинг" },
+  { id: "food", emoji: "🍽️", title: "Рестораны и кафе" },
+  { id: "spa", emoji: "🧖", title: "СПА" },
+  { id: "shop", emoji: "🛍️", title: "Магазины" }
+];
+
+function getBaliTime() {
+  const now = new Date();
+  const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+  return new Date(utc + 8 * 3600000);
+}
+
+function isOpenNow(place) {
+  const bali = getBaliTime();
+  const day = bali.getDay();
+  const nowMins = bali.getHours() * 60 + bali.getMinutes();
+  return (place.scheduleRaw || []).some(s => {
+    if (!s.days || !s.days.includes(day)) return false;
+    const [fh,fm] = s.from.split(':').map(Number);
+    const [th,tm] = s.to.split(':').map(Number);
+    const fromM = fh*60+fm, toM = th*60+tm;
+    if (s.from === "00:00" && (s.to === "24:00" || s.to === "23:59")) return true;
+    return toM > fromM ? (nowMins >= fromM && nowMins < toM) : (nowMins >= fromM || nowMins < toM);
+  });
+}
+
+function renderCard(p) {
+  const open = isOpenNow(p);
+  const mapsUrl = p.mapUrl || `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`;
+  const bfUrl = p.slug ? `https://baliforum.ru/places/${p.slug}` : null;
+
+  const tagsHtml = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  const links = [];
+  if (bfUrl) links.push(`<a href="${bfUrl}" target="_blank">📖 baliforum</a>`);
+  if (p.website) links.push(`<a href="${p.website}" target="_blank">🌐 сайт</a>`);
+  if (p.instagram) links.push(`<a href="${p.instagram}" target="_blank">📸 instagram</a>`);
+
+  return `
+    <div class="card" data-name="${p.name.toLowerCase()}" data-section="${p.section}">
+      <div class="card-header">
+        <div class="card-title">${bfUrl ? `<a href="${bfUrl}" target="_blank">${p.name}</a>` : p.name}</div>
+        <span class="card-type type-${p.type}">${p.typeLabel}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          ${p.price ? `<span>💰 ${p.price}</span>` : ''}
+          <span class="schedule-badge">
+            <span class="dot ${open ? 'dot-open' : 'dot-closed'}"></span>
+            ${p.schedule}
+          </span>
+        </div>
+        <div class="card-desc">${p.description}</div>
+        ${tagsHtml ? `<div class="card-tags">${tagsHtml}</div>` : ''}
+      </div>
+      <div class="card-footer">
+        ${links.join('')}
+        <a href="${mapsUrl}" target="_blank" class="address-link" style="margin-left:auto">📍 ${p.address}</a>
+      </div>
+    </div>
+  `;
+}
+
+function render() {
+  const query = document.getElementById('search').value.toLowerCase();
+  const content = document.getElementById('content');
+  let totalVisible = 0;
+  let html = '';
+
+  for (const sec of sections) {
+    const sectionPlaces = places.filter(p => p.section === sec.id);
+    const visible = sectionPlaces.filter(p => !query || p.name.toLowerCase().includes(query));
+    if (visible.length === 0 && query) continue;
+
+    html += `<div class="section">`;
+    html += `<div class="section-title">${sec.emoji} ${sec.title}<span class="section-count">${visible.length}</span></div>`;
+    html += `<div class="grid">`;
+    for (const p of sectionPlaces) {
+      const match = !query || p.name.toLowerCase().includes(query);
+      if (match) {
+        html += renderCard(p);
+        totalVisible++;
+      }
+    }
+    html += `</div></div>`;
+  }
+
+  if (totalVisible === 0) {
+    html = '<div class="section"><div class="no-results">Ничего не найдено 🌿</div></div>';
+  }
+
+  content.innerHTML = html;
+  document.getElementById('count').textContent = `Найдено мест: ${totalVisible} из ${places.length}`;
+}
+
+document.getElementById('search').addEventListener('input', render);
+render();
+setInterval(render, 60000);
+</script>
+
+</body>
+</html>
