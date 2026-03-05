@@ -766,5 +766,42 @@
     "lat": -8.51,
     "lng": 115.264,
     "mapUrl": "https://www.google.com/maps/search/Tukies+Coconut+Shop+Ubud+Bali"
+  },
+  {
+    "name": "Seniman Coffee Studio",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Jl. Sriwedari No.5, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "спешелти кофе",
+      "обжарка",
+      "пекарня",
+      "арт-галерея"
+    ],
+    "description": "Легендарная кофейня Убуда! Собственная обжарка, cold drip, пекарня Joni Cheder, арт-галереи и воркшопы. Одно из лучших мест для кофе на Бали.",
+    "website": "https://senimancoffee.com",
+    "instagram": "https://www.instagram.com/senimancoffee/",
+    "slug": "",
+    "lat": -8.507,
+    "lng": 115.262,
+    "mapUrl": "https://www.google.com/maps/search/Seniman+Coffee+Ubud+Bali"
   }
 ]
