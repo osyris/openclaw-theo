@@ -5,9 +5,21 @@
     "district": "Убуд",
     "address": "Jl. Raya Pengosekan Ubud No.108, Ubud, Bali 80571",
     "price": "$$$",
-    "schedule": [{"days": "Пн-Сб", "from": "14:00", "to": "22:00"}],
-    "cuisines": ["Европейская", "Фьюжн"],
-    "tags": ["красивый вид", "живая музыка"],
+    "schedule": [
+      {
+        "days": "Пн-Сб",
+        "from": "14:00",
+        "to": "22:00"
+      }
+    ],
+    "cuisines": [
+      "Европейская",
+      "Фьюжн"
+    ],
+    "tags": [
+      "красивый вид",
+      "живая музыка"
+    ],
     "description": "Необычное пространство в Убуде, оформленное как волшебная библиотека и старинный театр. Витражи, резные детали, мягкий тёплый свет и множество декоративных элементов.",
     "website": "https://merlins-magic.com/",
     "instagram": "https://www.instagram.com/merlinsmagicbali/",
@@ -21,9 +33,22 @@
     "district": "Гианьяр",
     "address": "Jl. Prof. Dr. Ida Bagus Mantra No.Km. 19, Serongga, Bali 80551",
     "price": "$$$",
-    "schedule": [{"days": "Ежедневно", "from": "09:00", "to": "17:30"}, {"days": "Ежедневно", "from": "18:00", "to": "21:00"}],
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "09:00",
+        "to": "17:30"
+      },
+      {
+        "days": "Ежедневно",
+        "from": "18:00",
+        "to": "21:00"
+      }
+    ],
     "cuisines": [],
-    "tags": ["животные"],
+    "tags": [
+      "животные"
+    ],
     "description": "Крупнейший парк дикой природы на острове, более 40 гектаров, свыше 1000 животных из Индонезии, Индии и Африки. Ночное сафари, аквапарк и шоу.",
     "website": null,
     "instagram": null,
@@ -37,7 +62,13 @@
     "district": "Тегалаланг",
     "address": "Jl. Tirta Tawar, Banjar Tengah, Tegallalang, Bali 80561",
     "price": "$$",
-    "schedule": [{"days": "Ежедневно", "from": "07:00", "to": "23:00"}],
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "23:00"
+      }
+    ],
     "cuisines": [],
     "tags": [],
     "description": "Приятное место для вкусного кофе, напитков и лёгких блюд в спокойной, расслабленной обстановке. Подходит для отдыха после прогулки.",
@@ -53,9 +84,23 @@
     "district": "Убуд",
     "address": "Jl. Subak Sok Wayah, Jl. Raya Ubud, Ubud, Bali 80571",
     "price": "$$",
-    "schedule": [{"days": "Вс, Ср, Сб", "from": "08:00", "to": "21:00"}, {"days": "Пн, Чт, Пт", "from": "08:00", "to": "20:00"}],
+    "schedule": [
+      {
+        "days": "Вс, Ср, Сб",
+        "from": "08:00",
+        "to": "21:00"
+      },
+      {
+        "days": "Пн, Чт, Пт",
+        "from": "08:00",
+        "to": "20:00"
+      }
+    ],
     "cuisines": [],
-    "tags": ["баня", "релакс"],
+    "tags": [
+      "баня",
+      "релакс"
+    ],
     "description": "Баня на травах, костер, бассейн, имбирный чай. Уютные бунгало с видом на рисовые поля, бассейном и вегетарианским рестораном.",
     "website": null,
     "instagram": "https://www.instagram.com/dragonflyvillage/",
@@ -69,9 +114,18 @@
     "district": "Убуд",
     "address": "Jl. Raya Ubud, Ubud, Bali 80571",
     "price": "$$",
-    "schedule": [{"days": "Ежедневно", "from": "07:30", "to": "14:00"}],
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:30",
+        "to": "14:00"
+      }
+    ],
     "cuisines": [],
-    "tags": ["завтрак", "кофе"],
+    "tags": [
+      "завтрак",
+      "кофе"
+    ],
     "description": "Стильное кафе для завтраков и бранчей с хорошим спешелти-кофе, авокадо-тостами и бенедиктом. Уютно, современно, подходит для утренних встреч.",
     "website": "https://www.twofacebali.com/",
     "instagram": null,
@@ -85,9 +139,21 @@
     "district": "Убуд",
     "address": "Jl. Bisma No.63x, Ubud, Bali 80671",
     "price": "$$",
-    "schedule": [{"days": "Ежедневно", "from": "15:00", "to": "23:00"}],
-    "cuisines": ["Европейская", "Вегетарианская"],
-    "tags": ["алкоголь", "органическая еда"],
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "15:00",
+        "to": "23:00"
+      }
+    ],
+    "cuisines": [
+      "Европейская",
+      "Вегетарианская"
+    ],
+    "tags": [
+      "алкоголь",
+      "органическая еда"
+    ],
     "description": "Ресторан органической кухни в центре Убуда. Аквариум с лобстерами, винная комната, терраса. Идеальное место для романтического ужина.",
     "website": "https://ferroubud.com",
     "instagram": null,
@@ -101,9 +167,19 @@
     "district": "Тегалаланг",
     "address": "Jl. Raya Tegallalang, Tegallalang, Bali 80561",
     "price": "$$",
-    "schedule": [{"days": "Ежедневно", "from": "09:00", "to": "20:00"}],
-    "cuisines": ["Индонезийская"],
-    "tags": ["красивый вид"],
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "09:00",
+        "to": "20:00"
+      }
+    ],
+    "cuisines": [
+      "Индонезийская"
+    ],
+    "tags": [
+      "красивый вид"
+    ],
     "description": "Стильный ресторан в Тегалаланге с красивым видом на рисовые террасы. Непринуждённая, современная атмосфера.",
     "website": "https://cretyalite.shop/",
     "instagram": null,
@@ -117,14 +193,52 @@
     "district": "Сукавати",
     "address": "Jl. Subak Telaga I No.9, Ketewel, Sukawati, Bali 80582",
     "price": "$",
-    "schedule": [{"days": "7-8 марта", "from": "10:00", "to": "21:00"}],
+    "schedule": [
+      {
+        "days": "7-8 марта",
+        "from": "10:00",
+        "to": "21:00"
+      }
+    ],
     "cuisines": [],
-    "tags": ["ярмарка", "искусство", "мастер-классы"],
+    "tags": [
+      "ярмарка",
+      "искусство",
+      "мастер-классы"
+    ],
     "description": "Уикенд, объединяющий культуру, дизайн, еду и музыку. Мастер-классы, маркет ремесленников, традиционные индонезийские сладости, танец Barongsai и DJ-сеты.",
     "website": null,
     "instagram": "https://www.instagram.com/masamasabali/",
     "slug": "market-remeslennikov-v-masa-masa",
     "lat": -8.635653,
     "lng": 115.290306
+  },
+  {
+    "name": "Nuanu Creative City",
+    "type": "attraction",
+    "district": "Табанан",
+    "address": "Beraban, Kediri, Tabanan Regency, Bali 80351, Indonesia",
+    "price": "",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "22:00"
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "эко",
+      "коворкинг",
+      "креативное пространство",
+      "digital nomads"
+    ],
+    "description": "Масштабный эко-комьюнити на 44 гектарах: коворкинги, студии, галереи, школы, велнес-центры, жилые виллы и пространства для ивентов. Город будущего для творческих людей среди тропической природы, рядом с пляжем.",
+    "website": "https://nuanu.com",
+    "instagram": "https://www.instagram.com/nuanu.city/",
+    "slug": "",
+    "lat": -8.5868,
+    "lng": 115.1268,
+    "mapUrl": "https://maps.app.goo.gl/bXsGhBMh6uqiaiNd6"
   }
 ]
