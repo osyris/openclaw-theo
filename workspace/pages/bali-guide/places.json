@@ -803,5 +803,42 @@
     "lat": -8.507,
     "lng": 115.262,
     "mapUrl": "https://www.google.com/maps/search/Seniman+Coffee+Ubud+Bali"
+  },
+  {
+    "name": "Pandawa Beach",
+    "type": "attraction",
+    "district": "Букит",
+    "address": "Jl. Pantai Pandawa, Kutuh, Kec. Kuta Selatan, Kabupaten Badung, Bali",
+    "price": "$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "19:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "пляж",
+      "скалы",
+      "каякинг",
+      "фото"
+    ],
+    "description": "Один из красивейших пляжей Бали! Белый песок, бирюзовая вода, высокие скалы с вырезанными статуями Пандавов. Можно арендовать каяк, лежаки. Вход платный (~20k).",
+    "website": null,
+    "instagram": "https://www.instagram.com/pandawabeachbali/",
+    "slug": "",
+    "lat": -8.8452,
+    "lng": 115.1826,
+    "mapUrl": "https://www.google.com/maps/search/Pandawa+Beach+Bali"
   }
 ]
