@@ -319,5 +319,43 @@
     "lat": -8.5868,
     "lng": 115.1268,
     "mapUrl": "https://maps.app.goo.gl/bXsGhBMh6uqiaiNd6"
+  },
+  {
+    "name": "Bokashi",
+    "type": "restaurant",
+    "district": "Убуд",
+    "address": "Ubud, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [
+      "ЗОЖ",
+      "Органическая"
+    ],
+    "tags": [
+      "авокадо-тост",
+      "ЗОЖ-продукция",
+      "магазин"
+    ],
+    "description": "Безумно красивая территория ресторана и магазин с ЗОЖ-продукцией. Авокадо-тост с красным песто — это любовь. Red Pesto & Avocado Toast — 60k, Tasmanian Salmon Sashimi — 75k.",
+    "website": "https://www.bokashibali.com",
+    "instagram": "https://www.instagram.com/bokashibali/",
+    "slug": "",
+    "lat": -8.5069,
+    "lng": 115.2624
   }
 ]
