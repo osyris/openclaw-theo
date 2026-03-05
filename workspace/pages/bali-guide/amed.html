@@ -133,6 +133,8 @@
   .type-cafe { background:rgba(52,152,219,0.15); color:#3498db; }
   .type-spa { background:rgba(155,89,182,0.15); color:#9b59b6; }
   .type-shop { background:rgba(230,126,34,0.15); color:#e67e22; }
+  .type-bar { background:rgba(231,76,60,0.15); color:#e74c3c; }
+  .type-yoga { background:rgba(241,196,15,0.15); color:#f1c40f; }
 
   .card-body { padding:0 1.2rem 1rem; flex:1; }
 
@@ -204,10 +206,12 @@
   <h1>🏝️ AMED GUIDE</h1>
   <p class="subtitle">Восток Бали</p>
   <p class="description">
-    Амед — тихий уголок на востоке Бали у подножия вулкана Агунг. 
+    Амед — полоса из семи рыбацких деревушек на северо-востоке Бали у подножия вулкана Агунг: 
+    Амед, Джемелук, Бунутан, Липах, Селанг, Баньюнинг и Аас. 
     Чёрные вулканические пляжи, лучший снорклинг и дайвинг на острове, 
-    солёные террасы, потрясающие рассветы и закаты. Здесь нет толп туристов — 
-    только океан, горы и настоящий балийский покой.
+    традиционные солёные террасы и потрясающие рассветы. 
+    Отсюда ~30 мин до водных дворцов Tirta Gangga и Taman Ujung, 
+    храма Lempuyang и затонувшего корабля USAT Liberty в Туламбене.
   </p>
 </div>
 
@@ -558,15 +562,301 @@ const places = [
     instagram: null,
     mapUrl: null,
     price: "$$"
+  },
+
+  // 🍹 Бары
+  {
+    section: "bar",
+    name: "Rasta Bar",
+    slug: null,
+    description: "Чилл-аут бар прямо на пляже с регги-атмосферой. Живая музыка каждый вечер, большой выбор коктейлей и блюд по доступным ценам. Отличное место для вечернего отдыха.",
+    address: "Jl. Ketut Natih, Pantai Timur, Amed",
+    lat: -8.334657,
+    lng: 115.64616,
+    schedule: "Ежедневно: 14:00–00:00",
+    scheduleRaw: [{from:"14:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["живая музыка", "reggae", "коктейли", "пляж"],
+    type: "bar",
+    typeLabel: "Бар",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/amed-rasta-bar",
+    price: "$"
+  },
+
+  // ===== НОВЫЕ МЕСТА (из Wikivoyage, Baliforum, внешних источников) =====
+
+  // 🏖️ Пляжи — дополнительные
+  {
+    section: "beach",
+    name: "Lipah Beach",
+    slug: null,
+    description: "Уютный пляж с чёрным песком между скалами. Отличный снорклинг — у берега лежит затонувшая деревянная лодка, обросшая кораллами. Здесь же можно заказать массаж прямо на пляже.",
+    address: "Lipah, Bunutan, Karangasem",
+    lat: -8.3505,
+    lng: 115.6844,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["снорклинг", "чёрный песок", "массаж"],
+    type: "beach",
+    typeLabel: "Пляж",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/lipah-beach-amed",
+    price: "free"
+  },
+  {
+    section: "beach",
+    name: "Selang Beach",
+    slug: null,
+    description: "Пляж в восточной части Амеда. Хорошие кораллы, но бывают сильные течения. Рядом находится мини-зоопарк Selang Resort. Менее людный, чем Джемелук.",
+    address: "Selang, Abang, Karangasem",
+    lat: -8.3578,
+    lng: 115.6965,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["снорклинг", "тихий пляж"],
+    type: "beach",
+    typeLabel: "Пляж",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "free"
+  },
+
+  // 🏔️ Достопримечательности — дополнительные
+  {
+    section: "attraction",
+    name: "Tirta Gangga",
+    slug: null,
+    description: "Водный дворец балийских королей (1946). Красивейшие фонтаны, бассейны с карпами, ухоженные сады. Можно купаться в священных источниках. 30 минут на байке от Амеда.",
+    address: "Ababi, Abang, Karangasem",
+    lat: -8.4128,
+    lng: 115.5870,
+    schedule: "Ежедневно: 08:00–18:00",
+    scheduleRaw: [{from:"08:00",to:"18:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["дворец", "must-see", "фонтаны", "сады"],
+    type: "attraction",
+    typeLabel: "Дворец",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/tirta-gangga",
+    price: "$"
+  },
+  {
+    section: "attraction",
+    name: "Taman Ujung Water Palace",
+    slug: null,
+    description: "Величественный водный дворец Карангасема (1921) с видом на океан и горы. Длинные мосты над прудами, павильоны в колониальном стиле. Менее туристический, чем Tirta Gangga.",
+    address: "Tumbu, Karangasem",
+    lat: -8.4712,
+    lng: 115.6370,
+    schedule: "Ежедневно: 07:00–18:00",
+    scheduleRaw: [{from:"07:00",to:"18:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["дворец", "красивый вид", "фото", "история"],
+    type: "attraction",
+    typeLabel: "Дворец",
+    website: null,
+    instagram: null,
+    mapUrl: "https://maps.app.goo.gl/taman-ujung",
+    price: "$"
+  },
+  {
+    section: "attraction",
+    name: "Shell Museum",
+    slug: null,
+    description: "Маленький, но очаровательный музей ракушек в Бунутане при Aiona Garden of Health. Коллекция морских раковин со всей Индонезии. Приятная остановка по пути.",
+    address: "Bunutan, Abang, Karangasem",
+    lat: -8.3428,
+    lng: 115.6682,
+    schedule: "Ежедневно: 09:00–17:00",
+    scheduleRaw: [{from:"09:00",to:"17:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["музей", "ракушки"],
+    type: "attraction",
+    typeLabel: "Музей",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$"
+  },
+  {
+    section: "attraction",
+    name: "Mini Zoo Selang",
+    slug: null,
+    description: "Небольшой зоопарк при Selang Resort. Попугаи какаду, лори, птицы-носороги, питоны, черепахи, дикобразы. Интересно для визита с детьми.",
+    address: "Selang, Abang, Karangasem",
+    lat: -8.358,
+    lng: 115.694,
+    schedule: "Ежедневно: 07:00–21:00",
+    scheduleRaw: [{from:"07:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["животные", "с детьми"],
+    type: "attraction",
+    typeLabel: "Зоопарк",
+    website: "http://selangresort.com/zoo-amed-bali/",
+    instagram: null,
+    mapUrl: null,
+    price: "$"
+  },
+
+  // 🤿 Дайвинг — дополнительные
+  {
+    section: "diving",
+    name: "Japanese Shipwreck Banyuning",
+    slug: null,
+    description: "Затонувший японский корабль всего в 20 метрах от берега. Потрясающие кораллы и множество рыб. Подходит для снорклинга и начинающих дайверов. Есть парковка и аренда снаряжения.",
+    address: "Banyuning, Abang, Karangasem",
+    lat: -8.36419,
+    lng: 115.7004,
+    schedule: "Круглосуточно",
+    scheduleRaw: [{from:"00:00",to:"24:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["снорклинг", "дайвинг", "кораблекрушение"],
+    type: "diving",
+    typeLabel: "Дайвинг-сайт",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "free"
+  },
+  {
+    section: "diving",
+    name: "Ecodive Bali",
+    slug: null,
+    description: "Старейший и крупнейший дайв-центр Амеда (с 1997). PADI/SSI курсы, ежедневные погружения. $1 с каждого дайва и $10 с курса идут на экологические проекты. EN/FR/DE/NL.",
+    address: "Jemeluk, Abang, Karangasem",
+    lat: -8.3358,
+    lng: 115.6598,
+    schedule: "Ежедневно: 07:30–19:00",
+    scheduleRaw: [{from:"07:30",to:"19:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["PADI", "SSI", "эко", "дайвинг"],
+    type: "diving",
+    typeLabel: "Дайвинг",
+    website: "http://www.ecodivebali.com",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "diving",
+    name: "Apneista Freediving & Yoga",
+    slug: null,
+    description: "Школа фридайвинга и йоги на берегу залива Джемелук. Курсы по задержке дыхания, утренняя и вечерняя йога (90 мин). Совмещайте погружения с практикой осознанности.",
+    address: "Jemeluk Bay, Abang, Karangasem",
+    lat: -8.338,
+    lng: 115.660,
+    schedule: "Ежедневно: 07:00–18:00",
+    scheduleRaw: [{from:"07:00",to:"18:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["фридайвинг", "йога", "медитация"],
+    type: "diving",
+    typeLabel: "Фридайвинг",
+    website: "http://www.apneista.com",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+
+  // 🍽️ Рестораны и кафе — дополнительные
+  {
+    section: "food",
+    name: "Warung Celagi",
+    slug: "warung-celagi",
+    description: "Прибрежный варунг с отличными свежими морепродуктами и балийской кухней. Просто, вкусно, с видом на океан — классический амедский опыт.",
+    address: "Bunutan, Abang, Karangasem",
+    lat: -8.3361003,
+    lng: 115.6578616,
+    schedule: "Ежедневно: 12:00–21:00",
+    scheduleRaw: [{from:"12:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["морепродукты", "варунг", "вид на океан"],
+    type: "restaurant",
+    typeLabel: "Варунг",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "Garam Cafe (Salt Café)",
+    slug: null,
+    description: "Кафе при Hotel Uyah с тематикой производства соли. Расположено прямо за соляными террасами. Западная, индонезийская и азиатская кухня. Бильярд, пинг-понг, сувенирная лавка.",
+    address: "Jl Pantai Timur 801, Amed",
+    lat: -8.33502,
+    lng: 115.6436,
+    schedule: "Ежедневно: 07:00–22:00",
+    scheduleRaw: [{from:"07:00",to:"22:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["соль", "бильярд", "сувениры"],
+    type: "cafe",
+    typeLabel: "Кафе",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
+  },
+  {
+    section: "food",
+    name: "Warung Enak",
+    slug: null,
+    description: "Маленький семейный варунг с 6 столиками. Местная и западная кухня по бюджетным ценам. Чисто, уютно, аутентично — отличный выбор для экономных путешественников.",
+    address: "Amed, Purwakerti, Karangasem",
+    lat: -8.334,
+    lng: 115.637,
+    schedule: "Ежедневно: 08:00–21:00",
+    scheduleRaw: [{from:"08:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["бюджетно", "варунг", "домашняя кухня"],
+    type: "restaurant",
+    typeLabel: "Варунг",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$"
+  },
+  {
+    section: "food",
+    name: "Warung Bobo II",
+    slug: null,
+    description: "Варунг на самом краю волн в бухте Джемелук. Свежая рыба и локальная кухня. Популярное место для ужина на закате — столики практически в воде.",
+    address: "Jemeluk, Abang, Karangasem",
+    lat: -8.338,
+    lng: 115.661,
+    schedule: "Ежедневно: 10:00–21:00",
+    scheduleRaw: [{from:"10:00",to:"21:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["рыба", "на берегу", "закат"],
+    type: "restaurant",
+    typeLabel: "Варунг",
+    website: null,
+    instagram: null,
+    mapUrl: null,
+    price: "$"
+  },
+
+  // 🧘 Йога
+  {
+    section: "yoga",
+    name: "Coconut Yoga",
+    slug: null,
+    description: "Тихая шала в лесу при Kelapa Cottage. Ежедневные классы йоги, ретриты и подготовка инструкторов. Подходит для всех уровней. Расслабленная атмосфера в окружении природы.",
+    address: "Kelapa Cottage, Amed, Karangasem",
+    lat: -8.335,
+    lng: 115.645,
+    schedule: "Ежедневно: 07:00–18:00",
+    scheduleRaw: [{from:"07:00",to:"18:00",days:[0,1,2,3,4,5,6]}],
+    tags: ["йога", "ретрит", "все уровни"],
+    type: "yoga",
+    typeLabel: "Йога",
+    website: "http://yogahereandthere.com",
+    instagram: null,
+    mapUrl: null,
+    price: "$$"
   }
 ];
 
 const sections = [
   { id: "beach", emoji: "🏖️", title: "Пляжи" },
   { id: "attraction", emoji: "🏔️", title: "Достопримечательности" },
-  { id: "diving", emoji: "🤿", title: "Дайвинг" },
+  { id: "diving", emoji: "🤿", title: "Дайвинг и фридайвинг" },
   { id: "food", emoji: "🍽️", title: "Рестораны и кафе" },
+  { id: "bar", emoji: "🍹", title: "Бары" },
   { id: "spa", emoji: "🧖", title: "СПА" },
+  { id: "yoga", emoji: "🧘", title: "Йога" },
   { id: "shop", emoji: "🛍️", title: "Магазины" }
 ];
 
