@@ -470,5 +470,41 @@
     "lat": -8.3874393,
     "lng": 115.2775207,
     "mapUrl": "https://maps.app.goo.gl/NRK1T9E2cmsrCy167"
+  },
+  {
+    "name": "Lazy Cats Cafe",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Jl. Raya Ubud, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "кошки",
+      "кофе",
+      "уют"
+    ],
+    "description": "Котокафе в Убуде! Уютное место с кошками, кофе и лёгкими блюдами. Идеально для отдыха и обнимашек с пушистыми.",
+    "website": null,
+    "instagram": "https://www.instagram.com/lazycatscafebali/",
+    "slug": "",
+    "lat": -8.5053108,
+    "lng": 115.2582557,
+    "mapUrl": "https://maps.app.goo.gl/ceb5aQ1PrtofP3yf9"
   }
 ]
