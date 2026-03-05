@@ -652,5 +652,44 @@
     "lat": -8.279617,
     "lng": 115.357559,
     "mapUrl": "https://maps.app.goo.gl/z34hhTQg9iVHnvaC6"
+  },
+  {
+    "name": "Zest Ubud",
+    "type": "restaurant",
+    "district": "Убуд",
+    "address": "Jl. Hanoman, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:30",
+        "to": "23:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [
+      "Вегетарианская",
+      "Plant-based"
+    ],
+    "tags": [
+      "ЗОЖ",
+      "коворкинг",
+      "digital nomads"
+    ],
+    "description": "Plant-based ресторан в Убуде. Не просто место поесть — коворкинг, пространство для номадов и встреч. «A place where you feel safe to belong».",
+    "website": "https://www.zestubud.com",
+    "instagram": "https://www.instagram.com/zestubud/",
+    "slug": "",
+    "lat": -8.513,
+    "lng": 115.265,
+    "mapUrl": ""
   }
 ]
