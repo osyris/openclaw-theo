@@ -613,5 +613,44 @@
     "lat": -8.5165788,
     "lng": 115.2664944,
     "mapUrl": "https://maps.app.goo.gl/U7zLGUTq6sn5uXwdA"
+  },
+  {
+    "name": "AKASA",
+    "type": "restaurant",
+    "district": "Кинтамани",
+    "address": "Kintamani, Kabupaten Bangli, Bali",
+    "price": "$$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "09:00",
+        "to": "21:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [
+      "Индонезийская",
+      "Фьюжн"
+    ],
+    "tags": [
+      "вулкан",
+      "красивый вид",
+      "Кинтамани"
+    ],
+    "description": "Ресторан с потрясающим видом на вулкан Батур и озеро в Кинтамани. Одно из самых живописных мест для обеда на Бали.",
+    "website": null,
+    "instagram": "https://www.instagram.com/akasabali/",
+    "slug": "",
+    "lat": -8.279617,
+    "lng": 115.357559,
+    "mapUrl": "https://maps.app.goo.gl/z34hhTQg9iVHnvaC6"
   }
 ]
