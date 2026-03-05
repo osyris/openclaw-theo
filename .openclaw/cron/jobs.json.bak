@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772506811876,
+      "updatedAtMs": 1772593208806,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772593200000,
-        "lastRunAtMs": 1772506800033,
+        "nextRunAtMs": 1772679600000,
+        "lastRunAtMs": 1772593200027,
         "lastStatus": "ok",
-        "lastDurationMs": 11843,
+        "lastDurationMs": 8779,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772593200025
+        "runningAtMs": 1772679600032
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772517606431,
+      "updatedAtMs": 1772604010348,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +88,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772604000000,
-        "lastRunAtMs": 1772517600086,
+        "nextRunAtMs": 1772690400000,
+        "lastRunAtMs": 1772604000047,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6345,
+        "lastDurationMs": 10301,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -492,30 +492,30 @@
       "id": "b0a63b62-bbea-4889-a051-ff9e3c3b7d73",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Вечерний чекпоинт 21:30",
+      "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772566236800,
+      "updatedAtMs": 1772631052422,
       "schedule": {
         "kind": "cron",
-        "expr": "30 19 * * *",
+        "expr": "30 13 * * *",
         "tz": "UTC"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Вечерний чекпоинт для Наталии. Прочитай файлы memory/YYYY-MM-DD.md за сегодня и посмотри список крон-задач (cron list). Собери все задачи, напоминания и дела, которые были запланированы на сегодня и отправь Наталии сообщение-чеклист: 'Вечерний чекпоинт ✅' со списком всех дел дня. Спроси, всё ли сделано или нужно что-то перенести на завтра."
+        "message": "Вечерний чекпоинт для Наталии. Сейчас 21:30 по Бали (15:30 по Эстонии). Прочитай файлы memory/YYYY-MM-DD.md за сегодня и посмотри список крон-задач (cron list). Собери все задачи, напоминания и дела на сегодня. Отправь сообщение-чеклист: 'Вечерний чекпоинт ✅' со списком дел. ВАЖНО: рядом с каждым временем пиши эстонское время в скобках, например '10:00 Бали (04:00 Эстония)'. Спроси, всё ли сделано или нужно что-то перенести."
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772652600000,
-        "lastRunAtMs": 1772566200060,
+        "nextRunAtMs": 1772717400000,
+        "lastRunAtMs": 1772631000023,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 36740,
+        "lastDurationMs": 52399,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
