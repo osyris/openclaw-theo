@@ -50,8 +50,8 @@
       "животные"
     ],
     "description": "Крупнейший парк дикой природы на острове, более 40 гектаров, свыше 1000 животных из Индонезии, Индии и Африки. Ночное сафари, аквапарк и шоу.",
-    "website": null,
-    "instagram": null,
+    "website": "https://www.balisafarimarinepark.com",
+    "instagram": "https://www.instagram.com/balisafaripark/",
     "slug": "bali-safari-i-morskoy-park-bali-safari-marine-park",
     "lat": -8.5805621,
     "lng": 115.3454147
@@ -73,7 +73,7 @@
     "tags": [],
     "description": "Приятное место для вкусного кофе, напитков и лёгких блюд в спокойной, расслабленной обстановке. Подходит для отдыха после прогулки.",
     "website": null,
-    "instagram": null,
+    "instagram": "https://www.instagram.com/kubas.cafe/",
     "slug": "kubas-cafe",
     "lat": -8.4606469,
     "lng": 115.2742809
@@ -102,7 +102,7 @@
       "релакс"
     ],
     "description": "Баня на травах, костер, бассейн, имбирный чай. Уютные бунгало с видом на рисовые поля, бассейном и вегетарианским рестораном.",
-    "website": null,
+    "website": "https://dragonflyvillage.com",
     "instagram": "https://www.instagram.com/dragonflyvillage/",
     "slug": "banya-dragonflay-villidzh-dragonfly-village",
     "lat": -8.4996075,
@@ -128,7 +128,7 @@
     ],
     "description": "Стильное кафе для завтраков и бранчей с хорошим спешелти-кофе, авокадо-тостами и бенедиктом. Уютно, современно, подходит для утренних встреч.",
     "website": "https://www.twofacebali.com/",
-    "instagram": null,
+    "instagram": "https://www.instagram.com/twofacebali/",
     "slug": "two-face-coffee-brunch-ubud",
     "lat": -8.5062629,
     "lng": 115.2608425
@@ -156,7 +156,7 @@
     ],
     "description": "Ресторан органической кухни в центре Убуда. Аквариум с лобстерами, винная комната, терраса. Идеальное место для романтического ужина.",
     "website": "https://ferroubud.com",
-    "instagram": null,
+    "instagram": "https://www.instagram.com/ferroubud/",
     "slug": "ferro-grill-restaurant-bar",
     "lat": -8.5122945,
     "lng": 115.258165
@@ -182,7 +182,7 @@
     ],
     "description": "Стильный ресторан в Тегалаланге с красивым видом на рисовые террасы. Непринуждённая, современная атмосфера.",
     "website": "https://cretyalite.shop/",
-    "instagram": null,
+    "instagram": "https://www.instagram.com/cretyalite/",
     "slug": "cretya-lite",
     "lat": -8.4403764,
     "lng": 115.2806591
@@ -207,7 +207,7 @@
       "мастер-классы"
     ],
     "description": "Уикенд, объединяющий культуру, дизайн, еду и музыку. Мастер-классы, маркет ремесленников, традиционные индонезийские сладости, танец Barongsai и DJ-сеты.",
-    "website": null,
+    "website": "https://masamasa.com",
     "instagram": "https://www.instagram.com/masamasabali/",
     "slug": "market-remeslennikov-v-masa-masa",
     "lat": -8.635653,
