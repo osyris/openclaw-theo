@@ -433,5 +433,42 @@
     "slug": "",
     "lat": -8.5069,
     "lng": 115.2624
+  },
+  {
+    "name": "The Fireflies Garden & Villas",
+    "type": "attraction",
+    "district": "Тегалаланг",
+    "address": "Taro Village, Tegallalang, Kabupaten Gianyar, Bali",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "22:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "эко",
+      "виллы",
+      "природа",
+      "светлячки"
+    ],
+    "description": "Скрытый эко-ретрит в деревне Таро — одном из старейших и священных мест Бали. Виллы среди природы, устойчивое развитие, поддержка местного сообщества. Магическое место для отдыха и перезагрузки.",
+    "website": "https://thefirefliesgarden.com",
+    "instagram": "https://www.instagram.com/thefirefliesgarden/",
+    "slug": "",
+    "lat": -8.3874393,
+    "lng": 115.2775207,
+    "mapUrl": "https://maps.app.goo.gl/NRK1T9E2cmsrCy167"
   }
 ]
