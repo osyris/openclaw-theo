@@ -730,5 +730,41 @@
     "lat": -8.5085,
     "lng": 115.263,
     "mapUrl": "https://www.google.com/maps/search/Wyah+Ubud+Bali"
+  },
+  {
+    "name": "Tukies Coconut Shop",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali",
+    "price": "$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "18:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [],
+    "tags": [
+      "кокос",
+      "мороженое",
+      "смузи"
+    ],
+    "description": "Кокосовый рай! Натуральное кокосовое мороженое, смузи, кокосовая вода и десерты. Всё из свежего кокоса — must visit на Бали.",
+    "website": null,
+    "instagram": "https://www.instagram.com/tukiescoconutshop/",
+    "slug": "",
+    "lat": -8.51,
+    "lng": 115.264,
+    "mapUrl": "https://www.google.com/maps/search/Tukies+Coconut+Shop+Ubud+Bali"
   }
 ]
