@@ -357,5 +357,43 @@
     "slug": "",
     "lat": -8.5069,
     "lng": 115.2624
+  },
+  {
+    "name": "Woods",
+    "type": "restaurant",
+    "district": "Убуд",
+    "address": "Ubud, Bali",
+    "price": "$$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "11:00",
+        "to": "23:00",
+        "daysArr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "cuisines": [
+      "Европейская",
+      "Фьюжн"
+    ],
+    "tags": [
+      "деревянный интерьер",
+      "травяные чаи",
+      "атмосфера"
+    ],
+    "description": "Ресторан, полностью выполненный из дерева — невероятно красиво! Огромный выбор травяных чаёв (редкость для Бали). Burrata Gazpacho — 135k, Truffle Pumpkin Risotto — 145k.",
+    "website": "https://woodsbali.com",
+    "instagram": "https://www.instagram.com/woodsbali/",
+    "slug": "",
+    "lat": -8.5069,
+    "lng": 115.2624
   }
 ]
