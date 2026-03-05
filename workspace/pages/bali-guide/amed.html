@@ -105,7 +105,7 @@
   /* Card */
   .card {
     background:var(--card); border:1px solid var(--border); border-radius:12px;
-    overflow:hidden; transition:all 0.25s; cursor:default;
+    overflow:hidden; transition:all 0.25s; cursor:pointer;
     display:flex; flex-direction:column;
   }
   .card:hover { border-color:var(--accent); transform:translateY(-3px); box-shadow:0 8px 30px rgba(39,174,96,0.08); }
@@ -186,6 +186,74 @@
   }
   .page-footer a { color:var(--accent); text-decoration:none; }
 
+  /* Modal */
+  .modal-overlay {
+    display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.6); z-index:100; backdrop-filter:blur(6px);
+    justify-content:center; align-items:flex-start; padding:2rem 1rem;
+    overflow-y:auto;
+  }
+  .modal-overlay.open { display:flex; }
+  .modal {
+    background:#1a1a1a; border-radius:16px; max-width:640px; width:100%;
+    position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.5);
+    margin:auto; overflow:hidden; border:1px solid var(--border);
+  }
+  .modal-close {
+    position:absolute; top:0.8rem; right:0.8rem; background:rgba(255,255,255,0.08);
+    border:none; font-size:1.4rem; cursor:pointer; color:#888; line-height:1;
+    z-index:2; width:36px; height:36px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; transition:all 0.2s;
+  }
+  .modal-close:hover { color:#fff; background:rgba(255,255,255,0.15); }
+
+  .m-header {
+    padding:1.8rem 2rem 1.2rem; border-bottom:1px solid var(--border);
+    background:linear-gradient(180deg, #1e1e1e 0%, #1a1a1a 100%);
+  }
+  .m-title-row { display:flex; justify-content:space-between; align-items:flex-start; gap:0.8rem; margin-bottom:0.6rem; }
+  .m-name { font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:0.04em; color:var(--text); line-height:1.2; }
+  .m-type-badge {
+    flex-shrink:0; padding:0.25rem 0.8rem; border-radius:2rem;
+    font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:500;
+    white-space:nowrap;
+  }
+  .m-district { font-size:0.82rem; color:var(--muted); margin-bottom:0.5rem; }
+  .m-status {
+    display:inline-flex; align-items:center; gap:0.35rem;
+    font-size:0.78rem; font-weight:500; padding:0.25rem 0.7rem;
+    border-radius:2rem;
+  }
+  .m-status.open { background:rgba(46,204,113,0.12); color:#2ecc71; }
+  .m-status.closed { background:rgba(231,76,60,0.12); color:#e74c3c; }
+  .m-status .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+
+  .m-content { padding:1.5rem 2rem 2rem; }
+  .m-section { margin-bottom:1.2rem; }
+  .m-section-title {
+    font-size:0.68rem; text-transform:uppercase; letter-spacing:0.14em;
+    color:var(--muted); font-weight:500; margin-bottom:0.5rem;
+  }
+  .m-desc-text { font-size:0.88rem; color:#ccc; line-height:1.7; }
+  .m-meta-grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:0.5rem 1.2rem;
+  }
+  .m-meta-item { display:flex; flex-direction:column; }
+  .m-meta-label { font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; color:#666; margin-bottom:0.1rem; }
+  .m-meta-value { font-size:0.85rem; color:var(--text); }
+  .m-tags { display:flex; flex-wrap:wrap; gap:0.3rem; }
+  .m-tags .tag { font-size:0.7rem; padding:0.2rem 0.6rem; }
+
+  .m-links { display:flex; flex-direction:column; gap:0.5rem; margin-top:1.2rem; }
+  .m-link-btn {
+    display:flex; align-items:center; gap:0.6rem; padding:0.7rem 1rem;
+    background:rgba(255,255,255,0.04); border:1px solid var(--border);
+    border-radius:10px; color:var(--text); text-decoration:none;
+    font-size:0.85rem; transition:all 0.2s;
+  }
+  .m-link-btn:hover { border-color:var(--accent); background:rgba(39,174,96,0.08); color:var(--accent-light); }
+  .m-link-btn .link-emoji { font-size:1.1rem; }
+
   /* Mobile */
   @media(max-width:700px) {
     .hero h1 { font-size:2.6rem; }
@@ -195,6 +263,11 @@
     .controls { padding:1rem; }
     .back-btn { margin:1rem 1rem 0; }
     .section-title { font-size:1.6rem; }
+    .m-header { padding:1.5rem 1.2rem 1rem; }
+    .m-content { padding:1.2rem; }
+    .m-name { font-size:1.6rem; }
+    .m-meta-grid { grid-template-columns:1fr; }
+    .modal { border-radius:12px; }
   }
 </style>
 </head>
@@ -221,6 +294,10 @@
 </div>
 
 <div id="content"></div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal"></div>
+</div>
 
 <div class="page-footer">
   Данные: <a href="https://baliforum.ru" target="_blank">baliforum.ru</a> · Время по Бали (WITA, UTC+8)
@@ -892,10 +969,11 @@ function renderCard(p) {
   if (p.website) links.push(`<a href="${p.website}" target="_blank">🌐 сайт</a>`);
   if (p.instagram) links.push(`<a href="${p.instagram}" target="_blank">📸 instagram</a>`);
 
+  const idx = places.indexOf(p);
   return `
-    <div class="card" data-name="${p.name.toLowerCase()}" data-section="${p.section}">
+    <div class="card" data-name="${p.name.toLowerCase()}" data-section="${p.section}" onclick="openModal(${idx})">
       <div class="card-header">
-        <div class="card-title">${bfUrl ? `<a href="${bfUrl}" target="_blank">${p.name}</a>` : p.name}</div>
+        <div class="card-title">${p.name}</div>
         <span class="card-type type-${p.type}">${p.typeLabel}</span>
       </div>
       <div class="card-body">
@@ -911,7 +989,7 @@ function renderCard(p) {
       </div>
       <div class="card-footer">
         ${links.join('')}
-        <a href="${mapsUrl}" target="_blank" class="address-link" style="margin-left:auto">📍 ${p.address}</a>
+        <span class="address-link" style="margin-left:auto">📍 ${p.address}</span>
       </div>
     </div>
   `;
@@ -952,6 +1030,77 @@ function render() {
 document.getElementById('search').addEventListener('input', render);
 render();
 setInterval(render, 60000);
+
+// Modal
+const modalOverlay = document.getElementById('modalOverlay');
+const modalEl = document.getElementById('modal');
+
+const typeEmojis = {
+  beach: '🏖️', attraction: '🏔️', diving: '🤿',
+  restaurant: '🍽️', cafe: '☕', spa: '🧖', shop: '🛍️'
+};
+
+window.openModal = function(idx) {
+  const p = places[idx];
+  if (!p) return;
+  const open = isOpenNow(p);
+  const mapsUrl = p.mapUrl || `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`;
+  const bfUrl = p.slug ? `https://baliforum.ru/places/${p.slug}` : null;
+  const tagsHtml = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  let linksHtml = '';
+  linksHtml += `<a href="${mapsUrl}" target="_blank" class="m-link-btn" onclick="event.stopPropagation()"><span class="link-emoji">📍</span> Google Maps — ${p.address}</a>`;
+  if (bfUrl) linksHtml += `<a href="${bfUrl}" target="_blank" class="m-link-btn" onclick="event.stopPropagation()"><span class="link-emoji">📖</span> Baliforum</a>`;
+  if (p.website) linksHtml += `<a href="${p.website}" target="_blank" class="m-link-btn" onclick="event.stopPropagation()"><span class="link-emoji">🌐</span> Сайт</a>`;
+  if (p.instagram) linksHtml += `<a href="${p.instagram}" target="_blank" class="m-link-btn" onclick="event.stopPropagation()"><span class="link-emoji">📸</span> Instagram</a>`;
+
+  const priceLabel = p.price === 'free' ? 'Бесплатно' : p.price || '—';
+
+  modalEl.innerHTML = `
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="m-header">
+      <div class="m-title-row">
+        <div class="m-name">${p.name}</div>
+        <span class="m-type-badge type-${p.type}">${typeEmojis[p.type] || ''} ${p.typeLabel}</span>
+      </div>
+      <div class="m-district">📍 Амед, Восток Бали</div>
+      <span class="m-status ${open ? 'open' : 'closed'}">
+        <span class="dot ${open ? 'dot-open' : 'dot-closed'}"></span>
+        ${open ? 'Открыто сейчас' : 'Закрыто'}
+      </span>
+    </div>
+    <div class="m-content">
+      <div class="m-section">
+        <div class="m-section-title">Описание</div>
+        <div class="m-desc-text">${p.description}</div>
+      </div>
+      <div class="m-section">
+        <div class="m-meta-grid">
+          <div class="m-meta-item">
+            <span class="m-meta-label">Расписание</span>
+            <span class="m-meta-value">${p.schedule}</span>
+          </div>
+          <div class="m-meta-item">
+            <span class="m-meta-label">Ценовая категория</span>
+            <span class="m-meta-value" style="color:var(--accent-light)">${priceLabel}</span>
+          </div>
+        </div>
+      </div>
+      ${tagsHtml ? `<div class="m-section"><div class="m-section-title">Теги</div><div class="m-tags">${tagsHtml}</div></div>` : ''}
+      <div class="m-links">${linksHtml}</div>
+    </div>
+  `;
+  modalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeModal = function() {
+  modalOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+};
+
+modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 
 </body>
