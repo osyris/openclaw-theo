@@ -21,6 +21,11 @@
 - **Артём и Даниил**: практика 23.03–15.05 Herterichstraße 168, 81476 München (Forstenried), Пн-Пт 8–17.
 - **Артём**: рентген сделан 18.02
 
+## Проекты
+- Каталог фильмов: nataliakatsalukha.com/pages/movies/ (40 фильмов, poster.sh/add.sh)
+- Путеводитель Бали: nataliakatsalukha.com/pages/bali-guide/ (данные из baliforum.ru API)
+- API baliforum.ru: /api/v1/places/{slug}, /api/v1/events/{slug}, /api/v1/topics?search={q}
+
 ## Наталия — предпочтения
 - Питание: 2 раза в день + белковый коктейль, цель 105г белка, не ест нут, ест чечевицу и батат
 - Парфюм: любит фруктовые (груша, ананас), гурманские (ваниль, молоко), фаворит — Parfums de Marly Delina
