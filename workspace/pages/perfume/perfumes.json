@@ -1632,5 +1632,60 @@
     "gender": "Унисекс",
     "family": "Цветочно-восточный",
     "fav": false
+  },
+  {
+    "brand": "Gold Juice",
+    "name": "Gold Juice",
+    "notes": "Манго, фрукты",
+    "desc": "Сочный фруктовый аромат с доминантой манго.",
+    "tags": ["fruit"],
+    "source": "Скриншот",
+    "img": "img/gold-juice.jpg",
+    "family": "Фруктовый",
+    "fav": false
+  },
+  {
+    "brand": "Born to Stand Out",
+    "name": "Warm Air",
+    "notes": "Eau Intimité",
+    "desc": "Из прозрачной линейки Eau Intimité — лёгкий, как крем для тела.",
+    "tags": ["fresh", "musk"],
+    "source": "Скриншот",
+    "img": "img/btso-warm-air.jpg",
+    "family": "Мускусный",
+    "fav": false
+  },
+  {
+    "brand": "Initio Parfums Privés",
+    "name": "Narcotic Delight",
+    "notes": "Ваниль, карамель, мускус",
+    "desc": "Opulent & magnetic, slow lingering embrace. Роскошный гурманский аромат.",
+    "tags": ["gourmand", "oriental"],
+    "source": "@catherine_knz",
+    "img": "img/narcotic-delight.jpg",
+    "family": "Восточно-гурманский",
+    "fav": false
+  },
+  {
+    "brand": "Stéphane Humbert Lucas",
+    "name": "Venom Incarnat",
+    "notes": "Сладкие, сочные ноты",
+    "desc": "Sweet, Juicy, Seductive, Bold. Яркий и дерзкий аромат.",
+    "tags": ["gourmand", "oriental"],
+    "source": "@catherine_knz",
+    "img": "img/venom-incarnat.jpg",
+    "family": "Восточно-гурманский",
+    "fav": false
+  },
+  {
+    "brand": "Purple Stain",
+    "name": "Purple Stain",
+    "notes": "Эмоциональные, чувственные ноты",
+    "desc": "Rush of closeness, Raw & emotional, Tender and reckless.",
+    "tags": ["oriental", "floral"],
+    "source": "@catherine_knz",
+    "img": "img/purple-stain.jpg",
+    "family": "Восточно-цветочный",
+    "fav": false
   }
 ]
