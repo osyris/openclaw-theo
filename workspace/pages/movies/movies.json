@@ -519,5 +519,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Vladimir",
+    "year": 2026,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/vladimir.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]

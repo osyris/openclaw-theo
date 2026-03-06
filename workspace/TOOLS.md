@@ -115,4 +115,48 @@ cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject
 
 ---
 
+---
+
+## Сортировка скриншотов
+
+**База данных:** `/data/workspace/pages/screenshots/index.json`
+**Скриншоты:** `/data/workspace/pages/screenshots/<category>/`
+
+### Категории:
+| Папка | Emoji | Название | Каталог (веб) |
+|-------|-------|----------|---------------|
+| books | 📚 | Книги | /pages/books/ |
+| hair | 💇‍♀️ | Волосы | /pages/hair/ |
+| cosmetics-skincare | 🧴 | Уходовая косметика | /pages/skincare/ |
+| cosmetics-decorative | 💄 | Декоративная косметика | /pages/decorative/ |
+| perfume | 🌸 | Парфюм | /pages/perfume/ |
+| coaching | 🎯 | Коучинг | — (через чат) |
+| blog | ✍️ | Ведение блога | — |
+| fashion | 👗 | Мода | — |
+| home | 🏠 | Дом | — |
+| travel-ideas | 🏖 | Путешествия | — |
+| food | 🍽 | Еда | — |
+| games | 🎲 | Игры | — |
+| health | 💊 | Здоровье | — |
+| finds | 💡 | Находки | — (теги: #девайс, #подарок, #для_себя, #для_дома) |
+| places-selfcare | 📍 | Места: уход | — |
+
+### Алгоритм при получении скриншота:
+1. Проанализировать изображение
+2. Определить категорию (если уверен >90% — сохранить и сказать; иначе — спросить)
+3. Сохранить: `cp <inbound> /data/workspace/pages/screenshots/<category>/<slug>.jpg`
+4. Добавить запись в `index.json`
+5. **Если есть веб-каталог** → найти красивое фото продукта из интернета, скачать в `/pages/<catalog>/img/`, добавить в HTML
+6. Сообщить результат
+
+### Для каталогов с веб-страницами:
+- Картинки: красивые продуктовые фото (не скриншоты!) в `/pages/<catalog>/img/`
+- Стиль: Bebas Neue заголовки (англ.), Playfair Display названия, Inter текст
+- Заголовки каталогов: BOOK COLLECTION, HAIR CARE, SKINCARE, MAKEUP COLLECTION, PERFUME COLLECTION, MOVIE COLLECTION
+
+### Использование для рекомендаций:
+Когда Наталия спрашивает о теме (волосы, косметика и т.д.) — искать в index.json по тегам и категориям, показывать релевантную информацию из коллекции.
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
