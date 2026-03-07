@@ -468,7 +468,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772717433140,
+      "updatedAtMs": 1772803866086,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -484,15 +484,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772803800000,
-        "lastRunAtMs": 1772717400030,
+        "nextRunAtMs": 1772890200000,
+        "lastRunAtMs": 1772803800057,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 33110,
+        "lastDurationMs": 66029,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1772803800047
+        "consecutiveErrors": 0
       }
     },
     {

@@ -150,10 +150,9 @@
     align-items:center;
   }
   .card-icon {
-    font-size:1.1rem; opacity:0.3; transition:all 0.2s; cursor:pointer;
+    font-size:1.1rem; opacity:0.3; transition:all 0.2s;
     user-select:none; padding:0.3rem; border-radius:50%;
   }
-  .card-icon:hover { opacity:0.7; transform:scale(1.2); }
   .card-icon.active { opacity:1; }
   .card-icon.active:hover { transform:scale(1.2); }
   .card-icon.watched { color:#4ecdc4; }
@@ -216,34 +215,9 @@ let activeFilter = 'all';
 let activeGenre = null;
 let searchQuery = '';
 
-// Load user overrides from localStorage
-function loadOverrides() {
-  try { return JSON.parse(localStorage.getItem('movie_overrides') || '{}'); } catch(e) { return {}; }
-}
-function saveOverrides(ov) {
-  localStorage.setItem('movie_overrides', JSON.stringify(ov));
-}
-function applyOverrides() {
-  const ov = loadOverrides();
-  movies.forEach(m => {
-    const key = m.title + '|' + m.year;
-    if (ov[key]) {
-      if (ov[key].status) m.status = ov[key].status;
-      if (ov[key].liked !== undefined) m.liked = ov[key].liked;
-    }
-  });
-}
-function setOverride(m, field, value) {
-  const ov = loadOverrides();
-  const key = m.title + '|' + m.year;
-  if (!ov[key]) ov[key] = {};
-  ov[key][field] = value;
-  saveOverrides(ov);
-}
-
 fetch('/pages/movies/movies.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data => { movies = data; applyOverrides(); initApp(); })
+  .then(data => { movies = data; initApp(); })
   .catch(() => { movies = []; initApp(); });
 
 function initApp() {
@@ -340,24 +314,7 @@ function renderMovies() {
       </div>`;
   }).join('');
 
-  // Attach click handlers
-  grid.querySelectorAll('.card-icon').forEach(icon => {
-    icon.addEventListener('click', e => {
-      e.stopPropagation();
-      const idx = parseInt(icon.dataset.idx);
-      const m = movies[idx];
-      if (icon.dataset.action === 'watched') {
-        m.status = m.status === 'watched' ? 'watchlist' : 'watched';
-        setOverride(m, 'status', m.status);
-      } else {
-        m.liked = !m.liked;
-        setOverride(m, 'liked', m.liked);
-      }
-      renderMovies();
-    });
-  });
 }
 </script>
-<script src="../sync.js"></script>
 </body>
 </html>
