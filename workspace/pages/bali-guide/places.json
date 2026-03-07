@@ -909,5 +909,28 @@
     "slug": "",
     "lat": -8.4500,
     "lng": 115.3500
+  },
+  {
+    "name": "Eden Lounge Ubud",
+    "type": "cafe",
+    "district": "Убуд",
+    "address": "Jl. Cok Putra, Sudarsana, Ubud, Gianyar, Bali 80571",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "11:00",
+        "to": "23:00",
+        "daysArr": [0,1,2,3,4,5,6]
+      }
+    ],
+    "cuisines": ["Индонезийская", "Балийская", "Интернациональная"],
+    "tags": ["лаунж", "кальян", "коктейли", "живая музыка", "DJ"],
+    "description": "Уютный ресторан-лаунж с премиальным интерьером. Индонезийская, балийская и международная кухня. Кальянная зона, коктейли, иногда живая музыка и DJ-сеты. Идеально для расслабленного обеда или вечера.",
+    "website": null,
+    "instagram": "https://www.instagram.com/edenloungeubud/",
+    "slug": "eden-lounge-ubud",
+    "lat": -8.5069,
+    "lng": 115.2625
   }
 ]
