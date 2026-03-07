@@ -911,7 +911,7 @@
     "lng": 115.3500
   },
   {
-    "name": "Eden Lounge Ubud",
+    "name": "Eden Hookah Club Ubud",
     "type": "cafe",
     "district": "Убуд",
     "address": "Jl. Cok Putra, Sudarsana, Ubud, Gianyar, Bali 80571",
@@ -920,15 +920,15 @@
       {
         "days": "Ежедневно",
         "from": "11:00",
-        "to": "23:00",
+        "to": "02:00",
         "daysArr": [0,1,2,3,4,5,6]
       }
     ],
     "cuisines": ["Индонезийская", "Балийская", "Интернациональная"],
     "tags": ["лаунж", "кальян", "коктейли", "живая музыка", "DJ"],
-    "description": "Уютный ресторан-лаунж с премиальным интерьером. Индонезийская, балийская и международная кухня. Кальянная зона, коктейли, иногда живая музыка и DJ-сеты. Идеально для расслабленного обеда или вечера.",
-    "website": null,
-    "instagram": "https://www.instagram.com/edenloungeubud/",
+    "description": "Премиальный кальянный лаунж-ресторан. Индонезийская, балийская и международная кухня. Лучшие кальяны на Бали, коктейли, DJ-сеты. Филиалы также в Seminyak, Canggu и Uluwatu.",
+    "website": "https://edenhookah.com/",
+    "instagram": "https://www.instagram.com/edenhookahclububud/",
     "slug": "eden-lounge-ubud",
     "lat": -8.5069,
     "lng": 115.2625
