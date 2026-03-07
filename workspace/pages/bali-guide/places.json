@@ -840,5 +840,74 @@
     "lat": -8.8452,
     "lng": 115.1826,
     "mapUrl": "https://www.google.com/maps/search/Pandawa+Beach+Bali"
+  },
+  {
+    "name": "Gili Trawangan Tour",
+    "type": "tour",
+    "district": "Гили",
+    "address": "Padang Bai → Gili Trawangan",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "23:59",
+        "daysArr": [0,1,2,3,4,5,6]
+      }
+    ],
+    "cuisines": [],
+    "tags": ["снорклинг", "острова", "черепахи", "2 дня", "спидбот"],
+    "description": "2-дневный тур на Gili Trawangan. Спидбот Ostina из Padang Bai (09:30, ~2.5 часа). Групповой снорклинг: подводные статуи «Nest», черепахи у Gili Meno, «Сад рыб» у Gili Air. Конные прогулки и рыбалка по запросу. Трансфер из Убуда — 60к рупий/чел.",
+    "website": "https://mybalitrips.com/en/tour-gili/",
+    "instagram": null,
+    "slug": "",
+    "lat": -8.3509,
+    "lng": 116.0436
+  },
+  {
+    "name": "Gili Meno Tour",
+    "type": "tour",
+    "district": "Гили",
+    "address": "Padang Bai → Gili Meno (Seri Resort)",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "07:00",
+        "to": "23:59",
+        "daysArr": [0,1,2,3,4,5,6]
+      }
+    ],
+    "cuisines": [],
+    "tags": ["снорклинг", "острова", "черепахи", "2 дня", "романтика", "приватный"],
+    "description": "2-дневный тур на тихий остров Gili Meno. Спидбот Gili Gili Fastboat (10:00, ~2 часа). Приватный снорклинг: подводные статуи «Nest», черепахи, «Fish Garden». Проживание в Seri Resort. Велосипед и каяк по желанию.",
+    "website": "https://mybalitrips.com/en/gili-meno-tour/",
+    "instagram": null,
+    "slug": "",
+    "lat": -8.3540,
+    "lng": 116.0590
+  },
+  {
+    "name": "ATV по джунглям",
+    "type": "tour",
+    "district": "Убуд",
+    "address": "Bali Jungle",
+    "price": "$$",
+    "schedule": [
+      {
+        "days": "Ежедневно",
+        "from": "08:00",
+        "to": "17:00",
+        "daysArr": [0,1,2,3,4,5,6]
+      }
+    ],
+    "cuisines": [],
+    "tags": ["адреналин", "квадроциклы", "джунгли", "природа", "офроуд"],
+    "description": "Квадроциклы через рисовые поля, бамбуковые леса, реки и природные тоннели. С опытным гидом. Подходит для всех — соло, с друзьями или семьёй.",
+    "website": "https://mybalitrips.com/en/atv-jungles/",
+    "instagram": null,
+    "slug": "",
+    "lat": -8.4500,
+    "lng": 115.3500
   }
 ]
