@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772766011150,
+      "updatedAtMs": 1772852409354,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772852400000,
-        "lastRunAtMs": 1772766000053,
+        "nextRunAtMs": 1772938800000,
+        "lastRunAtMs": 1772852400029,
         "lastStatus": "ok",
-        "lastDurationMs": 11097,
+        "lastDurationMs": 9325,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772776808052,
+      "updatedAtMs": 1772863206381,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772863200000,
-        "lastRunAtMs": 1772776800112,
+        "nextRunAtMs": 1772949600000,
+        "lastRunAtMs": 1772863200030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7940,
+        "lastDurationMs": 6351,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -121,32 +121,6 @@
       },
       "state": {
         "nextRunAtMs": 1773907200000
-      }
-    },
-    {
-      "id": "d5a1007b-4610-4338-94af-5e7a770cd61c",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: триал 58518075",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771857957541,
-      "updatedAtMs": 1771858254254,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-07T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Tele2 триал: 58518075, услуга Закрыть номер — 28 дней истекают. Напомни Наталии: связаться с клиентом или закрыть услугу!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1772870400000
       }
     },
     {
@@ -468,7 +442,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772803866086,
+      "updatedAtMs": 1772890264119,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -484,11 +458,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1772890200000,
-        "lastRunAtMs": 1772803800057,
+        "nextRunAtMs": 1772976600000,
+        "lastRunAtMs": 1772890200017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 66029,
+        "lastDurationMs": 64102,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
