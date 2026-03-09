@@ -332,25 +332,26 @@
     "fav": false
   },
   {
-    "brand": "Kinckydoe",
-    "name": "Extrait de Parfum",
+    "brand": "Laurent Mazzone Parfums",
+    "name": "Kingkydise",
     "notes": "Личи, грейпфрут, перец, роза, матча, ирис, мускус, сандал, амбра",
     "desc": "Женственный, игривый, манкий. «Так бы пахла Марго Робби в Волке с Уолл-стрит».",
     "tags": [
       "floral",
-      "oriental"
+      "fruity"
     ],
     "source": "catherine_knz",
     "price": "~150€",
-    "img": null,
+    "img": "img/kingkydise.jpg",
     "pyramid": {
       "top": "Личи, розовый грейпфрут, сычуаньский перец",
       "mid": "Роза, чай матча, ирис",
       "base": "Белый мускус, сандал, амбра"
     },
     "gender": "Ж",
-    "family": "Цветочно-восточный",
-    "fav": false
+    "family": "Цветочно-фруктовый",
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/Laurent-Mazzone-Parfums/Kingkydise-68640.html"
   },
   {
     "brand": "Phlur",
@@ -1638,7 +1639,9 @@
     "name": "Gold Juice",
     "notes": "Манго, фрукты",
     "desc": "Сочный фруктовый аромат с доминантой манго.",
-    "tags": ["fruit"],
+    "tags": [
+      "fruit"
+    ],
     "source": "Скриншот",
     "img": "img/gold-juice.jpg",
     "family": "Фруктовый",
@@ -1649,7 +1652,10 @@
     "name": "Warm Air",
     "notes": "Eau Intimité",
     "desc": "Из прозрачной линейки Eau Intimité — лёгкий, как крем для тела.",
-    "tags": ["fresh", "musk"],
+    "tags": [
+      "fresh",
+      "musk"
+    ],
     "source": "Скриншот",
     "img": "img/btso-warm-air.jpg",
     "family": "Мускусный",
@@ -1660,7 +1666,10 @@
     "name": "Narcotic Delight",
     "notes": "Ваниль, карамель, мускус",
     "desc": "Opulent & magnetic, slow lingering embrace. Роскошный гурманский аромат.",
-    "tags": ["gourmand", "oriental"],
+    "tags": [
+      "gourmand",
+      "oriental"
+    ],
     "source": "@catherine_knz",
     "img": "img/narcotic-delight.jpg",
     "family": "Восточно-гурманский",
@@ -1671,7 +1680,10 @@
     "name": "Venom Incarnat",
     "notes": "Сладкие, сочные ноты",
     "desc": "Sweet, Juicy, Seductive, Bold. Яркий и дерзкий аромат.",
-    "tags": ["gourmand", "oriental"],
+    "tags": [
+      "gourmand",
+      "oriental"
+    ],
     "source": "@catherine_knz",
     "img": "img/venom-incarnat.jpg",
     "family": "Восточно-гурманский",
@@ -1682,7 +1694,10 @@
     "name": "Purple Stain",
     "notes": "Эмоциональные, чувственные ноты",
     "desc": "Rush of closeness, Raw & emotional, Tender and reckless.",
-    "tags": ["oriental", "floral"],
+    "tags": [
+      "oriental",
+      "floral"
+    ],
     "source": "@catherine_knz",
     "img": "img/purple-stain.jpg",
     "family": "Восточно-цветочный",
