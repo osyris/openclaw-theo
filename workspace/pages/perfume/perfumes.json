@@ -10,7 +10,7 @@
     "source": "parftelier",
     "fav": true,
     "price": "~250€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/delina.jpg",
+    "img": "img/delina.jpg",
     "pyramid": {
       "top": "Личи, ревень, бергамот, мускатный орех, чёрная смородина",
       "mid": "Турецкая роза, пион, мускус, петалия, ваниль",
@@ -96,7 +96,7 @@
     ],
     "source": "parftelier",
     "price": "~245€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/moonlight-in-heaven.jpg",
+    "img": "img/moonlight-in-heaven.jpg",
     "pyramid": {
       "top": "Грейпфрут, Лимон, Розовый перец, Зеленые ноты, Персик, Гвоздика (пряность)",
       "mid": "Манго, Кокос, Рис, Тубероза, Корень ириса, Лактоны",
@@ -184,7 +184,7 @@
     ],
     "source": "sofyamil (IG)",
     "price": "~245€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/roses-on-ice.jpg",
+    "img": "img/roses-on-ice.jpg",
     "pyramid": {
       "top": "Огурец, Ягоды можжевельника, Лайм, Лист фиалки, Розовый перец",
       "mid": "Роза, Озон",
@@ -273,7 +273,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~230€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/siwa.jpg",
+    "img": "img/siwa.jpg",
     "pyramid": {
       "top": "are Calabrian bergamot, Pepper",
       "mid": "are Sichuan Pepper, Lavender, elemi, Pink Pepper, Vetiver, Patchouli",
@@ -363,7 +363,7 @@
     ],
     "source": "catherine_knz",
     "price": "~96€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/missing-person.jpg",
+    "img": "img/missing-person.jpg",
     "pyramid": {
       "top": "Лимон, Бергамот",
       "mid": "Ландыш, Сирень",
@@ -445,7 +445,7 @@
     ],
     "source": "catherine_knz",
     "price": "~32€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/vanilla-smoke.jpg",
+    "img": "img/vanilla-smoke.jpg",
     "pyramid": {
       "top": "Маршмеллоу, лимонный сахар, апельсин",
       "mid": "Кокосовый крем, амбреттолид, жасмин",
@@ -466,7 +466,7 @@
     ],
     "source": "catherine_knz",
     "price": "~32€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/heavy-cream.jpg",
+    "img": "img/heavy-cream.jpg",
     "pyramid": {
       "top": "Маршмеллоу, лимонный сахар, апельсин",
       "mid": "Кокосовый крем, амбреттолид, жасмин",
@@ -488,7 +488,7 @@
     ],
     "source": "parftelier",
     "price": "~140€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/philosykos.jpg",
+    "img": "img/philosykos.jpg",
     "pyramid": {
       "top": "Красные ягоды, Роза, Цитрон",
       "mid": "Лотос, Жасмин, Фрезия",
@@ -512,7 +512,7 @@
     ],
     "source": "parftelier",
     "price": "~310€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/babycat.jpg",
+    "img": "img/babycat.jpg",
     "pyramid": {
       "top": "Шафран, Лист инжира, Розовый перец, Бергамот",
       "mid": "Малина, Болгарская роза, Гваяк, Ландыш, Водяной жасмин",
@@ -535,7 +535,7 @@
     ],
     "source": "catherine_knz",
     "price": "~195€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/electimuss-cherry.jpg",
+    "img": "img/electimuss-cherry.jpg",
     "pyramid": {
       "top": "Чёрная вишня, амаретто, тёмный шоколад",
       "mid": "Кокос, кофе, корица, мёд, ветивер",
@@ -558,7 +558,7 @@
     ],
     "source": "molecule.ee",
     "price": "~115€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/mmmm.jpg",
+    "img": "img/mmmm.jpg",
     "pyramid": {
       "top": "Бучу, Ангелика",
       "mid": "Ромашка, Мандарин",
@@ -581,7 +581,7 @@
     ],
     "source": "molecule.ee",
     "price": "~350€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/guidance-46.jpg",
+    "img": "img/guidance-46.jpg",
     "pyramid": {
       "top": "Груша, фундук, розовая вода, горький миндаль, ладан, розовый перец",
       "mid": "Османтус, роза, жасмин самбак, шафран",
@@ -604,7 +604,7 @@
     ],
     "source": "catherine_knz",
     "price": "~120€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/wavechild.jpg",
+    "img": "img/wavechild.jpg",
     "pyramid": {
       "top": "Цитрусы",
       "mid": "Мадагаскарский перец",
@@ -627,7 +627,7 @@
     ],
     "source": "catherine_knz",
     "price": "~175€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/orchid-k.jpg",
+    "img": "img/orchid-k.jpg",
     "pyramid": {
       "top": "Мандарин, Розовый перец, Черника, Лист фиалки",
       "mid": "Цветок апельсина, Жасмин, Кашемировое дерево, Фрезия",
@@ -649,7 +649,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~250€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/gumin.jpg",
+    "img": "img/gumin.jpg",
     "pyramid": {
       "top": "Бергамот, Лимон, Апельсин",
       "mid": "Жасмин, Роза, Карамель, Кориандр",
@@ -671,7 +671,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~110€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/pear-inc.jpg",
+    "img": "img/pear-inc.jpg",
     "pyramid": {
       "top": "Груша, бергамот",
       "mid": "Амброксан, мускус",
@@ -695,7 +695,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~110€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/wild-pears.jpg",
+    "img": "img/wild-pears.jpg",
     "pyramid": {
       "top": "Яблоко",
       "mid": "Фрезия, Жасмин, Фиалка",
@@ -717,7 +717,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~85€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/pear-gelato.jpg",
+    "img": "img/pear-gelato.jpg",
     "pyramid": {
       "top": "Помело, Цедра лимона",
       "mid": "Магнолия, Водяная лилия, Питахайя",
@@ -739,7 +739,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~80€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/dylan-purple.jpg",
+    "img": "img/dylan-purple.jpg",
     "pyramid": {
       "top": "Озон, Альдегиды, Кардамон, Розмарин, Кориандр, Олибанум, Розовый оксид",
       "mid": "Ирис, Мускатный шалфей, Лилибелль®, Жасмин, Ландыш, Магнолия",
@@ -761,7 +761,7 @@
     ],
     "source": "losaromas.perfume",
     "price": "~175€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/pineapple-dg.jpg",
+    "img": "img/pineapple-dg.jpg",
     "pyramid": {
       "top": "Герань, Иланг-иланг",
       "mid": "Фиалка, Гвоздика (цветок), Кожа",
@@ -785,7 +785,7 @@
     ],
     "source": "losaromas.perfume",
     "price": "~290€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/bitter-peach.jpg",
+    "img": "img/bitter-peach.jpg",
     "pyramid": {
       "top": "Розовый перец, Кориандр, Фиалка, Танжерин",
       "mid": "Кедр, Пачули, Дубовый мох",
@@ -809,7 +809,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~245€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/kurky.jpg",
+    "img": "img/kurky.jpg",
     "pyramid": {
       "top": "Мускатный орех, Груша, Черная смородина",
       "mid": "Белый мускус, Карамель, Сирень",
@@ -833,7 +833,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~180€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/risvelium.jpg",
+    "img": "img/risvelium.jpg",
     "pyramid": {
       "top": "Цитрусовые, ананас",
       "mid": "Чёрная смородина, цветочные ноты",
@@ -857,7 +857,7 @@
     ],
     "source": "parftelier",
     "price": "~185€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/aldebaran.jpg",
+    "img": "img/aldebaran.jpg",
     "pyramid": {
       "top": "Итальянский танжерин, Листья цитрусовых, Бергамот",
       "mid": "Болгарская роза, Сироп черной смородины, Фиалка",
@@ -880,7 +880,7 @@
     ],
     "source": "catherine_knz",
     "price": "~110€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/dallachai.jpg",
+    "img": "img/dallachai.jpg",
     "pyramid": {
       "top": "Гвоздика, маракуйя, кардамон",
       "mid": "Кофе",
@@ -901,7 +901,7 @@
     ],
     "source": "Instagram ad",
     "price": "~105€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/milk-commodity.jpg",
+    "img": "img/milk-commodity.jpg",
     "pyramid": {
       "top": "Жареный кунжут",
       "mid": "Маршмеллоу, Молоко",
@@ -923,7 +923,7 @@
     ],
     "source": "molecule.ee",
     "price": "~190€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/blanche.jpg",
+    "img": "img/blanche.jpg",
     "pyramid": {
       "top": "Альдегиды, роза центифолия",
       "mid": "Пион, фиалка",
@@ -946,7 +946,7 @@
     ],
     "source": "alinavassiljeva",
     "price": "~135€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/red-hibiscus.jpg",
+    "img": "img/red-hibiscus.jpg",
     "pyramid": {
       "top": "Манго, давана",
       "mid": "Гибискус, магнолия, роза",
@@ -997,7 +997,7 @@
     ],
     "source": "Facebook ad",
     "price": "~175€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/erotika-minimale.jpg",
+    "img": "img/erotika-minimale.jpg",
     "concentration": "Extrait",
     "gender": "Унисекс",
     "family": "Восточный",
@@ -1013,7 +1013,7 @@
     ],
     "source": "catherine_knz",
     "price": "~90€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/optico-italy.jpg",
+    "img": "img/optico-italy.jpg",
     "pyramid": {
       "top": "Калабрийский бергамот, сицилийский горький апельсин, лимон, розовый грейпфрут, лаванда",
       "mid": "Цветок апельсина, белая роза, жасмин",
@@ -1034,7 +1034,7 @@
     ],
     "source": "catherine_knz",
     "price": "~200€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/le-point-g.jpg",
+    "img": "img/le-point-g.jpg",
     "pyramid": {
       "top": "Розовый перец, бергамот",
       "mid": "Майская роза, ирис",
@@ -1056,7 +1056,7 @@
     ],
     "source": "douglas.ee",
     "price": "~60€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/vents-et-marees.jpg",
+    "img": "img/vents-et-marees.jpg",
     "pyramid": {
       "top": "Грейпфрут, клементин, чёрная смородина",
       "mid": "Морские ноты, фрезия, роза",
@@ -1078,7 +1078,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~160€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/sisters-b4-misters.jpg",
+    "img": "img/sisters-b4-misters.jpg",
     "concentration": "EDP",
     "gender": "Ж",
     "family": "Гурманско-цветочный",
@@ -1095,7 +1095,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~130€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/angel-dust.jpg",
+    "img": "img/angel-dust.jpg",
     "pyramid": {
       "top": "Чёрная смородина, Клементин, Мандарин, Грейпфрут",
       "mid": "Морские ноты, Роза, Фрезия, Жасмин, Ландыш",
@@ -1141,7 +1141,7 @@
     ],
     "source": "Парфюмерия TG",
     "price": "~120€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/valhalla.jpg",
+    "img": "img/valhalla.jpg",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Восточный",
@@ -1158,7 +1158,7 @@
     ],
     "source": "parfum__agent",
     "price": "~190€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/another-13.jpg",
+    "img": "img/another-13.jpg",
     "pyramid": {
       "top": "Груша",
       "mid": "Амброксан, жасмин, мох",
@@ -1210,7 +1210,7 @@
     ],
     "source": "parfum__agent",
     "price": "~290€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/limmensity.jpg",
+    "img": "img/limmensity.jpg",
     "pyramid": {
       "top": "Грейпфрут, имбирь, цитрон, бергамот",
       "mid": "Водные ноты, амбра, чай",
@@ -1263,7 +1263,7 @@
     ],
     "source": "parfum__agent",
     "price": "~205€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/aqua-universalis.jpg",
+    "img": "img/aqua-universalis.jpg",
     "pyramid": {
       "top": "Калабрийский лимон, бергамот, петитгрейн",
       "mid": "Цветок апельсина, ландыш, жасмин",
@@ -1317,7 +1317,7 @@
     ],
     "source": "parfum__agent",
     "price": "~285€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/elysium.jpg",
+    "img": "img/elysium.jpg",
     "pyramid": {
       "top": "Грейпфрут, Бергамот, Лайм, Полынь, Лаванда, Лимон, Мускус, Тимьян",
       "mid": "Чёрная смородина, Яблоко, Жасмин, Ландыш, Майская роза",
@@ -1342,7 +1342,7 @@
     ],
     "source": "parfum__agent",
     "price": "~200€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/the-hedonist.jpg",
+    "img": "img/the-hedonist.jpg",
     "pyramid": {
       "top": "Шафран, кардамон, бергамот",
       "mid": "Ирис, роза, мускатный орех",
@@ -1364,7 +1364,7 @@
     ],
     "source": "parfum__agent",
     "price": "~100€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/mol-01-iris.jpg",
+    "img": "img/mol-01-iris.jpg",
     "pyramid": {
       "top": "Розовый перец",
       "mid": "Ирис",
@@ -1389,7 +1389,7 @@
     ],
     "source": "parfum__agent",
     "price": "~200€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/blue-talisman.jpg",
+    "img": "img/blue-talisman.jpg",
     "pyramid": {
       "top": "Бергамот, лимон",
       "mid": "Минеральный аккорд, ирис",
@@ -1411,7 +1411,7 @@
     ],
     "source": "parfum__agent",
     "price": "~310€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/silver-mountain-water.jpg",
+    "img": "img/silver-mountain-water.jpg",
     "pyramid": {
       "top": "Лаванда, Бергамот, Шалфей",
       "mid": "Ирис, Какао, Амбра, Кардамон",
@@ -1435,7 +1435,7 @@
     ],
     "source": "parfum__agent",
     "price": "~100€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/mol-01-patchouli.jpg",
+    "img": "img/mol-01-patchouli.jpg",
     "pyramid": {
       "top": "—",
       "mid": "Пачули",
@@ -1459,7 +1459,7 @@
     ],
     "source": "parfum__agent",
     "price": "~150€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/cedrus.jpg",
+    "img": "img/cedrus.jpg",
     "pyramid": {
       "top": "Мята, Мандарин, Розовый перец, Кардамон, Мускатный орех",
       "mid": "Кориандр, Шалфей, Фрезия, Лист фиалки, Хвоя кедра, Жасмин",
@@ -1481,7 +1481,7 @@
     ],
     "source": "parfum__agent",
     "price": "~180€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/morning-chess.jpg",
+    "img": "img/morning-chess.jpg",
     "pyramid": {
       "top": "Шафран, чёрный перец",
       "mid": "Ирис, замша",
@@ -1504,7 +1504,7 @@
     ],
     "source": "parfum__agent",
     "price": "~100€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/pink-molecule.jpg",
+    "img": "img/pink-molecule.jpg",
     "pyramid": {
       "top": "Фруктовые ноты",
       "mid": "Пудровые ноты, Цветочные ноты",
@@ -1528,7 +1528,7 @@
     ],
     "source": "parfum__agent",
     "price": "~100€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/mol-01-mandarin.jpg",
+    "img": "img/mol-01-mandarin.jpg",
     "pyramid": {
       "top": "Мандарин",
       "mid": "—",
@@ -1551,7 +1551,7 @@
     ],
     "source": "parfum__agent",
     "price": "~190€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/mojave-ghost.jpg",
+    "img": "img/mojave-ghost.jpg",
     "pyramid": {
       "top": "Розовый перец, Слива, Лесные ягоды",
       "mid": "Жасмин, Франжипани, Вистерия",
@@ -1576,7 +1576,7 @@
     ],
     "source": "parfum__agent",
     "price": "~110€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/wood-sage.jpg",
+    "img": "img/wood-sage.jpg",
     "pyramid": {
       "top": "Бергамот, Кардамон, Мускатный орех",
       "mid": "Лаванда, Фиалка, Укроп, Зеленые ноты, Герань",
@@ -1600,7 +1600,7 @@
     ],
     "source": "Наталия",
     "price": "~195€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/black-creme.jpg",
+    "img": "img/black-creme.jpg",
     "pyramid": {
       "top": "Шафран, кардамон, розовый перец",
       "mid": "Уд, кожа, роза",
@@ -1610,7 +1610,8 @@
     "concentration": "Extrait",
     "gender": "Унисекс",
     "family": "Восточно-гурманский",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Black-Creme-115202.html"
   },
   {
     "brand": "Clive Christian",
@@ -1624,7 +1625,7 @@
     ],
     "source": "Наталия",
     "price": "~350€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/out-of-the-blue.jpg",
+    "img": "img/out-of-the-blue.jpg",
     "pyramid": {
       "top": "Лимон, Апельсин, Танжерин, Имбирь, Перец",
       "mid": "Морские ноты, Тиаре, Сосна, Мимоза, Ветивер",
@@ -1634,7 +1635,8 @@
     "concentration": "Parfum",
     "gender": "Унисекс",
     "family": "Цветочно-восточный",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/Clive-Christian/Strange-Heavens-Out-Of-The-Blue-122036.html"
   },
   {
     "brand": "Gold Juice",
@@ -1647,7 +1649,8 @@
     "source": "Скриншот",
     "img": "img/gold-juice.jpg",
     "family": "Фруктовый",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Gold-Juice-109045.html"
   },
   {
     "brand": "Born to Stand Out",
@@ -1661,7 +1664,8 @@
     "source": "Скриншот",
     "img": "img/btso-warm-air.jpg",
     "family": "Мускусный",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Warm-Air-109046.html"
   },
   {
     "brand": "Initio Parfums Privés",
@@ -1675,7 +1679,8 @@
     "source": "@catherine_knz",
     "img": "img/narcotic-delight.jpg",
     "family": "Восточно-гурманский",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Narcotic-Delight-89368.html"
   },
   {
     "brand": "Stéphane Humbert Lucas",
@@ -1689,7 +1694,8 @@
     "source": "@catherine_knz",
     "img": "img/venom-incarnat.jpg",
     "family": "Восточно-гурманский",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Venom-Incarnat-72387.html"
   },
   {
     "brand": "Purple Stain",
@@ -1703,6 +1709,7 @@
     "source": "@catherine_knz",
     "img": "img/purple-stain.jpg",
     "family": "Восточно-цветочный",
-    "fav": false
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Purple-Stain-102810.html"
   }
 ]
