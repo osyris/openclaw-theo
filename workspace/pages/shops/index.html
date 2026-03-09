@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Избранные магазины</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --text: #e8e8e8;
+    --muted: #777;
+    --accent: #c9a84c;
+    --accent-glow: rgba(201,168,76,0.2);
+    --border: #222;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; line-height:1.6; font-weight:300; }
+
+  .hero {
+    text-align:center; padding:5rem 1.5rem 3rem;
+    position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:-80px; left:50%; transform:translateX(-50%);
+    width:600px; height:600px; border-radius:50%;
+    background:radial-gradient(circle, var(--accent-glow) 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .hero h1 {
+    font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:4rem;
+    letter-spacing:0.12em; color:var(--accent);
+    text-transform:uppercase; text-shadow:0 0 60px var(--accent-glow);
+    position:relative;
+  }
+  .hero p { color:var(--muted); font-size:0.82rem; letter-spacing:0.2em; text-transform:uppercase; position:relative; }
+
+  .controls {
+    max-width:900px; margin:0 auto; padding:0 1.5rem 0.5rem;
+    display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;
+  }
+  .filter-btn {
+    padding:0.55rem 1.3rem; border:1px solid var(--border); border-radius:2rem;
+    background:var(--card); font-size:0.95rem; font-family:'Bebas Neue',sans-serif;
+    cursor:pointer; transition:all 0.2s; color:#777;
+    text-transform:uppercase; letter-spacing:0.1em;
+  }
+  .filter-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .filter-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+
+  .grid {
+    max-width:900px; margin:0 auto; padding:1rem 1.5rem 4rem;
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:1rem;
+  }
+
+  .card {
+    background:var(--card); border:1px solid var(--border); border-radius:14px;
+    padding:1.5rem; text-decoration:none; color:var(--text);
+    transition:all 0.25s; display:flex; flex-direction:column; gap:0.6rem;
+    position:relative; overflow:hidden;
+  }
+  .card::before {
+    content:''; position:absolute; top:0; left:0;
+    width:100%; height:3px;
+    background:linear-gradient(90deg, transparent, var(--cat-color, var(--accent)), transparent);
+    opacity:0; transition:opacity 0.3s;
+  }
+  .card:hover {
+    border-color:var(--cat-color, var(--accent));
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  }
+  .card:hover::before { opacity:1; }
+
+  .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; }
+  .card-emoji { font-size:1.8rem; line-height:1; }
+  .card-cat {
+    font-size:0.6rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:500;
+    padding:0.15rem 0.6rem; border-radius:2rem;
+    background:rgba(201,168,76,0.1); color:var(--cat-color, var(--accent));
+    border:1px solid rgba(201,168,76,0.15);
+    white-space:nowrap;
+  }
+  .card-name {
+    font-family:'Bebas Neue',sans-serif; font-size:1.5rem;
+    letter-spacing:0.04em; line-height:1.2;
+  }
+  .card-desc { font-size:0.78rem; color:var(--muted); line-height:1.5; flex:1; }
+  .card-meta {
+    display:flex; flex-wrap:wrap; gap:0.3rem; margin-top:auto;
+    font-size:0.65rem;
+  }
+  .card-tag {
+    padding:0.12rem 0.45rem; border-radius:2rem;
+    background:rgba(255,255,255,0.05); color:#666;
+    border:1px solid rgba(255,255,255,0.06);
+  }
+  .card-link {
+    font-size:0.7rem; color:var(--cat-color, var(--accent));
+    margin-top:0.3rem; opacity:0.7;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+
+  .footer { text-align:center; padding:2rem; font-size:0.7rem; color:#333; border-top:1px solid var(--border); }
+
+  @media(max-width:600px) {
+    .hero h1 { font-size:2.8rem; }
+    .grid { grid-template-columns:1fr; padding:0.5rem 1rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>⭐ Избранные магазины</h1>
+  <p>Любимые места для шоппинга</p>
+</div>
+
+<div class="controls" id="controls"></div>
+<div class="grid" id="grid"></div>
+
+<div class="footer">
+  <a href="/pages/" style="color:var(--accent);text-decoration:none;">← Все каталоги</a>
+</div>
+
+<script>
+const shops = [
+  {
+    name: "Tearoma",
+    emoji: "🍵",
+    category: "Еда и напитки",
+    desc: "Эстонский чайный магазин — чёрный, зелёный, пуэр, улун, матча, травяной чай. Подарочные наборы. Доставка по Эстонии от 45€ бесплатно.",
+    url: "https://tearoma.ee/",
+    tags: ["чай", "Эстония", "онлайн"],
+    color: "#4caf50"
+  },
+  {
+    name: "Douglas Eesti",
+    emoji: "💄",
+    category: "Красота",
+    desc: "Парфюмерия, уход за кожей, декоративная косметика. Магазин в Viru Keskus, Таллин.",
+    url: "https://www.douglas.ee/",
+    tags: ["парфюмерия", "косметика", "Таллин"],
+    color: "#d4a0b9"
+  }
+];
+
+const catColors = {};
+shops.forEach(s => { catColors[s.category] = s.color; });
+const categories = [...new Set(shops.map(s => s.category))];
+
+let activeFilter = 'all';
+
+function render() {
+  const grid = document.getElementById('grid');
+  const controls = document.getElementById('controls');
+
+  // Filters
+  controls.innerHTML = `<button class="filter-btn ${activeFilter==='all'?'active':''}" onclick="setFilter('all')">Все</button>` +
+    categories.map(c => `<button class="filter-btn ${activeFilter===c?'active':''}" onclick="setFilter('${c}')" style="${activeFilter===c?'background:'+catColors[c]+';border-color:'+catColors[c]:''}">${c}</button>`).join('');
+
+  const filtered = activeFilter === 'all' ? shops : shops.filter(s => s.category === activeFilter);
+
+  grid.innerHTML = filtered.map(s => `
+    <a href="${s.url}" target="_blank" class="card" style="--cat-color:${s.color}">
+      <div class="card-top">
+        <div class="card-emoji">${s.emoji}</div>
+        <div class="card-cat" style="color:${s.color};background:${s.color}15;border-color:${s.color}25">${s.category}</div>
+      </div>
+      <div class="card-name">${s.name}</div>
+      <div class="card-desc">${s.desc}</div>
+      <div class="card-meta">${s.tags.map(t => `<span class="card-tag">${t}</span>`).join('')}</div>
+      <div class="card-link" style="color:${s.color}">${s.url.replace(/https?:\/\/(www\.)?/,'').replace(/\/$/,'')}</div>
+    </a>
+  `).join('');
+}
+
+window.setFilter = function(f) { activeFilter = f; render(); }
+render();
+</script>
+
+</body>
+</html>
