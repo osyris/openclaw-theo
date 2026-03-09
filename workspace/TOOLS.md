@@ -159,4 +159,24 @@ cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject
 
 ---
 
+---
+
+## Fragrantica (парфюмерный каталог)
+
+**ВАЖНО:** Fragrantica блокирует обычные запросы (Cloudflare). Всегда используй **ScrapingBee** для доступа:
+
+```bash
+curl -s "https://app.scrapingbee.com/api/v1/?api_key=${SCRAPINGBEE_API_KEY}&url=<URL>&render_js=true"
+```
+
+**Workflow при добавлении парфюма:**
+1. Получить ссылку/фото от Наталии
+2. Найти на Fragrantica через ScrapingBee
+3. Извлечь: бренд, название, год, ноты (top/mid/base), аккорды, рейтинг, семейство
+4. Сохранить фото в `/data/workspace/pages/perfume/img/`
+5. Обновить `/data/workspace/pages/perfume/perfumes.json`
+6. Закоммитить
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
