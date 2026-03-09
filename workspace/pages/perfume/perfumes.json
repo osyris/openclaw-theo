@@ -1108,17 +1108,18 @@
     "fav": false
   },
   {
-    "brand": "Fil D'Or",
-    "name": "N1 Extrait de Parfum",
+    "brand": "Laurent Mazzone Parfums",
+    "name": "Fil d'Or No.1",
     "notes": "Ром, табак, османтус, мирра, сандал, ваниль",
-    "desc": "Томный, чувственный, вечерний. «Чёрное платье и бриллианты».",
+    "desc": "Ликёрный, древесно-амбровый шлейф. Томный, чувственный, вечерний. «Как шёлковая блузка на голой коже».",
     "tags": [
-      "oriental",
-      "gourmand"
+      "woody",
+      "amber",
+      "sweet"
     ],
     "source": "catherine_knz",
     "price": "~150€",
-    "img": "https://gazelle.up.railway.app/pages/perfume/img/fil-dor-n1.jpg",
+    "img": "img/fil-dor-no1.jpg",
     "pyramid": {
       "top": "Ром, давана, розовый перец, бергамот",
       "mid": "Табак, османтус, мирра, сандал, перец",
@@ -1126,8 +1127,9 @@
     },
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Восточно-гурманский",
-    "fav": false
+    "family": "Древесно-амбровый",
+    "fav": false,
+    "fragrantica": "https://www.fragrantica.com/perfume/Laurent-Mazzone-Parfums/Fil-d-Or-No1-90991.html"
   },
   {
     "brand": "Paradis Des Sens",
