@@ -569,5 +569,31 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Project Hail Mary",
+    "year": 2025,
+    "genre": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "poster": "img/project-hail-mary.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Young Sherlock",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Crime"
+    ],
+    "poster": "img/young-sherlock.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
