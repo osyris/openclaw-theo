@@ -531,5 +531,18 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "The Bride",
+    "year": 2025,
+    "genre": [
+      "Horror",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "poster": "img/the-bride.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
