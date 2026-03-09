@@ -544,5 +544,30 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Beef (Season 2)",
+    "year": 2025,
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "poster": "img/beef-s2.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Good Luck, Have Fun, Don't Die",
+    "year": 2025,
+    "genre": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "poster": "img/good-luck-have-fun.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
