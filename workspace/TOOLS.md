@@ -173,9 +173,13 @@ curl -s "https://app.scrapingbee.com/api/v1/?api_key=${SCRAPINGBEE_API_KEY}&url=
 1. Получить ссылку/фото от Наталии
 2. Найти на Fragrantica через ScrapingBee
 3. Извлечь: бренд, название, год, ноты (top/mid/base), аккорды, рейтинг, семейство
-4. Сохранить фото в `/data/workspace/pages/perfume/img/`
+4. **Фото: ВСЕГДА скачивать с Fragrantica** (не использовать скрины от пользователя!)
+   - URL: `https://fimgs.net/mdimg/perfume/375x500.{ID}.jpg` (ID из URL страницы)
+   - Сохранить в `/data/workspace/pages/perfume/img/`
 5. Обновить `/data/workspace/pages/perfume/perfumes.json`
 6. Закоммитить
+
+**ВАЖНО:** Фото должны быть эстетичными и органично смотреться на страничке — только качественные изображения из интернета!
 
 ---
 
