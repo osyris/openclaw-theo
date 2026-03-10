@@ -152,7 +152,9 @@
   .card-icon {
     font-size:1.1rem; opacity:0.3; transition:all 0.2s;
     user-select:none; padding:0.3rem; border-radius:50%;
+    cursor:pointer;
   }
+  .card-icon:hover { opacity:0.7; transform:scale(1.15); }
   .card-icon.active { opacity:1; }
   .card-icon.active:hover { transform:scale(1.2); }
   .card-icon.watched { color:#4ecdc4; }
@@ -220,7 +222,7 @@ let searchQuery = '';
 
 fetch('/pages/movies/movies.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data => { movies = data; initApp(); })
+  .then(data => { movies = data; loadUserState(); initApp(); })
   .catch(() => { movies = []; initApp(); });
 
 function initApp() {
@@ -317,6 +319,50 @@ function renderMovies() {
       </div>`;
   }).join('');
 
+  // Attach click handlers to icons
+  grid.querySelectorAll('.card-icon').forEach(icon => {
+    icon.style.cursor = 'pointer';
+    icon.addEventListener('click', e => {
+      e.stopPropagation();
+      const idx = parseInt(icon.dataset.idx);
+      const action = icon.dataset.action;
+      const m = movies[idx];
+      if (!m) return;
+
+      if (action === 'watched') {
+        m.status = m.status === 'watched' ? 'watchlist' : 'watched';
+      } else if (action === 'liked') {
+        m.liked = !m.liked;
+      }
+
+      saveUserState();
+      renderMovies();
+    });
+  });
+}
+
+// Persist user changes (watched/liked) in localStorage
+function saveUserState() {
+  const state = {};
+  movies.forEach((m, i) => {
+    if (m.status === 'watched' || m.liked) {
+      state[m.title + '|' + (m.year || '')] = { status: m.status, liked: !!m.liked };
+    }
+  });
+  localStorage.setItem('movies-user-state', JSON.stringify(state));
+}
+
+function loadUserState() {
+  try {
+    const state = JSON.parse(localStorage.getItem('movies-user-state') || '{}');
+    movies.forEach(m => {
+      const key = m.title + '|' + (m.year || '');
+      if (state[key]) {
+        if (state[key].status) m.status = state[key].status;
+        if (state[key].liked) m.liked = state[key].liked;
+      }
+    });
+  } catch(e) {}
 }
 </script>
 </body>
