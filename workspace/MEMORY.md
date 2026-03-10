@@ -26,6 +26,13 @@
 - Путеводитель Бали: nataliakatsalukha.com/pages/bali-guide/ (данные из baliforum.ru API)
 - API baliforum.ru: /api/v1/places/{slug}, /api/v1/events/{slug}, /api/v1/topics?search={q}
 
+## Инструменты & Workflow
+- **Fragrantica:** доступ только через ScrapingBee (Cloudflare). Фото: `fimgs.net/mdimg/perfume/375x500.{ID}.jpg`. Лимит 1000 запросов/мес — исчерпан до апреля 2026.
+- **Фото для каталогов:** ВСЕГДА из интернета (Fragrantica, TMDB, Litres), никогда скриншоты пользователя.
+- **Каталог фильмов:** постеры через `poster.sh` (Film.ru → TMDB → Wikipedia), добавление через `add.sh`.
+- **Главная страница:** `nataliakatsalukha.com/pages/` — хаб всех каталогов.
+- **Избранные магазины:** `/pages/shops/` — 11 магазинов в 7 категориях.
+
 ## Наталия — предпочтения
 - Питание: 2 раза в день + белковый коктейль, цель 105г белка, не ест нут, ест чечевицу и батат
 - Парфюм: любит фруктовые (груша, ананас), гурманские (ваниль, молоко), фаворит — Parfums de Marly Delina
