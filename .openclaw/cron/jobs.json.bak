@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1772938809403,
+      "updatedAtMs": 1773025208730,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773025200000,
-        "lastRunAtMs": 1772938800039,
+        "nextRunAtMs": 1773111600000,
+        "lastRunAtMs": 1773025200038,
         "lastStatus": "ok",
-        "lastDurationMs": 9364,
+        "lastDurationMs": 8692,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1772949605127,
+      "updatedAtMs": 1773036006245,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773036000000,
-        "lastRunAtMs": 1772949600033,
+        "nextRunAtMs": 1773122400000,
+        "lastRunAtMs": 1773036000027,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5094,
+        "lastDurationMs": 6218,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -442,7 +442,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1772976651865,
+      "updatedAtMs": 1773063038854,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -458,11 +458,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773063000000,
-        "lastRunAtMs": 1772976600020,
+        "nextRunAtMs": 1773149400000,
+        "lastRunAtMs": 1773063000021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 51845,
+        "lastDurationMs": 38833,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
