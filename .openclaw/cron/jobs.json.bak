@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773025208730,
+      "updatedAtMs": 1773111610297,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773111600000,
-        "lastRunAtMs": 1773025200038,
+        "nextRunAtMs": 1773198000000,
+        "lastRunAtMs": 1773111600105,
         "lastStatus": "ok",
-        "lastDurationMs": 8692,
+        "lastDurationMs": 10192,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773036006245,
+      "updatedAtMs": 1773122406083,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773122400000,
-        "lastRunAtMs": 1773036000027,
+        "nextRunAtMs": 1773208800000,
+        "lastRunAtMs": 1773122400065,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6218,
+        "lastDurationMs": 6018,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -442,7 +442,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773063038854,
+      "updatedAtMs": 1773149492056,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -458,14 +458,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773149400000,
-        "lastRunAtMs": 1773063000021,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 38833,
+        "nextRunAtMs": 1773235800000,
+        "lastRunAtMs": 1773149400026,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 92030,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ ✉️ Message failed"
       }
     },
     {
@@ -570,6 +571,32 @@
       },
       "state": {
         "nextRunAtMs": 1774940400000
+      }
+    },
+    {
+      "id": "c0b04232-451d-4a7f-8872-cdca4fd3acf7",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Напоминание: Rutracker для Антона",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773122983243,
+      "updatedAtMs": 1773122983243,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-18T14:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии: показать Антону Rutracker, чтобы мог скачивать фильмы на компьютер. Сейчас 16:00 по Эстонии."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773842400000
       }
     }
   ]
