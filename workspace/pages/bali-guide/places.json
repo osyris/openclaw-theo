@@ -1033,5 +1033,26 @@
     "slug": "",
     "lat": -8.5785,
     "lng": 115.1321
+  },
+  {
+    "name": "Остров Сумба",
+    "type": "tour",
+    "district": "За пределами Бали",
+    "address": "Sumba Island, East Nusa Tenggara, Indonesia",
+    "price": "$$$",
+    "schedule": [],
+    "cuisines": [],
+    "tags": [
+      "остров",
+      "тур",
+      "природа",
+      "пляжи"
+    ],
+    "description": "Дикий и нетуристический остров к востоку от Бали — невероятные пляжи, водопады, традиционные деревни и мегалитические гробницы. Добраться можно самолётом с Бали (~1ч) или через турагентство. Туры организует @balilook_tours.",
+    "website": null,
+    "instagram": "https://www.instagram.com/balilook_tours/",
+    "slug": "sumba-island",
+    "lat": -9.6544,
+    "lng": 119.5513
   }
 ]
