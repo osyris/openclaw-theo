@@ -245,6 +245,27 @@ function filterPlaces() {
   });
 }
 
+function renderSpots(spots, parentIdx) {
+  let html = '<div class="spots">';
+  html += '<div class="spots-title" data-idx="' + parentIdx + '">📍 Места (' + spots.length + ') ▾</div>';
+  html += '<div class="spots-list" id="spots-' + parentIdx + '" style="display:none;">';
+  spots.forEach(function(s, si) {
+    const sVisited = s.visited ? 'active' : '';
+    const spotClass = s.visited ? 'spot spot-visited' : 'spot';
+    let sLinks = '';
+    if (s.instagram) sLinks = ' <a href="' + s.instagram + '" target="_blank" style="font-size:0.75rem;color:var(--accent-light);text-decoration:none;opacity:0.7;">📸</a>';
+    html += '<div class="' + spotClass + '">';
+    html += '<div class="spot-info">';
+    html += '<span class="spot-name">' + s.name + '</span>' + sLinks;
+    html += '<div class="spot-desc">' + (s.desc || '') + '</div>';
+    html += '</div>';
+    html += '<span class="card-icon visited-icon ' + sVisited + '" data-idx="' + parentIdx + '" data-spot="' + si + '" title="Побывали">✅</span>';
+    html += '</div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
 function renderPlaces() {
   const filtered = filterPlaces();
   const grid = document.getElementById('grid');
@@ -262,25 +283,7 @@ function renderPlaces() {
     const cardClass = p.visited ? 'card visited' : 'card';
     const hasSpots = (p.spots || []).length > 0;
 
-    const spotsHTML = !hasSpots ? '' : `
-      <div class="spots">
-        <div class="spots-title" data-idx="${idx}">📍 Места (${p.spots.length}) ▾</div>
-        <div class="spots-list" id="spots-${idx}" style="display:none;">
-          ${p.spots.map((s, si) => {
-            const sVisited = s.visited ? 'active' : '';
-            let sLinks = '';
-            if (s.instagram) sLinks += \` <a href="\${s.instagram}" target="_blank" style="font-size:0.75rem;color:var(--accent-light);text-decoration:none;opacity:0.7;">📸</a>\`;
-            return \`
-              <div class="spot \${s.visited ? 'spot-visited' : ''}">
-                <div class="spot-info">
-                  <span class="spot-name">\${s.name}</span>\${sLinks}
-                  <div class="spot-desc">\${s.desc || ''}</div>
-                </div>
-                <span class="card-icon visited-icon \${sVisited}" data-idx="\${idx}" data-spot="\${si}" title="Побывали">✅</span>
-              </div>\`;
-          }).join('')}
-        </div>
-      </div>`;
+    const spotsHTML = !hasSpots ? '' : renderSpots(p.spots, idx);
 
     return `
       <div class="${cardClass}">
