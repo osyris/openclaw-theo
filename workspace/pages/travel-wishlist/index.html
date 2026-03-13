@@ -142,6 +142,23 @@
   .card-icon.active { opacity:1; }
   .card-icon.visited-icon { color:var(--visited); }
 
+  .spots { margin-top:0.3rem; }
+  .spots-title {
+    font-size:0.78rem; color:var(--accent-light); cursor:pointer;
+    padding:0.4rem 0; user-select:none; transition:opacity 0.2s;
+  }
+  .spots-title:hover { opacity:0.8; }
+  .spots-list { display:flex; flex-direction:column; gap:0.5rem; padding:0.3rem 0; }
+  .spot {
+    display:flex; align-items:flex-start; justify-content:space-between; gap:0.5rem;
+    padding:0.6rem 0.8rem; background:rgba(230,126,34,0.05); border-radius:0.5rem;
+    border-left:2px solid var(--border);
+  }
+  .spot-visited { border-left-color:var(--visited); }
+  .spot-info { flex:1; }
+  .spot-name { font-size:0.88rem; font-weight:500; color:#ddd; }
+  .spot-desc { font-size:0.78rem; color:#777; margin-top:0.2rem; line-height:1.4; }
+
   .empty {
     text-align:center; padding:4rem 1rem; color:#444; font-size:0.9rem;
   }
@@ -243,10 +260,27 @@ function renderPlaces() {
     const tags = (p.tags || []).map(t => `<span class="card-tag">${t}</span>`).join('');
     const visitedClass = p.visited ? 'active' : '';
     const cardClass = p.visited ? 'card visited' : 'card';
+    const hasSpots = (p.spots || []).length > 0;
 
-    let links = '';
-    if (p.instagram) links += `<a href="${p.instagram}" target="_blank">📸 Instagram</a>`;
-    if (p.link) links += `<a href="${p.link}" target="_blank">🔗 Подробнее</a>`;
+    const spotsHTML = !hasSpots ? '' : `
+      <div class="spots">
+        <div class="spots-title" data-idx="${idx}">📍 Места (${p.spots.length}) ▾</div>
+        <div class="spots-list" id="spots-${idx}" style="display:none;">
+          ${p.spots.map((s, si) => {
+            const sVisited = s.visited ? 'active' : '';
+            let sLinks = '';
+            if (s.instagram) sLinks += \` <a href="\${s.instagram}" target="_blank" style="font-size:0.75rem;color:var(--accent-light);text-decoration:none;opacity:0.7;">📸</a>\`;
+            return \`
+              <div class="spot \${s.visited ? 'spot-visited' : ''}">
+                <div class="spot-info">
+                  <span class="spot-name">\${s.name}</span>\${sLinks}
+                  <div class="spot-desc">\${s.desc || ''}</div>
+                </div>
+                <span class="card-icon visited-icon \${sVisited}" data-idx="\${idx}" data-spot="\${si}" title="Побывали">✅</span>
+              </div>\`;
+          }).join('')}
+        </div>
+      </div>`;
 
     return `
       <div class="${cardClass}">
@@ -260,14 +294,30 @@ function renderPlaces() {
         <div class="card-desc">${p.desc || ''}</div>
         ${p.howToGet ? `<div class="card-how">${p.howToGet}</div>` : ''}
         <div class="card-tags">${tags}</div>
+        ${spotsHTML}
         <div class="card-footer">
           <div class="card-date">Добавлено: ${p.addedDate || ''}</div>
-          <div class="card-links">${links}</div>
         </div>
       </div>`;
   }).join('');
 
-  grid.querySelectorAll('.card-icon').forEach(icon => {
+  // Toggle spots visibility
+  grid.querySelectorAll('.spots-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const idx = title.dataset.idx;
+      const list = document.getElementById('spots-' + idx);
+      if (list.style.display === 'none') {
+        list.style.display = 'block';
+        title.textContent = title.textContent.replace('▾', '▴');
+      } else {
+        list.style.display = 'none';
+        title.textContent = title.textContent.replace('▴', '▾');
+      }
+    });
+  });
+
+  // Toggle visited for destinations
+  grid.querySelectorAll('.card-icon[data-idx]:not([data-spot])').forEach(icon => {
     icon.addEventListener('click', e => {
       e.stopPropagation();
       const idx = parseInt(icon.dataset.idx);
@@ -278,6 +328,23 @@ function renderPlaces() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ index: idx })
+      }).catch(() => {});
+    });
+  });
+
+  // Toggle visited for spots
+  grid.querySelectorAll('.card-icon[data-spot]').forEach(icon => {
+    icon.addEventListener('click', e => {
+      e.stopPropagation();
+      const idx = parseInt(icon.dataset.idx);
+      const si = parseInt(icon.dataset.spot);
+      places[idx].spots[si].visited = !places[idx].spots[si].visited;
+      renderPlaces();
+
+      fetch('/pages-api/travel/toggle-spot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ index: idx, spotIndex: si })
       }).catch(() => {});
     });
   });
