@@ -194,69 +194,73 @@
 </head>
 <body>
 <div style="max-width:900px;margin:0 auto;padding:0.8rem 1.5rem 0;">
-  <a href="/pages/" style="font-family:'Inter',sans-serif;font-size:0.78rem;color:#8B6914;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">← Все каталоги</a>
+  <a href="/pages/" style="font-family:'Inter',sans-serif;font-size:0.78rem;color:#8B6914;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">← All Collections</a>
 </div>
     <div class="header">
         <h1>WEEKLY PLANNER</h1>
-        <div class="week-label">23 февраля – 1 марта 2026</div>
+        <div class="week-label">16 – 22 March 2026</div>
     </div>
 
     <div class="container" id="planner"></div>
 
-    <div class="footer">Тео ☀️</div>
+    <div class="footer">Theo ☀️</div>
 
     <script>
         const days = [
             {
-                key: 'mon', label: 'Понедельник', date: '23 февраля',
-                tags: [{ text: 'Работа', type: 'work' }],
+                key: 'mon', label: 'Monday', date: 'March 16',
+                tags: [{ text: '🌴 Last day Bali', type: 'off' }],
+                tasks: []
+            },
+            {
+                key: 'tue', label: 'Tuesday', date: 'March 17',
+                tags: [{ text: '✈️ Travel day', type: 'off' }],
                 tasks: [
-                    { time: "9:30–21:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
+                    { time: "21:10", emoji: "✈️", name: "Flight DPS → IST (TK 0067)", subtasks: ["Code: VFQTV2", "Depart Bali 21:10 → Arrive Istanbul 00:40+1"] },
+                    { emoji: "📱", name: "Tele2: закрыть ТВ+DigiKaitse 58507365" },
+                    { emoji: "📱", name: "Tele2: закрыть страховку 5229913" },
                 ]
             },
             {
-                key: 'tue', label: 'Вторник', date: '24 февраля',
-                tags: [{ text: 'Работа', type: 'work' }],
+                key: 'wed', label: 'Wednesday', date: 'March 18',
+                tags: [{ text: '🏠 Home!', type: 'off' }],
                 tasks: [
-                    { time: "9:30–19:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
+                    { time: "02:55–04:30", emoji: "✈️", name: "Flight IST → TLL (TK 1421)", subtasks: ["Code: VFQTV2", "Arrive Tallinn 04:30"] },
+                    { time: "16:00", emoji: "💻", name: "Показать Антону Rutracker", subtasks: ["Чтобы мог скачивать фильмы"] },
                 ]
             },
             {
-                key: 'wed', label: 'Среда', date: '25 февраля',
-                tags: [{ text: 'Работа', type: 'work' }],
-                tasks: [
-                    { time: "9:30–21:00", emoji: "💼", name: "Work", subtasks: ["Lasnamäe Centrum"] },
-                    { time: "9:45–10:15", emoji: "🦷", name: "Ортодонт", subtasks: ["A. H. Tammsaare tee 56"] },
-                    { emoji: "💊", name: "Посмотреть медикаменты для Бали", subtasks: ["Что взять в аптечку"] },
-                ]
-            },
-            {
-                key: 'thu', label: 'Четверг', date: '26 февраля',
-                tags: [{ text: 'Работа', type: 'work' }],
-                tasks: [
-                    { time: "9:30–18:00", emoji: "💼", name: "Tele2 Lasnamäe Centrum" },
-                ]
-            },
-            {
-                key: 'fri', label: 'Пятница', date: '27 февраля',
-                tags: [{ text: '🎂 ДР Артёма!', type: 'off' }],
-                tasks: [
-                    { time: "12:20–14:20", emoji: "💆", name: "Массаж лица", subtasks: ["Lastekodu 35"] },
-                ]
-            },
-            {
-                key: 'sat', label: 'Суббота', date: '28 февраля',
+                key: 'thu', label: 'Thursday', date: 'March 19',
                 tags: [],
                 tasks: [
-                    { time: "10:30–11:30", emoji: "🇬🇧", name: "English lesson", subtasks: ["Niine põik 3"] },
+                    { emoji: "💇", name: "Записаться в Juuste Akadeemia", subtasks: ["juusteakadeemia.ee", "Диагностика выпадения волос"] },
                 ]
             },
             {
-                key: 'sun', label: 'Воскресенье', date: '1 марта',
-                tags: [{ text: 'Работа', type: 'work' }],
+                key: 'fri', label: 'Friday', date: 'March 20',
+                tags: [{ text: 'Work', type: 'work' }],
                 tasks: [
-                    { time: "9:30–19:00", emoji: "💼", name: "Work" },
-                    { time: "19:00–21:00", emoji: "✨", name: "Ресницы (Юля Ага)" },
+                    { time: "9:30–21:00", emoji: "💼", name: "Work" },
+                    { emoji: "📱", name: "Tele2: закрыть страховку 50305150025" },
+                    { emoji: "📱", name: "Tele2: закрыть страховку 60306224925" },
+                ]
+            },
+            {
+                key: 'sat', label: 'Saturday', date: 'March 21',
+                tags: [{ text: 'Work', type: 'work' }],
+                tasks: [
+                    { time: "9:30–21:00", emoji: "💼", name: "Work" },
+                    { emoji: "📱", name: "Tele2: закрыть DigiKaitse 55953690" },
+                    { emoji: "📱", name: "Tele2: закрыть страховку 39901070232" },
+                    { emoji: "📱", name: "Tele2: закрыть страховку 38111100233" },
+                ]
+            },
+            {
+                key: 'sun', label: 'Sunday', date: 'March 22',
+                tags: [{ text: 'Work', type: 'work' }],
+                tasks: [
+                    { time: "10:00–16:00", emoji: "💼", name: "Work" },
+                    { time: "19:00–21:00", emoji: "✨", name: "Lashes — Julia Aga", subtasks: ["Niine põik 3, Tallinn"] },
                 ]
             }
         ];
@@ -303,7 +307,7 @@
             }
 
             const emptyHtml = day.tasks.length === 0
-                ? `<div class="empty-page">${day.tags.some(t=>t.type==='off') ? 'Выходной ☀️' : 'пока пусто...'}</div>` : '';
+                ? `<div class="empty-page">${day.tags.some(t=>t.type==='off') ? 'Day off ☀️' : 'nothing yet...'}</div>` : '';
 
             return `
                 <div class="day-title">${day.label} ${tagsHtml}</div>
