@@ -323,8 +323,8 @@
       "Drama"
     ],
     "poster": "img/devil-wears-prada.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie"
   },
   {
