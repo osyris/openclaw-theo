@@ -26,7 +26,7 @@
 
   /* Hero */
   .hero {
-    text-align:center; padding:5rem 1.5rem 3rem;
+    text-align:center; padding:1.5rem 1.5rem 3rem;
     background: linear-gradient(180deg, #1a0a0a 0%, #0d0d0d 100%);
     position:relative; overflow:hidden;
   }
@@ -181,7 +181,7 @@
 
   @media(max-width:600px) {
     .hero h1 { font-size:2.8rem; }
-    .hero { padding:3.5rem 1rem 2rem; }
+    .hero { padding:1.2rem 1rem 2rem; }
     .grid { grid-template-columns:1fr; }
     .card-poster { width:100px; min-width:100px; height:150px; }
     .controls { padding:1rem 1rem 0.5rem; }
@@ -192,11 +192,10 @@
 </style>
 </head>
 <body>
-<div style="max-width:900px;margin:0 auto;padding:0.8rem 1.5rem 0;">
-  <a href="/pages/" style="font-family:'Inter',sans-serif;font-size:0.78rem;color:#c9a84c;text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">← Все каталоги</a>
-</div>
-
 <div class="hero">
+  <div style="max-width:900px;margin:0 auto;padding:0 1.5rem;text-align:left;">
+    <a href="/pages/" style="display:inline-block;padding:0.4rem 1rem;border:1px solid rgba(255,255,255,0.3);border-radius:2rem;font-family:'Inter',sans-serif;font-size:0.75rem;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:0.08em;transition:all 0.2s;opacity:0.7;" onmouseover="this.style.opacity='1';this.style.borderColor='rgba(255,255,255,0.6)'" onmouseout="this.style.opacity='0.7';this.style.borderColor='rgba(255,255,255,0.3)'">← Back</a>
+  </div>
   <h1>🎬 MOVIE COLLECTION</h1>
   <p>Фильмы, которые стоит пережить</p>
 </div>
