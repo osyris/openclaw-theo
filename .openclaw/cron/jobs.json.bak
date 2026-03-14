@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773284412138,
+      "updatedAtMs": 1773370809315,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773370800000,
-        "lastRunAtMs": 1773284400018,
+        "nextRunAtMs": 1773457200000,
+        "lastRunAtMs": 1773370800042,
         "lastStatus": "ok",
-        "lastDurationMs": 12120,
+        "lastDurationMs": 9273,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773295207535,
+      "updatedAtMs": 1773381611044,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773381600000,
-        "lastRunAtMs": 1773295200046,
+        "nextRunAtMs": 1773468000000,
+        "lastRunAtMs": 1773381600068,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7489,
+        "lastDurationMs": 10976,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -121,58 +121,6 @@
       },
       "state": {
         "nextRunAtMs": 1773907200000
-      }
-    },
-    {
-      "id": "22442f12-b359-46a9-88aa-9e6484d9c670",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: триал 56831273",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771857957577,
-      "updatedAtMs": 1771858254313,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-13T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Tele2 триал: 56831273, услуга Телевидение + DigiGaiti — 28 дней истекают. Напомни Наталии: связаться с клиентом или закрыть услугу!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773388800000
-      }
-    },
-    {
-      "id": "be956a9b-2a0b-4473-a536-cc1955dcf22b",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 55997790",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771858202421,
-      "updatedAtMs": 1771858254285,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-13T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 55997790 (создана 13.02). Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773388800000
       }
     },
     {
@@ -442,7 +390,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773322253080,
+      "updatedAtMs": 1773408679226,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -458,11 +406,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773408600000,
-        "lastRunAtMs": 1773322200018,
+        "nextRunAtMs": 1773495000000,
+        "lastRunAtMs": 1773408600025,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 53062,
+        "lastDurationMs": 79201,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
