@@ -607,5 +607,17 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Здесь был Юра"
+  },
+  {
+    "title": "Sidney Lumet's Birthday",
+    "year": 2025,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/den-rozhdeniya-sidni-lyumeta.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "День рождения Сидни Люмета"
   }
 ]
