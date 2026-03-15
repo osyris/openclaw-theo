@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773370809315,
+      "updatedAtMs": 1773457209472,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773457200000,
-        "lastRunAtMs": 1773370800042,
+        "nextRunAtMs": 1773543600000,
+        "lastRunAtMs": 1773457200070,
         "lastStatus": "ok",
-        "lastDurationMs": 9273,
+        "lastDurationMs": 9402,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773381611044,
+      "updatedAtMs": 1773468006144,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773468000000,
-        "lastRunAtMs": 1773381600068,
+        "nextRunAtMs": 1773554400000,
+        "lastRunAtMs": 1773468000023,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10976,
+        "lastDurationMs": 6121,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -390,7 +390,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773408679226,
+      "updatedAtMs": 1773495050516,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -406,11 +406,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773495000000,
-        "lastRunAtMs": 1773408600025,
+        "nextRunAtMs": 1773581400000,
+        "lastRunAtMs": 1773495000035,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 79201,
+        "lastDurationMs": 50481,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -440,32 +440,6 @@
       },
       "state": {
         "nextRunAtMs": 1779692400000
-      }
-    },
-    {
-      "id": "1418b180-d8c4-4c8c-871a-6974a79a4fd6",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: перепроверить ТВ + DigiBox 45404280277",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772036473178,
-      "updatedAtMs": 1772036473178,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-14T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Перепроверить подключение ТВ + добавить DigiBox:\n- isikukood: 45404280277\n- серийный номер: 500061327\nНапомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773475200000
       }
     },
     {
