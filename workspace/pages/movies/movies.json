@@ -657,5 +657,18 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Всё, что тебя касается"
+  },
+  {
+    "title": "Happy When You're Not",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/schastliv-kogda-ty-net.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Счастлив, когда ты нет"
   }
 ]
