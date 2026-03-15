@@ -645,5 +645,17 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Ангелы не жужжат"
+  },
+  {
+    "title": "Everything That Concerns You",
+    "year": 2025,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/vsyo-chto-tebya-kasaetsya.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Всё, что тебя касается"
   }
 ]
