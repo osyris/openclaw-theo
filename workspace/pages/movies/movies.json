@@ -632,5 +632,18 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Цинга"
+  },
+  {
+    "title": "Angels Don't Buzz",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/angely-ne-zhuzhzhat.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Ангелы не жужжат"
   }
 ]
