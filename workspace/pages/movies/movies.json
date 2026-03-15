@@ -619,5 +619,18 @@
     "liked": false,
     "type": "movie",
     "titleRu": "День рождения Сидни Люмета"
+  },
+  {
+    "title": "Scurvy",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "poster": "img/cinga.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Цинга"
   }
 ]
