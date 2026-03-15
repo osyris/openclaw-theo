@@ -71,7 +71,7 @@
       "Drama"
     ],
     "poster": "img/the-housemaid.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie"
   },
@@ -256,8 +256,8 @@
       "Romance"
     ],
     "poster": "img/eat-pray-love.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie"
   },
   {
@@ -376,7 +376,7 @@
       "Drama"
     ],
     "poster": "img/breakfast-at-tiffanys.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie"
   },
@@ -528,7 +528,7 @@
       "Comedy"
     ],
     "poster": "img/vladimir.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series"
   },
@@ -595,5 +595,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Zdes Byl Yura",
+    "year": 2025,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/zdes-byl-yura.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Здесь был Юра"
   }
 ]
