@@ -683,5 +683,18 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Походу любовь"
+  },
+  {
+    "title": "The Aviator",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Sci-Fi"
+    ],
+    "poster": "img/aviator-2.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Авиатор"
   }
 ]
