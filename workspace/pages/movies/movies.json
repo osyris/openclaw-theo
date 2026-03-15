@@ -670,5 +670,18 @@
     "liked": false,
     "type": "movie",
     "titleRu": "Счастлив, когда ты нет"
+  },
+  {
+    "title": "Seems Like Love",
+    "year": 2025,
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
+    "poster": "img/pohodu-lyubov.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "titleRu": "Походу любовь"
   }
 ]
