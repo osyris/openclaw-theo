@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773630035121,
+      "updatedAtMs": 1773716427383,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773716400000,
-        "lastRunAtMs": 1773630000112,
+        "nextRunAtMs": 1773802800000,
+        "lastRunAtMs": 1773716400097,
         "lastStatus": "ok",
-        "lastDurationMs": 35009,
+        "lastDurationMs": 27286,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773640812890,
+      "updatedAtMs": 1773727206721,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773727200000,
-        "lastRunAtMs": 1773640800076,
+        "nextRunAtMs": 1773813600000,
+        "lastRunAtMs": 1773727200027,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12814,
+        "lastDurationMs": 6694,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -124,40 +124,14 @@
       }
     },
     {
-      "id": "b7f6e767-c1e5-4084-b639-6c9fea472994",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 5229913",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771858202461,
-      "updatedAtMs": 1771858254361,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-17T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, номер 5229913 (создана 17.02). Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773734400000
-      }
-    },
-    {
       "id": "029d7776-d0df-449f-8218-cc77a4fa4479",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Tele2: закрыть ТВ+DigiKaitse 58507365",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1771858202506,
-      "updatedAtMs": 1771858254340,
+      "updatedAtMs": 1773734437012,
       "schedule": {
         "kind": "at",
         "at": "2026-03-17T08:00:00.000Z"
@@ -172,7 +146,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773734400000
+        "lastRunAtMs": 1773734400040,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 36972,
+        "lastError": "LLM request timed out.",
+        "lastErrorReason": "timeout",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -390,7 +372,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773667831462,
+      "updatedAtMs": 1773754299121,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -406,14 +388,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773754200000,
-        "lastRunAtMs": 1773667800038,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 31424,
+        "nextRunAtMs": 1773840600000,
+        "lastRunAtMs": 1773754200038,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 99083,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ ✉️ Message failed"
       }
     },
     {
