@@ -679,8 +679,8 @@
       "Comedy"
     ],
     "poster": "img/pohodu-lyubov.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "titleRu": "Походу любовь"
   },
