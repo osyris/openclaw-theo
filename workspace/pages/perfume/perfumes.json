@@ -95,6 +95,7 @@
       "gourmand"
     ],
     "source": "parftelier",
+    "fav": false,
     "price": "~245€",
     "img": "img/moonlight-in-heaven.jpg",
     "pyramid": {
@@ -170,8 +171,7 @@
     "perfumer": "Calice Becker",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Фруктово-гурманский",
-    "fav": false
+    "family": "Фруктово-гурманский"
   },
   {
     "brand": "Kilian",
@@ -183,6 +183,7 @@
       "fresh"
     ],
     "source": "sofyamil (IG)",
+    "fav": true,
     "price": "~245€",
     "img": "img/roses-on-ice.jpg",
     "pyramid": {
@@ -260,8 +261,7 @@
     "perfumer": "Calice Becker",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Цветочно-свежий",
-    "fav": true
+    "family": "Цветочно-свежий"
   },
   {
     "brand": "Memo",
@@ -272,6 +272,7 @@
       "oriental"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~230€",
     "img": "img/siwa.jpg",
     "pyramid": {
@@ -328,8 +329,7 @@
     "perfumer": "Alienor Massenet",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Восточно-цветочный",
-    "fav": false
+    "family": "Восточно-цветочный"
   },
   {
     "brand": "Laurent Mazzone Parfums",
@@ -341,6 +341,7 @@
       "fruity"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~150€",
     "img": "img/kingkydise.jpg",
     "pyramid": {
@@ -348,10 +349,18 @@
       "mid": "Роза, чай матча, ирис",
       "base": "Белый мускус, сандал, амбра"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
     "gender": "Ж",
-    "family": "Цветочно-фруктовый",
-    "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/Laurent-Mazzone-Parfums/Kingkydise-68640.html"
+    "family": "Цветочно-фруктовый"
   },
   {
     "brand": "Phlur",
@@ -362,6 +371,7 @@
       "musk"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~96€",
     "img": "img/missing-person.jpg",
     "pyramid": {
@@ -431,8 +441,7 @@
     "perfumer": "Carlos Viñals",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Мускусный",
-    "fav": false
+    "family": "Мускусный"
   },
   {
     "brand": "Phlur",
@@ -444,6 +453,7 @@
       "oriental"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~32€",
     "img": "img/vanilla-smoke.jpg",
     "pyramid": {
@@ -451,10 +461,18 @@
       "mid": "Кокосовый крем, амбреттолид, жасмин",
       "base": "Крем, ванильный мусс, солёная карамель"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "Body mist",
     "gender": "Унисекс",
-    "family": "Гурманский",
-    "fav": false
+    "family": "Гурманский"
   },
   {
     "brand": "Phlur",
@@ -465,6 +483,7 @@
       "gourmand"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~32€",
     "img": "img/heavy-cream.jpg",
     "pyramid": {
@@ -472,10 +491,18 @@
       "mid": "Кокосовый крем, амбреттолид, жасмин",
       "base": "Крем, ванильный мусс, солёная карамель"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "Body mist",
     "gender": "Унисекс",
-    "family": "Гурманский",
-    "fav": false
+    "family": "Гурманский"
   },
   {
     "brand": "Diptyque",
@@ -487,6 +514,7 @@
       "fresh"
     ],
     "source": "parftelier",
+    "fav": false,
     "price": "~140€",
     "img": "img/philosykos.jpg",
     "pyramid": {
@@ -494,12 +522,18 @@
       "mid": "Лотос, Жасмин, Фрезия",
       "base": "Пачули, Мускус, Сандал"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 1996,
     "perfumer": "Olivia Giacobetti",
     "concentration": "EDT",
     "gender": "Унисекс",
-    "family": "Древесно-зелёный",
-    "fav": false
+    "family": "Древесно-зелёный"
   },
   {
     "brand": "YSL",
@@ -511,6 +545,7 @@
       "woody"
     ],
     "source": "parftelier",
+    "fav": false,
     "price": "~310€",
     "img": "img/babycat.jpg",
     "pyramid": {
@@ -518,11 +553,18 @@
       "mid": "Малина, Болгарская роза, Гваяк, Ландыш, Водяной жасмин",
       "base": "Амбра, Уд, Ваниль, Карамель, Амирис, Лабданум, Пачули, Мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2019,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Восточно-пряный",
-    "fav": false
+    "family": "Восточно-пряный"
   },
   {
     "brand": "Electimuss",
@@ -534,6 +576,7 @@
       "gourmand"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~195€",
     "img": "img/electimuss-cherry.jpg",
     "pyramid": {
@@ -541,11 +584,18 @@
       "mid": "Кокос, кофе, корица, мёд, ветивер",
       "base": "Белый шоколад, сандал, бобы тонка, пачули"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2025,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Фруктово-гурманский",
-    "fav": false
+    "family": "Фруктово-гурманский"
   },
   {
     "brand": "Juliette Has A Gun",
@@ -557,6 +607,7 @@
       "floral"
     ],
     "source": "molecule.ee",
+    "fav": false,
     "price": "~115€",
     "img": "img/mmmm.jpg",
     "pyramid": {
@@ -564,12 +615,18 @@
       "mid": "Ромашка, Мандарин",
       "base": "Стиракс, Пачули, Ветивер"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2016,
     "perfumer": "Romano Ricci",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Фруктово-цветочный",
-    "fav": false
+    "family": "Фруктово-цветочный"
   },
   {
     "brand": "Amouage",
@@ -580,6 +637,7 @@
       "oriental"
     ],
     "source": "molecule.ee",
+    "fav": false,
     "price": "~350€",
     "img": "img/guidance-46.jpg",
     "pyramid": {
@@ -587,11 +645,18 @@
       "mid": "Османтус, роза, жасмин самбак, шафран",
       "base": "Акигалавуд, джордживуд, ваниль, амбра, сандал, амбретта, ладанник, циприол"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2024,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Восточный",
-    "fav": false
+    "family": "Восточный"
   },
   {
     "brand": "Room 1015",
@@ -603,6 +668,7 @@
       "fresh"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~120€",
     "img": "img/wavechild.jpg",
     "pyramid": {
@@ -610,11 +676,18 @@
       "mid": "Мадагаскарский перец",
       "base": "Мадагаскарский ветивер, Iso E Super"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2019,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Фруктово-свежий",
-    "fav": false
+    "family": "Фруктово-свежий"
   },
   {
     "brand": "Ella K",
@@ -626,6 +699,7 @@
       "gourmand"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~175€",
     "img": "img/orchid-k.jpg",
     "pyramid": {
@@ -633,11 +707,18 @@
       "mid": "Цветок апельсина, Жасмин, Кашемировое дерево, Фрезия",
       "base": "Мускус, Ваниль, Сандал, Сахар, Ветивер"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
     "perfumer": "Сосье Лепасье (автор Pure Musc for Her)",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Цветочно-гурманский",
-    "fav": false
+    "family": "Цветочно-гурманский"
   },
   {
     "brand": "Tiziana Terenzi",
@@ -648,6 +729,7 @@
       "fruit"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~250€",
     "img": "img/gumin.jpg",
     "pyramid": {
@@ -655,11 +737,18 @@
       "mid": "Жасмин, Роза, Карамель, Кориандр",
       "base": "Амбра, Пачули, Ветивер, Табак"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2024,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Фруктовый",
-    "fav": false
+    "family": "Фруктовый"
   },
   {
     "brand": "Juliette Has A Gun",
@@ -670,6 +759,7 @@
       "fruit"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~110€",
     "img": "img/pear-inc.jpg",
     "pyramid": {
@@ -677,12 +767,18 @@
       "mid": "Амброксан, мускус",
       "base": "Кедр"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2018,
     "perfumer": "Romano Ricci",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Фруктово-мускусный",
-    "fav": false
+    "family": "Фруктово-мускусный"
   },
   {
     "brand": "Montale",
@@ -694,6 +790,7 @@
       "oriental"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~110€",
     "img": "img/wild-pears.jpg",
     "pyramid": {
@@ -701,10 +798,18 @@
       "mid": "Фрезия, Жасмин, Фиалка",
       "base": "Древесные ноты 123"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Фруктово-восточный",
-    "fav": false
+    "family": "Фруктово-восточный"
   },
   {
     "brand": "Theodoros Kalotinis",
@@ -716,6 +821,7 @@
       "gourmand"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~85€",
     "img": "img/pear-gelato.jpg",
     "pyramid": {
@@ -723,10 +829,18 @@
       "mid": "Магнолия, Водяная лилия, Питахайя",
       "base": "Морские ноты, Серая амбра"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Гурманский",
-    "fav": false
+    "family": "Гурманский"
   },
   {
     "brand": "Versace",
@@ -738,6 +852,7 @@
       "fresh"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~80€",
     "img": "img/dylan-purple.jpg",
     "pyramid": {
@@ -745,11 +860,18 @@
       "mid": "Ирис, Мускатный шалфей, Лилибелль®, Жасмин, Ландыш, Магнолия",
       "base": "Мускус, Дубовый мох, Амбра, Пачули, Сандал, Морские водоросли, Мусс из Саксонии"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2022,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Фруктово-цветочный",
-    "fav": false
+    "family": "Фруктово-цветочный"
   },
   {
     "brand": "D&G",
@@ -760,6 +882,7 @@
       "fruit"
     ],
     "source": "losaromas.perfume",
+    "fav": false,
     "price": "~175€",
     "img": "img/pineapple-dg.jpg",
     "pyramid": {
@@ -767,12 +890,18 @@
       "mid": "Фиалка, Гвоздика (цветок), Кожа",
       "base": "Амбра, Цибетин, Ладан, Кедр"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2020,
     "perfumer": "Marie Salamagne",
     "concentration": "EDT",
     "gender": "Унисекс",
-    "family": "Фруктовый",
-    "fav": false
+    "family": "Фруктовый"
   },
   {
     "brand": "Tom Ford",
@@ -784,6 +913,7 @@
       "gourmand"
     ],
     "source": "losaromas.perfume",
+    "fav": false,
     "price": "~290€",
     "img": "img/bitter-peach.jpg",
     "pyramid": {
@@ -791,12 +921,18 @@
       "mid": "Кедр, Пачули, Дубовый мох",
       "base": "Древесные ноты, Ваниль, Серая амбра, Бензоин"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2020,
     "perfumer": "—",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Фруктово-гурманский",
-    "fav": false
+    "family": "Фруктово-гурманский"
   },
   {
     "brand": "MFK",
@@ -808,6 +944,7 @@
       "fruit"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~245€",
     "img": "img/kurky.jpg",
     "pyramid": {
@@ -815,12 +952,18 @@
       "mid": "Белый мускус, Карамель, Сирень",
       "base": "Сандал, Малина, Бобы тонка"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2024,
     "perfumer": "Francis Kurkdjian",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Гурманский",
-    "fav": false
+    "family": "Гурманский"
   },
   {
     "brand": "Orto Parisi",
@@ -832,6 +975,7 @@
       "fruit"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~180€",
     "img": "img/risvelium.jpg",
     "pyramid": {
@@ -839,12 +983,18 @@
       "mid": "Чёрная смородина, цветочные ноты",
       "base": "Древесные ноты, мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2024,
     "perfumer": "Alessandro Gualtieri",
     "concentration": "Parfum",
     "gender": "Унисекс",
-    "family": "Фруктово-свежий",
-    "fav": false
+    "family": "Фруктово-свежий"
   },
   {
     "brand": "Marc-Antoine Barrois",
@@ -856,6 +1006,7 @@
       "floral"
     ],
     "source": "parftelier",
+    "fav": false,
     "price": "~185€",
     "img": "img/aldebaran.jpg",
     "pyramid": {
@@ -863,11 +1014,18 @@
       "mid": "Болгарская роза, Сироп черной смородины, Фиалка",
       "base": "Мускус, Ambroxan, Амбервуд"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2024,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Цветочно-восточный",
-    "fav": false
+    "family": "Цветочно-восточный"
   },
   {
     "brand": "Montale",
@@ -879,6 +1037,7 @@
       "oriental"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~110€",
     "img": "img/dallachai.jpg",
     "pyramid": {
@@ -886,10 +1045,18 @@
       "mid": "Кофе",
       "base": "Мускус, амбра"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Гурманско-восточный",
-    "fav": false
+    "family": "Гурманско-восточный"
   },
   {
     "brand": "Commodity",
@@ -900,6 +1067,7 @@
       "gourmand"
     ],
     "source": "Instagram ad",
+    "fav": false,
     "price": "~105€",
     "img": "img/milk-commodity.jpg",
     "pyramid": {
@@ -907,10 +1075,18 @@
       "mid": "Маршмеллоу, Молоко",
       "base": "Бобы тонка, Красное дерево, Бензоин"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Гурманский",
-    "fav": false
+    "family": "Гурманский"
   },
   {
     "brand": "Byredo",
@@ -922,6 +1098,7 @@
       "musk"
     ],
     "source": "molecule.ee",
+    "fav": false,
     "price": "~190€",
     "img": "img/blanche.jpg",
     "pyramid": {
@@ -929,12 +1106,18 @@
       "mid": "Пион, фиалка",
       "base": "Мускус, сандал"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2009,
     "perfumer": "Ben Gorham & Jérôme Epinette",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Чистый, альдегидный",
-    "fav": false
+    "family": "Чистый, альдегидный"
   },
   {
     "brand": "Jo Malone",
@@ -945,6 +1128,7 @@
       "floral"
     ],
     "source": "alinavassiljeva",
+    "fav": false,
     "price": "~135€",
     "img": "img/red-hibiscus.jpg",
     "pyramid": {
@@ -952,10 +1136,6 @@
       "mid": "Гибискус, магнолия, роза",
       "base": "Мускус, кедр, пачули"
     },
-    "year": 2023,
-    "concentration": "Cologne Intense",
-    "gender": "Унисекс",
-    "family": "Экзотический цветочный",
     "accords": [
       {
         "name": "цветочный",
@@ -985,7 +1165,15 @@
     ],
     "rating": 3.7,
     "votes": 650,
-    "fav": false
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 2023,
+    "perfumer": "",
+    "concentration": "Cologne Intense",
+    "gender": "Унисекс",
+    "family": "Экзотический цветочный"
   },
   {
     "brand": "New Notes",
@@ -996,12 +1184,26 @@
       "oriental"
     ],
     "source": "Facebook ad",
+    "fav": false,
     "price": "~175€",
     "img": "img/erotika-minimale.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Восточный",
-    "fav": false
+    "family": "Восточный"
   },
   {
     "brand": "Optico Italy",
@@ -1012,6 +1214,7 @@
       "fresh"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~90€",
     "img": "img/optico-italy.jpg",
     "pyramid": {
@@ -1019,9 +1222,18 @@
       "mid": "Цветок апельсина, белая роза, жасмин",
       "base": "Серая амбра, белый мускус, амбретта"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
     "gender": "Унисекс",
-    "family": "Цитрусовый",
-    "fav": false
+    "family": "Цитрусовый"
   },
   {
     "brand": "Veronique Gabai",
@@ -1033,6 +1245,7 @@
       "woody"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~200€",
     "img": "img/le-point-g.jpg",
     "pyramid": {
@@ -1040,10 +1253,18 @@
       "mid": "Майская роза, ирис",
       "base": "Ваниль, кедр, амбра, бобы тонка, белый мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Цветочно-древесный",
-    "fav": false
+    "family": "Цветочно-древесный"
   },
   {
     "brand": "Molinard",
@@ -1055,6 +1276,7 @@
       "fresh"
     ],
     "source": "douglas.ee",
+    "fav": false,
     "price": "~60€",
     "img": "img/vents-et-marees.jpg",
     "pyramid": {
@@ -1062,10 +1284,18 @@
       "mid": "Морские ноты, фрезия, роза",
       "base": "Сандал, бобы тонка, белый мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Древесно-цитрусовый",
-    "fav": false
+    "family": "Древесно-цитрусовый"
   },
   {
     "brand": "Jusbox",
@@ -1077,12 +1307,26 @@
       "floral"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~160€",
     "img": "img/sisters-b4-misters.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Гурманско-цветочный",
-    "fav": false
+    "family": "Гурманско-цветочный"
   },
   {
     "brand": "Fugazzi",
@@ -1094,6 +1338,7 @@
       "woody"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~130€",
     "img": "img/angel-dust.jpg",
     "pyramid": {
@@ -1101,11 +1346,18 @@
       "mid": "Морские ноты, Роза, Фрезия, Жасмин, Ландыш",
       "base": "Серая амбра, Сандал, Ваниль"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2021,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Мускусно-древесный",
-    "fav": false
+    "family": "Мускусно-древесный"
   },
   {
     "brand": "Laurent Mazzone Parfums",
@@ -1118,6 +1370,7 @@
       "sweet"
     ],
     "source": "catherine_knz",
+    "fav": false,
     "price": "~150€",
     "img": "img/fil-dor-no1.jpg",
     "pyramid": {
@@ -1125,11 +1378,18 @@
       "mid": "Табак, османтус, мирра, сандал, перец",
       "base": "Лабданум, ваниль, дуб, бобы тонка, мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Древесно-амбровый",
-    "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/Laurent-Mazzone-Parfums/Fil-d-Or-No1-90991.html"
+    "family": "Древесно-амбровый"
   },
   {
     "brand": "Paradis Des Sens",
@@ -1140,12 +1400,26 @@
       "oriental"
     ],
     "source": "Парфюмерия TG",
+    "fav": false,
     "price": "~120€",
     "img": "img/valhalla.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Восточный",
-    "fav": false
+    "family": "Восточный"
   },
   {
     "brand": "Le Labo",
@@ -1157,6 +1431,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~190€",
     "img": "img/another-13.jpg",
     "pyramid": {
@@ -1164,10 +1439,6 @@
       "mid": "Амброксан, жасмин, мох",
       "base": "Мускус, Iso E Super, древесные ноты"
     },
-    "year": 2010,
-    "concentration": "EDP",
-    "gender": "М",
-    "family": "Мускусный",
     "accords": [
       {
         "name": "мускусный",
@@ -1197,7 +1468,15 @@
     ],
     "rating": 3.75,
     "votes": 7200,
-    "fav": false
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 2010,
+    "perfumer": "",
+    "concentration": "EDP",
+    "gender": "М",
+    "family": "Мускусный"
   },
   {
     "brand": "Louis Vuitton",
@@ -1209,6 +1488,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~290€",
     "img": "img/limmensity.jpg",
     "pyramid": {
@@ -1216,11 +1496,6 @@
       "mid": "Водные ноты, амбра, чай",
       "base": "Лабданум, мускус, древесные ноты, амброксан"
     },
-    "year": 2018,
-    "perfumer": "Jacques Cavallier",
-    "concentration": "EDP",
-    "gender": "М",
-    "family": "Свежий древесный",
     "accords": [
       {
         "name": "цитрусовый",
@@ -1250,7 +1525,15 @@
     ],
     "rating": 3.95,
     "votes": 6800,
-    "fav": false
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 2018,
+    "perfumer": "Jacques Cavallier",
+    "concentration": "EDP",
+    "gender": "М",
+    "family": "Свежий древесный"
   },
   {
     "brand": "MFK",
@@ -1262,6 +1545,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~205€",
     "img": "img/aqua-universalis.jpg",
     "pyramid": {
@@ -1269,11 +1553,6 @@
       "mid": "Цветок апельсина, ландыш, жасмин",
       "base": "Белый мускус, амбра"
     },
-    "year": 2009,
-    "perfumer": "Francis Kurkdjian",
-    "concentration": "EDT",
-    "gender": "Унисекс",
-    "family": "Свежий цитрусовый",
     "accords": [
       {
         "name": "цитрусовый",
@@ -1303,7 +1582,15 @@
     ],
     "rating": 3.88,
     "votes": 4500,
-    "fav": false
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 2009,
+    "perfumer": "Francis Kurkdjian",
+    "concentration": "EDT",
+    "gender": "Унисекс",
+    "family": "Свежий цитрусовый"
   },
   {
     "brand": "Roja",
@@ -1316,6 +1603,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~285€",
     "img": "img/elysium.jpg",
     "pyramid": {
@@ -1323,12 +1611,18 @@
       "mid": "Чёрная смородина, Яблоко, Жасмин, Ландыш, Майская роза",
       "base": "Кедр, Ягоды можжевельника, Ветивер, Серая амбра, Бензоин, Циприол, Гальбанум, Лабданум, Мускус, Розовый перец, Кожа, Ваниль"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2017,
     "perfumer": "Roja Dove",
     "concentration": "Parfum",
     "gender": "М",
-    "family": "Свежий древесный",
-    "fav": false
+    "family": "Свежий древесный"
   },
   {
     "brand": "Ex Nihilo",
@@ -1341,6 +1635,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~200€",
     "img": "img/the-hedonist.jpg",
     "pyramid": {
@@ -1348,10 +1643,18 @@
       "mid": "Ирис, роза, мускатный орех",
       "base": "Кедр, мускус, ветивер, амбра"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "М",
-    "family": "Древесно-пряный",
-    "fav": false
+    "family": "Древесно-пряный"
   },
   {
     "brand": "Escentric Molecules",
@@ -1363,6 +1666,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~100€",
     "img": "img/mol-01-iris.jpg",
     "pyramid": {
@@ -1370,12 +1674,18 @@
       "mid": "Ирис",
       "base": "Iso E Super, амброксан"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
     "gender": "Унисекс",
-    "family": "Молекулярный",
-    "fav": false
+    "family": "Молекулярный"
   },
   {
     "brand": "Ex Nihilo",
@@ -1388,6 +1698,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~200€",
     "img": "img/blue-talisman.jpg",
     "pyramid": {
@@ -1395,10 +1706,18 @@
       "mid": "Минеральный аккорд, ирис",
       "base": "Белый мускус, амбра, кедр"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "М",
-    "family": "Свежий мускусный",
-    "fav": false
+    "family": "Свежий мускусный"
   },
   {
     "brand": "Creed",
@@ -1410,6 +1729,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~310€",
     "img": "img/silver-mountain-water.jpg",
     "pyramid": {
@@ -1417,12 +1737,18 @@
       "mid": "Ирис, Какао, Амбра, Кардамон",
       "base": "Кожа, Таитянский ветивер, Пачули"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 1995,
     "perfumer": "Olivier Creed",
     "concentration": "EDP",
     "gender": "М",
-    "family": "Свежий зелёный",
-    "fav": false
+    "family": "Свежий зелёный"
   },
   {
     "brand": "Escentric Molecules",
@@ -1434,6 +1760,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~100€",
     "img": "img/mol-01-patchouli.jpg",
     "pyramid": {
@@ -1441,12 +1768,18 @@
       "mid": "Пачули",
       "base": "Iso E Super, амброксан, сухое дерево"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
     "gender": "Унисекс",
-    "family": "Молекулярный",
-    "fav": false
+    "family": "Молекулярный"
   },
   {
     "brand": "Chloé",
@@ -1458,6 +1791,7 @@
       "floral"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~150€",
     "img": "img/cedrus.jpg",
     "pyramid": {
@@ -1465,10 +1799,18 @@
       "mid": "Кориандр, Шалфей, Фрезия, Лист фиалки, Хвоя кедра, Жасмин",
       "base": "Амбра, Сандал, Мускус, Кедр"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Древесно-цветочный",
-    "fav": false
+    "family": "Древесно-цветочный"
   },
   {
     "brand": "Vilhelm Parfumerie",
@@ -1480,6 +1822,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~180€",
     "img": "img/morning-chess.jpg",
     "pyramid": {
@@ -1487,11 +1830,18 @@
       "mid": "Ирис, замша",
       "base": "Сандал, ветивер, мускус"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2015,
+    "perfumer": "",
     "concentration": "EDP",
     "gender": "М",
-    "family": "Древесно-кожаный",
-    "fav": false
+    "family": "Древесно-кожаный"
   },
   {
     "brand": "Zarkoperfume",
@@ -1503,6 +1853,7 @@
       "floral"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~100€",
     "img": "img/pink-molecule.jpg",
     "pyramid": {
@@ -1510,11 +1861,18 @@
       "mid": "Пудровые ноты, Цветочные ноты",
       "base": "Ваниль, Замша, Сандал"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
     "perfumer": "Zarko Ahlmann Pavlov",
     "concentration": "EDP",
     "gender": "Ж",
-    "family": "Молекулярно-цветочный",
-    "fav": false
+    "family": "Молекулярно-цветочный"
   },
   {
     "brand": "Escentric Molecules",
@@ -1527,6 +1885,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~100€",
     "img": "img/mol-01-mandarin.jpg",
     "pyramid": {
@@ -1534,12 +1893,18 @@
       "mid": "—",
       "base": "Iso E Super, амброксан"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
     "gender": "Унисекс",
-    "family": "Молекулярный",
-    "fav": false
+    "family": "Молекулярный"
   },
   {
     "brand": "Byredo",
@@ -1550,6 +1915,7 @@
       "woody"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~190€",
     "img": "img/mojave-ghost.jpg",
     "pyramid": {
@@ -1557,12 +1923,18 @@
       "mid": "Жасмин, Франжипани, Вистерия",
       "base": "Мускус, Сандал, Бобы тонка"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2014,
     "perfumer": "Jérôme Epinette",
     "concentration": "EDP",
     "gender": "Унисекс",
-    "family": "Древесно-мускусный",
-    "fav": false
+    "family": "Древесно-мускусный"
   },
   {
     "brand": "Jo Malone",
@@ -1575,6 +1947,7 @@
       "male"
     ],
     "source": "parfum__agent",
+    "fav": false,
     "price": "~110€",
     "img": "img/wood-sage.jpg",
     "pyramid": {
@@ -1582,12 +1955,18 @@
       "mid": "Лаванда, Фиалка, Укроп, Зеленые ноты, Герань",
       "base": "Кедр, Пачули, Мускус, Амбра, Сандал"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2014,
     "perfumer": "Christine Nagel",
     "concentration": "Cologne",
     "gender": "Унисекс",
-    "family": "Древесно-морской",
-    "fav": false
+    "family": "Древесно-морской"
   },
   {
     "brand": "Born To Stand Out",
@@ -1599,6 +1978,7 @@
       "gourmand"
     ],
     "source": "Наталия",
+    "fav": false,
     "price": "~195€",
     "img": "img/black-creme.jpg",
     "pyramid": {
@@ -1606,12 +1986,18 @@
       "mid": "Уд, кожа, роза",
       "base": "Ваниль, амбра, мускус, бензоин, пачули"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2022,
+    "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
-    "family": "Восточно-гурманский",
-    "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Black-Creme-115202.html"
+    "family": "Восточно-гурманский"
   },
   {
     "brand": "Clive Christian",
@@ -1624,6 +2010,7 @@
       "oriental"
     ],
     "source": "Наталия",
+    "fav": false,
     "price": "~350€",
     "img": "img/out-of-the-blue.jpg",
     "pyramid": {
@@ -1631,12 +2018,18 @@
       "mid": "Морские ноты, Тиаре, Сосна, Мимоза, Ветивер",
       "base": "Морская соль, Белый мускус, Амбра"
     },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
     "year": 2023,
+    "perfumer": "",
     "concentration": "Parfum",
     "gender": "Унисекс",
-    "family": "Цветочно-восточный",
-    "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/Clive-Christian/Strange-Heavens-Out-Of-The-Blue-122036.html"
+    "family": "Цветочно-восточный"
   },
   {
     "brand": "Gold Juice",
@@ -1647,10 +2040,26 @@
       "fruit"
     ],
     "source": "Скриншот",
-    "img": "img/gold-juice.jpg",
-    "family": "Фруктовый",
     "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Gold-Juice-109045.html"
+    "price": "",
+    "img": "img/gold-juice.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "",
+    "family": "Фруктовый"
   },
   {
     "brand": "Born to Stand Out",
@@ -1662,10 +2071,26 @@
       "musk"
     ],
     "source": "Скриншот",
-    "img": "img/btso-warm-air.jpg",
-    "family": "Мускусный",
     "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Warm-Air-109046.html"
+    "price": "",
+    "img": "img/btso-warm-air.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "",
+    "family": "Мускусный"
   },
   {
     "brand": "Initio Parfums Privés",
@@ -1677,10 +2102,26 @@
       "oriental"
     ],
     "source": "@catherine_knz",
-    "img": "img/narcotic-delight.jpg",
-    "family": "Восточно-гурманский",
     "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/Initio-Parfums-Prives/Narcotic-Delight-89368.html"
+    "price": "",
+    "img": "img/narcotic-delight.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "",
+    "family": "Восточно-гурманский"
   },
   {
     "brand": "Stéphane Humbert Lucas",
@@ -1692,10 +2133,26 @@
       "oriental"
     ],
     "source": "@catherine_knz",
-    "img": "img/venom-incarnat.jpg",
-    "family": "Восточно-гурманский",
     "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/Stephane-Humbert-Lucas-777/Venom-Incarnat-72387.html"
+    "price": "",
+    "img": "img/venom-incarnat.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "",
+    "family": "Восточно-гурманский"
   },
   {
     "brand": "Purple Stain",
@@ -1707,179 +2164,230 @@
       "floral"
     ],
     "source": "@catherine_knz",
-    "img": "img/purple-stain.jpg",
-    "family": "Восточно-цветочный",
     "fav": false,
-    "fragrantica": "https://www.fragrantica.com/perfume/BORNTOSTANDOUT/Purple-Stain-102810.html"
+    "price": "",
+    "img": "img/purple-stain.jpg",
+    "pyramid": {
+      "top": "",
+      "mid": "",
+      "base": ""
+    },
+    "accords": [],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "",
+    "sillage": "",
+    "daytime": [],
+    "seasons": [],
+    "year": 0,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "",
+    "family": "Восточно-цветочный"
   },
   {
     "brand": "Tom Ford",
     "name": "Vanilla Sex",
-    "year": 2024,
-    "gender": "unisex",
-    "family": "Oriental Vanilla",
-    "notes": {
-      "top": [],
-      "middle": [],
-      "base": [
-        "ваниль"
-      ]
-    },
-    "accords": [
-      "vanilla",
-      "sweet",
-      "warm"
-    ],
-    "rating": null,
-    "source": "Рекомендация из Instagram",
-    "img": "",
+    "notes": "ваниль",
     "desc": "«Самая дорогая ваниль» — роскошный ванильный аромат от Tom Ford. EDP 50ml.",
-    "concentration": "",
-    "perfumer": "",
+    "tags": [],
+    "source": "Рекомендация из Instagram",
+    "fav": false,
+    "price": "",
+    "img": "",
+    "pyramid": {},
+    "accords": [
+      {
+        "name": "vanilla",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "sweet",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "warm",
+        "w": 0,
+        "color": ""
+      }
+    ],
+    "rating": 0,
+    "votes": "",
     "longevity": "",
     "sillage": "",
-    "seasons": [],
     "daytime": "",
-    "tags": [],
-    "pyramid": {},
-    "price": "",
-    "fav": false,
-    "votes": ""
+    "seasons": [],
+    "year": 2024,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "unisex",
+    "family": "Oriental Vanilla"
   },
   {
     "brand": "Borntostandout",
     "name": "Nanatopia",
-    "year": 2021,
-    "gender": "unisex",
-    "family": "Fruity Gourmand",
-    "notes": {
-      "top": [],
-      "middle": [],
-      "base": []
-    },
-    "accords": [
-      "fruity",
-      "sweet",
-      "gourmand"
-    ],
-    "rating": null,
-    "source": "Рекомендация из Instagram",
-    "img": "",
+    "notes": "",
     "desc": "«Провоцирует людей на комплименты без вашего разрешения» — яркий, сладкий, с характером.",
-    "concentration": "",
-    "perfumer": "",
+    "tags": [],
+    "source": "Рекомендация из Instagram",
+    "fav": false,
+    "price": "",
+    "img": "",
+    "pyramid": {},
+    "accords": [
+      {
+        "name": "fruity",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "sweet",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "gourmand",
+        "w": 0,
+        "color": ""
+      }
+    ],
+    "rating": 0,
+    "votes": "",
     "longevity": "",
     "sillage": "",
-    "seasons": [],
     "daytime": "",
-    "tags": [],
-    "pyramid": {},
-    "price": "",
-    "fav": false,
-    "votes": ""
+    "seasons": [],
+    "year": 2021,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "unisex",
+    "family": "Fruity Gourmand"
   },
   {
     "brand": "Matiere Premiere",
     "name": "Encens Suave",
-    "year": 2019,
-    "gender": "unisex",
-    "family": "Woody Aromatic",
-    "notes": {
-      "top": [],
-      "middle": [
-        "ладан"
-      ],
-      "base": []
-    },
-    "accords": [
-      "woody",
-      "aromatic",
-      "smoky"
-    ],
-    "rating": null,
-    "source": "Рекомендация из Instagram",
-    "img": "",
+    "notes": "ладан",
     "desc": "«Шлейф, который будут обсуждать» — благородный ладан, элегантный и запоминающийся.",
-    "concentration": "",
-    "perfumer": "",
+    "tags": [],
+    "source": "Рекомендация из Instagram",
+    "fav": false,
+    "price": "",
+    "img": "",
+    "pyramid": {},
+    "accords": [
+      {
+        "name": "woody",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "aromatic",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "smoky",
+        "w": 0,
+        "color": ""
+      }
+    ],
+    "rating": 0,
+    "votes": "",
     "longevity": "",
     "sillage": "",
-    "seasons": [],
     "daytime": "",
-    "tags": [],
-    "pyramid": {},
-    "price": "",
-    "fav": false,
-    "votes": ""
+    "seasons": [],
+    "year": 2019,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "unisex",
+    "family": "Woody Aromatic"
   },
   {
     "brand": "Frederic Malle",
     "name": "Acne Studios",
-    "year": 2023,
-    "gender": "unisex",
-    "family": "Fresh Clean",
-    "notes": {
-      "top": [],
-      "middle": [],
-      "base": []
-    },
-    "accords": [
-      "fresh",
-      "clean",
-      "musky"
-    ],
-    "rating": null,
-    "source": "Рекомендация из Instagram",
-    "img": "",
+    "notes": "",
     "desc": "«Кристаллическая чистота» — коллаборация Frederic Malle x Acne Studios. Чистый, прозрачный аромат.",
-    "concentration": "",
-    "perfumer": "",
+    "tags": [],
+    "source": "Рекомендация из Instagram",
+    "fav": false,
+    "price": "",
+    "img": "",
+    "pyramid": {},
+    "accords": [
+      {
+        "name": "fresh",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "clean",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "musky",
+        "w": 0,
+        "color": ""
+      }
+    ],
+    "rating": 0,
+    "votes": "",
     "longevity": "",
     "sillage": "",
-    "seasons": [],
     "daytime": "",
-    "tags": [],
-    "pyramid": {},
-    "price": "",
-    "fav": false,
-    "votes": ""
+    "seasons": [],
+    "year": 2023,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "unisex",
+    "family": "Fresh Clean"
   },
   {
     "brand": "BDK Parfums",
     "name": "Rouge Smoking",
-    "year": 2020,
-    "gender": "unisex",
-    "family": "Fruity Gourmand",
-    "notes": {
-      "top": [
-        "вишня"
-      ],
-      "middle": [],
-      "base": [
-        "ваниль",
-        "табак"
-      ]
-    },
-    "accords": [
-      "cherry",
-      "gourmand",
-      "sweet",
-      "smoky"
-    ],
-    "rating": null,
-    "source": "Рекомендация из Instagram",
-    "img": "",
+    "notes": "вишня, ваниль, табак",
     "desc": "«Вишнёвый десерт, который сводит людей с ума» — сладкая вишня, табак, ваниль.",
-    "concentration": "",
-    "perfumer": "",
+    "tags": [],
+    "source": "Рекомендация из Instagram",
+    "fav": false,
+    "price": "",
+    "img": "",
+    "pyramid": {},
+    "accords": [
+      {
+        "name": "cherry",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "gourmand",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "sweet",
+        "w": 0,
+        "color": ""
+      },
+      {
+        "name": "smoky",
+        "w": 0,
+        "color": ""
+      }
+    ],
+    "rating": 0,
+    "votes": "",
     "longevity": "",
     "sillage": "",
-    "seasons": [],
     "daytime": "",
-    "tags": [],
-    "pyramid": {},
-    "price": "",
-    "fav": false,
-    "votes": ""
+    "seasons": [],
+    "year": 2020,
+    "perfumer": "",
+    "concentration": "",
+    "gender": "unisex",
+    "family": "Fruity Gourmand"
   }
 ]
