@@ -3,8 +3,20 @@
     "title": "Magwink — MagSafe аксессуары",
     "description": "Магнитные линзы, фильтры, держатели для телефона. Крутые MagSafe-аксессуары для фотографии.",
     "image": "img/magwink-magsafe.jpg",
-    "tags": ["gadget"],
+    "tags": [
+      "gadget"
+    ],
     "url": "https://www.instagram.com/magwink.uk/",
     "date": "2026-03-06"
+  },
+  {
+    "title": "dariya.kvl — Handmade украшения",
+    "description": "Авторская бижутерия — плетёные колье, чокеры, блестящие аксессуары. Пост от @_marsianka_lala.",
+    "image": "img/dariya-kvl-jewelry.jpg",
+    "tags": [
+      "selfcare"
+    ],
+    "url": "https://www.instagram.com/dariya.kvl/",
+    "date": "2026-03-19"
   }
 ]
