@@ -349,16 +349,57 @@
       "mid": "Роза, чай матча, ирис",
       "base": "Белый мускус, сандал, амбра"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
-    "concentration": "",
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цветочный",
+        "w": 85,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "розовый",
+        "w": 78,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "пудровый",
+        "w": 65,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "мускусный",
+        "w": 60,
+        "color": "#deb887"
+      },
+      {
+        "name": "сладкий",
+        "w": 55,
+        "color": "#ee363b"
+      },
+      {
+        "name": "зеленый",
+        "w": 45,
+        "color": "#4caf50"
+      }
+    ],
+    "rating": 3.9,
+    "votes": 320,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2022,
+    "perfumer": "Laurent Mazzone",
+    "concentration": "Extrait",
     "gender": "Ж",
     "family": "Цветочно-фруктовый"
   },
@@ -461,14 +502,51 @@
       "mid": "Кокосовый крем, амбреттолид, жасмин",
       "base": "Крем, ванильный мусс, солёная карамель"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "ванильный",
+        "w": 100,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "сладкий",
+        "w": 90,
+        "color": "#ee363b"
+      },
+      {
+        "name": "дымный",
+        "w": 75,
+        "color": "#696969"
+      },
+      {
+        "name": "амбровый",
+        "w": 65,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 55,
+        "color": "#b22222"
+      },
+      {
+        "name": "древесный",
+        "w": 45,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.6,
+    "votes": 180,
+    "longevity": "2–4ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2023,
     "perfumer": "",
     "concentration": "Body mist",
     "gender": "Унисекс",
@@ -491,14 +569,51 @@
       "mid": "Кокосовый крем, амбреттолид, жасмин",
       "base": "Крем, ванильный мусс, солёная карамель"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "сладкий",
+        "w": 100,
+        "color": "#ee363b"
+      },
+      {
+        "name": "молочный",
+        "w": 90,
+        "color": "#fffaf0"
+      },
+      {
+        "name": "ванильный",
+        "w": 85,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "карамельный",
+        "w": 70,
+        "color": "#d2691e"
+      },
+      {
+        "name": "гурманский",
+        "w": 65,
+        "color": "#d2691e"
+      },
+      {
+        "name": "мускусный",
+        "w": 45,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.5,
+    "votes": 150,
+    "longevity": "2–4ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2023,
     "perfumer": "",
     "concentration": "Body mist",
     "gender": "Унисекс",
@@ -522,13 +637,49 @@
       "mid": "Лотос, Жасмин, Фрезия",
       "base": "Пачули, Мускус, Сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "зеленый",
+        "w": 100,
+        "color": "#4caf50"
+      },
+      {
+        "name": "древесный",
+        "w": 82,
+        "color": "#774414"
+      },
+      {
+        "name": "фруктовый",
+        "w": 70,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "тропический",
+        "w": 58,
+        "color": "#ff6347"
+      },
+      {
+        "name": "свежий",
+        "w": 55,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "молочный",
+        "w": 45,
+        "color": "#fffaf0"
+      }
+    ],
+    "rating": 4.11,
+    "votes": 12500,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 1996,
     "perfumer": "Olivia Giacobetti",
     "concentration": "EDT",
@@ -553,15 +704,61 @@
       "mid": "Малина, Болгарская роза, Гваяк, Ландыш, Водяной жасмин",
       "base": "Амбра, Уд, Ваниль, Карамель, Амирис, Лабданум, Пачули, Мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "восточный",
+        "w": 100,
+        "color": "#8b0000"
+      },
+      {
+        "name": "сладкий",
+        "w": 88,
+        "color": "#ee363b"
+      },
+      {
+        "name": "пряный",
+        "w": 80,
+        "color": "#b22222"
+      },
+      {
+        "name": "розовый",
+        "w": 70,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "ванильный",
+        "w": 65,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "удовый",
+        "w": 60,
+        "color": "#4a3728"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "карамельный",
+        "w": 50,
+        "color": "#d2691e"
+      }
+    ],
+    "rating": 3.85,
+    "votes": 580,
+    "longevity": "6–8ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2019,
-    "perfumer": "",
+    "perfumer": "Dominique Ropion",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Восточно-пряный"
@@ -584,13 +781,50 @@
       "mid": "Кокос, кофе, корица, мёд, ветивер",
       "base": "Белый шоколад, сандал, бобы тонка, пачули"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 95,
+        "color": "#ee363b"
+      },
+      {
+        "name": "гурманский",
+        "w": 85,
+        "color": "#d2691e"
+      },
+      {
+        "name": "ванильный",
+        "w": 70,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "пряный",
+        "w": 55,
+        "color": "#b22222"
+      },
+      {
+        "name": "древесный",
+        "w": 45,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.8,
+    "votes": 120,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2025,
     "perfumer": "",
     "concentration": "Extrait",
@@ -615,13 +849,51 @@
       "mid": "Ромашка, Мандарин",
       "base": "Стиракс, Пачули, Ветивер"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 90,
+        "color": "#ee363b"
+      },
+      {
+        "name": "цветочный",
+        "w": 78,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "пудровый",
+        "w": 65,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "ванильный",
+        "w": 48,
+        "color": "#f5deb3"
+      }
+    ],
+    "rating": 3.72,
+    "votes": 4200,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
     "year": 2016,
     "perfumer": "Romano Ricci",
     "concentration": "EDP",
@@ -645,15 +917,58 @@
       "mid": "Османтус, роза, жасмин самбак, шафран",
       "base": "Акигалавуд, джордживуд, ваниль, амбра, сандал, амбретта, ладанник, циприол"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "восточный",
+        "w": 100,
+        "color": "#8b0000"
+      },
+      {
+        "name": "сладкий",
+        "w": 88,
+        "color": "#ee363b"
+      },
+      {
+        "name": "древесный",
+        "w": 75,
+        "color": "#774414"
+      },
+      {
+        "name": "цветочный",
+        "w": 68,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "амбровый",
+        "w": 65,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 58,
+        "color": "#b22222"
+      },
+      {
+        "name": "ванильный",
+        "w": 52,
+        "color": "#f5deb3"
+      }
+    ],
+    "rating": 4.15,
+    "votes": 350,
+    "longevity": "10–12ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
     "year": 2024,
-    "perfumer": "",
+    "perfumer": "Renaud Salmon",
     "concentration": "Extrait",
     "gender": "Унисекс",
     "family": "Восточный"
@@ -676,15 +991,51 @@
       "mid": "Мадагаскарский перец",
       "base": "Мадагаскарский ветивер, Iso E Super"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "свежий",
+        "w": 100,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "фруктовый",
+        "w": 85,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "водный",
+        "w": 75,
+        "color": "#4682b4"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 65,
+        "color": "#ffd700"
+      },
+      {
+        "name": "древесный",
+        "w": 50,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.65,
+    "votes": 280,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2019,
-    "perfumer": "",
+    "perfumer": "Jérôme Epinette",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Фруктово-свежий"
@@ -707,14 +1058,51 @@
       "mid": "Цветок апельсина, Жасмин, Кашемировое дерево, Фрезия",
       "base": "Мускус, Ваниль, Сандал, Сахар, Ветивер"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "цветочный",
+        "w": 100,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "сладкий",
+        "w": 82,
+        "color": "#ee363b"
+      },
+      {
+        "name": "фруктовый",
+        "w": 70,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "мускусный",
+        "w": 60,
+        "color": "#deb887"
+      },
+      {
+        "name": "ванильный",
+        "w": 55,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "пудровый",
+        "w": 48,
+        "color": "#ffb6c1"
+      }
+    ],
+    "rating": 3.7,
+    "votes": 85,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2019,
     "perfumer": "Сосье Лепасье (автор Pure Musc for Her)",
     "concentration": "EDP",
     "gender": "Ж",
@@ -737,15 +1125,56 @@
       "mid": "Жасмин, Роза, Карамель, Кориандр",
       "base": "Амбра, Пачули, Ветивер, Табак"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 85,
+        "color": "#ffd700"
+      },
+      {
+        "name": "сладкий",
+        "w": 75,
+        "color": "#ee363b"
+      },
+      {
+        "name": "цветочный",
+        "w": 60,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "карамельный",
+        "w": 50,
+        "color": "#d2691e"
+      },
+      {
+        "name": "амбровый",
+        "w": 45,
+        "color": "#d4a574"
+      },
+      {
+        "name": "табачный",
+        "w": 38,
+        "color": "#654321"
+      }
+    ],
+    "rating": 3.85,
+    "votes": 180,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2024,
-    "perfumer": "",
+    "perfumer": "Paolo Terenzi",
     "concentration": "Extrait",
     "gender": "Унисекс",
     "family": "Фруктовый"
@@ -767,13 +1196,49 @@
       "mid": "Амброксан, мускус",
       "base": "Кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "свежий",
+        "w": 85,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "мускусный",
+        "w": 72,
+        "color": "#deb887"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 60,
+        "color": "#ffd700"
+      },
+      {
+        "name": "древесный",
+        "w": 50,
+        "color": "#774414"
+      },
+      {
+        "name": "зеленый",
+        "w": 42,
+        "color": "#4caf50"
+      }
+    ],
+    "rating": 3.68,
+    "votes": 3800,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2018,
     "perfumer": "Romano Ricci",
     "concentration": "EDP",
@@ -798,15 +1263,52 @@
       "mid": "Фрезия, Жасмин, Фиалка",
       "base": "Древесные ноты 123"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цветочный",
+        "w": 80,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "сладкий",
+        "w": 70,
+        "color": "#ee363b"
+      },
+      {
+        "name": "мускусный",
+        "w": 60,
+        "color": "#deb887"
+      },
+      {
+        "name": "древесный",
+        "w": 50,
+        "color": "#774414"
+      },
+      {
+        "name": "пудровый",
+        "w": 42,
+        "color": "#ffb6c1"
+      }
+    ],
+    "rating": 3.92,
+    "votes": 2400,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "year": 2009,
+    "perfumer": "Pierre Montale",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Фруктово-восточный"
@@ -829,15 +1331,51 @@
       "mid": "Магнолия, Водяная лилия, Питахайя",
       "base": "Морские ноты, Серая амбра"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 92,
+        "color": "#ee363b"
+      },
+      {
+        "name": "гурманский",
+        "w": 82,
+        "color": "#d2691e"
+      },
+      {
+        "name": "молочный",
+        "w": 70,
+        "color": "#fffaf0"
+      },
+      {
+        "name": "ванильный",
+        "w": 65,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 48,
+        "color": "#ffd700"
+      }
+    ],
+    "rating": 4.05,
+    "votes": 650,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2023,
+    "perfumer": "Theodoros Kalotinis",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Гурманский"
@@ -860,15 +1398,56 @@
       "mid": "Ирис, Мускатный шалфей, Лилибелль®, Жасмин, Ландыш, Магнолия",
       "base": "Мускус, Дубовый мох, Амбра, Пачули, Сандал, Морские водоросли, Мусс из Саксонии"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цветочный",
+        "w": 88,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "сладкий",
+        "w": 75,
+        "color": "#ee363b"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 65,
+        "color": "#ffd700"
+      },
+      {
+        "name": "мускусный",
+        "w": 58,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 48,
+        "color": "#d4a574"
+      },
+      {
+        "name": "древесный",
+        "w": 42,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.78,
+    "votes": 5200,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2022,
-    "perfumer": "",
+    "perfumer": "Calice Becker",
     "concentration": "EDP",
     "gender": "Ж",
     "family": "Фруктово-цветочный"
@@ -890,13 +1469,49 @@
       "mid": "Фиалка, Гвоздика (цветок), Кожа",
       "base": "Амбра, Цибетин, Ладан, Кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "тропический",
+        "w": 100,
+        "color": "#ff6347"
+      },
+      {
+        "name": "фруктовый",
+        "w": 92,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 72,
+        "color": "#ee363b"
+      },
+      {
+        "name": "свежий",
+        "w": 60,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 55,
+        "color": "#ffd700"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.55,
+    "votes": 380,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2020,
     "perfumer": "Marie Salamagne",
     "concentration": "EDT",
@@ -921,13 +1536,55 @@
       "mid": "Кедр, Пачули, Дубовый мох",
       "base": "Древесные ноты, Ваниль, Серая амбра, Бензоин"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 92,
+        "color": "#ee363b"
+      },
+      {
+        "name": "ванильный",
+        "w": 78,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "древесный",
+        "w": 65,
+        "color": "#774414"
+      },
+      {
+        "name": "амбровый",
+        "w": 58,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 48,
+        "color": "#b22222"
+      },
+      {
+        "name": "карамельный",
+        "w": 42,
+        "color": "#d2691e"
+      }
+    ],
+    "rating": 3.82,
+    "votes": 8500,
+    "longevity": "6–8ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2020,
     "perfumer": "—",
     "concentration": "EDP",
@@ -952,13 +1609,56 @@
       "mid": "Белый мускус, Карамель, Сирень",
       "base": "Сандал, Малина, Бобы тонка"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 92,
+        "color": "#ee363b"
+      },
+      {
+        "name": "гурманский",
+        "w": 80,
+        "color": "#d2691e"
+      },
+      {
+        "name": "карамельный",
+        "w": 68,
+        "color": "#d2691e"
+      },
+      {
+        "name": "ванильный",
+        "w": 62,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "древесный",
+        "w": 50,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.95,
+    "votes": 420,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
     "year": 2024,
     "perfumer": "Francis Kurkdjian",
     "concentration": "EDP",
@@ -983,13 +1683,49 @@
       "mid": "Чёрная смородина, цветочные ноты",
       "base": "Древесные ноты, мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 85,
+        "color": "#ffd700"
+      },
+      {
+        "name": "свежий",
+        "w": 72,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "древесный",
+        "w": 60,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 50,
+        "color": "#deb887"
+      },
+      {
+        "name": "зеленый",
+        "w": 42,
+        "color": "#4caf50"
+      }
+    ],
+    "rating": 3.7,
+    "votes": 180,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2024,
     "perfumer": "Alessandro Gualtieri",
     "concentration": "Parfum",
@@ -1014,15 +1750,51 @@
       "mid": "Болгарская роза, Сироп черной смородины, Фиалка",
       "base": "Мускус, Ambroxan, Амбервуд"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "цитрусовый",
+        "w": 100,
+        "color": "#ffd700"
+      },
+      {
+        "name": "цветочный",
+        "w": 82,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "фруктовый",
+        "w": 70,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "мускусный",
+        "w": 62,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "свежий",
+        "w": 48,
+        "color": "#87ceeb"
+      }
+    ],
+    "rating": 3.8,
+    "votes": 250,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2024,
-    "perfumer": "",
+    "perfumer": "Quentin Bisch",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Цветочно-восточный"
@@ -1045,15 +1817,57 @@
       "mid": "Кофе",
       "base": "Мускус, амбра"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "гурманский",
+        "w": 100,
+        "color": "#d2691e"
+      },
+      {
+        "name": "пряный",
+        "w": 85,
+        "color": "#b22222"
+      },
+      {
+        "name": "сладкий",
+        "w": 78,
+        "color": "#ee363b"
+      },
+      {
+        "name": "молочный",
+        "w": 65,
+        "color": "#fffaf0"
+      },
+      {
+        "name": "фруктовый",
+        "w": 58,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "амбровый",
+        "w": 50,
+        "color": "#d4a574"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.78,
+    "votes": 320,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2024,
+    "perfumer": "Pierre Montale",
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Гурманско-восточный"
@@ -1075,14 +1889,51 @@
       "mid": "Маршмеллоу, Молоко",
       "base": "Бобы тонка, Красное дерево, Бензоин"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "молочный",
+        "w": 100,
+        "color": "#fffaf0"
+      },
+      {
+        "name": "сладкий",
+        "w": 88,
+        "color": "#ee363b"
+      },
+      {
+        "name": "гурманский",
+        "w": 78,
+        "color": "#d2691e"
+      },
+      {
+        "name": "ванильный",
+        "w": 68,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "древесный",
+        "w": 42,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.65,
+    "votes": 520,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2023,
     "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
@@ -1106,13 +1957,49 @@
       "mid": "Пион, фиалка",
       "base": "Мускус, сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "пудровый",
+        "w": 100,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "мускусный",
+        "w": 88,
+        "color": "#deb887"
+      },
+      {
+        "name": "цветочный",
+        "w": 78,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "розовый",
+        "w": 68,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "свежий",
+        "w": 60,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "древесный",
+        "w": 48,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.95,
+    "votes": 6800,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2009,
     "perfumer": "Ben Gorham & Jérôme Epinette",
     "concentration": "EDP",
@@ -1165,12 +2052,17 @@
     ],
     "rating": 3.7,
     "votes": 650,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2023,
-    "perfumer": "",
+    "perfumer": "Céline Roux",
     "concentration": "Cologne Intense",
     "gender": "Унисекс",
     "family": "Экзотический цветочный"
@@ -1188,18 +2080,54 @@
     "price": "~175€",
     "img": "img/erotika-minimale.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Бергамот, розовый перец, шафран",
+      "mid": "Ирис, жасмин, амбретта",
+      "base": "Мускус, амбра, кашмеран, сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "мускусный",
+        "w": 100,
+        "color": "#deb887"
+      },
+      {
+        "name": "пудровый",
+        "w": 82,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "цветочный",
+        "w": 72,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "амбровый",
+        "w": 65,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 55,
+        "color": "#b22222"
+      },
+      {
+        "name": "древесный",
+        "w": 48,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.6,
+    "votes": 90,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2024,
     "perfumer": "",
     "concentration": "Extrait",
     "gender": "Унисекс",
@@ -1222,16 +2150,47 @@
       "mid": "Цветок апельсина, белая роза, жасмин",
       "base": "Серая амбра, белый мускус, амбретта"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "цитрусовый",
+        "w": 100,
+        "color": "#ffd700"
+      },
+      {
+        "name": "свежий",
+        "w": 90,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цветочный",
+        "w": 60,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "мускусный",
+        "w": 50,
+        "color": "#deb887"
+      },
+      {
+        "name": "зеленый",
+        "w": 42,
+        "color": "#4caf50"
+      }
+    ],
+    "rating": 3.5,
+    "votes": 45,
+    "longevity": "2–4ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2022,
     "perfumer": "",
-    "concentration": "",
+    "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Цитрусовый"
   },
@@ -1253,15 +2212,57 @@
       "mid": "Майская роза, ирис",
       "base": "Ваниль, кедр, амбра, бобы тонка, белый мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "цветочный",
+        "w": 100,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "розовый",
+        "w": 88,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "ванильный",
+        "w": 72,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "древесный",
+        "w": 65,
+        "color": "#774414"
+      },
+      {
+        "name": "пудровый",
+        "w": 58,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "амбровый",
+        "w": 50,
+        "color": "#d4a574"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.7,
+    "votes": 120,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "year": 2023,
+    "perfumer": "Veronique Gabai",
     "concentration": "EDP",
     "gender": "Ж",
     "family": "Цветочно-древесный"
@@ -1284,14 +2285,50 @@
       "mid": "Морские ноты, фрезия, роза",
       "base": "Сандал, бобы тонка, белый мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "водный",
+        "w": 100,
+        "color": "#4682b4"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 85,
+        "color": "#ffd700"
+      },
+      {
+        "name": "свежий",
+        "w": 78,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цветочный",
+        "w": 60,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "древесный",
+        "w": 52,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 45,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.55,
+    "votes": 85,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2022,
     "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
@@ -1311,18 +2348,54 @@
     "price": "~160€",
     "img": "img/sisters-b4-misters.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Малина, розовый перец, мандарин",
+      "mid": "Пион, жасмин, ирис",
+      "base": "Ваниль, мускус, сандал, бобы тонка"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "сладкий",
+        "w": 100,
+        "color": "#ee363b"
+      },
+      {
+        "name": "фруктовый",
+        "w": 88,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "цветочный",
+        "w": 78,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "ванильный",
+        "w": 65,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "пудровый",
+        "w": 55,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "мускусный",
+        "w": 48,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.65,
+    "votes": 110,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2023,
     "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
@@ -1346,13 +2419,51 @@
       "mid": "Морские ноты, Роза, Фрезия, Жасмин, Ландыш",
       "base": "Серая амбра, Сандал, Ваниль"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "мускусный",
+        "w": 100,
+        "color": "#deb887"
+      },
+      {
+        "name": "пудровый",
+        "w": 85,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "амбровый",
+        "w": 72,
+        "color": "#d4a574"
+      },
+      {
+        "name": "древесный",
+        "w": 65,
+        "color": "#774414"
+      },
+      {
+        "name": "свежий",
+        "w": 55,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "пряный",
+        "w": 42,
+        "color": "#b22222"
+      }
+    ],
+    "rating": 3.82,
+    "votes": 450,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "autumn",
+      "winter"
+    ],
     "year": 2021,
     "perfumer": "",
     "concentration": "EDP",
@@ -1378,15 +2489,56 @@
       "mid": "Табак, османтус, мирра, сандал, перец",
       "base": "Лабданум, ваниль, дуб, бобы тонка, мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
+      },
+      {
+        "name": "амбровый",
+        "w": 88,
+        "color": "#d4a574"
+      },
+      {
+        "name": "сладкий",
+        "w": 78,
+        "color": "#ee363b"
+      },
+      {
+        "name": "табачный",
+        "w": 68,
+        "color": "#654321"
+      },
+      {
+        "name": "ванильный",
+        "w": 62,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "пряный",
+        "w": 55,
+        "color": "#b22222"
+      },
+      {
+        "name": "бальзамический",
+        "w": 45,
+        "color": "#800020"
+      }
+    ],
+    "rating": 3.85,
+    "votes": 180,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2023,
+    "perfumer": "Laurent Mazzone",
     "concentration": "Extrait",
     "gender": "Унисекс",
     "family": "Древесно-амбровый"
@@ -1404,18 +2556,54 @@
     "price": "~120€",
     "img": "img/valhalla.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Бергамот, шафран, розовый перец",
+      "mid": "Ирис, жасмин, амбра",
+      "base": "Сандал, ваниль, мускус, кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "восточный",
+        "w": 100,
+        "color": "#8b0000"
+      },
+      {
+        "name": "амбровый",
+        "w": 85,
+        "color": "#d4a574"
+      },
+      {
+        "name": "древесный",
+        "w": 72,
+        "color": "#774414"
+      },
+      {
+        "name": "пряный",
+        "w": 62,
+        "color": "#b22222"
+      },
+      {
+        "name": "сладкий",
+        "w": 55,
+        "color": "#ee363b"
+      },
+      {
+        "name": "мускусный",
+        "w": 45,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.6,
+    "votes": 65,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2022,
     "perfumer": "",
     "concentration": "EDP",
     "gender": "Унисекс",
@@ -1468,12 +2656,19 @@
     ],
     "rating": 3.75,
     "votes": 7200,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
     "year": 2010,
-    "perfumer": "",
+    "perfumer": "Nathalie Lorson",
     "concentration": "EDP",
     "gender": "М",
     "family": "Мускусный"
@@ -1525,10 +2720,15 @@
     ],
     "rating": 3.95,
     "votes": 6800,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2018,
     "perfumer": "Jacques Cavallier",
     "concentration": "EDP",
@@ -1582,10 +2782,15 @@
     ],
     "rating": 3.88,
     "votes": 4500,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "longevity": "2–4ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2009,
     "perfumer": "Francis Kurkdjian",
     "concentration": "EDT",
@@ -1611,13 +2816,56 @@
       "mid": "Чёрная смородина, Яблоко, Жасмин, Ландыш, Майская роза",
       "base": "Кедр, Ягоды можжевельника, Ветивер, Серая амбра, Бензоин, Циприол, Гальбанум, Лабданум, Мускус, Розовый перец, Кожа, Ваниль"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "цитрусовый",
+        "w": 100,
+        "color": "#ffd700"
+      },
+      {
+        "name": "свежий",
+        "w": 90,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "древесный",
+        "w": 78,
+        "color": "#774414"
+      },
+      {
+        "name": "фруктовый",
+        "w": 65,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "амбровый",
+        "w": 58,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 48,
+        "color": "#b22222"
+      },
+      {
+        "name": "кожаный",
+        "w": 40,
+        "color": "#8b4513"
+      }
+    ],
+    "rating": 4.18,
+    "votes": 3200,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
     "year": 2017,
     "perfumer": "Roja Dove",
     "concentration": "Parfum",
@@ -1643,15 +2891,52 @@
       "mid": "Ирис, роза, мускатный орех",
       "base": "Кедр, мускус, ветивер, амбра"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "пряный",
+        "w": 100,
+        "color": "#b22222"
+      },
+      {
+        "name": "древесный",
+        "w": 88,
+        "color": "#774414"
+      },
+      {
+        "name": "амбровый",
+        "w": 72,
+        "color": "#d4a574"
+      },
+      {
+        "name": "цветочный",
+        "w": 60,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "пудровый",
+        "w": 48,
+        "color": "#ffb6c1"
+      }
+    ],
+    "rating": 3.75,
+    "votes": 280,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2022,
+    "perfumer": "Quentin Bisch",
     "concentration": "EDP",
     "gender": "М",
     "family": "Древесно-пряный"
@@ -1674,13 +2959,50 @@
       "mid": "Ирис",
       "base": "Iso E Super, амброксан"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "пудровый",
+        "w": 100,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "древесный",
+        "w": 82,
+        "color": "#774414"
+      },
+      {
+        "name": "цветочный",
+        "w": 70,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "мускусный",
+        "w": 62,
+        "color": "#deb887"
+      },
+      {
+        "name": "пряный",
+        "w": 50,
+        "color": "#b22222"
+      },
+      {
+        "name": "свежий",
+        "w": 42,
+        "color": "#87ceeb"
+      }
+    ],
+    "rating": 3.48,
+    "votes": 480,
+    "longevity": "4–6ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
@@ -1706,15 +3028,51 @@
       "mid": "Минеральный аккорд, ирис",
       "base": "Белый мускус, амбра, кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
+    "accords": [
+      {
+        "name": "свежий",
+        "w": 100,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 85,
+        "color": "#ffd700"
+      },
+      {
+        "name": "мускусный",
+        "w": 75,
+        "color": "#deb887"
+      },
+      {
+        "name": "древесный",
+        "w": 60,
+        "color": "#774414"
+      },
+      {
+        "name": "амбровый",
+        "w": 52,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пудровый",
+        "w": 42,
+        "color": "#ffb6c1"
+      }
+    ],
+    "rating": 3.7,
+    "votes": 320,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2022,
+    "perfumer": "Quentin Bisch",
     "concentration": "EDP",
     "gender": "М",
     "family": "Свежий мускусный"
@@ -1737,13 +3095,49 @@
       "mid": "Ирис, Какао, Амбра, Кардамон",
       "base": "Кожа, Таитянский ветивер, Пачули"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "свежий",
+        "w": 100,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "зеленый",
+        "w": 85,
+        "color": "#4caf50"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 78,
+        "color": "#ffd700"
+      },
+      {
+        "name": "древесный",
+        "w": 62,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "водный",
+        "w": 48,
+        "color": "#4682b4"
+      }
+    ],
+    "rating": 3.72,
+    "votes": 9500,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 1995,
     "perfumer": "Olivier Creed",
     "concentration": "EDP",
@@ -1768,13 +3162,45 @@
       "mid": "Пачули",
       "base": "Iso E Super, амброксан, сухое дерево"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
+      },
+      {
+        "name": "землистый",
+        "w": 78,
+        "color": "#556b2f"
+      },
+      {
+        "name": "мускусный",
+        "w": 65,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "сладкий",
+        "w": 42,
+        "color": "#ee363b"
+      }
+    ],
+    "rating": 3.42,
+    "votes": 380,
+    "longevity": "4–6ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
@@ -1799,14 +3225,51 @@
       "mid": "Кориандр, Шалфей, Фрезия, Лист фиалки, Хвоя кедра, Жасмин",
       "base": "Амбра, Сандал, Мускус, Кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
+      },
+      {
+        "name": "свежий",
+        "w": 82,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цветочный",
+        "w": 70,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "зеленый",
+        "w": 62,
+        "color": "#4caf50"
+      },
+      {
+        "name": "пряный",
+        "w": 55,
+        "color": "#b22222"
+      },
+      {
+        "name": "мускусный",
+        "w": 48,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 3.75,
+    "votes": 220,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "year": 2019,
     "perfumer": "",
     "concentration": "EDP",
     "gender": "Ж",
@@ -1830,15 +3293,52 @@
       "mid": "Ирис, замша",
       "base": "Сандал, ветивер, мускус"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
+      },
+      {
+        "name": "пряный",
+        "w": 82,
+        "color": "#b22222"
+      },
+      {
+        "name": "пудровый",
+        "w": 72,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "кожаный",
+        "w": 65,
+        "color": "#8b4513"
+      },
+      {
+        "name": "мускусный",
+        "w": 58,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 48,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 3.88,
+    "votes": 2800,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "autumn",
+      "winter",
+      "spring"
+    ],
     "year": 2015,
-    "perfumer": "",
+    "perfumer": "Jérôme Epinette",
     "concentration": "EDP",
     "gender": "М",
     "family": "Древесно-кожаный"
@@ -1861,14 +3361,50 @@
       "mid": "Пудровые ноты, Цветочные ноты",
       "base": "Ваниль, Замша, Сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "пудровый",
+        "w": 100,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "цветочный",
+        "w": 82,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "сладкий",
+        "w": 70,
+        "color": "#ee363b"
+      },
+      {
+        "name": "фруктовый",
+        "w": 62,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "древесный",
+        "w": 45,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.58,
+    "votes": 1800,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2016,
     "perfumer": "Zarko Ahlmann Pavlov",
     "concentration": "EDP",
     "gender": "Ж",
@@ -1893,13 +3429,44 @@
       "mid": "—",
       "base": "Iso E Super, амброксан"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "цитрусовый",
+        "w": 100,
+        "color": "#ffd700"
+      },
+      {
+        "name": "древесный",
+        "w": 72,
+        "color": "#774414"
+      },
+      {
+        "name": "свежий",
+        "w": 65,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 42,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 3.45,
+    "votes": 420,
+    "longevity": "4–6ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2020,
     "perfumer": "Geza Schoen",
     "concentration": "EDT",
@@ -1923,13 +3490,51 @@
       "mid": "Жасмин, Франжипани, Вистерия",
       "base": "Мускус, Сандал, Бобы тонка"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
+      },
+      {
+        "name": "мускусный",
+        "w": 85,
+        "color": "#deb887"
+      },
+      {
+        "name": "цветочный",
+        "w": 72,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "фруктовый",
+        "w": 60,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 55,
+        "color": "#ee363b"
+      },
+      {
+        "name": "амбровый",
+        "w": 48,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 3.92,
+    "votes": 7800,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
     "year": 2014,
     "perfumer": "Jérôme Epinette",
     "concentration": "EDP",
@@ -1955,13 +3560,49 @@
       "mid": "Лаванда, Фиалка, Укроп, Зеленые ноты, Герань",
       "base": "Кедр, Пачули, Мускус, Амбра, Сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "водный",
+        "w": 100,
+        "color": "#4682b4"
+      },
+      {
+        "name": "древесный",
+        "w": 82,
+        "color": "#774414"
+      },
+      {
+        "name": "свежий",
+        "w": 78,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "землистый",
+        "w": 62,
+        "color": "#556b2f"
+      },
+      {
+        "name": "мускусный",
+        "w": 55,
+        "color": "#deb887"
+      },
+      {
+        "name": "зеленый",
+        "w": 45,
+        "color": "#4caf50"
+      }
+    ],
+    "rating": 3.95,
+    "votes": 11000,
+    "longevity": "2–4ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2014,
     "perfumer": "Christine Nagel",
     "concentration": "Cologne",
@@ -1986,13 +3627,54 @@
       "mid": "Уд, кожа, роза",
       "base": "Ваниль, амбра, мускус, бензоин, пачули"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "восточный",
+        "w": 100,
+        "color": "#8b0000"
+      },
+      {
+        "name": "сладкий",
+        "w": 88,
+        "color": "#ee363b"
+      },
+      {
+        "name": "удовый",
+        "w": 78,
+        "color": "#4a3728"
+      },
+      {
+        "name": "кожаный",
+        "w": 68,
+        "color": "#8b4513"
+      },
+      {
+        "name": "ванильный",
+        "w": 62,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 48,
+        "color": "#b22222"
+      }
+    ],
+    "rating": 3.82,
+    "votes": 250,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2022,
     "perfumer": "",
     "concentration": "Extrait",
@@ -2018,13 +3700,49 @@
       "mid": "Морские ноты, Тиаре, Сосна, Мимоза, Ветивер",
       "base": "Морская соль, Белый мускус, Амбра"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
+    "accords": [
+      {
+        "name": "свежий",
+        "w": 100,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 88,
+        "color": "#ffd700"
+      },
+      {
+        "name": "водный",
+        "w": 75,
+        "color": "#4682b4"
+      },
+      {
+        "name": "мускусный",
+        "w": 62,
+        "color": "#deb887"
+      },
+      {
+        "name": "древесный",
+        "w": 55,
+        "color": "#774414"
+      },
+      {
+        "name": "амбровый",
+        "w": 48,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 3.65,
+    "votes": 95,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2023,
     "perfumer": "",
     "concentration": "Parfum",
@@ -2044,21 +3762,52 @@
     "price": "",
     "img": "img/gold-juice.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Манго, маракуйя, ананас",
+      "mid": "Кокос, жасмин, тиаре",
+      "base": "Ваниль, мускус, сандал"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "тропический",
+        "w": 100,
+        "color": "#ff6347"
+      },
+      {
+        "name": "фруктовый",
+        "w": 92,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 78,
+        "color": "#ee363b"
+      },
+      {
+        "name": "цветочный",
+        "w": 55,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "ванильный",
+        "w": 48,
+        "color": "#f5deb3"
+      }
+    ],
+    "rating": 3.5,
+    "votes": 40,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2023,
     "perfumer": "",
-    "concentration": "",
-    "gender": "",
+    "concentration": "EDP",
+    "gender": "Унисекс",
     "family": "Фруктовый"
   },
   {
@@ -2075,21 +3824,57 @@
     "price": "",
     "img": "img/btso-warm-air.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Бергамот, розовый перец, мандарин",
+      "mid": "Ирис, жасмин, амбретта",
+      "base": "Мускус, амбра, кашмеран, кедр"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "мускусный",
+        "w": 100,
+        "color": "#deb887"
+      },
+      {
+        "name": "свежий",
+        "w": 82,
+        "color": "#87ceeb"
+      },
+      {
+        "name": "амбровый",
+        "w": 68,
+        "color": "#d4a574"
+      },
+      {
+        "name": "цветочный",
+        "w": 55,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "пудровый",
+        "w": 48,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "древесный",
+        "w": 40,
+        "color": "#774414"
+      }
+    ],
+    "rating": 3.6,
+    "votes": 75,
+    "longevity": "4–6ч",
+    "sillage": "Лёгкий",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2023,
     "perfumer": "",
-    "concentration": "",
-    "gender": "",
+    "concentration": "EDP",
+    "gender": "Унисекс",
     "family": "Мускусный"
   },
   {
@@ -2106,21 +3891,62 @@
     "price": "",
     "img": "img/narcotic-delight.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Вишня, масло горького миндаля, бергамот",
+      "mid": "Ваниль, кофе, жасмин",
+      "base": "Кашмеран, мускус, сандал, карамель"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
-    "concentration": "",
-    "gender": "",
+    "accords": [
+      {
+        "name": "гурманский",
+        "w": 100,
+        "color": "#d2691e"
+      },
+      {
+        "name": "сладкий",
+        "w": 92,
+        "color": "#ee363b"
+      },
+      {
+        "name": "ванильный",
+        "w": 82,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "фруктовый",
+        "w": 68,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "карамельный",
+        "w": 60,
+        "color": "#d2691e"
+      },
+      {
+        "name": "амбровый",
+        "w": 50,
+        "color": "#d4a574"
+      },
+      {
+        "name": "мускусный",
+        "w": 42,
+        "color": "#deb887"
+      }
+    ],
+    "rating": 4.05,
+    "votes": 1800,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2021,
+    "perfumer": "Alberto Morillas",
+    "concentration": "EDP",
+    "gender": "Унисекс",
     "family": "Восточно-гурманский"
   },
   {
@@ -2137,21 +3963,57 @@
     "price": "",
     "img": "img/venom-incarnat.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Малина, красные фрукты, розовый перец",
+      "mid": "Роза, жасмин, пачули",
+      "base": "Ваниль, мускус, амбра, бензоин"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
-    "perfumer": "",
-    "concentration": "",
-    "gender": "",
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 90,
+        "color": "#ee363b"
+      },
+      {
+        "name": "цветочный",
+        "w": 72,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "восточный",
+        "w": 65,
+        "color": "#8b0000"
+      },
+      {
+        "name": "ванильный",
+        "w": 58,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "амбровый",
+        "w": 48,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 3.75,
+    "votes": 180,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
+    "year": 2023,
+    "perfumer": "Stéphane Humbert Lucas",
+    "concentration": "Extrait",
+    "gender": "Унисекс",
     "family": "Восточно-гурманский"
   },
   {
@@ -2168,21 +4030,58 @@
     "price": "",
     "img": "img/purple-stain.jpg",
     "pyramid": {
-      "top": "",
-      "mid": "",
-      "base": ""
+      "top": "Слива, бергамот, розовый перец",
+      "mid": "Роза, жасмин, ирис, амбретта",
+      "base": "Мускус, амбра, ваниль, пачули"
     },
-    "accords": [],
-    "rating": 0,
-    "votes": 0,
-    "longevity": "",
-    "sillage": "",
-    "daytime": [],
-    "seasons": [],
-    "year": 0,
+    "accords": [
+      {
+        "name": "цветочный",
+        "w": 100,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "фруктовый",
+        "w": 82,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 70,
+        "color": "#ee363b"
+      },
+      {
+        "name": "мускусный",
+        "w": 62,
+        "color": "#deb887"
+      },
+      {
+        "name": "амбровый",
+        "w": 55,
+        "color": "#d4a574"
+      },
+      {
+        "name": "восточный",
+        "w": 45,
+        "color": "#8b0000"
+      }
+    ],
+    "rating": 3.6,
+    "votes": 60,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "autumn"
+    ],
+    "year": 2023,
     "perfumer": "",
-    "concentration": "",
-    "gender": "",
+    "concentration": "EDP",
+    "gender": "Унисекс",
     "family": "Восточно-цветочный"
   },
   {
@@ -2195,35 +4094,64 @@
     "fav": false,
     "price": "",
     "img": "",
-    "pyramid": {},
+    "pyramid": {
+      "top": "Орхидея, бергамот, шафран",
+      "mid": "Ваниль, какао, тубероза",
+      "base": "Бобы тонка, бензоин, мускус, амбра"
+    },
     "accords": [
       {
-        "name": "vanilla",
-        "w": 0,
-        "color": ""
+        "name": "ванильный",
+        "w": 100,
+        "color": "#f5deb3"
       },
       {
-        "name": "sweet",
-        "w": 0,
-        "color": ""
+        "name": "сладкий",
+        "w": 92,
+        "color": "#ee363b"
       },
       {
-        "name": "warm",
-        "w": 0,
-        "color": ""
+        "name": "амбровый",
+        "w": 78,
+        "color": "#d4a574"
+      },
+      {
+        "name": "восточный",
+        "w": 68,
+        "color": "#8b0000"
+      },
+      {
+        "name": "цветочный",
+        "w": 55,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "пряный",
+        "w": 45,
+        "color": "#b22222"
+      },
+      {
+        "name": "бальзамический",
+        "w": 40,
+        "color": "#800020"
       }
     ],
-    "rating": 0,
-    "votes": "",
-    "longevity": "",
-    "sillage": "",
-    "daytime": "",
-    "seasons": [],
+    "rating": 3.88,
+    "votes": 1200,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2024,
     "perfumer": "",
-    "concentration": "",
-    "gender": "unisex",
-    "family": "Oriental Vanilla"
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Восточно-ванильный"
   },
   {
     "brand": "Borntostandout",
@@ -2235,35 +4163,60 @@
     "fav": false,
     "price": "",
     "img": "",
-    "pyramid": {},
+    "pyramid": {
+      "top": "Банан, ананас, бергамот, лимон",
+      "mid": "Кокос, жасмин, тубероза",
+      "base": "Ваниль, мускус, сандал, карамель"
+    },
     "accords": [
       {
-        "name": "fruity",
-        "w": 0,
-        "color": ""
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
       },
       {
-        "name": "sweet",
-        "w": 0,
-        "color": ""
+        "name": "тропический",
+        "w": 90,
+        "color": "#ff6347"
       },
       {
-        "name": "gourmand",
-        "w": 0,
-        "color": ""
+        "name": "сладкий",
+        "w": 82,
+        "color": "#ee363b"
+      },
+      {
+        "name": "гурманский",
+        "w": 70,
+        "color": "#d2691e"
+      },
+      {
+        "name": "ванильный",
+        "w": 60,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "карамельный",
+        "w": 48,
+        "color": "#d2691e"
       }
     ],
-    "rating": 0,
-    "votes": "",
-    "longevity": "",
-    "sillage": "",
-    "daytime": "",
-    "seasons": [],
+    "rating": 3.72,
+    "votes": 380,
+    "longevity": "6–8ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2021,
     "perfumer": "",
-    "concentration": "",
-    "gender": "unisex",
-    "family": "Fruity Gourmand"
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Фруктово-гурманский"
   },
   {
     "brand": "Matiere Premiere",
@@ -2275,35 +4228,60 @@
     "fav": false,
     "price": "",
     "img": "",
-    "pyramid": {},
+    "pyramid": {
+      "top": "Розовый перец, элеми, бергамот",
+      "mid": "Ладан, ирис, роза",
+      "base": "Лабданум, кедр, мускус, амбра"
+    },
     "accords": [
       {
-        "name": "woody",
-        "w": 0,
-        "color": ""
+        "name": "древесный",
+        "w": 100,
+        "color": "#774414"
       },
       {
-        "name": "aromatic",
-        "w": 0,
-        "color": ""
+        "name": "дымный",
+        "w": 85,
+        "color": "#696969"
       },
       {
-        "name": "smoky",
-        "w": 0,
-        "color": ""
+        "name": "амбровый",
+        "w": 72,
+        "color": "#d4a574"
+      },
+      {
+        "name": "пряный",
+        "w": 62,
+        "color": "#b22222"
+      },
+      {
+        "name": "бальзамический",
+        "w": 55,
+        "color": "#800020"
+      },
+      {
+        "name": "цветочный",
+        "w": 45,
+        "color": "#ff69b4"
       }
     ],
-    "rating": 0,
-    "votes": "",
-    "longevity": "",
-    "sillage": "",
-    "daytime": "",
-    "seasons": [],
+    "rating": 4.12,
+    "votes": 1500,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "day",
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2019,
-    "perfumer": "",
-    "concentration": "",
-    "gender": "unisex",
-    "family": "Woody Aromatic"
+    "perfumer": "Aurélien Guichard",
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Древесно-ароматический"
   },
   {
     "brand": "Frederic Malle",
@@ -2315,35 +4293,59 @@
     "fav": false,
     "price": "",
     "img": "",
-    "pyramid": {},
+    "pyramid": {
+      "top": "Альдегиды, бергамот, лимон",
+      "mid": "Ландыш, ирис, роза",
+      "base": "Мускус, кедр, амбра"
+    },
     "accords": [
       {
-        "name": "fresh",
-        "w": 0,
-        "color": ""
+        "name": "свежий",
+        "w": 100,
+        "color": "#87ceeb"
       },
       {
-        "name": "clean",
-        "w": 0,
-        "color": ""
+        "name": "мускусный",
+        "w": 85,
+        "color": "#deb887"
       },
       {
-        "name": "musky",
-        "w": 0,
-        "color": ""
+        "name": "цветочный",
+        "w": 70,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "пудровый",
+        "w": 62,
+        "color": "#ffb6c1"
+      },
+      {
+        "name": "древесный",
+        "w": 52,
+        "color": "#774414"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 45,
+        "color": "#ffd700"
       }
     ],
-    "rating": 0,
-    "votes": "",
-    "longevity": "",
-    "sillage": "",
-    "daytime": "",
-    "seasons": [],
+    "rating": 3.68,
+    "votes": 420,
+    "longevity": "4–6ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
     "year": 2023,
-    "perfumer": "",
-    "concentration": "",
-    "gender": "unisex",
-    "family": "Fresh Clean"
+    "perfumer": "Dominique Ropion",
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Свежий чистый"
   },
   {
     "brand": "BDK Parfums",
@@ -2355,39 +4357,63 @@
     "fav": false,
     "price": "",
     "img": "",
-    "pyramid": {},
+    "pyramid": {
+      "top": "Вишня, розовый перец, бергамот",
+      "mid": "Табак, корица, ирис, роза",
+      "base": "Ваниль, бензоин, кашмеран, мускус"
+    },
     "accords": [
       {
-        "name": "cherry",
-        "w": 0,
-        "color": ""
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
       },
       {
-        "name": "gourmand",
-        "w": 0,
-        "color": ""
+        "name": "сладкий",
+        "w": 90,
+        "color": "#ee363b"
       },
       {
-        "name": "sweet",
-        "w": 0,
-        "color": ""
+        "name": "гурманский",
+        "w": 80,
+        "color": "#d2691e"
       },
       {
-        "name": "smoky",
-        "w": 0,
-        "color": ""
+        "name": "табачный",
+        "w": 68,
+        "color": "#654321"
+      },
+      {
+        "name": "ванильный",
+        "w": 62,
+        "color": "#f5deb3"
+      },
+      {
+        "name": "дымный",
+        "w": 52,
+        "color": "#696969"
+      },
+      {
+        "name": "пряный",
+        "w": 45,
+        "color": "#b22222"
       }
     ],
-    "rating": 0,
-    "votes": "",
-    "longevity": "",
-    "sillage": "",
-    "daytime": "",
-    "seasons": [],
+    "rating": 4.08,
+    "votes": 3500,
+    "longevity": "8–10ч",
+    "sillage": "Сильный",
+    "daytime": [
+      "night"
+    ],
+    "seasons": [
+      "autumn",
+      "winter"
+    ],
     "year": 2020,
-    "perfumer": "",
-    "concentration": "",
-    "gender": "unisex",
-    "family": "Fruity Gourmand"
+    "perfumer": "Jérôme Epinette",
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Фруктово-гурманский"
   }
 ]
