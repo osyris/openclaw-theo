@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Contacts — Trusted Specialists</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --card-hover: #1a1a1a;
+    --text: #e8e8e8;
+    --muted: #777;
+    --border: #222;
+    --accent: #26a69a;
+    --accent-glow: rgba(38,166,154,0.25);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 1.5rem 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .back-btn {
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: all 0.3s;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .back-btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.5);
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-transform: uppercase;
+    text-shadow: 0 0 80px var(--accent-glow);
+    position: relative;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .hero p {
+    color: var(--muted);
+    font-size: 0.82rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  /* Filters */
+  .filters {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem 1.2rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .search-box::placeholder { color: var(--muted); }
+  .search-box:focus { border-color: var(--accent); }
+
+  .cat-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .cat-btn {
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+  }
+  .cat-btn:hover { border-color: var(--accent); color: var(--text); }
+  .cat-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* Grid */
+  .grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Card */
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .contact-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  }
+  .contact-card:hover::before { opacity: 1; }
+
+  .card-cat-emoji {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .card-specialty {
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  .card-location {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .card-contact a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+  .card-contact a:hover { color: var(--accent); }
+
+  .card-note {
+    font-size: 0.75rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .no-results {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    padding: 3rem 0;
+    grid-column: 1 / -1;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.7rem;
+    color: #333;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .hero { padding: 1.5rem 1.5rem 2rem; }
+    .hero h1 { font-size: 3.2rem; }
+    .grid { grid-template-columns: 1fr; padding: 0 1rem 3rem; }
+    .contact-card { padding: 1.5rem 1.2rem; }
+    .search-box { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <a href="/pages/" class="back-btn">← Back</a>
+  <h1>MY CONTACTS</h1>
+  <p>Trusted specialists & useful contacts</p>
+</div>
+
+<div class="filters">
+  <input type="text" class="search-box" placeholder="Search by name, specialty, notes…" id="searchInput">
+  <div class="cat-filters" id="catFilters">
+    <button class="cat-btn active" data-cat="all">All</button>
+    <button class="cat-btn" data-cat="beauty">💆‍♀️ Beauty</button>
+    <button class="cat-btn" data-cat="health">🏥 Health</button>
+    <button class="cat-btn" data-cat="photo">📸 Photo</button>
+    <button class="cat-btn" data-cat="kids">👶 Kids</button>
+    <button class="cat-btn" data-cat="home">🏠 Home</button>
+    <button class="cat-btn" data-cat="other">✨ Other</button>
+  </div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="footer">My Contacts · 2026</div>
+
+<script>
+const CATEGORY_EMOJI = {
+  beauty: '💆‍♀️',
+  health: '🏥',
+  photo: '📸',
+  kids: '👶',
+  home: '🏠',
+  other: '✨'
+};
+
+function contactLink(contact, contactType) {
+  if (contactType === 'instagram') {
+    const username = contact.replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/\/$/, '');
+    return `<a href="${contact}" target="_blank" rel="noopener">📷 @${username}</a>`;
+  }
+  if (contactType === 'phone') {
+    return `<a href="tel:${contact}">📞 ${contact}</a>`;
+  }
+  if (contactType === 'telegram') {
+    const username = contact.replace(/^https?:\/\/(t\.me|telegram\.me)\//, '').replace(/^@/, '');
+    return `<a href="https://t.me/${username}" target="_blank" rel="noopener">✈️ @${username}</a>`;
+  }
+  // website
+  const display = contact.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+  return `<a href="${contact}" target="_blank" rel="noopener">🔗 ${display}</a>`;
+}
+
+function renderCard(c) {
+  const emoji = CATEGORY_EMOJI[c.category] || '✨';
+  const note = c.note ? `<div class="card-note">💬 ${c.note}</div>` : '';
+  return `
+    <div class="contact-card" data-cat="${c.category}" data-search="${(c.name + ' ' + c.specialty + ' ' + (c.note||'')).toLowerCase()}">
+      <div class="card-cat-emoji">${emoji}</div>
+      <div class="card-name">${c.name}</div>
+      <div class="card-specialty">${c.specialty}</div>
+      <div class="card-location">📍 ${c.location}</div>
+      <div class="card-contact">${contactLink(c.contact, c.contactType)}</div>
+      ${note}
+    </div>`;
+}
+
+let contacts = [];
+let activeCat = 'all';
+
+function filterAndRender() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const grid = document.getElementById('grid');
+  const filtered = contacts.filter(c => {
+    const catOk = activeCat === 'all' || c.category === activeCat;
+    const searchOk = !q || (c.name + ' ' + c.specialty + ' ' + (c.note||'')).toLowerCase().includes(q);
+    return catOk && searchOk;
+  });
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="no-results">No contacts found</div>';
+  } else {
+    grid.innerHTML = filtered.map(renderCard).join('');
+  }
+}
+
+// Category buttons
+document.getElementById('catFilters').addEventListener('click', e => {
+  if (!e.target.classList.contains('cat-btn')) return;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  activeCat = e.target.dataset.cat;
+  filterAndRender();
+});
+
+// Search
+document.getElementById('searchInput').addEventListener('input', filterAndRender);
+
+// Load data
+fetch('contacts.json')
+  .then(r => r.json())
+  .then(data => { contacts = data; filterAndRender(); })
+  .catch(() => {
+    document.getElementById('grid').innerHTML = '<div class="no-results">Failed to load contacts</div>';
+  });
+</script>
+
+</body>
+</html>
