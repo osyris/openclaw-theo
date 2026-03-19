@@ -63,7 +63,7 @@
     "favorite": false
   },
   {
-    "title": "Творожные оладьи (200 ккал / 18г белка)",
+    "title": "Творожные оладьи",
     "titleEn": "Cottage Cheese Pancakes",
     "category": "breakfast",
     "time": "15 мин",
@@ -83,10 +83,12 @@
       "Жарить на сковороде как оладьи до золотистости",
       "Подавать с ягодами, сметаной или мёдом"
     ],
-    "favorite": false
+    "favorite": false,
+    "calories": "200 ккал",
+    "protein": "18 г белка"
   },
   {
-    "title": "Морковные лёпёшки (177 ккал / 20г белка)",
+    "title": "Морковные лёпёшки",
     "titleEn": "Carrot Flatbreads",
     "category": "snack",
     "time": "20 мин",
@@ -114,6 +116,8 @@
       "Выпекать до золотистости",
       "Начинить творожным сыром, шпинатом, огурцом и курицей"
     ],
-    "favorite": false
+    "favorite": false,
+    "calories": "177 ккал",
+    "protein": "20 г белка"
   }
 ]

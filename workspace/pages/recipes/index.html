@@ -392,6 +392,8 @@ function openModal(r) {
       <span>⏱ ${r.time}</span>
       <span>🍽 ${r.servings} порц.</span>
       <span class="${diffClass}">${r.difficulty}</span>
+      ${r.calories ? `<span>🔥 ${r.calories}</span>` : ''}
+      ${r.protein ? `<span>💪 ${r.protein}</span>` : ''}
     </div>
     <div class="modal-section">
       <div class="modal-section-title">📝 Ингредиенты</div>
