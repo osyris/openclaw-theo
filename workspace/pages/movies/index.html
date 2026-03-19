@@ -356,7 +356,8 @@ function renderGenreButtons() {
   const container = document.getElementById('genreFilters');
   const genres = getAllGenres();
   if (!genres.length) { container.innerHTML = ''; return; }
-  container.innerHTML = genres.map(g =>
+  container.innerHTML = `<button class="genre-btn" data-genre="__series__">📺 Series</button>` +
+    genres.map(g =>
     `<button class="genre-btn" data-genre="${g}">${g}</button>`
   ).join('');
   container.querySelectorAll('.genre-btn').forEach(btn => {
@@ -380,7 +381,8 @@ function filterMovies() {
     if (activeFilter === 'watched' && m.status !== 'watched') return false;
     if (activeFilter === 'watchlist' && m.status !== 'watchlist') return false;
     if (activeFilter === 'liked' && !m.liked) return false;
-    if (activeGenre && !(m.genre || []).includes(activeGenre)) return false;
+    if (activeGenre === '__series__' && m.type !== 'series') return false;
+    if (activeGenre && activeGenre !== '__series__' && !(m.genre || []).includes(activeGenre)) return false;
     if (searchQuery && !m.title.toLowerCase().includes(searchQuery) && !(m.titleRu && m.titleRu.toLowerCase().includes(searchQuery))) return false;
     return true;
   });
