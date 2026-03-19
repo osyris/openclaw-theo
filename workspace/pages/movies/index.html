@@ -239,6 +239,10 @@
     background:rgba(192,57,43,0.15); color:var(--accent-light);
     text-transform:uppercase; letter-spacing:0.04em;
   }
+  .modal-description {
+    font-size:0.88rem; color:#bbb; line-height:1.6; margin-bottom:0.8rem;
+    font-style:italic; font-weight:300;
+  }
   .modal-meta {
     display:flex; gap:0.8rem; flex-wrap:wrap; margin-bottom:0.8rem;
   }
@@ -487,6 +491,7 @@ function openModal(idx) {
     ${m.titleRu ? `<div class="modal-title-ru">${m.titleRu}</div>` : ''}
     ${m.year ? `<div class="modal-year">${m.year}</div>` : ''}
     <div class="modal-genres">${genres}</div>
+    ${m.description ? `<div class="modal-description">${m.description}</div>` : ''}
     <div class="modal-meta">
       <span class="modal-badge ${typeClass}">${typeLabel}</span>
       <span class="modal-badge ${statusClass}" id="modalStatusBadge">${statusLabel}</span>
