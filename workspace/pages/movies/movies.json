@@ -10,7 +10,8 @@
     "poster": "img/wuthering-heights.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Новая экранизация романа Эмили Бронте о страстной и разрушительной любви Хитклифа и Кэтрин на фоне суровых йоркширских пустошей."
   },
   {
     "title": "Трудно быть богом",
@@ -23,7 +24,8 @@
     "poster": "img/hard-to-be-a-god.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Экранизация романа Стругацких. Земной учёный живёт на отсталой планете под видом дворянина, наблюдая жестокое средневековье и борясь с соблазном вмешаться."
   },
   {
     "title": "Jay Kelly",
@@ -36,7 +38,8 @@
     "poster": "img/jay-kelly.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Новый фильм Йоргоса Лантимоса с Колином Фарреллом. Загадочная драмеди о мужчине, чья жизнь принимает абсурдный оборот."
   },
   {
     "title": "После Фишера. Инквизитор",
@@ -49,7 +52,8 @@
     "poster": "img/posle-fishera.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Российский криминальный триллер — продолжение серии «После Фишера». Детектив расследует серию загадочных преступлений, выходя на след опасного маньяка."
   },
   {
     "title": "Уволить Жору",
@@ -60,7 +64,8 @@
     "poster": "img/uvolit-zhoru.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "HR-специалист Макс получает задание уволить тихого программиста Жору, но тот оказывается человеком, которого невозможно уволить ни хитростью, ни по правилам."
   },
   {
     "title": "The Housemaid",
@@ -73,7 +78,8 @@
     "poster": "img/the-housemaid.jpg",
     "status": "watched",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Молодая горничная устраивается на работу в дом богатой семьи и оказывается втянута в опасную паутину секретов и манипуляций."
   },
   {
     "title": "Limitless with Chris Hemsworth",
@@ -86,7 +92,8 @@
     "poster": "img/bez-granic.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Крис Хемсворт проверяет пределы человеческого тела, проходя экстремальные испытания под руководством учёных. Документальный сериал о долголетии."
   },
   {
     "title": "While You Were Sleeping",
@@ -100,7 +107,8 @@
     "poster": "img/while-you-were-sleeping.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Одинокая девушка спасает незнакомца в метро, а его семья по ошибке принимает её за невесту. Тёплая романтическая комедия с Сандрой Буллок."
   },
   {
     "title": "The Holiday",
@@ -113,7 +121,8 @@
     "poster": "img/the-holiday.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Две женщины из разных стран меняются домами на Рождество и неожиданно находят любовь. С Кэмерон Диаз, Кейт Уинслет и Джудом Лоу."
   },
   {
     "title": "The Family Man",
@@ -127,7 +136,8 @@
     "poster": "img/the-family-man.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Успешный бизнесмен просыпается в альтернативной жизни, где он — муж и отец. Рождественская история о том, что действительно важно."
   },
   {
     "title": "Last Christmas",
@@ -140,7 +150,8 @@
     "poster": "img/last-christmas.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Кейт работает эльфом в рождественском магазине и встречает загадочного Тома, который меняет её взгляд на жизнь. По мотивам песни Джорджа Майкла."
   },
   {
     "title": "Love Actually",
@@ -154,7 +165,8 @@
     "poster": "img/love-actually.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Десять переплетённых историй о любви в предрождественском Лондоне. Культовая британская комедия со звёздным ансамблем."
   },
   {
     "title": "Something from Tiffany's",
@@ -167,7 +179,8 @@
     "poster": "img/something-from-tiffanys.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Перепутанные рождественские подарки из Тиффани сводят вместе двух незнакомцев. Лёгкая романтическая комедия о судьбе и любви."
   },
   {
     "title": "Serendipity",
@@ -180,7 +193,8 @@
     "poster": "img/serendipity.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Двое встречаются в магазине перед Рождеством и решают доверить судьбу случаю. Спустя годы они пытаются найти друг друга снова."
   },
   {
     "title": "Holidate",
@@ -193,7 +207,8 @@
     "poster": "img/holidate.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Двое одиноких людей заключают пакт — быть друг другу парой на каждый праздник, без обязательств. Но чувства берут своё."
   },
   {
     "title": "Last Holiday",
@@ -206,7 +221,8 @@
     "poster": "img/last-holiday.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Узнав о смертельном диагнозе, скромная продавщица решает прожить оставшееся время на полную — и отправляется в роскошный европейский отель."
   },
   {
     "title": "Happiest Season",
@@ -219,7 +235,8 @@
     "poster": "img/happiest-season.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Эбби едет на Рождество к семье своей девушки, но узнаёт, что та ещё не раскрыла родителям свою ориентацию. Праздничная ромком."
   },
   {
     "title": "Love Hard",
@@ -232,7 +249,8 @@
     "poster": "img/love-hard.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Журналистка из Лос-Анджелеса летит через всю страну к парню из дейтинг-приложения, но обнаруживает, что он использовал чужие фото."
   },
   {
     "title": "Falling for Christmas",
@@ -245,7 +263,8 @@
     "poster": "img/falling-for-christmas.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Избалованная наследница теряет память после аварии на горнолыжном курорте. Владелец скромного домика помогает ей обрести себя заново."
   },
   {
     "title": "Eat Pray Love",
@@ -258,7 +277,8 @@
     "poster": "img/eat-pray-love.jpg",
     "status": "watched",
     "liked": true,
-    "type": "movie"
+    "type": "movie",
+    "description": "После развода женщина отправляется в путешествие по Италии, Индии и Бали в поисках себя. По бестселлеру Элизабет Гилберт."
   },
   {
     "title": "Original Sin",
@@ -272,7 +292,8 @@
     "poster": "img/original-sin.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Богатый кубинец женится на загадочной американке по переписке, но невеста оказывается совсем не той, за кого себя выдаёт. С Джоли и Бандерасом."
   },
   {
     "title": "Bridget Jones's Diary",
@@ -285,7 +306,8 @@
     "poster": "img/bridget-jones-diary.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "32-летняя лондонка ведёт дневник, борется с лишним весом, ищет любовь и выбирает между двумя мужчинами. Культовая британская ромком."
   },
   {
     "title": "Joy",
@@ -298,7 +320,8 @@
     "poster": "img/joy.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "История Джой Мангано — матери-одиночки, которая изобрела самоотжимающуюся швабру и построила бизнес-империю. С Дженнифер Лоуренс."
   },
   {
     "title": "Under the Tuscan Sun",
@@ -312,7 +335,8 @@
     "poster": "img/under-the-tuscan-sun.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "После развода писательница импульсивно покупает виллу в Тоскане и начинает новую жизнь среди итальянских пейзажей и новых знакомств."
   },
   {
     "title": "The Devil Wears Prada",
@@ -325,7 +349,8 @@
     "poster": "img/devil-wears-prada.jpg",
     "status": "watched",
     "liked": true,
-    "type": "movie"
+    "type": "movie",
+    "description": "Выпускница колледжа устраивается ассистенткой к деспотичному редактору модного журнала. Мэрил Стрип в своей культовой роли Миранды Пристли."
   },
   {
     "title": "Wild",
@@ -338,7 +363,8 @@
     "poster": "img/wild.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Женщина в одиночку проходит 1770 км по Тихоокеанскому хребтовому маршруту, чтобы пережить потерю и найти себя. С Риз Уизерспун."
   },
   {
     "title": "Little Women",
@@ -351,7 +377,8 @@
     "poster": "img/little-women.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Четыре сестры Марч взрослеют в Америке времён Гражданской войны, мечтая, любя и выбирая свой путь. Экранизация Греты Гервиг."
   },
   {
     "title": "The Notebook",
@@ -364,7 +391,8 @@
     "poster": "img/the-notebook.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "История любви юных Ноя и Элли, разлучённых обстоятельствами, и старика, читающего дневник своей жене в доме престарелых."
   },
   {
     "title": "Breakfast at Tiffany's",
@@ -378,7 +406,8 @@
     "poster": "img/breakfast-at-tiffanys.jpg",
     "status": "watched",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Очаровательная и эксцентричная Холли Голайтли ведёт богемную жизнь в Нью-Йорке. Культовый фильм с Одри Хепбёрн по повести Трумена Капоте."
   },
   {
     "title": "A Walk to Remember",
@@ -391,7 +420,8 @@
     "poster": "img/a-walk-to-remember.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Хулиган из старшей школы влюбляется в тихую дочь пастора, хранящую важный секрет. Трогательная история первой любви по роману Николаса Спаркса."
   },
   {
     "title": "Chocolat",
@@ -404,7 +434,8 @@
     "poster": "img/chocolat.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Загадочная женщина открывает шоколадную лавку в консервативном французском городке и меняет жизнь его обитателей. С Жюльет Бинош и Джонни Деппом."
   },
   {
     "title": "The Women",
@@ -417,7 +448,8 @@
     "poster": "img/the-women.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Четыре подруги переживают кризисы в отношениях, карьере и дружбе. В фильме нет ни одного мужского персонажа — только женщины."
   },
   {
     "title": "I Don't Know How She Does It",
@@ -429,7 +461,8 @@
     "poster": "img/i-dont-know-how-she-does-it.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Финансистка с Уолл-стрит пытается совмещать карьеру и семью, балансируя между встречами, детьми и чувством вины. С Сарой Джессикой Паркер."
   },
   {
     "title": "The Age of Adaline",
@@ -443,7 +476,8 @@
     "poster": "img/age-of-adaline.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Молодая женщина перестала стареть после удара молнии в 1930-х. Спустя десятилетия одиночества она наконец решается впустить любовь в свою жизнь."
   },
   {
     "title": "The Dressmaker",
@@ -456,7 +490,8 @@
     "poster": "img/the-dressmaker.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Гламурная портниха возвращается в маленький австралийский городок, чтобы разобраться с прошлым и отомстить обидчикам — с помощью моды и швейной машинки."
   },
   {
     "title": "Grace of Monaco",
@@ -468,7 +503,8 @@
     "poster": "img/grace-of-monaco.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Бывшая голливудская звезда Грейс Келли борется за спасение Монако от политического кризиса. Николь Кидман в роли легендарной княгини."
   },
   {
     "title": "Love, Rosie",
@@ -481,7 +517,8 @@
     "poster": "img/love-rosie.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Лучшие друзья с детства любят друг друга, но обстоятельства раз за разом разводят их. История о том, что для настоящей любви никогда не поздно."
   },
   {
     "title": "Карта желаний",
@@ -493,7 +530,8 @@
     "poster": "img/karta-zhelaniy.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Российский сериал о людях, которые составляют карту желаний и пытаются воплотить мечты в реальность, сталкиваясь с забавными и трогательными ситуациями."
   },
   {
     "title": "Комментируй это",
@@ -504,7 +542,8 @@
     "poster": "img/kommentiruy-eto.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Российская комедия о мире интернет-комментариев и блогеров, где виртуальная жизнь переплетается с реальной самым неожиданным образом."
   },
   {
     "title": "Altered Carbon",
@@ -518,7 +557,8 @@
     "poster": "img/altered-carbon.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "В будущем сознание можно перемещать между телами. Бывший солдат воскрешён через 250 лет, чтобы раскрыть убийство богатейшего человека на Земле."
   },
   {
     "title": "Vladimir",
@@ -530,7 +570,8 @@
     "poster": "img/vladimir.jpg",
     "status": "watched",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Профессор литературы переживает кризис, когда на кафедре появляется молодой писатель Владимир. Сериал с Рэйчел Вайс о тайной одержимости."
   },
   {
     "title": "The Bride",
@@ -543,7 +584,8 @@
     "poster": "img/the-bride.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Мрачная переосмысленная история Невесты Франкенштейна. Созданная учёным женщина обретает сознание и борется за свою свободу."
   },
   {
     "title": "Beef (Season 2)",
@@ -556,7 +598,8 @@
     "poster": "img/beef-s2.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Второй сезон хитового сериала Netflix. Новая пара незнакомцев вступает в эскалирующий конфликт, который разрушает их жизни."
   },
   {
     "title": "Good Luck, Have Fun, Don't Die",
@@ -568,7 +611,8 @@
     "poster": "img/good-luck-have-fun.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Фантастический боевик о людях, попавших в смертельную игру, где нужно выжить любой ценой. Напряжённый экшн с элементами sci-fi."
   },
   {
     "title": "Project Hail Mary",
@@ -581,7 +625,8 @@
     "poster": "img/project-hail-mary.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "description": "Учёный просыпается один на корабле и не помнит, как туда попал. Он — последняя надежда Земли. По бестселлеру Энди Вейра, с Райаном Гослингом."
   },
   {
     "title": "Young Sherlock",
@@ -594,7 +639,8 @@
     "poster": "img/young-sherlock.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "series"
+    "type": "series",
+    "description": "Сериал о юности Шерлока Холмса — как будущий великий детектив раскрывал свои первые дела и формировал знаменитый дедуктивный метод."
   },
   {
     "title": "Zdes Byl Yura",
@@ -606,7 +652,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Здесь был Юра"
+    "titleRu": "Здесь был Юра",
+    "description": "Трое парней остаются с дядей Юрой, человеком с ментальными особенностями. Десять дней вместе превращаются в историю о дружбе и взрослении."
   },
   {
     "title": "Sidney Lumet's Birthday",
@@ -618,7 +665,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "День рождения Сидни Люмета"
+    "titleRu": "День рождения Сидни Люмета",
+    "description": "Авторское кино Рауля Гейдарова о взрослении и поиске себя. Искренняя история мальчика Дато, рассказанная в духе неореализма."
   },
   {
     "title": "Scurvy",
@@ -631,7 +679,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Цинга"
+    "titleRu": "Цинга",
+    "description": "1991 год, Полярный Урал. Молодой послушник Фёдор остаётся один среди ненцев, чтобы пройти испытание верой и обрести себя. С Никитой Ефремовым."
   },
   {
     "title": "Angels Don't Buzz",
@@ -644,7 +693,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Ангелы не жужжат"
+    "titleRu": "Ангелы не жужжат",
+    "description": "Истории двенадцати незнакомцев переплетаются, когда странный мастер-класс по варке манной каши неожиданно объединяет их. Абсурдистская драмеди."
   },
   {
     "title": "Everything That Concerns You",
@@ -656,7 +706,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Всё, что тебя касается"
+    "titleRu": "Всё, что тебя касается",
+    "description": "16-летняя Маша ищет отца, которого никогда не знала. Единственная зацепка — юбилейный концерт группы «Звери», где она надеется его встретить."
   },
   {
     "title": "Happy When You're Not",
@@ -669,7 +720,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Счастлив, когда ты нет"
+    "titleRu": "Счастлив, когда ты нет",
+    "description": "Евгений и Женя знакомятся на мероприятии и не ладят, но оказываются вместе. Одна фраза меняет всё. Гран-при фестиваля «Короче»."
   },
   {
     "title": "Seems Like Love",
@@ -682,7 +734,8 @@
     "status": "watched",
     "liked": true,
     "type": "movie",
-    "titleRu": "Походу любовь"
+    "titleRu": "Походу любовь",
+    "description": "Российская романтическая комедия о случайной встрече, которая перерастает в настоящее чувство. Лёгкая и искренняя история о любви."
   },
   {
     "title": "The Aviator",
@@ -695,6 +748,7 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "titleRu": "Авиатор"
+    "titleRu": "Авиатор",
+    "description": "Советский авиатор 1929 года заморожен в рамках тайного эксперимента и размораживается в 2025-м. Ему предстоит найти себя в новом мире."
   }
 ]
