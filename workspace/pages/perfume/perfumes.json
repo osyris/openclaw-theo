@@ -1718,7 +1718,6 @@
     "year": 2024,
     "gender": "unisex",
     "family": "Oriental Vanilla",
-    "description": "«Самая дорогая ваниль» — роскошный ванильный аромат от Tom Ford. EDP 50ml.",
     "notes": {
       "top": [],
       "middle": [],
@@ -1732,9 +1731,20 @@
       "warm"
     ],
     "rating": null,
-    "image": "",
-    "status": "wishlist",
-    "source": "Рекомендация из Instagram"
+    "source": "Рекомендация из Instagram",
+    "img": "",
+    "desc": "«Самая дорогая ваниль» — роскошный ванильный аромат от Tom Ford. EDP 50ml.",
+    "concentration": "",
+    "perfumer": "",
+    "longevity": "",
+    "sillage": "",
+    "seasons": [],
+    "daytime": "",
+    "tags": [],
+    "pyramid": {},
+    "price": "",
+    "fav": false,
+    "votes": ""
   },
   {
     "brand": "Borntostandout",
@@ -1742,7 +1752,6 @@
     "year": 2021,
     "gender": "unisex",
     "family": "Fruity Gourmand",
-    "description": "«Провоцирует людей на комплименты без вашего разрешения» — яркий, сладкий, с характером.",
     "notes": {
       "top": [],
       "middle": [],
@@ -1754,9 +1763,20 @@
       "gourmand"
     ],
     "rating": null,
-    "image": "",
-    "status": "wishlist",
-    "source": "Рекомендация из Instagram"
+    "source": "Рекомендация из Instagram",
+    "img": "",
+    "desc": "«Провоцирует людей на комплименты без вашего разрешения» — яркий, сладкий, с характером.",
+    "concentration": "",
+    "perfumer": "",
+    "longevity": "",
+    "sillage": "",
+    "seasons": [],
+    "daytime": "",
+    "tags": [],
+    "pyramid": {},
+    "price": "",
+    "fav": false,
+    "votes": ""
   },
   {
     "brand": "Matiere Premiere",
@@ -1764,7 +1784,6 @@
     "year": 2019,
     "gender": "unisex",
     "family": "Woody Aromatic",
-    "description": "«Шлейф, который будут обсуждать» — благородный ладан, элегантный и запоминающийся.",
     "notes": {
       "top": [],
       "middle": [
@@ -1778,9 +1797,20 @@
       "smoky"
     ],
     "rating": null,
-    "image": "",
-    "status": "wishlist",
-    "source": "Рекомендация из Instagram"
+    "source": "Рекомендация из Instagram",
+    "img": "",
+    "desc": "«Шлейф, который будут обсуждать» — благородный ладан, элегантный и запоминающийся.",
+    "concentration": "",
+    "perfumer": "",
+    "longevity": "",
+    "sillage": "",
+    "seasons": [],
+    "daytime": "",
+    "tags": [],
+    "pyramid": {},
+    "price": "",
+    "fav": false,
+    "votes": ""
   },
   {
     "brand": "Frederic Malle",
@@ -1788,7 +1818,6 @@
     "year": 2023,
     "gender": "unisex",
     "family": "Fresh Clean",
-    "description": "«Кристаллическая чистота» — коллаборация Frederic Malle x Acne Studios. Чистый, прозрачный аромат.",
     "notes": {
       "top": [],
       "middle": [],
@@ -1800,9 +1829,20 @@
       "musky"
     ],
     "rating": null,
-    "image": "",
-    "status": "wishlist",
-    "source": "Рекомендация из Instagram"
+    "source": "Рекомендация из Instagram",
+    "img": "",
+    "desc": "«Кристаллическая чистота» — коллаборация Frederic Malle x Acne Studios. Чистый, прозрачный аромат.",
+    "concentration": "",
+    "perfumer": "",
+    "longevity": "",
+    "sillage": "",
+    "seasons": [],
+    "daytime": "",
+    "tags": [],
+    "pyramid": {},
+    "price": "",
+    "fav": false,
+    "votes": ""
   },
   {
     "brand": "BDK Parfums",
@@ -1810,7 +1850,6 @@
     "year": 2020,
     "gender": "unisex",
     "family": "Fruity Gourmand",
-    "description": "«Вишнёвый десерт, который сводит людей с ума» — сладкая вишня, табак, ваниль.",
     "notes": {
       "top": [
         "вишня"
@@ -1828,8 +1867,19 @@
       "smoky"
     ],
     "rating": null,
-    "image": "",
-    "status": "wishlist",
-    "source": "Рекомендация из Instagram"
+    "source": "Рекомендация из Instagram",
+    "img": "",
+    "desc": "«Вишнёвый десерт, который сводит людей с ума» — сладкая вишня, табак, ваниль.",
+    "concentration": "",
+    "perfumer": "",
+    "longevity": "",
+    "sillage": "",
+    "seasons": [],
+    "daytime": "",
+    "tags": [],
+    "pyramid": {},
+    "price": "",
+    "fav": false,
+    "votes": ""
   }
 ]
