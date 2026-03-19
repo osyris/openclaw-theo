@@ -8,7 +8,7 @@
 ## Natalia
 - **Telegram:** @natalia_katsalukha (id: 448934333)
 - **What to call her:** Наталия
-- **Timezone:** UTC+8 (Bali WITA, с 3 марта 2026; обычно UTC+2)
+- **Timezone:** UTC+2 (Эстония, EET/EEST). Примечание: с последнего воскресенья марта — летнее время UTC+3 (EEST).
 - **Дети:** Артём, Антон
 - **Notes:** Любит тепло и заботу 😁, назвала меня Тео
 
