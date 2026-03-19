@@ -171,13 +171,42 @@ curl -s "https://app.scrapingbee.com/api/v1/?api_key=${SCRAPINGBEE_API_KEY}&url=
 
 **Workflow при добавлении парфюма:**
 1. Получить ссылку/фото от Наталии
-2. Найти на Fragrantica через ScrapingBee
-3. Извлечь: бренд, название, год, ноты (top/mid/base), аккорды, рейтинг, семейство
-4. **Фото: ВСЕГДА скачивать с Fragrantica** (не использовать скрины от пользователя!)
-   - URL: `https://fimgs.net/mdimg/perfume/375x500.{ID}.jpg` (ID из URL страницы)
+2. **ВСЕГДА запускать субагента** для: поиска на Fragrantica, скачивания фото, заполнения всех полей
+3. Извлечь: бренд, название, год, ноты (top/mid/base), аккорды (с весами и цветами!), рейтинг, семейство, парфюмер, концентрация, стойкость, шлейф
+4. **Фото: ВСЕГДА скачивать из интернета** (не использовать скрины от пользователя!)
+   - Fragrantica: `https://fimgs.net/mdimg/perfume/375x500.{ID}.jpg` (ID из URL страницы)
+   - Альтернатива: Google Images, parfumo.net
    - Сохранить в `/data/workspace/pages/perfume/img/`
-5. Обновить `/data/workspace/pages/perfume/perfumes.json`
+5. Обновить `/data/workspace/pages/perfume/perfumes.json` **строго по шаблону Delina**
 6. Закоммитить
+
+**ШАБЛОН (эталон — Delina). Все 23 поля ОБЯЗАТЕЛЬНЫ:**
+```json
+{
+  "brand": "string",
+  "name": "string", 
+  "notes": "string — краткие ноты через запятую",
+  "desc": "string — описание 1-2 предложения",
+  "tags": ["floral", "woody", "fruity", "gourmand", "fresh", "oriental"],
+  "source": "string",
+  "fav": false,
+  "price": "string (~250€ или '')",
+  "img": "img/filename.jpg",
+  "pyramid": {"top": "string", "mid": "string", "base": "string"},
+  "accords": [{"name": "русское название", "w": 100, "color": "#hex"}],
+  "rating": 0,
+  "votes": 0,
+  "longevity": "string (6–8ч или '')",
+  "sillage": "string (Сильный/Средний/Лёгкий или '')",
+  "daytime": ["day", "night"],
+  "seasons": ["spring", "summer", "autumn", "winter"],
+  "year": 2024,
+  "perfumer": "string",
+  "concentration": "string (EDP/EDT/Parfum)",
+  "gender": "string (Ж/М/Унисекс)",
+  "family": "string (Цветочный/Восточный/Древесный)"
+}
+```
 
 **ВАЖНО:** Фото должны быть эстетичными и органично смотреться на страничке — только качественные изображения из интернета!
 
