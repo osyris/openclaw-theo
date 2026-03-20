@@ -287,124 +287,31 @@
     </div>
 
     <script>
-        // Тео обновляет этот блок
-        const TRIALS_DATA = {
-            updated: "24.02.2026",
-            trials: [
-                {
-                    id: "4721080328",
-                    service: "Страховка",
-                    startDate: "2026-02-05",
-                    status: "active"
-                },
-                {
-                    id: "58518075",
-                    service: "Закрыть номер",
-                    startDate: "2026-02-07",
-                    status: "active"
-                },
-                {
-                    id: "56831273",
-                    service: "Телевидение + DigiKaitse",
-                    startDate: "2026-02-13",
-                    status: "active"
-                },
-                {
-                    id: "55997790",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-13",
-                    status: "active"
-                },
-                {
-                    id: "5229913",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-17",
-                    status: "active"
-                },
-                {
-                    id: "58507365",
-                    service: "Закрыть телевидение + DigiKaitse",
-                    startDate: "2026-02-17",
-                    status: "active"
-                },
-                {
-                    id: "50305150025",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-20",
-                    status: "active"
-                },
-                {
-                    id: "60306224925",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-20",
-                    status: "active"
-                },
-                {
-                    id: "55953690",
-                    service: "Закрыть DigiKaitse",
-                    startDate: "2026-02-21",
-                    status: "active"
-                },
-                {
-                    id: "39901070232",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-21",
-                    status: "active"
-                },
-                {
-                    id: "38111100233",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-21",
-                    status: "active"
-                },
-                {
-                    id: "11903610",
-                    service: "Закрыть страховку (фирма)",
-                    startDate: "2026-02-23",
-                    status: "active"
-                },
-                {
-                    id: "58508061",
-                    service: "Закрыть телевидение",
-                    startDate: "2026-02-23",
-                    status: "active"
-                },
-                {
-                    id: "35902140258",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-23",
-                    status: "active"
-                },
-                {
-                    id: "56941671",
-                    service: "Закрыть телевидение",
-                    startDate: "2026-02-02",
-                    status: "active"
-                },
-                {
-                    id: "35178836957504",
-                    service: "Закрыть страховку",
-                    startDate: "2026-02-02",
-                    status: "active"
-                },
-                {
-                    id: "55974862",
-                    service: "Закрыть DigiKaitse (3 мес)",
-                    startDate: "2026-02-25",
-                    trialDays: 90,
-                    status: "active"
-                },
-                {
-                    id: "45404280277",
-                    service: "Перепроверить ТВ + DigiBox (с/н 500061327)",
-                    startDate: "2026-02-14",
-                    status: "active"
-                },
-            ]
-        };
-
+        let TRIALS_DATA = { updated: '', trials: [] };
         const TRIAL_DAYS = 28;
         const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
+
+        // Load data from server API
+        async function loadData() {
+            try {
+                const resp = await fetch('/pages-api/tele2');
+                if (resp.ok) {
+                    TRIALS_DATA = await resp.json();
+                } else {
+                    // Fallback to static JSON
+                    const resp2 = await fetch('/pages/tele2/tele2.json');
+                    TRIALS_DATA = await resp2.json();
+                }
+            } catch(e) {
+                try {
+                    const resp2 = await fetch('/pages/tele2/tele2.json');
+                    TRIALS_DATA = await resp2.json();
+                } catch(e2) {
+                    console.error('Could not load data', e2);
+                }
+            }
+            render();
+        }
 
         function daysBetween(d1, d2) {
             return Math.ceil((d2 - d1) / (1000 * 60 * 60 * 24));
@@ -426,15 +333,7 @@
             return d.toISOString().slice(0, 10);
         }
 
-        function applyLocalState() {
-            const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
-            TRIALS_DATA.trials.forEach(t => {
-                if (closed.includes(t.id)) t.status = 'closed';
-            });
-        }
-
         function render() {
-            applyLocalState();
             const today = new Date();
             today.setHours(0,0,0,0);
 
@@ -558,17 +457,29 @@
             document.getElementById('overlay').classList.remove('open');
         }
 
-        function closeTrial(id) {
-            if (confirm('Закрыть триал ' + id + '?')) {
-                const closed = JSON.parse(localStorage.getItem('tele2-closed') || '[]');
-                if (!closed.includes(id)) closed.push(id);
-                localStorage.setItem('tele2-closed', JSON.stringify(closed));
-                closeDetail();
-                render();
+        async function closeTrial(id) {
+            if (!confirm('Закрыть триал ' + id + '?')) return;
+            try {
+                const resp = await fetch('/pages-api/tele2/toggle', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id })
+                });
+                if (resp.ok) {
+                    const result = await resp.json();
+                    const trial = TRIALS_DATA.trials.find(t => t.id === id);
+                    if (trial) trial.status = result.status;
+                    closeDetail();
+                    render();
+                } else {
+                    alert('Ошибка при закрытии триала');
+                }
+            } catch(e) {
+                alert('Нет связи с сервером');
             }
         }
 
-        render();
+        loadData();
     </script>
 </body>
 </html>
