@@ -628,5 +628,23 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 41,
+    "file": "hair/post-coloring-care.jpg",
+    "category": "hair",
+    "title": "L'Oréal Absolut Repair + OLLIN Service Line pH 3.5",
+    "description": "После окрашивания: 1) L'Oréal Absolut Repair — профессиональная маска для сухих/повреждённых волос, 250 мл. 2) OLLIN Service Line — кондиционер-стабилизатор pH 3.5, закрывает кутикулу после окрашивания.",
+    "source": "@uhodom_edinym",
+    "tags": [
+      "волосы",
+      "окрашивание",
+      "маска",
+      "кондиционер",
+      "L'Oréal",
+      "OLLIN"
+    ],
+    "added": "2026-03-20",
+    "catalog": "hair"
   }
 ]
