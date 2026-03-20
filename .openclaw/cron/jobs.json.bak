@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773802814518,
+      "updatedAtMs": 1773889211492,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773889200000,
-        "lastRunAtMs": 1773802800023,
+        "nextRunAtMs": 1773975600000,
+        "lastRunAtMs": 1773889200077,
         "lastStatus": "ok",
-        "lastDurationMs": 14495,
+        "lastDurationMs": 11415,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773813613757,
+      "updatedAtMs": 1773903087737,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -81,46 +81,20 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Прочитай файл /data/workspace/memory/birthdays.md. Проверь, совпадает ли сегодняшняя дата с каким-то днём рождения (сравни день и месяц). Если да — отправь Наталии поздравительное напоминание: '🎂 Сегодня день рождения у [имя]! Не забудь поздравить!' Если сегодня нет дней рождения — НЕ отправляй ничего, просто завершись молча."
+        "message": "Прочитай файл /data/workspace/memory/birthdays.md. Проверь, совпадает ли сегодняшняя дата с каким-то днём рождения (сравни день и месяц). Если да — отправь ТОЛЬКО короткое поздравительное напоминание, например: '🎂 Сегодня день рождения у [имя]! Не забудь поздравить!' Без технических деталей, без инструкций, без упоминания Telegram/id/username. Просто человеческое напоминание. Если сегодня нет дней рождения — НЕ отправляй ничего, просто завершись молча."
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773900000000,
-        "lastRunAtMs": 1773813600052,
+        "nextRunAtMs": 1773986400000,
+        "lastRunAtMs": 1773900000033,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 13705,
+        "lastDurationMs": 19839,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "e43c0ad5-3552-4d20-9d1e-d963561e3290",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Напоминание: Juuste Akadeemia",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771851413928,
-      "updatedAtMs": 1771851413928,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-19T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Напомни Наталии: записаться в Juuste Akadeemia (juusteakadeemia.ee) — диагностика и лечение выпадения волос. Она планировала обратиться после отпуска."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773907200000
       }
     },
     {
@@ -372,7 +346,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773840658523,
+      "updatedAtMs": 1773927032029,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -388,11 +362,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773927000000,
-        "lastRunAtMs": 1773840600024,
+        "nextRunAtMs": 1774013400000,
+        "lastRunAtMs": 1773927000046,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 58499,
+        "lastDurationMs": 31983,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

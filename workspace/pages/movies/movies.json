@@ -703,8 +703,8 @@
       "Drama"
     ],
     "poster": "img/vsyo-chto-tebya-kasaetsya.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "titleRu": "Всё, что тебя касается",
     "description": "16-летняя Маша ищет отца, которого никогда не знала. Единственная зацепка — юбилейный концерт группы «Звери», где она надеется его встретить."
