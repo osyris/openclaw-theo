@@ -610,5 +610,23 @@
     ],
     "added": "2026-03-20",
     "catalog": null
+  },
+  {
+    "id": 40,
+    "file": "hair/dercos-preshampoo.jpg",
+    "category": "hair",
+    "title": "Vichy Dercos + Time to Purity Grow",
+    "description": "1) Vichy Dercos Caspa Control K — шампунь-пилинг, салициловая кислота, против перхоти/себума. 2) Time to Purity Grow — маска-прешампунь, глубокое очищение, 200 мл.",
+    "source": "@uhodom_edinym",
+    "tags": [
+      "волосы",
+      "шампунь",
+      "пилинг",
+      "очищение",
+      "Vichy",
+      "Dercos"
+    ],
+    "added": "2026-03-20",
+    "catalog": "hair"
   }
 ]
