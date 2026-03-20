@@ -4415,5 +4415,78 @@
     "concentration": "EDP",
     "gender": "Унисекс",
     "family": "Фруктово-гурманский"
+  },
+  {
+    "brand": "27 87 Perfumes",
+    "name": "Hakuna Matata",
+    "notes": "Банан, бергамот, жасмин, мёд",
+    "desc": "Сначала — игривый флирт, потом — тёплый банановый хлеб. Уют, солнце и «жизнь хороша!» Самый реалистичный банан ever.",
+    "tags": [
+      "fruity",
+      "gourmand",
+      "floral"
+    ],
+    "source": "molecule.ee",
+    "fav": false,
+    "price": "~185€",
+    "img": "img/hakuna-matata.jpg",
+    "pyramid": {
+      "top": "Бергамот, аккорд зелёной банановой кожуры, дрок (Broom Flower)",
+      "mid": "Спелый банан, жасмин, цветок апельсина",
+      "base": "Мёд, ладанник (лабданум)"
+    },
+    "accords": [
+      {
+        "name": "фруктовый",
+        "w": 100,
+        "color": "#ff9a00"
+      },
+      {
+        "name": "сладкий",
+        "w": 85,
+        "color": "#ee363b"
+      },
+      {
+        "name": "тропический",
+        "w": 80,
+        "color": "#ffcc00"
+      },
+      {
+        "name": "медовый",
+        "w": 70,
+        "color": "#d4a017"
+      },
+      {
+        "name": "цветочный",
+        "w": 65,
+        "color": "#ff69b4"
+      },
+      {
+        "name": "цитрусовый",
+        "w": 55,
+        "color": "#ffd700"
+      },
+      {
+        "name": "амбровый",
+        "w": 50,
+        "color": "#d4a574"
+      }
+    ],
+    "rating": 0,
+    "votes": 0,
+    "longevity": "6–8ч",
+    "sillage": "Средний",
+    "daytime": [
+      "day"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "year": 2024,
+    "perfumer": "",
+    "concentration": "EDP",
+    "gender": "Унисекс",
+    "family": "Фруктовый"
   }
 ]
