@@ -679,5 +679,23 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 44,
+    "file": "hair/color-wow-dream-coat.jpg",
+    "category": "hair",
+    "title": "Color WOW Extra Strength Dream Coat",
+    "description": "Стайлинг-спрей от пушистости (Extra Strength). Анти-фриз, гладкость, блеск. 200 мл.",
+    "source": "@uhodom_edinym",
+    "tags": [
+      "волосы",
+      "стайлинг",
+      "спрей",
+      "Color WOW",
+      "анти-фриз",
+      "пушистость"
+    ],
+    "added": "2026-03-20",
+    "catalog": "hair"
   }
 ]
