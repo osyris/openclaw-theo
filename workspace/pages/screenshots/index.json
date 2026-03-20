@@ -593,5 +593,22 @@
     ],
     "added": "2026-03-20",
     "catalog": null
+  },
+  {
+    "id": 39,
+    "file": "leisure/oxxxymiron-tallinn.jpg",
+    "category": "leisure",
+    "title": "Oxxxymiron — концерт",
+    "description": "Понедельник, 8 июня 2026. Helitehas, Tallinn. Билеты на Songkick.",
+    "source": "Songkick",
+    "tags": [
+      "досуг",
+      "концерт",
+      "музыка",
+      "Таллин",
+      "Oxxxymiron"
+    ],
+    "added": "2026-03-20",
+    "catalog": null
   }
 ]
