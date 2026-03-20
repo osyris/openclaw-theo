@@ -663,5 +663,21 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 43,
+    "file": "hair/oioi-porosity-stabilizer.jpg",
+    "category": "hair",
+    "title": "OIOI Porosity Stabilizer",
+    "description": "Стабилизатор пористости / увлажнение. 250 мл. Этап: увлажнение.",
+    "source": "@uhodom_edinym",
+    "tags": [
+      "волосы",
+      "увлажнение",
+      "OIOI",
+      "пористость"
+    ],
+    "added": "2026-03-20",
+    "catalog": "hair"
   }
 ]
