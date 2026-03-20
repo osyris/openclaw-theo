@@ -646,5 +646,22 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 42,
+    "file": "hair/rco-television.jpg",
+    "category": "hair",
+    "title": "R+Co TELEVISION Perfect Hair",
+    "description": "Шампунь + кондиционер R+Co Television Perfect Hair. «Прекрасная пара на каждый день». 241 мл.",
+    "source": "@uhodom_edinym",
+    "tags": [
+      "волосы",
+      "шампунь",
+      "кондиционер",
+      "R+Co",
+      "ежедневный уход"
+    ],
+    "added": "2026-03-20",
+    "catalog": "hair"
   }
 ]
