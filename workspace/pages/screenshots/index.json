@@ -576,5 +576,22 @@
     ],
     "added": "2026-03-20",
     "catalog": null
+  },
+  {
+    "id": 38,
+    "file": "finds/selfie-monitor.jpg",
+    "category": "finds",
+    "title": "Монитор для селфи (магнитный)",
+    "description": "Мини-экран на заднюю камеру для селфи. Батарея 2000 mAh, Wi-Fi, функция Power Bank. Совместим с iOS и Android. Крепкий магнит. Wildberries ~3084₽.",
+    "source": "Wildberries",
+    "tags": [
+      "находки",
+      "#девайс",
+      "#для_себя",
+      "селфи",
+      "гаджет"
+    ],
+    "added": "2026-03-20",
+    "catalog": null
   }
 ]
