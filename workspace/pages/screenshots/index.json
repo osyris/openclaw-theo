@@ -697,5 +697,23 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 45,
+    "file": "finds/chaichai-lt.jpg",
+    "category": "finds",
+    "title": "Chai Chai — чай и специи",
+    "description": "Литовский магазин чая, специй и подарков. Verkių g. 31C, Vilnius. Сайт: chaichai.lt",
+    "source": "@chaichailt",
+    "tags": [
+      "находки",
+      "#для_себя",
+      "#подарок",
+      "чай",
+      "специи",
+      "Вильнюс"
+    ],
+    "added": "2026-03-20",
+    "catalog": null
   }
 ]
