@@ -765,5 +765,22 @@
     "added": "2026-03-21",
     "catalog": "skincare",
     "file": ""
+  },
+  {
+    "id": 49,
+    "category": "cosmetics-skincare",
+    "title": "SALIPIL Purifying Body Spray",
+    "description": "Спрей для тела с 2% салициловой кислотой от акне. 100 мл, 27.90€ beautyboutique.ee",
+    "source": "beautyboutique.ee",
+    "tags": [
+      "уход",
+      "тело",
+      "акне",
+      "салициловая кислота",
+      "спрей"
+    ],
+    "added": "2026-03-21",
+    "catalog": "skincare",
+    "file": ""
   }
 ]
