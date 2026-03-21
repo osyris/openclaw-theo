@@ -733,5 +733,21 @@
     ],
     "added": "2026-03-20",
     "catalog": "hair"
+  },
+  {
+    "id": 47,
+    "file": "cosmetics-skincare/caudalie-vinobronze.jpg",
+    "category": "cosmetics-skincare",
+    "title": "Caudalie Vinobronze Self-Tan Sun Drops",
+    "description": "Капли для автозагара, 15 мл. Смешать с увлажняющим кремом на ночь — естественный бронзовый тон. Не забивает поры.",
+    "source": "cultbeauty.com",
+    "tags": [
+      "уход",
+      "автозагар",
+      "лицо",
+      "Caudalie"
+    ],
+    "added": "2026-03-21",
+    "catalog": "skincare"
   }
 ]
