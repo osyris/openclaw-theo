@@ -291,23 +291,19 @@
         const TRIAL_DAYS = 28;
         const months = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
 
-        // Load data from server API
+        // Load data from server API (try pages-api, then app-api, then static fallback)
         async function loadData() {
-            try {
-                const resp = await fetch('/pages-api/tele2');
-                if (resp.ok) {
-                    TRIALS_DATA = await resp.json();
-                } else {
-                    // Fallback to static JSON
-                    const resp2 = await fetch('/pages/tele2/tele2.json');
-                    TRIALS_DATA = await resp2.json();
-                }
-            } catch(e) {
+            const urls = ['/pages-api/tele2', '/app-api/tele2', '/pages/tele2/tele2.json'];
+            for (const url of urls) {
                 try {
-                    const resp2 = await fetch('/pages/tele2/tele2.json');
-                    TRIALS_DATA = await resp2.json();
-                } catch(e2) {
-                    console.error('Could not load data', e2);
+                    const resp = await fetch(url);
+                    if (resp.ok) {
+                        TRIALS_DATA = await resp.json();
+                        console.log('Loaded from:', url);
+                        break;
+                    }
+                } catch(e) {
+                    console.warn('Failed to load from', url, e);
                 }
             }
             render();
@@ -460,11 +456,20 @@
         async function closeTrial(id) {
             if (!confirm('Закрыть триал ' + id + '?')) return;
             try {
-                const resp = await fetch('/pages-api/tele2/toggle', {
+                // Try POST first
+                let resp = await fetch('/pages-api/tele2/toggle', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id })
                 });
+                // If POST blocked by same-origin, try via app-api (login-protected)
+                if (resp.status === 403) {
+                    resp = await fetch('/app-api/tele2/toggle', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ id })
+                    });
+                }
                 if (resp.ok) {
                     const result = await resp.json();
                     const trial = TRIALS_DATA.trials.find(t => t.id === id);
@@ -472,10 +477,11 @@
                     closeDetail();
                     render();
                 } else {
-                    alert('Ошибка при закрытии триала');
+                    const err = await resp.text();
+                    alert('Ошибка: ' + resp.status + ' ' + err);
                 }
             } catch(e) {
-                alert('Нет связи с сервером');
+                alert('Нет связи с сервером: ' + e.message);
             }
         }
 
