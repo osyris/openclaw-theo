@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1773889211492,
+      "updatedAtMs": 1773975614466,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1773975600000,
-        "lastRunAtMs": 1773889200077,
+        "nextRunAtMs": 1774062000000,
+        "lastRunAtMs": 1773975600062,
         "lastStatus": "ok",
-        "lastDurationMs": 11415,
+        "lastDurationMs": 14404,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -71,7 +71,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1773903087737,
+      "updatedAtMs": 1773986410140,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -87,11 +87,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1773986400000,
-        "lastRunAtMs": 1773900000033,
+        "nextRunAtMs": 1774072800000,
+        "lastRunAtMs": 1773986400076,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19839,
+        "lastDurationMs": 10064,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -129,58 +129,6 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 1
-      }
-    },
-    {
-      "id": "3cde14b2-3d3e-4bcb-a08e-f8bf70321a5e",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 50305150025",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771858340446,
-      "updatedAtMs": 1771858340446,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-20T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, личный код 50305150025 (создана 20.02). Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773993600000
-      }
-    },
-    {
-      "id": "bf01ed7a-148e-4ef2-b5ce-05a1bcca0f77",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 60306224925",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771858340486,
-      "updatedAtMs": 1771858340486,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-20T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть страховку, личный код 60306224925 (создана 20.02). Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1773993600000
       }
     },
     {
@@ -346,7 +294,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1773927032029,
+      "updatedAtMs": 1774013422485,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -362,11 +310,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774013400000,
-        "lastRunAtMs": 1773927000046,
+        "nextRunAtMs": 1774099800000,
+        "lastRunAtMs": 1774013400073,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31983,
+        "lastDurationMs": 22412,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -448,6 +396,65 @@
       },
       "state": {
         "nextRunAtMs": 1774940400000
+      }
+    },
+    {
+      "id": "8e0f4f26-9ff0-4a2f-a73d-7fcc0eaab2df",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Вечерний чекпоинт",
+      "enabled": true,
+      "createdAtMs": 1774013614902,
+      "updatedAtMs": 1774027857275,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 19 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Вечерний чекпоинт (21:30 Эстония). Проверь:\n1. Задачи из Weekly Planner (/data/workspace/pages/planner/index.html) на сегодня — что сделано, что нет\n2. Tele2 Trial Tracker (/data/workspace/pages/tele2/index.html) — триалы с дедлайном сегодня/завтра\n3. Напоминания из memory/mama-todo.md и других списков\n4. iCloud Calendar — события на завтра\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. Пиши на русском, тепло и по делу."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774114200000,
+        "lastRunAtMs": 1774027800031,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57244,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "371df430-6656-483c-aa09-7a155d8f9522",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Напоминание: Oxxxymiron 8 июня",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774031484508,
+      "updatedAtMs": 1774031484508,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-25T15:30:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напомни Наталии: через 2 недели — концерт Oxxxymiron! 🎤\n📅 Понедельник, 8 июня 2026\n📍 Helitehas, Tallinn\n🎟 Билеты на Songkick — если ещё не купила, самое время!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1779723000000
       }
     }
   ]
