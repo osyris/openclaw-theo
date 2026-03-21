@@ -749,5 +749,21 @@
     ],
     "added": "2026-03-21",
     "catalog": "skincare"
+  },
+  {
+    "id": 48,
+    "category": "cosmetics-skincare",
+    "title": "Bondi Sands Everyday Gradual Tanning Milk",
+    "description": "Молочко для постепенного загара, 375 мл. Кокосовый аромат. 18.99€ cultbeauty.com",
+    "source": "cultbeauty.com",
+    "tags": [
+      "уход",
+      "автозагар",
+      "тело",
+      "Bondi Sands"
+    ],
+    "added": "2026-03-21",
+    "catalog": "skincare",
+    "file": ""
   }
 ]
