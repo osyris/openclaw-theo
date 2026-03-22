@@ -167,25 +167,21 @@
     <div class="footer">updated <span id="updated"></span></div>
 
     <script>
-        const SHOPPING_DATA = {
-            updated: "22.03.2026",
-            categories: [
-                {
-                    name: "🧹 Для дома",
-                    items: [
-                        { text: "Туалетная бумага" },
-                        { text: "Зубочистки" },
-                        { text: "Пакеты для мусора" },
-                    ]
-                },
-                {
-                    name: "🍽 Продукты",
-                    items: [
-                        { text: "Сушеный чеснок" },
-                    ]
-                },
-            ]
-        };
+        let SHOPPING_DATA = { updated: '', categories: [] };
+
+        async function loadData() {
+            const urls = ['/pages-api/shopping', '/app-api/shopping', '/pages/shopping/shopping.json'];
+            for (const url of urls) {
+                try {
+                    const resp = await fetch(url);
+                    if (resp.ok) {
+                        SHOPPING_DATA = await resp.json();
+                        break;
+                    }
+                } catch(e) {}
+            }
+            render();
+        }
 
         function render() {
             const container = document.getElementById('shopping-list');
@@ -198,19 +194,16 @@
                 return;
             }
 
-            const checked = JSON.parse(localStorage.getItem('shopping-checked') || '{}');
             let hasChecked = false;
-
             let html = '';
-            SHOPPING_DATA.categories.forEach(cat => {
+            SHOPPING_DATA.categories.forEach((cat, catIdx) => {
                 html += `<div class="category">`;
                 html += `<div class="category-title">${cat.name}</div>`;
                 html += `<ul class="items">`;
-                cat.items.forEach((item, idx) => {
-                    const key = `${cat.name}-${idx}`;
-                    const isChecked = checked[key] ? 'checked' : '';
-                    if (checked[key]) hasChecked = true;
-                    html += `<li class="${isChecked}" onclick="toggleItem(this, '${key}')">
+                cat.items.forEach((item, itemIdx) => {
+                    const isChecked = item.checked ? 'checked' : '';
+                    if (item.checked) hasChecked = true;
+                    html += `<li class="${isChecked}" onclick="toggleItem(${catIdx}, ${itemIdx}, this)">
                         <span class="checkbox"></span>
                         <span class="item-text">${item.text}</span>
                         ${item.qty ? `<span class="item-qty">${item.qty}</span>` : ''}
@@ -224,25 +217,60 @@
             clearBtn.style.display = hasChecked ? 'block' : 'none';
         }
 
-        function toggleItem(el, key) {
+        async function toggleItem(catIdx, itemIdx, el) {
             el.classList.toggle('checked');
-            const checked = JSON.parse(localStorage.getItem('shopping-checked') || '{}');
-            if (el.classList.contains('checked')) {
-                checked[key] = true;
-            } else {
-                delete checked[key];
+            // Optimistic update
+            SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+
+            try {
+                let resp = await fetch('/pages-api/shopping/toggle', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ category: catIdx, item: itemIdx })
+                });
+                if (resp.status === 403) {
+                    resp = await fetch('/app-api/shopping/toggle', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ category: catIdx, item: itemIdx })
+                    });
+                }
+                if (!resp.ok) {
+                    // Revert on error
+                    SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                        !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+                    render();
+                }
+            } catch(e) {
+                SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                    !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+                render();
             }
-            localStorage.setItem('shopping-checked', JSON.stringify(checked));
-            document.getElementById('clear-btn').style.display =
-                Object.keys(checked).length ? 'block' : 'none';
+
+            const hasChecked = SHOPPING_DATA.categories.some(c => c.items.some(i => i.checked));
+            document.getElementById('clear-btn').style.display = hasChecked ? 'block' : 'none';
         }
 
-        function clearChecked() {
-            localStorage.removeItem('shopping-checked');
-            render();
+        async function clearChecked() {
+            try {
+                let resp = await fetch('/pages-api/shopping/clear', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                if (resp.status === 403) {
+                    resp = await fetch('/app-api/shopping/clear', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                }
+                if (resp.ok) {
+                    await loadData();
+                }
+            } catch(e) {}
         }
 
-        render();
+        loadData();
     </script>
 </body>
 </html>

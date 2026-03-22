@@ -1,0 +1,31 @@
+{
+  "updated": "22.03.2026",
+  "categories": [
+    {
+      "name": "🧹 Для дома",
+      "items": [
+        {
+          "text": "Туалетная бумага",
+          "checked": false
+        },
+        {
+          "text": "Зубочистки",
+          "checked": false
+        },
+        {
+          "text": "Пакеты для мусора",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "name": "🍽 Продукты",
+      "items": [
+        {
+          "text": "Сушеный чеснок",
+          "checked": false
+        }
+      ]
+    }
+  ]
+}
