@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774062010592,
+      "updatedAtMs": 1774148410369,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774148400000,
-        "lastRunAtMs": 1774062000084,
+        "nextRunAtMs": 1774234800000,
+        "lastRunAtMs": 1774148400057,
         "lastStatus": "ok",
-        "lastDurationMs": 10508,
+        "lastDurationMs": 10312,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1774148400025
+        "runningAtMs": 1774234800032
       }
     },
     {
@@ -72,7 +72,7 @@
       "name": "Проверка дней рождения",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774072806256,
+      "updatedAtMs": 1774159206860,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -88,11 +88,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774159200000,
-        "lastRunAtMs": 1774072800132,
+        "nextRunAtMs": 1774245600000,
+        "lastRunAtMs": 1774159200046,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6124,
+        "lastDurationMs": 6814,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -217,7 +217,7 @@
       "name": "Вечерний чекпоинт 21:30 Бали",
       "enabled": true,
       "createdAtMs": 1771956626928,
-      "updatedAtMs": 1774099840289,
+      "updatedAtMs": 1774186248589,
       "schedule": {
         "kind": "cron",
         "expr": "30 13 * * *",
@@ -233,11 +233,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774186200000,
-        "lastRunAtMs": 1774099800022,
+        "nextRunAtMs": 1774272600000,
+        "lastRunAtMs": 1774186200044,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40267,
+        "lastDurationMs": 48545,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -328,7 +328,7 @@
       "name": "Вечерний чекпоинт",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774114244758,
+      "updatedAtMs": 1774200643731,
       "schedule": {
         "kind": "cron",
         "expr": "30 19 * * *",
@@ -344,11 +344,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774200600000,
-        "lastRunAtMs": 1774114200042,
+        "nextRunAtMs": 1774287000000,
+        "lastRunAtMs": 1774200600048,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 44716,
+        "lastDurationMs": 43683,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
