@@ -1,17 +1,17 @@
 {
-  "updated": "21.03.2026",
+  "updated": "23.03.2026",
   "trials": [
     {
       "id": "4721080328",
       "service": "Страховка",
       "startDate": "2026-02-05",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "58518075",
       "service": "Закрыть номер",
       "startDate": "2026-02-07",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "56831273",
@@ -77,25 +77,25 @@
       "id": "58508061",
       "service": "Закрыть телевидение",
       "startDate": "2026-02-23",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "35902140258",
       "service": "Закрыть страховку",
       "startDate": "2026-02-23",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "56941671",
       "service": "Закрыть телевидение",
       "startDate": "2026-02-02",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "35178836957504",
       "service": "Закрыть страховку",
       "startDate": "2026-02-02",
-      "status": "active"
+      "status": "closed"
     },
     {
       "id": "55974862",
