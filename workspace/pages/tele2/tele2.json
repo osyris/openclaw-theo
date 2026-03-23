@@ -116,6 +116,13 @@
       "startDate": "2026-03-21",
       "trialDays": 30,
       "status": "active"
+    },
+    {
+      "id": "55636718",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-03-23",
+      "trialDays": 30,
+      "status": "active"
     }
   ]
 }
