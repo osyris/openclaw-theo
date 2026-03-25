@@ -1,5 +1,5 @@
 {
-  "updated": "23.03.2026",
+  "updated": "25.03.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -121,6 +121,13 @@
       "id": "55636718",
       "service": "Закрыть телевидение",
       "startDate": "2026-03-23",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55500196",
+      "service": "Закрыть страховку",
+      "startDate": "2026-03-25",
       "trialDays": 30,
       "status": "active"
     }
