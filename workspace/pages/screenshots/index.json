@@ -782,5 +782,59 @@
     "added": "2026-03-21",
     "catalog": "skincare",
     "file": ""
+  },
+  {
+    "id": 50,
+    "file": "books/dreiser-financist.jpg",
+    "category": "books",
+    "title": "Финансист",
+    "titleOriginal": "The Financier",
+    "author": "Теодор Драйзер",
+    "description": "Первый роман «Трилогии желания». История молодого финансиста Фрэнка Каупервуда, его взлёта и падения в мире больших денег Филадельфии.",
+    "source": null,
+    "tags": [
+      "книга",
+      "бизнес",
+      "литература",
+      "классика"
+    ],
+    "added": "2026-03-26",
+    "catalog": "books"
+  },
+  {
+    "id": 51,
+    "file": "books/dreiser-titan.jpg",
+    "category": "books",
+    "title": "Титан",
+    "titleOriginal": "The Titan",
+    "author": "Теодор Драйзер",
+    "description": "Второй роман «Трилогии желания». Каупервуд покоряет Чикаго, строя транспортную империю и сражаясь с коррупцией и конкурентами.",
+    "source": null,
+    "tags": [
+      "книга",
+      "бизнес",
+      "литература",
+      "классика"
+    ],
+    "added": "2026-03-26",
+    "catalog": "books"
+  },
+  {
+    "id": 52,
+    "file": "books/dreiser-stoik.jpg",
+    "category": "books",
+    "title": "Стоик",
+    "titleOriginal": "The Stoic",
+    "author": "Теодор Драйзер",
+    "description": "Заключительный роман «Трилогии желания». Последние годы Каупервуда — борьба за лондонское метро и философское осмысление жизни.",
+    "source": null,
+    "tags": [
+      "книга",
+      "бизнес",
+      "литература",
+      "классика"
+    ],
+    "added": "2026-03-26",
+    "catalog": "books"
   }
 ]
