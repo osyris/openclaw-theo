@@ -1032,5 +1032,73 @@
     ],
     "added": "2026-03-26",
     "catalog": "books"
+  },
+  {
+    "id": 64,
+    "file": "books/girlsmoneymind-robbins.jpg",
+    "category": "books",
+    "catalog": "books",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "финансы",
+      "психология денег"
+    ],
+    "date": "2026-03-26",
+    "note": "Пост @girlsmoneymind — рекомендация книг по финансам (Психология денег)"
+  },
+  {
+    "id": 65,
+    "file": "books/girlsmoneymind-beginners.jpg",
+    "category": "books",
+    "catalog": "books",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "финансы",
+      "для подростков",
+      "для новичков"
+    ],
+    "date": "2026-03-26",
+    "note": "Пост @girlsmoneymind — книги для подростков и новичков: Самый богатый человек в Вавилоне, Думай медленно... решай быстро, Хулиномика"
+  },
+  {
+    "id": 66,
+    "file": "books/marketing-3-knigi.jpg",
+    "category": "books",
+    "catalog": "books",
+    "source": "@galya.melnikova",
+    "tags": [
+      "маркетинг",
+      "фиолетовая корова",
+      "сет годин"
+    ],
+    "note": "Фиолетовая корова — Сет Годин. Источник: Instagram @galya.melnikova — 3 книги по маркетингу",
+    "date": "2026-03-26"
+  },
+  {
+    "id": 67,
+    "file": "books/girlsmoneymind-robbins.jpg",
+    "category": "books",
+    "catalog": "books",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "финансы",
+      "психология денег"
+    ],
+    "date": "2026-03-26",
+    "note": "Пост @girlsmoneymind — рекомендация книг по финансам (Психология денег)"
+  },
+  {
+    "id": 68,
+    "file": "books/girlsmoneymind-beginners.jpg",
+    "category": "books",
+    "catalog": "books",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "финансы",
+      "для подростков",
+      "для новичков"
+    ],
+    "date": "2026-03-26",
+    "note": "Пост @girlsmoneymind — книги для подростков и новичков: Самый богатый человек в Вавилоне, Думай медленно... решай быстро, Хулиномика"
   }
 ]
