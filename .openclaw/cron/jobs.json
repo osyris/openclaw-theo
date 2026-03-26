@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774321215969,
+      "updatedAtMs": 1774407626410,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,142 +24,45 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774407600000,
-        "lastRunAtMs": 1774321200043,
+        "nextRunAtMs": 1774494000000,
+        "lastRunAtMs": 1774407600040,
         "lastStatus": "ok",
-        "lastDurationMs": 15926,
+        "lastDurationMs": 26370,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1774407600019
-      }
-    },
-    {
-      "id": "2e869d64-870b-4d8f-80a2-0b9a889d127d",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Тестовое напоминание",
-      "enabled": false,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771833318632,
-      "updatedAtMs": 1771833622388,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-02-23T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Отправь Наталии тестовое напоминание: '🔔 Тест! Напоминание работает. Поставь Антону причину на пропуски!'"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1771833600029,
-        "lastStatus": "error",
-        "lastDurationMs": 22359,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "runningAtMs": 1774494000019
       }
     },
     {
       "id": "50af5351-d2d4-4925-bd9c-a2f0801aab0b",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Проверка дней рождения",
+      "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774332006467,
+      "updatedAtMs": 1774434579652,
       "schedule": {
         "kind": "cron",
-        "expr": "0 6 * * *",
-        "tz": "UTC"
+        "expr": "0 8 * * *",
+        "tz": "Europe/Tallinn"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Прочитай файл /data/workspace/memory/birthdays.md. Проверь, совпадает ли сегодняшняя дата с каким-то днём рождения (сравни день и месяц). Если да — отправь ТОЛЬКО короткое поздравительное напоминание, например: '🎂 Сегодня день рождения у [имя]! Не забудь поздравить!' Без технических деталей, без инструкций, без упоминания Telegram/id/username. Просто человеческое напоминание. Если сегодня нет дней рождения — НЕ отправляй ничего, просто завершись молча."
+        "message": "Проверь дни рождения на сегодня:\n1. Прочитай /data/workspace/memory/birthdays.md\n2. Проверь iCloud Calendar (cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject python3 ical.py list-events --from today --to today) — ищи события с 'день рождения', 'birthday', 'ДР'\n3. Сравни сегодняшний день+месяц\n\nЕсли есть совпадение — отправь короткое тёплое напоминание: '🎂 Сегодня ДР у [имя]! Не забудь поздравить!'\nЕсли нет — завершись молча, ничего не отправляй."
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774418400000,
-        "lastRunAtMs": 1774332000079,
+        "nextRunAtMs": 1774504800000,
+        "lastRunAtMs": 1774418400047,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6388,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "029d7776-d0df-449f-8218-cc77a4fa4479",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть ТВ+DigiKaitse 58507365",
-      "enabled": false,
-      "deleteAfterRun": true,
-      "createdAtMs": 1771858202506,
-      "updatedAtMs": 1773734437012,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-17T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание! Сегодня истекает 28-дневный срок по задаче Tele2: Закрыть телевидение + DigiKaitse, номер 58507365 (создана 17.02). Напомни Наталии!"
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1773734400040,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 36972,
-        "lastError": "LLM request timed out.",
-        "lastErrorReason": "timeout",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1
-      }
-    },
-    {
-      "id": "b0a63b62-bbea-4889-a051-ff9e3c3b7d73",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Вечерний чекпоинт 21:30 Бали",
-      "enabled": true,
-      "createdAtMs": 1771956626928,
-      "updatedAtMs": 1774359054894,
-      "schedule": {
-        "kind": "cron",
-        "expr": "30 13 * * *",
-        "tz": "UTC"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Вечерний чекпоинт для Наталии. Сейчас 21:30 по Бали (15:30 по Эстонии). Прочитай файлы memory/YYYY-MM-DD.md за сегодня и посмотри список крон-задач (cron list). Собери все задачи, напоминания и дела на сегодня. Отправь сообщение-чеклист: 'Вечерний чекпоинт ✅' со списком дел. ВАЖНО: рядом с каждым временем пиши эстонское время в скобках, например '10:00 Бали (04:00 Эстония)'. Спроси, всё ли сделано или нужно что-то перенести."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774445400000,
-        "lastRunAtMs": 1774359000023,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 54871,
+        "lastDurationMs": 10202,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -247,30 +150,30 @@
       "id": "8e0f4f26-9ff0-4a2f-a73d-7fcc0eaab2df",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Вечерний чекпоинт",
+      "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774373440155,
+      "updatedAtMs": 1774467042887,
       "schedule": {
         "kind": "cron",
-        "expr": "30 19 * * *",
+        "expr": "30 21 * * *",
         "tz": "Europe/Tallinn"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Вечерний чекпоинт (21:30 Эстония). Проверь:\n1. Задачи из Weekly Planner (/data/workspace/pages/planner/index.html) на сегодня — что сделано, что нет\n2. Tele2 Trial Tracker (/data/workspace/pages/tele2/index.html) — триалы с дедлайном сегодня/завтра\n3. Напоминания из memory/mama-todo.md и других списков\n4. iCloud Calendar — события на завтра\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. Пиши на русском, тепло и по делу."
+        "message": "Вечерний чекпоинт (21:30 Эстония). Проверь ТОЛЬКО задачи на СЕГОДНЯ:\n1. iCloud Calendar — какие события были сегодня, все ли выполнены\n2. Cron jobs (cron list) — какие напоминания сработали или должны были сработать сегодня\n3. Tele2 Trial Tracker (/data/workspace/pages/tele2/index.html) — ТОЛЬКО если дедлайн сегодня\n4. memory/mama-todo.md — задачи с сегодняшней датой\n5. Weekly Planner (/data/workspace/pages/planner/index.html) — задачи на сегодня\n\nНЕ показывай будущие и прошлые задачи. Только текущий день.\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу."
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774459800000,
-        "lastRunAtMs": 1774373400036,
+        "nextRunAtMs": 1774553400000,
+        "lastRunAtMs": 1774467000044,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40119,
+        "lastDurationMs": 42843,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -300,6 +203,58 @@
       },
       "state": {
         "nextRunAtMs": 1779723000000
+      }
+    },
+    {
+      "id": "4f906783-da04-4c9e-8d02-bb207fb2d754",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Проверить переход номеров + скидка Англия",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774442045838,
+      "updatedAtMs": 1774442045838,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-31T06:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: проверить, перешли ли номера (рег. номер 17299598). Если перешли — активировать скидку для звонков в Англию."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774936800000
+      }
+    },
+    {
+      "id": "738ad111-4b75-4c7a-8a9e-ddb112f31fbf",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Активировать номер 14966485",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774464095110,
+      "updatedAtMs": 1774464095110,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-26T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: активировать номер (рег. номер 14966485)."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774512000000
       }
     }
   ]
