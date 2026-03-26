@@ -967,5 +967,21 @@
     ],
     "source": "@darina.jusina",
     "date": "2026-03-26"
+  },
+  {
+    "id": 60,
+    "category": "books",
+    "catalog": "books",
+    "file": "books/hauzel-psihologiya-deneg.jpg",
+    "title": "Психология денег. Вечные уроки богатства, жадности и счастья",
+    "author": "Морган Хаузел",
+    "tags": [
+      "книга",
+      "финансы",
+      "психология",
+      "бизнес"
+    ],
+    "source": "@zakon_uspexa",
+    "date": "2026-03-26"
   }
 ]
