@@ -37,6 +37,14 @@
   .genre-btn:hover { border-color:var(--accent); color:var(--accent); }
   .genre-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
+  .status-bar { max-width:960px; margin:0 auto; padding:0.3rem 1.5rem 0.5rem; display:flex; flex-wrap:wrap; gap:0.35rem; align-items:center; }
+  .status-btn { padding:0.4rem 1rem; border:1px solid var(--border); border-radius:2rem; background:#fff; font-size:0.75rem; font-family:'Inter',sans-serif; cursor:pointer; transition:all 0.2s; color:var(--muted); letter-spacing:0.06em; font-weight:400; display:flex; align-items:center; gap:0.3rem; }
+  .status-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .status-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .status-badge { display:inline-flex; align-items:center; gap:0.2rem; font-size:0.6rem; padding:0.1rem 0.4rem; border-radius:1rem; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; position:absolute; top:0.5rem; right:0.5rem; z-index:2; }
+  .status-badge.read { background:#e8f5e9; color:#2e7d32; }
+  .status-badge.wishlist { background:#fff3e0; color:#e65100; }
+
   .grid { max-width:960px; margin:0 auto; padding:0.5rem 1.5rem 3rem; display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
 
   .card { background:var(--card); border:1px solid var(--border); border-radius:0.8rem; padding:1.2rem; transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s; display:flex; gap:1rem; position:relative; cursor:pointer; }
@@ -168,6 +176,7 @@
 
 <div class="alphabet-bar" id="alphabetBar"></div>
 <div class="genre-bar" id="genreBar"></div>
+<div class="status-bar" id="statusBar"></div>
 
 <div class="grid" id="grid"></div>
 
@@ -386,6 +395,16 @@ const items = [
     desc: 'Культовая книга о женском архетипе Дикой Женщины через призму мифов, сказок и легенд. Маст-хэв для каждой.',
     img: 'img/estes-begushaya-s-volkami.jpg',
     source: 'Рекомендация @darina.jusina'
+  },
+  {
+    name: 'Как завоёвывать друзей и оказывать влияние на людей',
+    author: 'Дейл Карнеги (Dale Carnegie)',
+    surname: 'Карнеги',
+    original: 'How to Win Friends and Influence People (1936)',
+    genre: ['Саморазвитие', 'Психология'],
+    desc: 'Легендарная книга о навыках общения. Продано более 15 миллионов экземпляров. Практические принципы, которые помогают строить отношения и влиять на людей.',
+    img: 'img/karnegi-kak-zavoevyvat-druzey.jpg',
+    source: 'канал Книги'
   }
 ];
 
