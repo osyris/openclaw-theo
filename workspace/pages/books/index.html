@@ -395,6 +395,12 @@ function buildGenres() {
     genreBar.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeGenre = genre || null;
+    // «Все» сбрасывает и алфавитный фильтр тоже
+    if (!genre) {
+      activeLetter = null;
+      alphabetBar.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+      search.value = '';
+    }
     render();
   });
 }
