@@ -998,5 +998,39 @@
     "note": "48 законов власти — Роберт Грин",
     "source": "@zakon_uspexa",
     "date": "2026-03-26"
+  },
+  {
+    "id": 62,
+    "file": "books/robbins-toni.jpg",
+    "category": "books",
+    "title": "Деньги. Мастер игры",
+    "titleOriginal": "Money: Master the Game",
+    "author": "Тони Роббинс",
+    "description": "7 простых шагов к финансовой свободе. Практическое руководство по инвестициям и управлению деньгами.",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "книга",
+      "финансы",
+      "саморазвитие"
+    ],
+    "added": "2026-03-26",
+    "catalog": "books"
+  },
+  {
+    "id": 63,
+    "file": "books/robbins-toni.jpg",
+    "category": "books",
+    "title": "Непоколебимый",
+    "titleOriginal": "Unshakeable: Your Financial Freedom Playbook",
+    "author": "Тони Роббинс",
+    "description": "Сценарий финансовой свободы. Как сохранять стабильность и приумножать капитал в условиях нестабильного мира.",
+    "source": "@girlsmoneymind",
+    "tags": [
+      "книга",
+      "финансы",
+      "саморазвитие"
+    ],
+    "added": "2026-03-26",
+    "catalog": "books"
   }
 ]
