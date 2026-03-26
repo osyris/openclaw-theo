@@ -983,5 +983,20 @@
     ],
     "source": "@zakon_uspexa",
     "date": "2026-03-26"
+  },
+  {
+    "id": 61,
+    "file": "books/grin-48-zakonov-vlasti.jpg",
+    "category": "books",
+    "catalog": "books",
+    "tags": [
+      "книга",
+      "бизнес",
+      "власть",
+      "стратегия"
+    ],
+    "note": "48 законов власти — Роберт Грин",
+    "source": "@zakon_uspexa",
+    "date": "2026-03-26"
   }
 ]
