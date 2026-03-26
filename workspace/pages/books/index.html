@@ -26,6 +26,17 @@
   .filter-btn:hover,.filter-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
   .count { width:100%; text-align:right; font-size:0.78rem; color:var(--muted); padding-top:0.3rem; }
 
+  .alphabet-bar { max-width:960px; margin:0 auto; padding:0.3rem 1.5rem; display:flex; flex-wrap:wrap; gap:0.3rem; align-items:center; }
+  .alpha-btn { width:32px; height:32px; border:1px solid var(--border); border-radius:50%; background:#fff; font-family:'Bebas Neue',sans-serif; font-size:0.95rem; cursor:pointer; transition:all 0.2s; color:var(--muted); display:flex; align-items:center; justify-content:center; letter-spacing:0.02em; }
+  .alpha-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .alpha-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .alpha-btn.disabled { opacity:0.3; cursor:default; pointer-events:none; }
+
+  .genre-bar { max-width:960px; margin:0 auto; padding:0.3rem 1.5rem 0.5rem; display:flex; flex-wrap:wrap; gap:0.35rem; align-items:center; }
+  .genre-btn { padding:0.4rem 1rem; border:1px solid var(--border); border-radius:2rem; background:#fff; font-size:0.75rem; font-family:'Inter',sans-serif; cursor:pointer; transition:all 0.2s; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:400; }
+  .genre-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .genre-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+
   .grid { max-width:960px; margin:0 auto; padding:0.5rem 1.5rem 3rem; display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
 
   .card { background:var(--card); border:1px solid var(--border); border-radius:0.8rem; padding:1.2rem; transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s; display:flex; gap:1rem; position:relative; cursor:pointer; }
@@ -169,7 +180,9 @@ const items = [
   {
     name: 'Третий рейх на наркотиках',
     author: 'Норман Олер (Norman Ohler)',
+    surname: 'Олер',
     original: 'Der totale Rausch / Blitzed: Drugs in the Third Reich',
+    genre: ['Документальная', 'История'],
     desc: 'Документальная книга о том, как нацистская Германия использовала наркотики. Шокирующее расследование о роли наркотических веществ в истории Третьего рейха — от первитина в армии до личного врача Гитлера.',
     img: 'img/third-reich-on-drugs.jpg',
     source: ''
@@ -177,7 +190,9 @@ const items = [
   {
     name: 'Подросток и гаджеты',
     author: 'Тео Компернолле',
+    surname: 'Компернолле',
     original: '',
+    genre: ['Воспитание', 'Психология'],
     desc: 'О цифровой безопасности детей и влиянии техники на мозг подростка. Как технологии меняют развитие, внимание и когнитивные способности молодого поколения.',
     img: 'img/podrostok-i-gadzhety.jpg',
     source: 'Рекомендация @papa_psy'
@@ -185,7 +200,9 @@ const items = [
   {
     name: 'Внимание и память',
     author: 'Валентина Груздева',
+    surname: 'Груздева',
     original: '',
+    genre: ['Психология', 'Наука'],
     desc: 'Нейрофизиолог объясняет, как перегруженность информацией и отвлекающие факторы бьют по вниманию и памяти. Про стресс, многозадачность и бесконечный поток информации — и как с этим справляться.',
     img: 'img/vnimanie-i-pamyat.jpg',
     source: '5prism.ru'
@@ -193,7 +210,9 @@ const items = [
   {
     name: 'Главные секреты абсолютной уверенности в себе',
     author: 'Роберт Энтони (Robert Anthony)',
+    surname: 'Энтони',
     original: 'The Ultimate Secrets of Total Self-Confidence',
+    genre: ['Саморазвитие', 'Психология'],
     desc: 'Практическое руководство по обретению уверенности в себе. Методы преодоления страхов, сомнений и негативных установок.',
     img: 'img/sekrety-uverennosti.jpg',
     source: ''
@@ -201,7 +220,9 @@ const items = [
   {
     name: 'Код уверенности',
     author: 'Роберт Келси (Robert Kelsey)',
+    surname: 'Келси',
     original: 'What\'s Stopping You?',
+    genre: ['Саморазвитие', 'Психология'],
     desc: 'Как умному человеку стать уверенным в себе. Техники работы со страхом неудачи, синдромом самозванца и внутренними барьерами.',
     img: 'img/kod-uverennosti.jpg',
     source: ''
@@ -209,15 +230,19 @@ const items = [
   {
     name: 'Ты имеешь значение! Как девочке выстроить границы',
     author: 'Кортни Макавинта, Андреа Вандер Плайм',
+    surname: 'Макавинта',
     original: 'Respect: A Girl\'s Guide to Getting Respect & Dealing When Your Line Is Crossed',
+    genre: ['Саморазвитие', 'Воспитание'],
     desc: 'Книга для молодых девушек о здоровых границах в отношениях. Как научиться говорить «нет», защищать своё пространство и уважать свои чувства.',
     img: 'img/ty-imeesh-znachenie.jpg',
     source: '5prism.ru'
   },
-{
+  {
     name: 'Неукротимая. Самое дерзкое руководство по уверенности в себе',
     author: 'Лилли Сингх (Lilly Singh)',
+    surname: 'Сингх',
     original: 'How to Be a Bawse: A Guide to Conquering Life',
+    genre: ['Саморазвитие', 'Биография'],
     desc: 'Автобиография канадской блогерши и комедиантки. Откровенно о депрессии, неуверенности и пути к успеху — от детства до карьеры на YouTube.',
     img: 'img/neukrotimaya.jpg',
     source: '5prism.ru'
@@ -225,7 +250,9 @@ const items = [
   {
     name: 'Семь дорог Женственности',
     author: 'Татьяна Зинкевич-Евстигнеева',
+    surname: 'Зинкевич-Евстигнеева',
     original: '',
+    genre: ['Психология', 'Саморазвитие'],
     desc: 'Семь архетипов женской энергии и поведения. Каждая стадия развития связана с одним из архетипов — понимание этих этапов помогает осознать себя и найти свой уникальный путь.',
     img: 'img/sem-dorog-zhenstvennosti.jpg',
     source: '5prism.ru'
@@ -233,7 +260,9 @@ const items = [
   {
     name: 'Выбор воды',
     author: 'Гала Узрютова',
+    surname: 'Узрютова',
     original: '',
+    genre: ['Художественная'],
     desc: 'Роман. Рекомендация от @_marsianka_lala — «хватит про маньяков».',
     img: 'img/vybor-vody.jpg',
     source: 'Рекомендация @_marsianka_lala'
@@ -241,7 +270,9 @@ const items = [
   {
     name: 'Поменяй воду цветам',
     author: 'Валери Перрен',
+    surname: 'Перрен',
     original: 'Changer l\'eau des fleurs',
+    genre: ['Художественная'],
     desc: 'Роман о женщине-смотрительнице кладбища, чья жизнь полна тайн и неожиданных встреч. Prix Maison de la Presse 2018. «Записываю в свой топ-10. Почти всю книгу читала со слезами на глазах.»',
     img: 'img/pomenyaj-vodu-cvetam.jpg',
     source: ''
@@ -249,7 +280,9 @@ const items = [
   {
     name: 'Кафе на краю земли',
     author: 'Джон Стрелеки',
+    surname: 'Стрелеки',
     original: 'The Café on the Edge of the World',
+    genre: ['Художественная', 'Философия'],
     desc: 'Две истории. Книга о смысле жизни, которая меняет взгляд на всё. «Большая часть нынешней жизни — её заслуга.»',
     img: 'img/kafe-na-krayu-zemli.jpg',
     source: 'Рекомендация @irinakalinina'
@@ -257,7 +290,9 @@ const items = [
   {
     name: 'Финансист',
     author: 'Теодор Драйзер (Theodore Dreiser)',
+    surname: 'Драйзер',
     original: 'The Financier (1912)',
+    genre: ['Художественная', 'Бизнес'],
     desc: 'Первый роман «Трилогии желания». История молодого финансиста Фрэнка Каупервуда, его взлёта и падения в мире больших денег Филадельфии.',
     img: 'img/dreiser-financist.jpg',
     source: ''
@@ -265,7 +300,9 @@ const items = [
   {
     name: 'Титан',
     author: 'Теодор Драйзер (Theodore Dreiser)',
+    surname: 'Драйзер',
     original: 'The Titan (1914)',
+    genre: ['Художественная', 'Бизнес'],
     desc: 'Второй роман «Трилогии желания». Каупервуд покоряет Чикаго, строя транспортную империю и сражаясь с коррупцией и конкурентами.',
     img: 'img/dreiser-titan.jpg',
     source: ''
@@ -273,7 +310,9 @@ const items = [
   {
     name: 'Стоик',
     author: 'Теодор Драйзер (Theodore Dreiser)',
+    surname: 'Драйзер',
     original: 'The Stoic (1947)',
+    genre: ['Художественная', 'Бизнес'],
     desc: 'Заключительный роман «Трилогии желания». Последние годы Каупервуда — борьба за лондонское метро и философское осмысление жизни.',
     img: 'img/dreiser-stoik.jpg',
     source: ''
@@ -281,7 +320,9 @@ const items = [
   {
     name: 'Религия будущего',
     author: 'Кен Уилбер',
+    surname: 'Уилбер',
     original: 'The Religion of Tomorrow',
+    genre: ['Философия', 'Духовность'],
     desc: 'Интегральный подход к духовности и сознанию. Серия «Избранные труды». «Последние 48 часов знатно перетряхнули внутренний мир...»',
     img: 'img/religiya-budushego.jpg',
     source: 'Рекомендация @andrey_land'
@@ -289,7 +330,9 @@ const items = [
   {
     name: 'Смерть Ивана Ильича',
     author: 'Лев Толстой (Leo Tolstoy)',
+    surname: 'Толстой',
     original: 'The Death of Ivan Ilyich (1886)',
+    genre: ['Художественная', 'Классика'],
     desc: 'Повесть о чиновнике, который перед смертью осознаёт пустоту прожитой жизни. Одно из самых пронзительных произведений Толстого.',
     img: 'img/tolstoy-smert-ivana-ilicha.jpg',
     source: 'Рекомендация @sashaoster_'
@@ -297,7 +340,9 @@ const items = [
   {
     name: 'Воскресение',
     author: 'Лев Толстой (Leo Tolstoy)',
+    surname: 'Толстой',
     original: 'Resurrection (1899)',
+    genre: ['Художественная', 'Классика'],
     desc: 'Последний роман Толстого о нравственном перерождении дворянина, пытающегося искупить вину перед соблазнённой им девушкой. «Топором промеж глаз с первых страниц. Набоков считал Толстого вершиной писательского мастерства.»',
     img: 'img/tolstoy-voskresenye.jpg',
     source: 'Рекомендация @andrey_land'
@@ -309,11 +354,58 @@ const search = document.getElementById('search');
 const countEl = document.getElementById('count');
 const modalOverlay = document.getElementById('modalOverlay');
 const modal = document.getElementById('modal');
+const alphabetBar = document.getElementById('alphabetBar');
+const genreBar = document.getElementById('genreBar');
+
+let activeLetter = null;
+let activeGenre = null;
+
+// Build alphabet bar
+function buildAlphabet() {
+  const letters = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ'.split('');
+  const available = new Set(items.map(p => (p.surname || '')[0]?.toUpperCase()).filter(Boolean));
+  alphabetBar.innerHTML = letters.map(l => 
+    `<button class="alpha-btn${available.has(l) ? '' : ' disabled'}" data-letter="${l}">${l}</button>`
+  ).join('');
+  alphabetBar.addEventListener('click', e => {
+    const btn = e.target.closest('.alpha-btn');
+    if (!btn || btn.classList.contains('disabled')) return;
+    const letter = btn.dataset.letter;
+    if (activeLetter === letter) { activeLetter = null; btn.classList.remove('active'); }
+    else {
+      alphabetBar.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeLetter = letter;
+    }
+    render();
+  });
+}
+
+// Build genre bar
+function buildGenres() {
+  const allGenres = new Set();
+  items.forEach(p => (p.genre || []).forEach(g => allGenres.add(g)));
+  const sorted = [...allGenres].sort((a,b) => a.localeCompare(b,'ru'));
+  genreBar.innerHTML = `<button class="genre-btn active" data-genre="">Все</button>` +
+    sorted.map(g => `<button class="genre-btn" data-genre="${g}">${g}</button>`).join('');
+  genreBar.addEventListener('click', e => {
+    const btn = e.target.closest('.genre-btn');
+    if (!btn) return;
+    const genre = btn.dataset.genre;
+    genreBar.querySelectorAll('.genre-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeGenre = genre || null;
+    render();
+  });
+}
 
 function render() {
   const q = search.value.toLowerCase();
   const filtered = items.map((p,i)=>({...p,idx:i})).filter(p => {
-    return !q || [p.name, p.author, p.desc, p.original, p.source].join(' ').toLowerCase().includes(q);
+    if (q && ![p.name, p.author, p.desc, p.original, p.source, p.surname].join(' ').toLowerCase().includes(q)) return false;
+    if (activeLetter && (p.surname || '')[0]?.toUpperCase() !== activeLetter) return false;
+    if (activeGenre && !(p.genre || []).includes(activeGenre)) return false;
+    return true;
   });
   countEl.textContent = filtered.length + ' из ' + items.length + ' книг';
   grid.innerHTML = filtered.map(p => `
@@ -324,10 +416,14 @@ function render() {
         <div class="card-name">${p.name}</div>
         ${p.original ? `<div class="card-desc" style="font-style:italic;font-size:0.72rem;color:#999">${p.original}</div>` : ''}
         <div class="card-desc">${p.desc}</div>
+        ${(p.genre||[]).length ? `<div class="card-tags">${p.genre.map(g=>`<span class="tag" style="background:rgba(139,105,20,0.08);color:var(--accent)">${g}</span>`).join('')}</div>` : ''}
         ${p.source ? `<div class="card-source">${p.source}</div>` : ''}
       </div>
     </div>`).join('');
 }
+
+buildAlphabet();
+buildGenres();
 
 window.openModal = function(idx) {
   const p = items[idx];
@@ -348,6 +444,7 @@ window.openModal = function(idx) {
         <div class="m-section-title">О книге</div>
         <div class="m-desc-text">${p.desc}</div>
       </div>
+      ${(p.genre||[]).length ? `<div class="m-tags">${p.genre.map(g=>`<span class="m-pill">${g}</span>`).join('')}</div>` : ''}
       ${p.source ? `<div class="m-source">${p.source}</div>` : ''}
     </div>`;
   modalOverlay.classList.add('open');

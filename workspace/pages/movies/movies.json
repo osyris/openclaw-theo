@@ -8,7 +8,7 @@
       "Romance"
     ],
     "poster": "img/wuthering-heights.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Новая экранизация романа Эмили Бронте о страстной и разрушительной любви Хитклифа и Кэтрин на фоне суровых йоркширских пустошей."
@@ -119,8 +119,8 @@
       "Comedy"
     ],
     "poster": "img/the-holiday.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "description": "Две женщины из разных стран меняются домами на Рождество и неожиданно находят любовь. С Кэмерон Диаз, Кейт Уинслет и Джудом Лоу."
   },
@@ -745,7 +745,7 @@
       "Sci-Fi"
     ],
     "poster": "img/aviator-2.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "titleRu": "Авиатор",
