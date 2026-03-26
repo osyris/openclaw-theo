@@ -229,6 +229,32 @@
       "state": {
         "nextRunAtMs": 1774936800000
       }
+    },
+    {
+      "id": "38a82b9c-98b2-441a-a68a-5742d65f0878",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: смена пакета 55468482",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774528710035,
+      "updatedAtMs": 1774528710035,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-08T06:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: активировать смену пакета на номере 55468482 (Tele2)."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1775628000000
+      }
     }
   ]
 }

@@ -229,33 +229,6 @@
       "state": {
         "nextRunAtMs": 1774936800000
       }
-    },
-    {
-      "id": "738ad111-4b75-4c7a-8a9e-ddb112f31fbf",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Активировать номер 14966485",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1774464095110,
-      "updatedAtMs": 1774464095110,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-26T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: активировать номер (рег. номер 14966485)."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774512000000,
-        "runningAtMs": 1774512000007
-      }
     }
   ]
 }

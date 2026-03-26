@@ -1,5 +1,5 @@
 {
-  "updated": "25.03.2026",
+  "updated": "26.03.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -129,6 +129,13 @@
       "service": "Закрыть страховку",
       "startDate": "2026-03-25",
       "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55468482",
+      "service": "Смена пакета",
+      "startDate": "2026-03-26",
+      "deadline": "2026-04-08",
       "status": "active"
     }
   ]
