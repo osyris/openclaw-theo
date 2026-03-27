@@ -152,7 +152,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774467042887,
+      "updatedAtMs": 1774553476269,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -168,11 +168,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774553400000,
-        "lastRunAtMs": 1774467000044,
+        "nextRunAtMs": 1774639800000,
+        "lastRunAtMs": 1774553400039,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 42843,
+        "lastDurationMs": 76230,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -228,6 +228,58 @@
       },
       "state": {
         "nextRunAtMs": 1774936800000
+      }
+    },
+    {
+      "id": "38a82b9c-98b2-441a-a68a-5742d65f0878",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: смена пакета 55468482",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774528710035,
+      "updatedAtMs": 1774529059908,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-08T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: активировать смену пакета на номере 55468482 (Tele2)."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1775635200000
+      }
+    },
+    {
+      "id": "7409a497-d79a-40ad-ae17-28847fb8a77b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Узнать по поводу А36",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774549064446,
+      "updatedAtMs": 1774549064446,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-27T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: узнать по поводу А36."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774598400000
       }
     }
   ]
