@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774494014134,
+      "updatedAtMs": 1774580414776,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774580400000,
-        "lastRunAtMs": 1774494000033,
+        "nextRunAtMs": 1774666800000,
+        "lastRunAtMs": 1774580400026,
         "lastStatus": "ok",
-        "lastDurationMs": 14101,
+        "lastDurationMs": 14750,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -41,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774504835997,
+      "updatedAtMs": 1774591235682,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -57,11 +57,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774591200000,
-        "lastRunAtMs": 1774504800033,
+        "nextRunAtMs": 1774677600000,
+        "lastRunAtMs": 1774591200087,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 35964,
+        "lastDurationMs": 35595,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -152,7 +152,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774553476269,
+      "updatedAtMs": 1774639851709,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -168,11 +168,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774639800000,
-        "lastRunAtMs": 1774553400039,
+        "nextRunAtMs": 1774726200000,
+        "lastRunAtMs": 1774639800203,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 76230,
+        "lastDurationMs": 51506,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -261,10 +261,10 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Узнать по поводу А36",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1774549064446,
-      "updatedAtMs": 1774549064446,
+      "updatedAtMs": 1774598886768,
       "schedule": {
         "kind": "at",
         "at": "2026-03-27T08:00:00.000Z"
@@ -279,7 +279,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774598400000
+        "lastRunAtMs": 1774598861994,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 24774,
+        "lastErrorReason": "overloaded",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 4,
+        "lastError": "The AI service is temporarily overloaded. Please try again in a moment."
       }
     }
   ]
