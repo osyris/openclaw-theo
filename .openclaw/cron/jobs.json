@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774580414776,
+      "updatedAtMs": 1774666814654,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774666800000,
-        "lastRunAtMs": 1774580400026,
+        "nextRunAtMs": 1774753200000,
+        "lastRunAtMs": 1774666800010,
         "lastStatus": "ok",
-        "lastDurationMs": 14750,
+        "lastDurationMs": 14644,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1774666800006
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -42,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774591235682,
+      "updatedAtMs": 1774677627033,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -58,11 +57,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774677600000,
-        "lastRunAtMs": 1774591200087,
+        "nextRunAtMs": 1774760400000,
+        "lastRunAtMs": 1774677600027,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 35595,
+        "lastDurationMs": 27006,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -153,7 +152,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774639851709,
+      "updatedAtMs": 1774681797685,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -163,7 +162,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Вечерний чекпоинт (21:30 Эстония). Проверь ТОЛЬКО задачи на СЕГОДНЯ:\n1. iCloud Calendar — какие события были сегодня, все ли выполнены\n2. Cron jobs (cron list) — какие напоминания сработали или должны были сработать сегодня\n3. Tele2 Trial Tracker (/data/workspace/pages/tele2/index.html) — ТОЛЬКО если дедлайн сегодня\n4. memory/mama-todo.md — задачи с сегодняшней датой\n5. Weekly Planner (/data/workspace/pages/planner/index.html) — задачи на сегодня\n\nНЕ показывай будущие и прошлые задачи. Только текущий день.\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу."
+        "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/pages/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой\n5. Weekly Planner — задачи на СЕГОДНЯ\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'"
       },
       "delivery": {
         "mode": "announce"
