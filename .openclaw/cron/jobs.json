@@ -31,7 +31,8 @@
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered"
+        "lastDeliveryStatus": "not-delivered",
+        "runningAtMs": 1774753200007
       }
     },
     {
@@ -152,7 +153,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774681797685,
+      "updatedAtMs": 1774726252934,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -168,11 +169,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774726200000,
-        "lastRunAtMs": 1774639800203,
+        "nextRunAtMs": 1774809000000,
+        "lastRunAtMs": 1774726200016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 51506,
+        "lastDurationMs": 52918,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -288,6 +289,32 @@
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 4,
         "lastError": "The AI service is temporarily overloaded. Please try again in a moment."
+      }
+    },
+    {
+      "id": "bd355b05-644c-4fd1-ac74-605b431a9c5f",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Проверить пакет Натальи Павловой",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774689986592,
+      "updatedAtMs": 1774689986592,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-29T08:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: проверить пакет Натальи Павловой."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774771200000
       }
     }
   ]
