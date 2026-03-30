@@ -1,5 +1,5 @@
 {
-  "updated": "26.03.2026",
+  "updated": "29.03.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -136,6 +136,13 @@
       "service": "Смена пакета",
       "startDate": "2026-03-26",
       "deadline": "2026-04-08",
+      "status": "active"
+    },
+    {
+      "id": "39303002/0",
+      "service": "Закрыть DigiKaitse + телевидение",
+      "startDate": "2026-03-29",
+      "trialDays": 30,
       "status": "active"
     }
   ]

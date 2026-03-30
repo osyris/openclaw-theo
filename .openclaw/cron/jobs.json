@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774666814654,
+      "updatedAtMs": 1774753210879,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774753200000,
-        "lastRunAtMs": 1774666800010,
+        "nextRunAtMs": 1774839600000,
+        "lastRunAtMs": 1774753200012,
         "lastStatus": "ok",
-        "lastDurationMs": 14644,
+        "lastDurationMs": 10867,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1774753200007
+        "runningAtMs": 1774839600016
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774677627033,
+      "updatedAtMs": 1774760428725,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -58,11 +58,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774760400000,
-        "lastRunAtMs": 1774677600027,
+        "nextRunAtMs": 1774846800000,
+        "lastRunAtMs": 1774760400018,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 27006,
+        "lastDurationMs": 28707,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -92,32 +92,6 @@
       },
       "state": {
         "nextRunAtMs": 1779692400000
-      }
-    },
-    {
-      "id": "508f2233-1fca-411e-9db8-8ba66f71bb03",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Закрыть диги-кайтсе и ТВ",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772359002959,
-      "updatedAtMs": 1772359002959,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-29T07:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Напомни Наталии: закрыть диги-кайтсе и телевидение. Клиентский код: 39303002/0. Добавить в список Tele2."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774767600000
       }
     },
     {
@@ -153,7 +127,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774726252934,
+      "updatedAtMs": 1774809053524,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -169,11 +143,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774809000000,
-        "lastRunAtMs": 1774726200016,
+        "nextRunAtMs": 1774895400000,
+        "lastRunAtMs": 1774809000062,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 52918,
+        "lastDurationMs": 53462,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -289,32 +263,6 @@
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 4,
         "lastError": "The AI service is temporarily overloaded. Please try again in a moment."
-      }
-    },
-    {
-      "id": "bd355b05-644c-4fd1-ac74-605b431a9c5f",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Проверить пакет Натальи Павловой",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1774689986592,
-      "updatedAtMs": 1774689986592,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-29T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: проверить пакет Натальи Павловой."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774771200000
       }
     }
   ]
