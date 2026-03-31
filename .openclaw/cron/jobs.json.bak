@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774753210879,
+      "updatedAtMs": 1774839616093,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774839600000,
-        "lastRunAtMs": 1774753200012,
+        "nextRunAtMs": 1774926000000,
+        "lastRunAtMs": 1774839600022,
         "lastStatus": "ok",
-        "lastDurationMs": 10867,
+        "lastDurationMs": 16071,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -41,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774760428725,
+      "updatedAtMs": 1774846830270,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -57,11 +57,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774846800000,
-        "lastRunAtMs": 1774760400018,
+        "nextRunAtMs": 1774933200000,
+        "lastRunAtMs": 1774846800100,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 28707,
+        "lastDurationMs": 30170,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -126,7 +126,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774809053524,
+      "updatedAtMs": 1774895460822,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -142,11 +142,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774895400000,
-        "lastRunAtMs": 1774809000062,
+        "nextRunAtMs": 1774981800000,
+        "lastRunAtMs": 1774895400066,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 53462,
+        "lastDurationMs": 60756,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
