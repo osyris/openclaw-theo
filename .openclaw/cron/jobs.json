@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774926010482,
+      "updatedAtMs": 1775012409438,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775012400000,
-        "lastRunAtMs": 1774926000044,
+        "nextRunAtMs": 1775098800000,
+        "lastRunAtMs": 1775012400025,
         "lastStatus": "ok",
-        "lastDurationMs": 10438,
+        "lastDurationMs": 9413,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1775012400015
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -42,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774933226635,
+      "updatedAtMs": 1775019801845,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -58,11 +57,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775019600000,
-        "lastRunAtMs": 1774933200077,
+        "nextRunAtMs": 1775106000000,
+        "lastRunAtMs": 1775019600030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26558,
+        "lastDurationMs": 201815,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
