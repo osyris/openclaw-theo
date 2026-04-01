@@ -1334,5 +1334,22 @@
       "рецепт"
     ],
     "added": "2026-04-01"
+  },
+  {
+    "id": 83,
+    "file": "food/batat-svekla-burrata-stacks.jpg",
+    "category": "food",
+    "title": "Стаки из батата и свёклы с песто и буратой",
+    "description": "Sweet Potato & Beet Stacks with Pesto, Burrata & Walnuts. От Recipes by Rosie",
+    "source": "@recipes_by_rosie",
+    "tags": [
+      "еда",
+      "батат",
+      "свёкла",
+      "бурата",
+      "рецепт",
+      "вегетарианский"
+    ],
+    "added": "2026-04-01"
   }
 ]
