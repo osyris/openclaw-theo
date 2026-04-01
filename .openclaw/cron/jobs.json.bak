@@ -41,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774933226635,
+      "updatedAtMs": 1775019801845,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -57,15 +57,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775019600000,
-        "lastRunAtMs": 1774933200077,
+        "nextRunAtMs": 1775106000000,
+        "lastRunAtMs": 1775019600030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26558,
+        "lastDurationMs": 201815,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1775019600015
+        "consecutiveErrors": 0
       }
     },
     {
@@ -125,8 +124,8 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 1,
-        "lastError": "The AI service is temporarily overloaded. Please try again in a moment.",
-        "lastErrorReason": "overloaded"
+        "lastErrorReason": "overloaded",
+        "runningAtMs": 1775068200032
       }
     },
     {

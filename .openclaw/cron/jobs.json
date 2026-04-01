@@ -100,7 +100,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774981853293,
+      "updatedAtMs": 1775068555781,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -116,16 +116,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775068200000,
-        "lastRunAtMs": 1774981800062,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 53231,
+        "nextRunAtMs": 1775154600000,
+        "lastRunAtMs": 1775068200053,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 355728,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "The AI service is temporarily overloaded. Please try again in a moment.",
-        "lastErrorReason": "overloaded"
+        "consecutiveErrors": 0
       }
     },
     {
