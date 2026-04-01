@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1774839616093,
+      "updatedAtMs": 1774926010482,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1774926000000,
-        "lastRunAtMs": 1774839600022,
+        "nextRunAtMs": 1775012400000,
+        "lastRunAtMs": 1774926000044,
         "lastStatus": "ok",
-        "lastDurationMs": 16071,
+        "lastDurationMs": 10438,
         "consecutiveErrors": 0,
         "lastDelivered": false,
         "lastRunStatus": "ok",
@@ -41,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1774846830270,
+      "updatedAtMs": 1774933226635,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -57,11 +57,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774933200000,
-        "lastRunAtMs": 1774846800100,
+        "nextRunAtMs": 1775019600000,
+        "lastRunAtMs": 1774933200077,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 30170,
+        "lastDurationMs": 26558,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -94,39 +94,13 @@
       }
     },
     {
-      "id": "42c380ef-4ecc-492d-bbab-951e39284a2c",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Закрыть страховку",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772366512035,
-      "updatedAtMs": 1772366531423,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-31T07:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Напомни Наталии: закрыть страховку. Номер полиса: 5227927. Добавить в список Tele2."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774940400000
-      }
-    },
-    {
       "id": "8e0f4f26-9ff0-4a2f-a73d-7fcc0eaab2df",
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774895460822,
+      "updatedAtMs": 1774981853293,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -142,14 +116,16 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774981800000,
-        "lastRunAtMs": 1774895400066,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 60756,
+        "nextRunAtMs": 1775068200000,
+        "lastRunAtMs": 1774981800062,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 53231,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "The AI service is temporarily overloaded. Please try again in a moment.",
+        "lastErrorReason": "overloaded"
       }
     },
     {
@@ -176,32 +152,6 @@
       },
       "state": {
         "nextRunAtMs": 1779723000000
-      }
-    },
-    {
-      "id": "4f906783-da04-4c9e-8d02-bb207fb2d754",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Проверить переход номеров + скидка Англия",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1774442045838,
-      "updatedAtMs": 1774442045838,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-31T06:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: проверить, перешли ли номера (рег. номер 17299598). Если перешли — активировать скидку для звонков в Англию."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774936800000
       }
     },
     {

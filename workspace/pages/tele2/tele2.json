@@ -1,5 +1,5 @@
 {
-  "updated": "29.03.2026",
+  "updated": "31.03.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -142,6 +142,13 @@
       "id": "39303002/0",
       "service": "Закрыть DigiKaitse + телевидение",
       "startDate": "2026-03-29",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "5227927",
+      "service": "Закрыть страховку",
+      "startDate": "2026-03-31",
       "trialDays": 30,
       "status": "active"
     }
