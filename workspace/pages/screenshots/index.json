@@ -1368,5 +1368,108 @@
       "видео"
     ],
     "added": "2026-04-01"
+  },
+  {
+    "file": "food/ris-krevetki-3.jpg",
+    "title": "Рис с креветками и овощами",
+    "source": "@takecakespb",
+    "tags": [
+      "еда",
+      "рис",
+      "креветки",
+      "рецепт"
+    ],
+    "id": 85,
+    "category": "food",
+    "added": "2026-04-01",
+    "description": "Рис с креветками и овощами"
+  },
+  {
+    "file": "food/okroshka-bez-kartoshki.jpg",
+    "title": "Окрошка без картошки",
+    "source": "@bezdarmood",
+    "tags": [
+      "еда",
+      "окрошка",
+      "креветки",
+      "рецепт"
+    ],
+    "id": 86,
+    "category": "food",
+    "added": "2026-04-01",
+    "description": "Окрошка без картошки"
+  },
+  {
+    "file": "food/smuzi-680.jpg",
+    "title": "Коллекция смузи (7 рецептов)",
+    "source": "@sanchousinkaa",
+    "tags": [
+      "еда",
+      "смузи",
+      "напитки",
+      "рецепт"
+    ],
+    "id": 87,
+    "category": "food",
+    "added": "2026-04-01",
+    "description": "Коллекция смузи (7 рецептов)"
+  },
+  {
+    "file": "food/tost-balzamicheskaya-klubnika.jpg",
+    "title": "Тост с бальзамической клубникой",
+    "source": "канал Рецепты",
+    "tags": [
+      "еда",
+      "тост",
+      "клубника",
+      "рецепт"
+    ],
+    "id": 88,
+    "category": "food",
+    "added": "2026-04-01",
+    "description": "Тост с бальзамической клубникой"
+  },
+  {
+    "file": "food/giros-2.jpg",
+    "title": "Гирос",
+    "source": "@takecakespb",
+    "tags": [
+      "еда",
+      "гирос",
+      "курица",
+      "рецепт"
+    ],
+    "id": 89,
+    "category": "food",
+    "added": "2026-04-01",
+    "description": "Гирос"
+  },
+  {
+    "id": 90,
+    "file": "food/ris-krevetki-1.jpg",
+    "category": "food",
+    "title": "Паста с креветками, кейлом и томатами",
+    "source": "@takecakespb",
+    "tags": [
+      "еда",
+      "паста",
+      "креветки"
+    ],
+    "added": "2026-04-01",
+    "description": "Паста с креветками, кейлом/шпинатом, черри и оливками"
+  },
+  {
+    "id": 91,
+    "file": "food/giros-1.jpg",
+    "category": "food",
+    "title": "Борщ (лайфхаки)",
+    "source": "Не Гордон Рамзи чат",
+    "tags": [
+      "еда",
+      "борщ",
+      "суп"
+    ],
+    "added": "2026-04-01",
+    "description": "Борщ с варёной свёклой, уксусом, чесноком и укропом"
   }
 ]
