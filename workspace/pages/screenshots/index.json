@@ -1564,5 +1564,35 @@
     ],
     "added": "2026-04-02",
     "description": "Кекс с сухофруктами, ромом и специями. 2 дня приготовления."
+  },
+  {
+    "id": 98,
+    "file": "food/bliny.jpg",
+    "category": "food",
+    "title": "Блины от @takecakespb",
+    "source": "@takecakespb",
+    "tags": [
+      "еда",
+      "блины",
+      "завтрак",
+      "рецепт"
+    ],
+    "added": "2026-04-02",
+    "description": "Тонкие блины с ванильным сахаром. 8 шт."
+  },
+  {
+    "id": 99,
+    "file": "food/aperol-losos.jpg",
+    "category": "food",
+    "title": "Апероль-лосось",
+    "source": "Vasyl Bulhar / @vasilymishlen",
+    "tags": [
+      "еда",
+      "лосось",
+      "закуска",
+      "рецепт"
+    ],
+    "added": "2026-04-02",
+    "description": "Филе лосося маринованное в апероле с укропом и цедрой"
   }
 ]
