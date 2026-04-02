@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775012409438,
+      "updatedAtMs": 1775098860080,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,14 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775098800000,
-        "lastRunAtMs": 1775012400025,
-        "lastStatus": "ok",
-        "lastDurationMs": 9413,
-        "consecutiveErrors": 0,
-        "lastDelivered": false,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered"
+        "nextRunAtMs": 1775185200000,
+        "lastRunAtMs": 1775098800026,
+        "lastStatus": "error",
+        "lastDurationMs": 60054,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -41,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775019801845,
+      "updatedAtMs": 1775106600230,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -57,14 +58,16 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775106000000,
-        "lastRunAtMs": 1775019600030,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 201815,
+        "nextRunAtMs": 1775192400000,
+        "lastRunAtMs": 1775106000016,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 600214,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+        "lastErrorReason": "timeout"
       }
     },
     {

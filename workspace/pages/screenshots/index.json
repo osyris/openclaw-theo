@@ -1471,5 +1471,21 @@
     ],
     "added": "2026-04-01",
     "description": "Борщ с варёной свёклой, уксусом, чесноком и укропом"
+  },
+  {
+    "id": 92,
+    "file": "food/baked-pears-brie.jpg",
+    "category": "food",
+    "title": "Запечённые груши с бри и грецкими орехами",
+    "description": "Baked Pears with Brie, Walnuts, Cranberries & Honey. От Recipes by Rosie",
+    "source": "Recipes by Rosie",
+    "tags": [
+      "еда",
+      "десерт",
+      "груши",
+      "бри",
+      "рецепт"
+    ],
+    "added": "2026-04-02"
   }
 ]

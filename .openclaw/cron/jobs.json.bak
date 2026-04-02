@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775012409438,
+      "updatedAtMs": 1775098860080,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,14 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775098800000,
-        "lastRunAtMs": 1775012400025,
-        "lastStatus": "ok",
-        "lastDurationMs": 9413,
-        "consecutiveErrors": 0,
-        "lastDelivered": false,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered"
+        "nextRunAtMs": 1775185200000,
+        "lastRunAtMs": 1775098800026,
+        "lastStatus": "error",
+        "lastDurationMs": 60054,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -64,7 +65,8 @@
         "lastDurationMs": 201815,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1775106000010
       }
     },
     {
@@ -100,7 +102,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1774981853293,
+      "updatedAtMs": 1775068555781,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -116,16 +118,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775068200000,
-        "lastRunAtMs": 1774981800062,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 53231,
+        "nextRunAtMs": 1775154600000,
+        "lastRunAtMs": 1775068200053,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 355728,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastErrorReason": "overloaded",
-        "runningAtMs": 1775068200032
+        "consecutiveErrors": 0
       }
     },
     {
