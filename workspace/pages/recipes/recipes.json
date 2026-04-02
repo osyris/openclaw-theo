@@ -123,7 +123,7 @@
   {
     "title": "Домашняя ПП-шаурма",
     "titleEn": "Healthy Homemade Shawarma",
-    "category": "lunch",
+    "category": "dinner",
     "time": "20 мин",
     "servings": 2,
     "difficulty": "easy",
@@ -503,7 +503,7 @@
   {
     "title": "Пирог с фетой, лососем и шпинатом",
     "titleEn": "Feta, Salmon & Spinach Filo Pie",
-    "category": "main",
+    "category": "dinner",
     "time": "55 мин",
     "servings": 4,
     "difficulty": "easy",
@@ -610,7 +610,7 @@
   {
     "title": "Батат с соусом дзадзыки и беконом",
     "titleEn": "Sweet Potato with Tzatziki & Bacon",
-    "category": "main",
+    "category": "dinner",
     "time": "1 час 20 мин",
     "servings": 2,
     "difficulty": "easy",
@@ -648,7 +648,7 @@
   {
     "title": "Стаки из батата и свёклы с буратой",
     "titleEn": "Sweet Potato & Beet Stacks with Pesto, Burrata & Walnuts",
-    "category": "appetizer",
+    "category": "snack",
     "time": "35 мин",
     "servings": 4,
     "difficulty": "easy",
@@ -724,7 +724,7 @@
   {
     "title": "Рис с креветками и овощами",
     "titleEn": "Shrimp Fried Rice",
-    "category": "main",
+    "category": "dinner",
     "time": "20 мин",
     "servings": 2,
     "difficulty": "easy",
@@ -765,7 +765,7 @@
   {
     "title": "Паста с креветками, кейлом и томатами",
     "titleEn": "Shrimp Kale Tomato Pasta",
-    "category": "main",
+    "category": "dinner",
     "time": "20 мин",
     "servings": 2,
     "difficulty": "easy",
@@ -874,7 +874,7 @@
   {
     "title": "Тост с бальзамической клубникой и маскарпоне",
     "titleEn": "Balsamic Strawberry Toast",
-    "category": "appetizer",
+    "category": "snack",
     "time": "15 мин",
     "servings": 2,
     "difficulty": "easy",
@@ -914,7 +914,7 @@
   {
     "title": "Гирос",
     "titleEn": "Chicken Gyros",
-    "category": "main",
+    "category": "dinner",
     "time": "40 мин",
     "servings": 3,
     "difficulty": "easy",
@@ -1039,7 +1039,7 @@
   {
     "title": "Сырная доска-венок на шпажках",
     "titleEn": "Christmas Cheeseboard Wreath",
-    "category": "appetizer",
+    "category": "snack",
     "time": "20 мин",
     "servings": 8,
     "difficulty": "easy",
@@ -1115,7 +1115,7 @@
   {
     "title": "Куриные котлеты с моцареллой",
     "titleEn": "Chicken Mozzarella Patties",
-    "category": "main",
+    "category": "dinner",
     "time": "25 мин",
     "servings": 4,
     "difficulty": "easy",
@@ -1284,7 +1284,7 @@
   {
     "title": "Апероль-лосось",
     "titleEn": "Aperol-Cured Salmon",
-    "category": "appetizer",
+    "category": "snack",
     "time": "14 часов",
     "servings": 8,
     "difficulty": "easy",
@@ -1320,7 +1320,7 @@
   {
     "title": "Финики с беконом и бри",
     "titleEn": "Bacon-Wrapped Dates with Brie",
-    "category": "appetizer",
+    "category": "snack",
     "time": "25 мин",
     "servings": 6,
     "difficulty": "easy",
