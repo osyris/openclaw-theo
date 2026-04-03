@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775098860080,
+      "updatedAtMs": 1775200153136,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -17,22 +17,22 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run daily git backup: cd /data && git add -A && git commit -m \"Daily backup $(date +%Y-%m-%d)\" && git push origin main. If nothing changed, just confirm no changes. Do NOT announce anything to the user — just do it silently.",
-        "timeoutSeconds": 60
+        "message": "Run: cd /data && git add -A && git diff --cached --quiet && echo 'No changes' || git commit -m 'Daily backup' && echo 'Done'. Do NOT push. Do NOT announce anything.",
+        "timeoutSeconds": 120
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775185200000,
-        "lastRunAtMs": 1775098800026,
+        "nextRunAtMs": 1775271600000,
+        "lastRunAtMs": 1775185200024,
         "lastStatus": "error",
-        "lastDurationMs": 60054,
-        "consecutiveErrors": 1,
+        "lastDurationMs": 60020,
+        "consecutiveErrors": 2,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
-        "lastError": "cron: job execution timed out",
-        "lastErrorReason": "timeout"
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775106600230,
+      "updatedAtMs": 1775200241383,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -52,22 +52,23 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Проверь дни рождения на сегодня:\n1. Прочитай /data/workspace/memory/birthdays.md\n2. Проверь iCloud Calendar (cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject python3 ical.py list-events --from today --to today) — ищи события с 'день рождения', 'birthday', 'ДР'\n3. Сравни сегодняшний день+месяц\n\nЕсли есть совпадение — отправь короткое тёплое напоминание: '🎂 Сегодня ДР у [имя]! Не забудь поздравить!'\nЕсли нет — завершись молча, ничего не отправляй."
+        "message": "Проверь дни рождения на сегодня:\n1. Прочитай /data/workspace/memory/birthdays.md\n2. Проверь iCloud Calendar на сегодня: cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject python3 ical.py list --from СЕГОДНЯ --to СЕГОДНЯ. Ищи события со словами 'день рождения', 'birthday', 'ДР', 'sünnipäev'\n3. Сравни сегодняшний день+месяц\n\nЕсли есть совпадение — отправь: '🎂 Сегодня ДР у [имя]! Не забудь поздравить!'\nЕсли нет — завершись молча, ничего не отправляй.",
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775192400000,
-        "lastRunAtMs": 1775106000016,
+        "nextRunAtMs": 1775278800000,
+        "lastRunAtMs": 1775192400017,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 600214,
+        "lastDurationMs": 300647,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
-        "lastErrorReason": "timeout"
+        "consecutiveErrors": 2,
+        "lastErrorReason": "timeout",
+        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config."
       }
     },
     {
@@ -103,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1775068555781,
+      "updatedAtMs": 1775154880675,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -119,13 +120,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775154600000,
-        "lastRunAtMs": 1775068200053,
+        "nextRunAtMs": 1775241000000,
+        "lastRunAtMs": 1775154600040,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 355728,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 280635,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
