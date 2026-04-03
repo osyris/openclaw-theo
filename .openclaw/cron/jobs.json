@@ -215,6 +215,32 @@
         "consecutiveErrors": 4,
         "lastError": "The AI service is temporarily overloaded. Please try again in a moment."
       }
+    },
+    {
+      "id": "09965398-820c-485c-8a87-0398b26db8fd",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tele2: закрыть страховку 50000007000076",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1775207577657,
+      "updatedAtMs": 1775207577657,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-01T07:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание для Наталии: через 2 дня (3 мая) дедлайн — закрыть страховку в Tele2! Личный код: 50000007000076. Не забудь!"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1777618800000
+      }
     }
   ]
 }

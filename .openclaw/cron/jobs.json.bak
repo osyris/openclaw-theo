@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775200146938,
+      "updatedAtMs": 1775200241383,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -52,8 +52,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Проверь дни рождения на сегодня. Прочитай ТОЛЬКО файл /data/workspace/memory/birthdays.md. Сравни сегодняшний день и месяц с записями. Если есть совпадение — отправь: '🎂 Сегодня ДР у [имя]! Не забудь поздравить!' Если нет — завершись молча, ничего не отправляй. НЕ проверяй iCloud Calendar — только birthdays.md.",
-        "timeoutSeconds": 120
+        "message": "Проверь дни рождения на сегодня:\n1. Прочитай /data/workspace/memory/birthdays.md\n2. Проверь iCloud Calendar на сегодня: cd /data/workspace/skills/icloud-calendar && uv run --with caldav --with vobject python3 ical.py list --from СЕГОДНЯ --to СЕГОДНЯ. Ищи события со словами 'день рождения', 'birthday', 'ДР', 'sünnipäev'\n3. Сравни сегодняшний день+месяц\n\nЕсли есть совпадение — отправь: '🎂 Сегодня ДР у [имя]! Не забудь поздравить!'\nЕсли нет — завершись молча, ничего не отправляй.",
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce"
