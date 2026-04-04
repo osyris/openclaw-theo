@@ -32,7 +32,7 @@
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
         "lastErrorReason": "timeout",
-        "lastError": "cron: job execution timed out"
+        "runningAtMs": 1775271600022
       }
     },
     {
@@ -104,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1775154880675,
+      "updatedAtMs": 1775241457863,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,13 +120,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775241000000,
-        "lastRunAtMs": 1775154600040,
+        "nextRunAtMs": 1775327400000,
+        "lastRunAtMs": 1775241000067,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 280635,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 457796,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
     },
@@ -220,11 +220,11 @@
       "id": "09965398-820c-485c-8a87-0398b26db8fd",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "Tele2: закрыть страховку 50000007000076",
+      "name": "Tele2: закрыть страховку 50007010076",
       "enabled": true,
       "deleteAfterRun": true,
       "createdAtMs": 1775207577657,
-      "updatedAtMs": 1775207577657,
+      "updatedAtMs": 1775217393482,
       "schedule": {
         "kind": "at",
         "at": "2026-05-01T07:00:00.000Z"
@@ -233,7 +233,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: через 2 дня (3 мая) дедлайн — закрыть страховку в Tele2! Личный код: 50000007000076. Не забудь!"
+        "message": "🔔 Напоминание для Наталии: через 2 дня (3 мая) дедлайн — закрыть страховку в Tele2! Isikukood: 50007010076. Не забудь!"
       },
       "delivery": {
         "mode": "announce"
