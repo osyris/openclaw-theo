@@ -4710,5 +4710,20 @@
       "роман"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 313,
+    "file": "books/nafousi-manifest-7-steps.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Manifest: 7 Steps to Living Your Best Life",
+    "description": "Roxie Nafousi",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "саморазвитие",
+      "осознанность"
+    ],
+    "added": "2026-04-05"
   }
 ]
