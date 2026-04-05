@@ -998,5 +998,18 @@
     "liked": false,
     "type": "movie",
     "description": "Документальный фильм о мозге, сознании и нейробиологии, поданный в научно-популярном формате."
+  },
+  {
+    "title": "The Thinking Game",
+    "titleRu": "Mõttemäng",
+    "year": 2024,
+    "genre": [
+      "Documentary"
+    ],
+    "poster": "img/the-thinking-game.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Документальный фильм Грега Колса (Greg Kohs) об ИИ и исследователях, которые меняют наше представление о будущем технологий."
   }
 ]
