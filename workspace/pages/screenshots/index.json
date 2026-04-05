@@ -4321,5 +4321,19 @@
       "психология"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 287,
+    "file": "books/valiullin-ne-skladyvaetsya-vychitay.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Не складывается — вычитай",
+    "description": "Ринат Валиуллин",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "проза"
+    ],
+    "added": "2026-04-05"
   }
 ]
