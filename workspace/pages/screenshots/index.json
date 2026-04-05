@@ -2114,5 +2114,20 @@
       "сага"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 133,
+    "file": "books/demina-vyhod-iz-operacionki-est.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Выход из операционки «Есть»",
+    "description": "Татьяна Демина",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "бизнес",
+      "менеджмент"
+    ],
+    "added": "2026-04-05"
   }
 ]
