@@ -4365,5 +4365,20 @@
       "психология"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 290,
+    "file": "books/tinkov-ya-takoy-kak-vse.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Я такой как все",
+    "description": "Олег Тиньков",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "бизнес",
+      "биография"
+    ],
+    "added": "2026-04-05"
   }
 ]
