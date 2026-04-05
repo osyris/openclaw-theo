@@ -4410,5 +4410,20 @@
       "инвестиции"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 293,
+    "file": "books/stahl-rebenok-v-tebe-dolzhen-obresti-dom.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Ребёнок в тебе должен обрести дом",
+    "description": "Стефани Шталь",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
