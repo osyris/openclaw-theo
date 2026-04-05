@@ -4771,5 +4771,19 @@
       "wishlist"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 317,
+    "file": "books/list-selfhelp-1-11.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Список self-help 1–11",
+    "description": "Зеланд, Руис, Толле, Коэльо, Хилл и др.",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
