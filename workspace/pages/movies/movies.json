@@ -90,8 +90,8 @@
       "Adventure"
     ],
     "poster": "img/bez-granic.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "series",
     "description": "Крис Хемсворт проверяет пределы человеческого тела, проходя экстремальные испытания под руководством учёных. Документальный сериал о долголетии."
   },
@@ -105,7 +105,7 @@
       "Drama"
     ],
     "poster": "img/while-you-were-sleeping.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Одинокая девушка спасает незнакомца в метро, а его семья по ошибке принимает её за невесту. Тёплая романтическая комедия с Сандрой Буллок."
@@ -290,8 +290,8 @@
       "Drama"
     ],
     "poster": "img/original-sin.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "description": "Богатый кубинец женится на загадочной американке по переписке, но невеста оказывается совсем не той, за кого себя выдаёт. С Джоли и Бандерасом."
   },
@@ -446,7 +446,7 @@
       "Drama"
     ],
     "poster": "img/the-women.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Четыре подруги переживают кризисы в отношениях, карьере и дружбе. В фильме нет ни одного мужского персонажа — только женщины."
@@ -623,7 +623,7 @@
       "Drama"
     ],
     "poster": "img/project-hail-mary.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Учёный просыпается один на корабле и не помнит, как туда попал. Он — последняя надежда Земли. По бестселлеру Энди Вейра, с Райаном Гослингом."
@@ -763,5 +763,119 @@
     "liked": false,
     "type": "movie",
     "description": "Старик-отшельник живёт в одинокой хижине. Случайная встреча с Мишелем — молодым человеком с синдромом Аспергера — переворачивает его жизнь. Режиссёр и главная роль — легенда французского кино Пьер Ришар. Привезли из Канн."
+  },
+  {
+    "title": "Emily in Paris",
+    "titleRu": "Эмили в Париже",
+    "year": 2025,
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/emily-in-paris.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Сериал о маркетологе Эмили, которая строит карьеру и личную жизнь в Европе; в новых сезонах действие частично переносится в Рим."
+  },
+  {
+    "title": "Cristóbal Balenciaga",
+    "titleRu": "Кристобаль Баленсиага",
+    "year": 2024,
+    "genre": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "poster": "img/cristobal-balenciaga.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Биографический сериал о пути Кристобаля Баленсиаги и становлении его модного дома."
+  },
+  {
+    "title": "Halston",
+    "titleRu": "Холстон",
+    "year": 2021,
+    "genre": [
+      "Biography",
+      "Drama"
+    ],
+    "poster": "img/halston.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Мини-сериал о взлёте и падении легендарного американского модельера Роя Холстона."
+  },
+  {
+    "title": "And Just Like That…",
+    "titleRu": "И просто так",
+    "year": 2021,
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/and-just-like-that.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Продолжение «Секса в большом городе» о жизни Кэрри, Миранды и Шарлотты в Нью-Йорке."
+  },
+  {
+    "title": "Phantom Thread",
+    "titleRu": "Призрачная нить",
+    "year": 2017,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/phantom-thread.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Драма Пола Томаса Андерсона о кутюрье Рейнольдсе Вудкоке и разрушительной любви."
+  },
+  {
+    "title": "The Super Models",
+    "titleRu": "Супермодели",
+    "year": 2023,
+    "genre": [
+      "Documentary"
+    ],
+    "poster": "img/the-super-models.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Документальный мини-сериал о Наоми Кэмпбелл, Синди Кроуфорд, Линде Евангелисте и Кристи Тарлингтон."
+  },
+  {
+    "title": "Kingdom of Dreams",
+    "titleRu": "Королевство грёз",
+    "year": 2022,
+    "genre": [
+      "Documentary",
+      "History"
+    ],
+    "poster": "img/kingdom-of-dreams.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Документальный сериал о мировой модной индустрии 1990–2010-х и ключевых дизайнерах эпохи."
+  },
+  {
+    "title": "The New Look",
+    "titleRu": "New Look",
+    "year": 2024,
+    "genre": [
+      "Drama",
+      "History"
+    ],
+    "poster": "img/the-new-look.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Сериал о Кристиане Диоре, Коко Шанель и рождении новой моды на фоне Второй мировой войны."
   }
 ]
