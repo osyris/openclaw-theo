@@ -4545,5 +4545,20 @@
       "история"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 302,
+    "file": "books/iger-chego-ya-hochu.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Чего я хочу?",
+    "description": "Кори Игер",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "осознанность",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
