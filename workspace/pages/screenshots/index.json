@@ -4590,5 +4590,20 @@
       "психология"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 305,
+    "file": "books/breuning-gormony-schastya.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Гормоны счастья",
+    "description": "Лоретта Грациано Бройнинг",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "нейронаука"
+    ],
+    "added": "2026-04-05"
   }
 ]
