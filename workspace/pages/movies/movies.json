@@ -877,5 +877,18 @@
     "liked": false,
     "type": "series",
     "description": "Сериал о Кристиане Диоре, Коко Шанель и рождении новой моды на фоне Второй мировой войны."
+  },
+  {
+    "title": "Landman",
+    "titleRu": "Лэндмен",
+    "year": 2024,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/landman.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Сериал Тейлора Шеридана о нефтяном бизнесе Западного Техаса: большие деньги, риски и жесткие корпоративные игры."
   }
 ]
