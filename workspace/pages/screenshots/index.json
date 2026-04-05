@@ -2542,5 +2542,54 @@
     ],
     "added": "2026-04-05",
     "catalog": "books"
+  },
+  {
+    "id": 161,
+    "file": "books/2026-04-05-antarova-dve-zhizni.jpg",
+    "category": "books",
+    "title": "Две жизни",
+    "author": "Конкордия Антарова",
+    "description": "Скриншот рекомендации книги «Две жизни».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "рекомендация"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 162,
+    "file": "books/2026-04-05-berger-zarazitelnyj-dup.jpg",
+    "category": "books",
+    "title": "Заразительный",
+    "author": "Йона Бергер",
+    "description": "Повторный скриншот рекомендации книги «Заразительный».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "дубль"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 163,
+    "file": "books/2026-04-05-bystryakova-u-tebya-est-ty.jpg",
+    "category": "books",
+    "title": "У тебя есть ты",
+    "author": "Маргарита Быстрякова",
+    "description": "Скриншот рекомендации книги «У тебя есть ты».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "рекомендация",
+      "эмоции"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
   }
 ]
