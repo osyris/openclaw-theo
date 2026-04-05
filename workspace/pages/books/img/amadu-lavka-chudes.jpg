@@ -1,0 +1,1 @@
+{"status":404,"error":{"type":"ResourceNotFoundByID","title":"Resource not found","detail":"Could not find art with art as an identifier","resource_type":"art","resource_id":"art"}}

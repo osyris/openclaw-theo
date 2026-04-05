@@ -4695,5 +4695,20 @@
       "осознанность"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 312,
+    "file": "books/amadu-lavka-chudes.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Лавка чудес",
+    "description": "Жоржи Амаду",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "классика",
+      "роман"
+    ],
+    "added": "2026-04-05"
   }
 ]
