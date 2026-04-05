@@ -4785,5 +4785,20 @@
       "саморазвитие"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 318,
+    "file": "books/otnosheniya-vizualnyy-gid-list.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Отношения. Визуальный гид по любви и дружбе",
+    "description": "Smart Reading",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "отношения",
+      "психология"
+    ],
+    "added": "2026-04-05"
   }
 ]
