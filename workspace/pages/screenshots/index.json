@@ -4725,5 +4725,20 @@
       "осознанность"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 314,
+    "file": "books/ginzburg-krutoy-marshrut.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Крутой маршрут",
+    "description": "Евгения Гинзбург",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "мемуары",
+      "история"
+    ],
+    "added": "2026-04-05"
   }
 ]
