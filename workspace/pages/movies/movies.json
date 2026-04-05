@@ -1011,5 +1011,18 @@
     "liked": false,
     "type": "movie",
     "description": "Документальный фильм Грега Колса (Greg Kohs) об ИИ и исследователях, которые меняют наше представление о будущем технологий."
+  },
+  {
+    "title": "Billy & Molly: An Otter Love Story",
+    "titleRu": "Билли и Молли: история любви с выдрой",
+    "year": 2024,
+    "genre": [
+      "Documentary"
+    ],
+    "poster": "img/billy-molly-an-otter-love-story.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Трогательная документальная история о дружбе человека и дикой выдры на побережье Шотландии."
   }
 ]
