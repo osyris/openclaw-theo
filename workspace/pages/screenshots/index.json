@@ -1876,5 +1876,20 @@
       "бизнес"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 118,
+    "file": "books/bogdanova-neyro-kopirayting.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Новый нейрокопирайтинг",
+    "description": "Майя Богданова",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "маркетинг",
+      "копирайтинг"
+    ],
+    "added": "2026-04-05"
   }
 ]
