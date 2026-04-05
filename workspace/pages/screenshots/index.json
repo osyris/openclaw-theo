@@ -4455,5 +4455,20 @@
       "юмор"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 296,
+    "file": "books/reno-iscelenie-vospominaniem.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Исцеление воспоминанием",
+    "description": "Жильбер Рено",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психосоматика",
+      "психология"
+    ],
+    "added": "2026-04-05"
   }
 ]
