@@ -931,5 +931,19 @@
     "liked": false,
     "type": "movie",
     "description": "Подросток Макс становится участником трагедии в ночном клубе, а его мать-чиновница пытается справиться с последствиями и защитить сына."
+  },
+  {
+    "title": "Как приручить лису",
+    "year": 2025,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "poster": "img/kak-priruchit-lisu.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "OKKO Original: история дочери маньяка и попытки вырваться из травматичного прошлого."
   }
 ]
