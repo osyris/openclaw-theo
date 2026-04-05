@@ -970,5 +970,20 @@
     "liked": false,
     "type": "movie",
     "description": "Российская драма о трех девушках, которые выбирают путь легких денег и сталкиваются с жесткой ценой этого выбора."
+  },
+  {
+    "title": "Loving Vincent",
+    "titleRu": "Ван Гог. С любовью, Винсент",
+    "year": 2017,
+    "genre": [
+      "Animation",
+      "Biography",
+      "Drama"
+    ],
+    "poster": "img/loving-vincent.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Первый в мире полнометражный фильм, полностью написанный масляными красками, посвящённый жизни и тайне смерти Винсента Ван Гога."
   }
 ]
