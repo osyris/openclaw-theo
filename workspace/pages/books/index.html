@@ -187,908 +187,1415 @@
 <script>
 const items = [
   {
-    name: 'Психология денег',
-    author: 'Морган Хаузел (Morgan Housel)',
-    surname: 'Хаузел',
-    original: 'The Psychology of Money (2020)',
-    genre: ['Финансы', 'Психология'],
-    desc: 'Международный бестселлер о том, как наше мышление влияет на финансовые решения. Вечные уроки богатства, жадности и счастья.',
-    img: 'img/hauzel-psihologiya-deneg.jpg',
-    source: '@zakon_uspexa',
-    status: 'wishlist'
+    "name": "Психология денег",
+    "author": "Морган Хаузел (Morgan Housel)",
+    "surname": "Хаузел",
+    "original": "The Psychology of Money (2020)",
+    "genre": [
+      "Финансы",
+      "Психология"
+    ],
+    "desc": "Международный бестселлер о том, как наше мышление влияет на финансовые решения. Вечные уроки богатства, жадности и счастья.",
+    "img": "img/hauzel-psihologiya-deneg.jpg",
+    "source": "@zakon_uspexa",
+    "status": "wishlist"
   },
   {
-    name: 'Третий рейх на наркотиках',
-    author: 'Норман Олер (Norman Ohler)',
-    surname: 'Олер',
-    original: 'Der totale Rausch / Blitzed: Drugs in the Third Reich',
-    genre: ['Документальная', 'История'],
-    desc: 'Документальная книга о том, как нацистская Германия использовала наркотики. Шокирующее расследование о роли наркотических веществ в истории Третьего рейха — от первитина в армии до личного врача Гитлера.',
-    img: 'img/third-reich-on-drugs.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Третий рейх на наркотиках",
+    "author": "Норман Олер (Norman Ohler)",
+    "surname": "Олер",
+    "original": "Der totale Rausch / Blitzed: Drugs in the Third Reich",
+    "genre": [
+      "Документальная",
+      "История"
+    ],
+    "desc": "Документальная книга о том, как нацистская Германия использовала наркотики. Шокирующее расследование о роли наркотических веществ в истории Третьего рейха — от первитина в армии до личного врача Гитлера.",
+    "img": "img/third-reich-on-drugs.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Подросток и гаджеты',
-    author: 'Тео Компернолле',
-    surname: 'Компернолле',
-    original: '',
-    genre: ['Воспитание', 'Психология'],
-    desc: 'О цифровой безопасности детей и влиянии техники на мозг подростка. Как технологии меняют развитие, внимание и когнитивные способности молодого поколения.',
-    img: 'img/podrostok-i-gadzhety.jpg',
-    source: 'Рекомендация @papa_psy',
-    status: 'wishlist'
+    "name": "Подросток и гаджеты",
+    "author": "Тео Компернолле",
+    "surname": "Компернолле",
+    "original": "",
+    "genre": [
+      "Воспитание",
+      "Психология"
+    ],
+    "desc": "О цифровой безопасности детей и влиянии техники на мозг подростка. Как технологии меняют развитие, внимание и когнитивные способности молодого поколения.",
+    "img": "img/podrostok-i-gadzhety.jpg",
+    "source": "Рекомендация @papa_psy",
+    "status": "wishlist"
   },
   {
-    name: 'Внимание и память',
-    author: 'Валентина Груздева',
-    surname: 'Груздева',
-    original: '',
-    genre: ['Психология', 'Наука'],
-    desc: 'Нейрофизиолог объясняет, как перегруженность информацией и отвлекающие факторы бьют по вниманию и памяти. Про стресс, многозадачность и бесконечный поток информации — и как с этим справляться.',
-    img: 'img/vnimanie-i-pamyat.jpg',
-    source: '5prism.ru',
-    status: 'wishlist'
+    "name": "Внимание и память",
+    "author": "Валентина Груздева",
+    "surname": "Груздева",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Наука"
+    ],
+    "desc": "Нейрофизиолог объясняет, как перегруженность информацией и отвлекающие факторы бьют по вниманию и памяти. Про стресс, многозадачность и бесконечный поток информации — и как с этим справляться.",
+    "img": "img/vnimanie-i-pamyat.jpg",
+    "source": "5prism.ru",
+    "status": "wishlist"
   },
   {
-    name: 'Главные секреты абсолютной уверенности в себе',
-    author: 'Роберт Энтони (Robert Anthony)',
-    surname: 'Энтони',
-    original: 'The Ultimate Secrets of Total Self-Confidence',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Практическое руководство по обретению уверенности в себе. Методы преодоления страхов, сомнений и негативных установок.',
-    img: 'img/sekrety-uverennosti.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Главные секреты абсолютной уверенности в себе",
+    "author": "Роберт Энтони (Robert Anthony)",
+    "surname": "Энтони",
+    "original": "The Ultimate Secrets of Total Self-Confidence",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Практическое руководство по обретению уверенности в себе. Методы преодоления страхов, сомнений и негативных установок.",
+    "img": "img/sekrety-uverennosti.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Код уверенности',
-    author: 'Роберт Келси (Robert Kelsey)',
-    surname: 'Келси',
-    original: 'What\'s Stopping You?',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Как умному человеку стать уверенным в себе. Техники работы со страхом неудачи, синдромом самозванца и внутренними барьерами.',
-    img: 'img/kod-uverennosti.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Код уверенности",
+    "author": "Роберт Келси (Robert Kelsey)",
+    "surname": "Келси",
+    "original": "What's Stopping You?",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Как умному человеку стать уверенным в себе. Техники работы со страхом неудачи, синдромом самозванца и внутренними барьерами.",
+    "img": "img/kod-uverennosti.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Ты имеешь значение! Как девочке выстроить границы',
-    author: 'Кортни Макавинта, Андреа Вандер Плайм',
-    surname: 'Макавинта',
-    original: 'Respect: A Girl\'s Guide to Getting Respect & Dealing When Your Line Is Crossed',
-    genre: ['Саморазвитие', 'Воспитание'],
-    desc: 'Книга для молодых девушек о здоровых границах в отношениях. Как научиться говорить «нет», защищать своё пространство и уважать свои чувства.',
-    img: 'img/ty-imeesh-znachenie.jpg',
-    source: '5prism.ru',
-    status: 'wishlist'
+    "name": "Ты имеешь значение! Как девочке выстроить границы",
+    "author": "Кортни Макавинта, Андреа Вандер Плайм",
+    "surname": "Макавинта",
+    "original": "Respect: A Girl's Guide to Getting Respect & Dealing When Your Line Is Crossed",
+    "genre": [
+      "Саморазвитие",
+      "Воспитание"
+    ],
+    "desc": "Книга для молодых девушек о здоровых границах в отношениях. Как научиться говорить «нет», защищать своё пространство и уважать свои чувства.",
+    "img": "img/ty-imeesh-znachenie.jpg",
+    "source": "5prism.ru",
+    "status": "wishlist"
   },
   {
-    name: 'Неукротимая. Самое дерзкое руководство по уверенности в себе',
-    author: 'Лилли Сингх (Lilly Singh)',
-    surname: 'Сингх',
-    original: 'How to Be a Bawse: A Guide to Conquering Life',
-    genre: ['Саморазвитие', 'Биография'],
-    desc: 'Автобиография канадской блогерши и комедиантки. Откровенно о депрессии, неуверенности и пути к успеху — от детства до карьеры на YouTube.',
-    img: 'img/neukrotimaya.jpg',
-    source: '5prism.ru',
-    status: 'wishlist'
+    "name": "Неукротимая. Самое дерзкое руководство по уверенности в себе",
+    "author": "Лилли Сингх (Lilly Singh)",
+    "surname": "Сингх",
+    "original": "How to Be a Bawse: A Guide to Conquering Life",
+    "genre": [
+      "Саморазвитие",
+      "Биография"
+    ],
+    "desc": "Автобиография канадской блогерши и комедиантки. Откровенно о депрессии, неуверенности и пути к успеху — от детства до карьеры на YouTube.",
+    "img": "img/neukrotimaya.jpg",
+    "source": "5prism.ru",
+    "status": "wishlist"
   },
   {
-    name: 'Семь дорог Женственности',
-    author: 'Татьяна Зинкевич-Евстигнеева',
-    surname: 'Зинкевич-Евстигнеева',
-    original: '',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'Семь архетипов женской энергии и поведения. Каждая стадия развития связана с одним из архетипов — понимание этих этапов помогает осознать себя и найти свой уникальный путь.',
-    img: 'img/sem-dorog-zhenstvennosti.jpg',
-    source: '5prism.ru',
-    status: 'wishlist'
+    "name": "Семь дорог Женственности",
+    "author": "Татьяна Зинкевич-Евстигнеева",
+    "surname": "Зинкевич-Евстигнеева",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "Семь архетипов женской энергии и поведения. Каждая стадия развития связана с одним из архетипов — понимание этих этапов помогает осознать себя и найти свой уникальный путь.",
+    "img": "img/sem-dorog-zhenstvennosti.jpg",
+    "source": "5prism.ru",
+    "status": "wishlist"
   },
   {
-    name: 'Выбор воды',
-    author: 'Гала Узрютова',
-    surname: 'Узрютова',
-    original: '',
-    genre: ['Художественная'],
-    desc: 'Роман. Рекомендация от @_marsianka_lala — «хватит про маньяков».',
-    img: 'img/vybor-vody.jpg',
-    source: 'Рекомендация @_marsianka_lala',
-    status: 'wishlist'
+    "name": "Выбор воды",
+    "author": "Гала Узрютова",
+    "surname": "Узрютова",
+    "original": "",
+    "genre": [
+      "Художественная"
+    ],
+    "desc": "Роман. Рекомендация от @_marsianka_lala — «хватит про маньяков».",
+    "img": "img/vybor-vody.jpg",
+    "source": "Рекомендация @_marsianka_lala",
+    "status": "wishlist"
   },
   {
-    name: 'Поменяй воду цветам',
-    author: 'Валери Перрен',
-    surname: 'Перрен',
-    original: 'Changer l\'eau des fleurs',
-    genre: ['Художественная'],
-    desc: 'Роман о женщине-смотрительнице кладбища, чья жизнь полна тайн и неожиданных встреч. Prix Maison de la Presse 2018. «Записываю в свой топ-10. Почти всю книгу читала со слезами на глазах.»',
-    img: 'img/pomenyaj-vodu-cvetam.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Поменяй воду цветам",
+    "author": "Валери Перрен",
+    "surname": "Перрен",
+    "original": "Changer l'eau des fleurs",
+    "genre": [
+      "Художественная"
+    ],
+    "desc": "Роман о женщине-смотрительнице кладбища, чья жизнь полна тайн и неожиданных встреч. Prix Maison de la Presse 2018. «Записываю в свой топ-10. Почти всю книгу читала со слезами на глазах.»",
+    "img": "img/pomenyaj-vodu-cvetam.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Кафе на краю земли',
-    author: 'Джон Стрелеки',
-    surname: 'Стрелеки',
-    original: 'The Café on the Edge of the World',
-    genre: ['Художественная', 'Философия', 'Саморазвитие'],
-    desc: 'Две истории. Книга о смысле жизни, которая меняет взгляд на всё. «Большая часть нынешней жизни — её заслуга.»',
-    img: 'img/kafe-na-krayu-zemli.jpg',
-    source: 'Рекомендация @irinakalinina',
-    status: 'wishlist'
+    "name": "Кафе на краю земли",
+    "author": "Джон Стрелеки",
+    "surname": "Стрелеки",
+    "original": "The Café on the Edge of the World",
+    "genre": [
+      "Художественная",
+      "Философия",
+      "Саморазвитие"
+    ],
+    "desc": "Две истории. Книга о смысле жизни, которая меняет взгляд на всё. «Большая часть нынешней жизни — её заслуга.»",
+    "img": "img/kafe-na-krayu-zemli.jpg",
+    "source": "Рекомендация @irinakalinina",
+    "status": "wishlist"
   },
   {
-    name: 'Финансист',
-    author: 'Теодор Драйзер (Theodore Dreiser)',
-    surname: 'Драйзер',
-    original: 'The Financier (1912)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Первый роман «Трилогии желания». История молодого финансиста Фрэнка Каупервуда, его взлёта и падения в мире больших денег Филадельфии.',
-    img: 'img/dreiser-financist.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Финансист",
+    "author": "Теодор Драйзер (Theodore Dreiser)",
+    "surname": "Драйзер",
+    "original": "The Financier (1912)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Первый роман «Трилогии желания». История молодого финансиста Фрэнка Каупервуда, его взлёта и падения в мире больших денег Филадельфии.",
+    "img": "img/dreiser-financist.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Титан',
-    author: 'Теодор Драйзер (Theodore Dreiser)',
-    surname: 'Драйзер',
-    original: 'The Titan (1914)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Второй роман «Трилогии желания». Каупервуд покоряет Чикаго, строя транспортную империю и сражаясь с коррупцией и конкурентами.',
-    img: 'img/dreiser-titan.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Титан",
+    "author": "Теодор Драйзер (Theodore Dreiser)",
+    "surname": "Драйзер",
+    "original": "The Titan (1914)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Второй роман «Трилогии желания». Каупервуд покоряет Чикаго, строя транспортную империю и сражаясь с коррупцией и конкурентами.",
+    "img": "img/dreiser-titan.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Стоик',
-    author: 'Теодор Драйзер (Theodore Dreiser)',
-    surname: 'Драйзер',
-    original: 'The Stoic (1947)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Заключительный роман «Трилогии желания». Последние годы Каупервуда — борьба за лондонское метро и философское осмысление жизни.',
-    img: 'img/dreiser-stoik.jpg',
-    source: '',
-    status: 'wishlist'
+    "name": "Стоик",
+    "author": "Теодор Драйзер (Theodore Dreiser)",
+    "surname": "Драйзер",
+    "original": "The Stoic (1947)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Заключительный роман «Трилогии желания». Последние годы Каупервуда — борьба за лондонское метро и философское осмысление жизни.",
+    "img": "img/dreiser-stoik.jpg",
+    "source": "",
+    "status": "wishlist"
   },
   {
-    name: 'Религия будущего',
-    author: 'Кен Уилбер',
-    surname: 'Уилбер',
-    original: 'The Religion of Tomorrow',
-    genre: ['Философия', 'Духовность'],
-    desc: 'Интегральный подход к духовности и сознанию. Серия «Избранные труды». «Последние 48 часов знатно перетряхнули внутренний мир...»',
-    img: 'img/religiya-budushego.jpg',
-    source: 'Рекомендация @andrey_land',
-    status: 'wishlist'
+    "name": "Религия будущего",
+    "author": "Кен Уилбер",
+    "surname": "Уилбер",
+    "original": "The Religion of Tomorrow",
+    "genre": [
+      "Философия",
+      "Духовность"
+    ],
+    "desc": "Интегральный подход к духовности и сознанию. Серия «Избранные труды». «Последние 48 часов знатно перетряхнули внутренний мир...»",
+    "img": "img/religiya-budushego.jpg",
+    "source": "Рекомендация @andrey_land",
+    "status": "wishlist"
   },
   {
-    name: 'Смерть Ивана Ильича',
-    author: 'Лев Толстой (Leo Tolstoy)',
-    surname: 'Толстой',
-    original: 'The Death of Ivan Ilyich (1886)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Повесть о чиновнике, который перед смертью осознаёт пустоту прожитой жизни. Одно из самых пронзительных произведений Толстого.',
-    img: 'img/tolstoy-smert-ivana-ilicha.jpg',
-    source: 'Рекомендация @sashaoster_',
-    status: 'wishlist'
+    "name": "Смерть Ивана Ильича",
+    "author": "Лев Толстой (Leo Tolstoy)",
+    "surname": "Толстой",
+    "original": "The Death of Ivan Ilyich (1886)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Повесть о чиновнике, который перед смертью осознаёт пустоту прожитой жизни. Одно из самых пронзительных произведений Толстого.",
+    "img": "img/tolstoy-smert-ivana-ilicha.jpg",
+    "source": "Рекомендация @sashaoster_",
+    "status": "wishlist"
   },
   {
-    name: 'Воскресение',
-    author: 'Лев Толстой (Leo Tolstoy)',
-    surname: 'Толстой',
-    original: 'Resurrection (1899)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Последний роман Толстого о нравственном перерождении дворянина, пытающегося искупить вину перед соблазнённой им девушкой. «Топором промеж глаз с первых страниц. Набоков считал Толстого вершиной писательского мастерства.»',
-    img: 'img/tolstoy-voskresenye.jpg',
-    source: 'Рекомендация @andrey_land',
-    status: 'wishlist'
+    "name": "Воскресение",
+    "author": "Лев Толстой (Leo Tolstoy)",
+    "surname": "Толстой",
+    "original": "Resurrection (1899)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Последний роман Толстого о нравственном перерождении дворянина, пытающегося искупить вину перед соблазнённой им девушкой. «Топором промеж глаз с первых страниц. Набоков считал Толстого вершиной писательского мастерства.»",
+    "img": "img/tolstoy-voskresenye.jpg",
+    "source": "Рекомендация @andrey_land",
+    "status": "wishlist"
   },
   {
-    name: 'Сиддхартха',
-    author: 'Герман Гессе (Hermann Hesse)',
-    surname: 'Гессе',
-    original: 'Siddhartha (1922)',
-    genre: ['Художественная', 'Классика', 'Философия', 'Духовность'],
-    desc: 'Поэтическая повесть о духовных исканиях индийского юноши, ищущего просветления. Нобелевский лауреат о пути к себе через отречение, любовь и мудрость реки.',
-    img: 'img/gesse-siddhartha.jpg',
+    "name": "Сиддхартха",
+    "author": "Герман Гессе (Hermann Hesse)",
+    "surname": "Гессе",
+    "original": "Siddhartha (1922)",
+    "genre": [
+      "Художественная",
+      "Классика",
+      "Философия",
+      "Духовность"
+    ],
+    "desc": "Поэтическая повесть о духовных исканиях индийского юноши, ищущего просветления. Нобелевский лауреат о пути к себе через отречение, любовь и мудрость реки.",
+    "img": "img/gesse-siddhartha.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Наука и технологии вечной молодости",
+    "author": "Сергей Янг (Sergey Young)",
+    "surname": "Янг",
+    "original": "The Science and Technology of Growing Young (2021)",
+    "genre": [
+      "Наука",
+      "Здоровье"
+    ],
+    "desc": "Основатель Longevity Vision Fund о прорывных технологиях, которые радикально продлят жизнь. Бестселлер WSJ и Amazon.",
+    "img": "img/yang-vechnoy-molodosti.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Извините, случился СДВГ",
+    "author": "Тамара Розье (Tamara Rosier)",
+    "surname": "Розье",
+    "original": "Your Brain's Not Broken",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "Как справиться с прокрастинацией, тревогой и гиперактивностью. Техники, упражнения и истории людей с СДВГ — с нежностью и задором.",
+    "img": "img/rozie-sdvg.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Бегущая с волками",
+    "author": "Кларисса Пинкола Эстес (Clarissa Pinkola Estés)",
+    "surname": "Эстес",
+    "original": "Women Who Run with the Wolves (1992)",
+    "genre": [
+      "Психология",
+      "Мифология"
+    ],
+    "desc": "Культовая книга о женском архетипе Дикой Женщины через призму мифов, сказок и легенд. Маст-хэв для каждой.",
+    "img": "img/estes-begushaya-s-volkami.jpg",
+    "source": "Рекомендация @darina.jusina",
+    "status": "wishlist"
+  },
+  {
+    "name": "Как завоёвывать друзей и оказывать влияние на людей",
+    "author": "Дейл Карнеги (Dale Carnegie)",
+    "surname": "Карнеги",
+    "original": "How to Win Friends and Influence People (1936)",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Легендарная книга о навыках общения. Продано более 15 миллионов экземпляров. Практические принципы, которые помогают строить отношения и влиять на людей.",
+    "img": "img/karnegi-kak-zavoevyvat-druzey.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Бизнес-ведьмы",
+    "author": "Светлана Комарова, Елена Рисберг",
+    "surname": "Комарова",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "О внутренней силе, мудрости и смелости выбирать свою тропу. Как продолжение «Бегущей с волками» — для мира после ковида.",
+    "img": "img/komarova-biznes-vedmy.jpg",
+    "source": "Рекомендация @darina.jusina",
+    "status": "wishlist"
+  },
+  {
+    "name": "48 законов власти",
+    "author": "Роберт Грин (Robert Greene)",
+    "surname": "Грин",
+    "original": "The 48 Laws of Power (1998)",
+    "genre": [
+      "Бизнес",
+      "Психология"
+    ],
+    "desc": "Мировой бестселлер о стратегиях влияния и власти. 48 законов, основанных на историческом опыте великих лидеров, полководцев и политиков.",
+    "img": "img/grin-48-zakonov-vlasti.jpg",
+    "source": "@zakon_uspexa",
+    "status": "wishlist"
+  },
+  {
+    "name": "Деньги. Мастер игры",
+    "author": "Тони Роббинс (Tony Robbins)",
+    "surname": "Роббинс",
+    "original": "Money: Master the Game (2014)",
+    "genre": [
+      "Финансы",
+      "Саморазвитие"
+    ],
+    "desc": "7 простых шагов к финансовой свободе. Практическое руководство по инвестициям и управлению деньгами от легендарного коуча.",
+    "img": "img/robbins-dengi-master-igry.jpg",
+    "source": "@girlsmoneymind",
+    "status": "wishlist"
+  },
+  {
+    "name": "Непоколебимый",
+    "author": "Тони Роббинс (Tony Robbins)",
+    "surname": "Роббинс",
+    "original": "Unshakeable: Your Financial Freedom Playbook (2017)",
+    "genre": [
+      "Финансы",
+      "Саморазвитие"
+    ],
+    "desc": "Сценарий финансовой свободы. Как сохранять стабильность и приумножать капитал в условиях нестабильного мира.",
+    "img": "img/robbins-nepokolebimyj.jpg",
+    "source": "@girlsmoneymind",
+    "status": "wishlist"
+  },
+  {
+    "name": "Самый богатый человек в Вавилоне",
+    "author": "Джордж Клейсон (George S. Clason)",
+    "surname": "Клейсон",
+    "original": "The Richest Man in Babylon (1926)",
+    "genre": [
+      "Финансы",
+      "Саморазвитие"
+    ],
+    "desc": "Притчи о секретах богатства из древнего Вавилона. Классика финансовой грамотности, которая учит простым принципам накопления и инвестирования.",
+    "img": "img/klejson-bogatyj-chelovek.jpg",
+    "source": "@girlsmoneymind",
+    "status": "wishlist"
+  },
+  {
+    "name": "Думай медленно... решай быстро",
+    "author": "Даниэль Канеман (Daniel Kahneman)",
+    "surname": "Канеман",
+    "original": "Thinking, Fast and Slow (2011)",
+    "genre": [
+      "Психология",
+      "Наука"
+    ],
+    "desc": "Нобелевский лауреат о двух системах мышления. Про поведение людей — полезно и для финансов, и для жизни.",
+    "img": "img/kaneman-dumaj-medlenno.jpg",
+    "source": "@girlsmoneymind",
+    "status": "wishlist"
+  },
+  {
+    "name": "Хулиномика",
+    "author": "Алексей Марков",
+    "surname": "Марков",
+    "original": "",
+    "genre": [
+      "Финансы",
+      "Бизнес"
+    ],
+    "desc": "Финансовые рынки для тех, кто их в гробу видал. Доступно о рынках, с юмором и нецензурными словами.",
+    "img": "img/markov-hulinomika.jpg",
+    "source": "@girlsmoneymind",
+    "status": "wishlist"
+  },
+  {
+    "name": "Фиолетовая корова",
+    "author": "Сет Годин (Seth Godin)",
+    "surname": "Годин",
+    "original": "Purple Cow (2003)",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "Как выделиться среди конкурентов. Почему безопасные продукты обречены, а только выдающиеся становятся заразительными.",
+    "img": "img/godin-fioletovaya-korova.jpg",
+    "source": "@galya.melnikova",
+    "status": "wishlist"
+  },
+  {
+    "name": "Заразительный",
+    "author": "Джона Бергер (Jonah Berger)",
+    "surname": "Бергер",
+    "original": "Contagious: Why Things Catch On (2013)",
+    "genre": [
+      "Маркетинг",
+      "Психология"
+    ],
+    "desc": "Почему одни идеи и продукты становятся вирусными, а другие нет. Наука о сарафанном радио и социальном влиянии.",
+    "img": "img/berger-zarazitelnyj.jpg",
+    "source": "@galya.melnikova",
+    "status": "wishlist"
+  },
+  {
+    "name": "Маркетинг с блэкджеком и шутками",
+    "author": "Павел Воронцов",
+    "surname": "Воронцов",
+    "original": "",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "Практическое руководство по маркетингу с юмором и без занудства.",
+    "img": "img/vorontsov-marketing.jpg",
+    "source": "@galya.melnikova",
+    "status": "wishlist"
+  },
+  {
+    "name": "Купи себе эти чёртовы лилии",
+    "author": "Тара Шустер (Tara Schuster)",
+    "surname": "Шустер",
+    "original": "Buy Yourself the F*cking Lilies (2020)",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Целительные ритуалы для настройки своей жизни. Как перестать себя ненавидеть и начать заботиться о себе — с юмором и нежностью.",
+    "img": "img/shuster-kupi-sebe-lilii.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "До самого рая",
+    "author": "Ханья Янагихара (Hanya Yanagihara)",
+    "surname": "Янагихара",
+    "original": "To Paradise (2022)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Три истории о любви, семье и утопии — в трёх разных Америках. Поднимает множество социальных вопросов. От автора «Маленькой жизни».",
+    "img": "img/yanagihara-do-samogo-raya.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Женщины Лазаря",
+    "author": "Марина Степнова",
+    "surname": "Степнова",
+    "original": "",
+    "genre": [
+      "Художественная"
+    ],
+    "desc": "Роман-сага о трёх женщинах трёх поколений, связанных с гениальным учёным. Россия XX века — любовь, жертва и судьба.",
+    "img": "img/stepnova-zhenshiny-lazarya.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Имя мне — Красный",
+    "author": "Орхан Памук (Orhan Pamuk)",
+    "surname": "Памук",
+    "original": "Benim Adım Kırmızı / My Name Is Red (1998)",
+    "genre": [
+      "Художественная",
+      "Классика"
+    ],
+    "desc": "Нобелевский лауреат. Детективный роман об убийстве в мире османских миниатюристов XVI века. Искусство, вера и тайна.",
+    "img": "img/pamuk-imya-mne-krasnyj.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Marry Him",
+    "author": "Лори Готтлиб (Lori Gottlieb)",
+    "surname": "Готтлиб",
+    "original": "Marry Him: The Case for Settling for Mr. Good Enough (2010)",
+    "genre": [
+      "Психология",
+      "Отношения"
+    ],
+    "desc": "Недооценённая книга о «хорошистах» в отношениях. Как перестать ждать идеал и найти настоящее счастье. Рекомендация Экспоненты.",
+    "img": "img/gottlieb-marry-him.jpg",
+    "source": "Экспонента",
+    "status": "wishlist"
+  },
+  {
+    "name": "The Power of the Pussy",
+    "author": "Кара Кинг (Kara King)",
+    "surname": "Кинг",
+    "original": "",
+    "genre": [
+      "Саморазвитие",
+      "Отношения"
+    ],
+    "desc": "Как получить от мужчин то, что ты хочешь: любовь, уважение, преданность и больше.",
+    "img": "img/king-power-of-pussy.jpg",
+    "source": "headway_app",
+    "status": "wishlist"
+  },
+  {
+    "name": "Маркетинг менеджмент",
+    "author": "Филип Котлер, Кевин Келлер, Александр Чернев",
+    "surname": "Котлер",
+    "original": "Marketing Management, 16-е издание",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "Классический фундаментальный учебник по маркетингу: анализ, стратегия, брендинг, ценообразование и управление ростом.",
+    "img": "img/kotler-marketing-menedzhment.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Позиционирование. Битва за умы",
+    "author": "Джек Траут, Эл Райс (Jack Trout, Al Ries)",
+    "surname": "Траут",
+    "original": "Positioning: The Battle for Your Mind (1981)",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "Классика маркетинга о том, как занять уникальную позицию в сознании клиента и выиграть конкурентную борьбу.",
+    "img": "img/trout-ries-pozicionirovanie-bitva-za-umy.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Построение бизнес-моделей",
+    "author": "Александр Остервальдер, Ив Пинье (Alexander Osterwalder, Yves Pigneur)",
+    "surname": "Остервальдер",
+    "original": "Business Model Generation (2010)",
+    "genre": [
+      "Бизнес",
+      "Стратегия"
+    ],
+    "desc": "Практический визуальный гид по созданию и трансформации бизнес-моделей с помощью Canvas.",
+    "img": "img/ostervalder-pinje-postroenie-biznes-modeley.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Давай поговорим о твоих доходах и расходах",
+    "author": "Карл Ричардс (Carl Richards)",
+    "surname": "Ричардс",
+    "original": "The One-Page Financial Plan",
+    "genre": [
+      "Финансы",
+      "Саморазвитие"
+    ],
+    "desc": "Простым языком о личных финансах: как тратить осознанно, уменьшать тревогу из-за денег и строить понятный финансовый план.",
+    "img": "img/richards-davay-pogovorim-o-dohodah-i-rashodah.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Бессознательное использование своего тела женщиной",
+    "author": "Динора Пайнз (Dinora Pines)",
+    "surname": "Пайнз",
+    "original": "A Woman's Unconscious Use of Her Body",
+    "genre": [
+      "Психология",
+      "Телесная психология"
+    ],
+    "desc": "Психоаналитический взгляд на связь тела, эмоций и внутреннего опыта женщины.",
+    "img": "img/pines-bessoznatelnoe-ispolzovanie-svoego-tela-zhenshchinoy.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Фактор латте",
+    "author": "Дэвид Бах, Джон Дэвид Манн (David Bach, John David Mann)",
+    "surname": "Бах",
+    "original": "The Latte Factor (2019)",
+    "genre": [
+      "Финансы",
+      "Саморазвитие"
+    ],
+    "desc": "Книга о маленьких финансовых привычках, которые со временем дают большую свободу и капитал.",
+    "img": "img/bach-faktor-latte.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Дети деньги не зарабатывают",
+    "author": "Ирина Марьевич",
+    "surname": "Марьевич",
+    "original": "",
+    "genre": [
+      "Финансы",
+      "Воспитание"
+    ],
+    "desc": "О финансовом взрослении и формировании здорового отношения к деньгам в семье.",
+    "img": "img/marievich-deti-dengi-ne-zarabatyvayut.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Как стать богатым. Учебник",
+    "author": "Макс Гюнтер (Max Gunther)",
+    "surname": "Гюнтер",
+    "original": "How to Get Rich",
+    "genre": [
+      "Финансы",
+      "Бизнес"
+    ],
+    "desc": "Практические принципы и стратегии накопления капитала, основанные на реальных кейсах и финансовой дисциплине.",
+    "img": "img/gunter-kak-stat-bogatym.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Живи с чувством",
+    "author": "Даниэлла Лапорт (Danielle LaPorte)",
+    "surname": "Лапорт",
+    "original": "The Desire Map",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "О том, как ставить цели через желаемые чувства, а не через внешние достижения.",
+    "img": "img/laporte-zhivi-s-chuvstvom.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Невроз и личностный рост",
+    "author": "Карен Хорни (Karen Horney)",
+    "surname": "Хорни",
+    "original": "Neurosis and Human Growth (1950)",
+    "genre": [
+      "Психология",
+      "Психотерапия"
+    ],
+    "desc": "Название восстановлено по контексту пользовательской пометки «... и невроз». Классическая работа о внутренних конфликтах, неврозе и пути к личностному росту.",
+    "img": "img/horney-nevroz-i-lichnostnyy-rost.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Да пребудет с вами вселенская терапия",
+    "author": "Леонид Тальпис",
+    "surname": "Тальпис",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "Книга о внутренней трансформации и психологическом исцелении, с практическим и образным подходом к работе с состояниями и жизненными сценариями.",
+    "img": "img/talpis-vselenskaya-terapiya.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Второй пол",
+    "author": "Симона де Бовуар (Simone de Beauvoir)",
+    "surname": "де Бовуар",
+    "original": "Le Deuxième Sexe / The Second Sex (1949)",
+    "genre": [
+      "Философия",
+      "Психология",
+      "Классика"
+    ],
+    "desc": "Фундаментальный труд о положении женщины в обществе и природе гендерных ролей. Одна из ключевых книг в истории феминистской мысли.",
+    "img": "img/beauvoir-vtoroy-pol.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Скорбь Сатаны",
+    "author": "Мария Корелли (Marie Corelli)",
+    "surname": "Корелли",
+    "original": "The Sorrows of Satan (1895)",
+    "genre": [
+      "Художественная",
+      "Классика",
+      "Мистика"
+    ],
+    "desc": "Готический роман о писателе, который получает внезапное богатство и знакомится с таинственным князем Лючо — воплощением искушения и морального выбора.",
+    "img": "img/corelli-skorb-satany.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Алмазный огранщик",
+    "author": "Майкл Роуч (Michael Roach)",
+    "surname": "Роуч",
+    "original": "The Diamond Cutter (2000)",
+    "genre": [
+      "Бизнес",
+      "Саморазвитие",
+      "Духовность"
+    ],
+    "desc": "О применении буддийских принципов в бизнесе и жизни: как соединить личный успех, этику и внутреннюю устойчивость.",
+    "img": "img/roach-almaznyy-ogranshchik.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Карма любви. Вопросы о личных отношениях",
+    "author": "Майкл Роуч (Michael Roach)",
+    "surname": "Роуч",
+    "original": "Karmic Relationships / Karma of Love",
+    "genre": [
+      "Психология",
+      "Отношения",
+      "Саморазвитие"
+    ],
+    "desc": "Книга о том, как кармические принципы влияют на отношения и почему повторяются одни и те же сценарии в любви.",
+    "img": "img/roach-karma-lyubvi.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Психология лжи. Обмани меня, если сможешь",
+    "author": "Пол Экман (Paul Ekman)",
+    "surname": "Экман",
+    "original": "Telling Lies: Clues to Deceit in the Marketplace, Politics, and Marriage",
+    "genre": [
+      "Психология",
+      "Нон-фикшн"
+    ],
+    "desc": "Классическая работа о том, как распознавать ложь по речи, мимике и поведению, и где проходят этические границы правды и обмана.",
+    "img": "img/ekman-psihologiya-lzhi.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Ловушки жизни. Типичные автоматизмы психики",
+    "author": "Геннадий Малейчук",
+    "surname": "Малейчук",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "По отзыву из поста, книга читается легко и очень точно описывает автоматизмы психики, в которых легко узнать себя. Помогает замечать повторяющиеся жизненные ловушки и менять привычные реакции.",
+    "img": "img/maleychuk-lovushki-zhizni.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Бог красит губы",
+    "author": "Карен Берг (Karen Berg)",
+    "surname": "Берг",
+    "original": "God Wears Lipstick",
+    "genre": [
+      "Саморазвитие",
+      "Духовность",
+      "Отношения"
+    ],
+    "desc": "Книга о женственности, любви и внутреннем развитии в каббалистическом подходе — как принимать, любить и выстраивать зрелые отношения.",
+    "img": "img/berg-bog-krasit-guby.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Уютный секс. Просто о неочевидно частых вещах",
+    "author": "Саша Корица",
+    "surname": "Корица",
+    "original": "",
+    "genre": [
+      "Психология",
+      "Отношения",
+      "Сексология"
+    ],
+    "desc": "Нон-фикшн о телесности, близости и сексуальной коммуникации без стыда — простым языком и с практическим фокусом.",
+    "img": "img/korica-uyutnyy-seks.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Как очаровывать людей. Искусство влиять на умы и поступки",
+    "author": "Гай Кавасаки (Guy Kawasaki)",
+    "surname": "Кавасаки",
+    "original": "Enchantment: The Art of Changing Hearts, Minds, and Actions",
+    "genre": [
+      "Бизнес",
+      "Психология",
+      "Коммуникация"
+    ],
+    "desc": "Практическая книга о личном влиянии: как вызывать доверие, вдохновлять людей и убеждать без давления.",
+    "img": "img/kawasaki-kak-ocharovyvat-lyudey.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Запуск",
+    "author": "Джефф Уокер (Jeff Walker)",
+    "surname": "Уокер",
+    "original": "Launch",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "Пошаговая система запуска продуктов и услуг: как выстраивать интерес аудитории и стабильно продавать через продуманные кампании.",
+    "img": "img/walker-zapusk.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Новый нейрокопирайтинг",
+    "author": "Майя Богданова",
+    "surname": "Богданова",
+    "original": "Новый нейрокопирайтинг. 99 способов влиять на людей с помощью текста",
+    "genre": [
+      "Маркетинг",
+      "Копирайтинг",
+      "Бизнес"
+    ],
+    "desc": "Практическое руководство по текстам для соцсетей и продаж: как захватывать внимание и влиять на аудиторию через структуру и психологию текста.",
+    "img": "img/bogdanova-neyro-kopirayting.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Подумайте еще раз",
+    "author": "Адам Грант",
+    "surname": "Грант",
+    "original": "Think Again (2021)",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "О силе переосмысления и умении менять мнение, чтобы принимать более точные решения в жизни и работе.",
+    "img": "img/grant-podumayte-eshche-raz.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Никаких компромиссов",
+    "author": "Крис Восс",
+    "surname": "Восс",
+    "original": "Never Split the Difference (2016)",
+    "genre": [
+      "Переговоры",
+      "Психология"
+    ],
+    "desc": "Практическое руководство по переговорам от бывшего переговорщика ФБР: как слышать собеседника и добиваться нужного результата.",
+    "img": "img/voss-nikakih-kompromissov.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Манифест инвестора",
+    "author": "Уильям Бернстайн",
+    "surname": "Бернстайн",
+    "original": "The Investor's Manifesto (2010)",
+    "genre": [
+      "Финансы",
+      "Инвестиции"
+    ],
+    "desc": "Книга о базовых принципах долгосрочного инвестирования: риск, диверсификация, дисциплина и личная стратегия.",
+    "img": "img/bernstein-manifest-investora.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Любимчик эпохи",
+    "author": "Катя Качур",
+    "surname": "Качур",
+    "original": "Любимчик эпохи (2023)",
+    "genre": [
+      "Роман",
+      "Современная проза"
+    ],
+    "desc": "Современный роман о человеческих отношениях, личном выборе и цене эмоциональной близости.",
+    "img": "img/kachur-lyubimchik-epohi.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Экономика впечатлений",
+    "author": "Дэн Хилл",
+    "surname": "Хилл",
+    "original": "Emotionomics (2010)",
+    "genre": [
+      "Маркетинг",
+      "Бизнес"
+    ],
+    "desc": "О том, как эмоции влияют на решения людей и как использовать это понимание в продажах, брендинге и клиентском опыте.",
+    "img": "img/hill-ekonomika-vpechatleniy.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "12 недель в году",
+    "author": "Брайан Моран, Майкл Леннингтон",
+    "surname": "Моран",
+    "original": "The 12 Week Year (2013)",
+    "genre": [
+      "Продуктивность",
+      "Бизнес"
+    ],
+    "desc": "Метод планирования, где год сжимается до 12 недель, чтобы фокусироваться на главном и быстрее достигать целей.",
+    "img": "img/moran-12-nedel-v-godu.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Психология сарафанного радио",
+    "author": "Йона Бергер",
+    "surname": "Бергер",
+    "original": "Contagious (2013)",
+    "genre": [
+      "Маркетинг",
+      "Коммуникации"
+    ],
+    "desc": "Почему одни идеи становятся вирусными, а другие нет: шесть принципов, которые заставляют людей делиться информацией.",
+    "img": "img/berger-psihologiya-sarafannogo-radio.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Неудобные разговоры",
+    "author": "Дуглас Стоун, Брюс Паттон, Шейла Хин",
+    "surname": "Стоун",
+    "original": "Difficult Conversations (1999)",
+    "genre": [
+      "Коммуникации",
+      "Психология"
+    ],
+    "desc": "Как вести сложные разговоры без разрушения отношений: структура, вопросы и приёмы для конфликтных тем.",
+    "img": "img/stone-neudobnye-razgovory.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Эссенциализм",
+    "author": "Грег МакКеон",
+    "surname": "МакКеон",
+    "original": "Essentialism (2014)",
+    "genre": [
+      "Саморазвитие",
+      "Продуктивность"
+    ],
+    "desc": "Философия осознанного выбора: меньше, но лучше. Как убирать лишнее и вкладываться в действительно важное.",
+    "img": "img/mckeown-essencializm.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Сила воли",
+    "author": "Келли Макгонигал",
+    "surname": "Макгонигал",
+    "original": "The Willpower Instinct (2011)",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "Научный взгляд на самоконтроль и формирование устойчивых привычек: как работать с импульсами и не срываться.",
+    "img": "img/mcgonigal-sila-voli.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Компас питания",
+    "author": "Бас Каст",
+    "surname": "Каст",
+    "original": "Der Ernährungskompass (2018)",
+    "genre": [
+      "Здоровье",
+      "Питание"
+    ],
+    "desc": "Обзор исследований о питании: какие продукты и подходы реально связаны с долгой и здоровой жизнью.",
+    "img": "img/kast-kompas-pitaniya.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Почему мне плохо, когда всё вроде хорошо?",
+    "author": "Андерс Хансен",
+    "surname": "Хансен",
+    "original": "Depphjärnan (2021)",
+    "genre": [
+      "Психология",
+      "Нейронаука"
+    ],
+    "desc": "О том, как мозг реагирует на современный образ жизни и почему тревога и усталость могут возникать даже при внешнем благополучии.",
+    "img": "img/hansen-pochemu-mne-ploho.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Атомные привычки",
+    "author": "Джеймс Клир",
+    "surname": "Клир",
+    "original": "Atomic Habits (2018)",
+    "genre": [
+      "Саморазвитие",
+      "Продуктивность"
+    ],
+    "desc": "Пошаговая система формирования полезных привычек и отказа от вредных через маленькие ежедневные изменения.",
+    "img": "img/clear-atomnye-privychki.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Накопительный эффект",
+    "author": "Даррен Харди",
+    "surname": "Харди",
+    "original": "The Compound Effect (2010)",
+    "genre": [
+      "Саморазвитие",
+      "Мотивация"
+    ],
+    "desc": "О силе маленьких повторяющихся действий, которые со временем дают непропорционально большой результат.",
+    "img": "img/hardy-nakopitelnyy-effekt.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Украденный фокус",
+    "author": "Йоханн Хари",
+    "surname": "Хари",
+    "original": "Stolen Focus (2022)",
+    "genre": [
+      "Психология",
+      "Продуктивность"
+    ],
+    "desc": "Исследование причин потери концентрации в цифровую эпоху и способов вернуть глубину внимания.",
+    "img": "img/hari-ukradennyy-fokus.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Зачем мы спим",
+    "author": "Мэттью Уокер",
+    "surname": "Уокер",
+    "original": "Why We Sleep (2017)",
+    "genre": [
+      "Здоровье",
+      "Нейронаука"
+    ],
+    "desc": "О роли сна для памяти, иммунитета, эмоций и долголетия, а также о рисках хронического недосыпа.",
+    "img": "img/walker-zachem-my-spim.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Код искателя",
+    "author": "Донни Эпстин",
+    "surname": "Эпстин",
+    "original": "The Seeker's Code (2024)",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Книга о личной трансформации, поиске внутренней опоры и практиках выхода на новый уровень восприятия и действий.",
+    "img": "img/epstin-kod-iskatelya.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Я хочу хотеть",
+    "author": "Виктория Вебер",
+    "surname": "Вебер",
+    "original": "Я хочу хотеть (2024)",
+    "genre": [
+      "Саморазвитие",
+      "Психология"
+    ],
+    "desc": "Книга-тренинг о контакте со своими желаниями, внутренней мотивации и мягком возвращении энергии к жизни.",
+    "img": "img/veber-ya-hochu-hotet.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Лилла",
+    "author": "Карина Кокрэлл-Ферре",
+    "surname": "Кокрэлл-Ферре",
+    "original": "Лилла (2024)",
+    "genre": [
+      "Роман",
+      "Современная проза"
+    ],
+    "desc": "Роман о женщине в поиске себя, любви и права на собственный путь.",
+    "img": "img/kokrell-ferre-lilla.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Завет воды",
+    "author": "Абрахам Вергезе (Abraham Verghese)",
+    "surname": "Вергезе",
+    "original": "The Covenant of Water (2023)",
+    "genre": [
+      "Художественная",
+      "Семейная сага",
+      "Современная проза"
+    ],
+    "desc": "Большая семейная сага, разворачивающаяся в Южной Индии на протяжении нескольких поколений. Медицинская драма, любовь, утраты и тайны рода.",
+    "img": "img/verghese-zavet-vody.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Выход из операционки «Есть»",
+    "author": "Татьяна Демина",
+    "surname": "Демина",
+    "original": "",
+    "genre": [
+      "Бизнес",
+      "Менеджмент"
+    ],
+    "desc": "Практическая книга для предпринимателей о выходе из операционной рутины и возврате свободы владельцу бизнеса.",
+    "img": "img/demina-vyhod-iz-operacionki-est.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Теннис. Психология успешной игры",
+    "author": "У. Тимоти Голлуэй (W. Timothy Gallwey)",
+    "surname": "Голлуэй",
+    "original": "The Inner Game of Tennis (1974)",
+    "genre": [
+      "Психология",
+      "Спорт",
+      "Саморазвитие"
+    ],
+    "desc": "Классика о ментальной стороне игры и навыке управления вниманием под давлением.",
+    "img": "img/gallwey-tennis-psychology.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "В поисках счастья",
+    "author": "Мартин Селигман (Martin E. P. Seligman)",
+    "surname": "Селигман",
+    "original": "Authentic Happiness (2002)",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "О позитивной психологии и практиках, которые помогают выстраивать устойчивое ощущение благополучия.",
+    "img": "img/seligman-authentic-happiness.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "У радости тысяча имён",
+    "author": "Байрон Кейти (Byron Katie)",
+    "surname": "Кейти",
+    "original": "A Thousand Names for Joy (2007)",
+    "genre": [
+      "Психология",
+      "Осознанность"
+    ],
+    "desc": "Книга о принятии реальности и внутреннем спокойствии через метод \"Работа\".",
+    "img": "img/byron-katie-thousand-names-of-joy.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Большое волшебство",
+    "author": "Элизабет Гилберт (Elizabeth Gilbert)",
+    "surname": "Гилберт",
+    "original": "Big Magic (2015)",
+    "genre": [
+      "Творчество",
+      "Саморазвитие"
+    ],
+    "desc": "Вдохновляющая книга о творчестве без страха, перфекционизма и самосаботажа.",
+    "img": "img/gilbert-big-magic.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Когда Ницше плакал",
+    "author": "Ирвин Ялом (Irvin D. Yalom)",
+    "surname": "Ялом",
+    "original": "When Nietzsche Wept (1992)",
+    "genre": [
+      "Психология",
+      "Роман"
+    ],
+    "desc": "Интеллектуальный роман о терапии, смысле жизни и встрече идей Ницше с психотерапией.",
+    "img": "img/yalom-when-nietzsche-wept.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Выйди из зоны комфорта",
+    "author": "Брайан Трейси (Brian Tracy)",
+    "surname": "Трейси",
+    "original": "Eat That Frog! (2001)",
+    "genre": [
+      "Продуктивность",
+      "Саморазвитие"
+    ],
+    "desc": "Практичные техники тайм-менеджмента и борьбы с прокрастинацией через фокус на главном.",
+    "img": "img/tracy-leave-comfort-zone.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Ego Is the Enemy",
+    "author": "Ryan Holiday",
+    "surname": "Holiday",
+    "original": "Ego Is the Enemy (2016)",
+    "genre": [
+      "Stoicism",
+      "Self-help"
+    ],
+    "desc": "О том, как эго мешает росту, отношениям и работе, и почему смирение делает сильнее.",
+    "img": "img/holiday-ego-is-the-enemy.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "The Obstacle Is the Way",
+    "author": "Ryan Holiday",
+    "surname": "Holiday",
+    "original": "The Obstacle Is the Way (2014)",
+    "genre": [
+      "Stoicism",
+      "Self-help"
+    ],
+    "desc": "Стоический подход к трудностям: препятствие можно превращать в путь и источник силы.",
+    "img": "img/holiday-obstacle-is-the-way.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "The Daily Stoic",
+    "author": "Ryan Holiday, Stephen Hanselman",
+    "surname": "Holiday",
+    "original": "The Daily Stoic (2016)",
+    "genre": [
+      "Stoicism",
+      "Self-help"
+    ],
+    "desc": "365 коротких стоических размышлений и практик на каждый день.",
+    "img": "img/holiday-daily-stoic.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Психология влияния",
+    "author": "Роберт Чалдини (Robert B. Cialdini)",
+    "surname": "Чалдини",
+    "original": "Influence: The Psychology of Persuasion (1984)",
+    "genre": [
+      "Психология",
+      "Коммуникации",
+      "Бизнес"
+    ],
+    "desc": "О механизмах убеждения и шести принципах влияния в переговорах, продажах и повседневной жизни.",
+    "img": "img/cialdini-psychology-of-influence.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Новая земля. Новый образ жизни",
+    "author": "Экхарт Толле (Eckhart Tolle)",
+    "surname": "Толле",
+    "original": "A New Earth (2005)",
+    "genre": [
+      "Осознанность",
+      "Психология"
+    ],
+    "desc": "О внутренней трансформации, наблюдении за эго и более осознанной жизни в настоящем.",
+    "img": "img/tolle-a-new-earth.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  },
+  {
+    "name": "Хочу всем нравиться",
+    "author": "Бэрбель Вардецки (Bärbel Wardetzki)",
+    "surname": "Вардецки",
+    "original": "Ich will allen gefallen (2019)",
+    "genre": [
+      "Психология",
+      "Саморазвитие"
+    ],
+    "desc": "Как перестать жить ради одобрения и выстраивать здоровые границы с собой и окружающими.",
+    "img": "img/wardetzki-want-everyone-like-me.jpg",
+    "source": "канал Книги",
+    "status": "wishlist"
+  }
+
+  ,
+  {
+    name: 'Ego Is the Enemy',
+    author: 'Райан Холидей (Ryan Holiday)',
+    surname: 'Холидей',
+    original: 'Ego Is the Enemy (2016)',
+    genre: ['Саморазвитие', 'Психология', 'Философия'],
+    desc: 'Книга о том, как эго мешает росту, лидерству и внутреннему спокойствию. Практичный стоический взгляд на амбиции, успех и ошибки.',
+    img: 'img/holiday-ego-is-the-enemy.jpg',
     source: 'канал Книги',
     status: 'wishlist'
-  },
+  }
+  ,
   {
-    name: 'Наука и технологии вечной молодости',
-    author: 'Сергей Янг (Sergey Young)',
-    surname: 'Янг',
-    original: 'The Science and Technology of Growing Young (2021)',
-    genre: ['Наука', 'Здоровье'],
-    desc: 'Основатель Longevity Vision Fund о прорывных технологиях, которые радикально продлят жизнь. Бестселлер WSJ и Amazon.',
-    img: 'img/yang-vechnoy-molodosti.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Извините, случился СДВГ',
-    author: 'Тамара Розье (Tamara Rosier)',
-    surname: 'Розье',
-    original: 'Your Brain\'s Not Broken',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'Как справиться с прокрастинацией, тревогой и гиперактивностью. Техники, упражнения и истории людей с СДВГ — с нежностью и задором.',
-    img: 'img/rozie-sdvg.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Бегущая с волками',
-    author: 'Кларисса Пинкола Эстес (Clarissa Pinkola Estés)',
-    surname: 'Эстес',
-    original: 'Women Who Run with the Wolves (1992)',
-    genre: ['Психология', 'Мифология'],
-    desc: 'Культовая книга о женском архетипе Дикой Женщины через призму мифов, сказок и легенд. Маст-хэв для каждой.',
-    img: 'img/estes-begushaya-s-volkami.jpg',
-    source: 'Рекомендация @darina.jusina',
-    status: 'wishlist'
-  },
-  {
-    name: 'Как завоёвывать друзей и оказывать влияние на людей',
-    author: 'Дейл Карнеги (Dale Carnegie)',
-    surname: 'Карнеги',
-    original: 'How to Win Friends and Influence People (1936)',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Легендарная книга о навыках общения. Продано более 15 миллионов экземпляров. Практические принципы, которые помогают строить отношения и влиять на людей.',
-    img: 'img/karnegi-kak-zavoevyvat-druzey.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Бизнес-ведьмы',
-    author: 'Светлана Комарова, Елена Рисберг',
-    surname: 'Комарова',
-    original: '',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'О внутренней силе, мудрости и смелости выбирать свою тропу. Как продолжение «Бегущей с волками» — для мира после ковида.',
-    img: 'img/komarova-biznes-vedmy.jpg',
-    source: 'Рекомендация @darina.jusina',
-    status: 'wishlist'
-  },
-  {
-    name: '48 законов власти',
-    author: 'Роберт Грин (Robert Greene)',
-    surname: 'Грин',
-    original: 'The 48 Laws of Power (1998)',
-    genre: ['Бизнес', 'Психология'],
-    desc: 'Мировой бестселлер о стратегиях влияния и власти. 48 законов, основанных на историческом опыте великих лидеров, полководцев и политиков.',
-    img: 'img/grin-48-zakonov-vlasti.jpg',
-    source: '@zakon_uspexa',
-    status: 'wishlist'
-  },
-  {
-    name: 'Деньги. Мастер игры',
-    author: 'Тони Роббинс (Tony Robbins)',
-    surname: 'Роббинс',
-    original: 'Money: Master the Game (2014)',
-    genre: ['Финансы', 'Саморазвитие'],
-    desc: '7 простых шагов к финансовой свободе. Практическое руководство по инвестициям и управлению деньгами от легендарного коуча.',
-    img: 'img/robbins-dengi-master-igry.jpg',
-    source: '@girlsmoneymind',
-    status: 'wishlist'
-  },
-  {
-    name: 'Непоколебимый',
-    author: 'Тони Роббинс (Tony Robbins)',
-    surname: 'Роббинс',
-    original: 'Unshakeable: Your Financial Freedom Playbook (2017)',
-    genre: ['Финансы', 'Саморазвитие'],
-    desc: 'Сценарий финансовой свободы. Как сохранять стабильность и приумножать капитал в условиях нестабильного мира.',
-    img: 'img/robbins-nepokolebimyj.jpg',
-    source: '@girlsmoneymind',
-    status: 'wishlist'
-  },
-  {
-    name: 'Самый богатый человек в Вавилоне',
-    author: 'Джордж Клейсон (George S. Clason)',
-    surname: 'Клейсон',
-    original: 'The Richest Man in Babylon (1926)',
-    genre: ['Финансы', 'Саморазвитие'],
-    desc: 'Притчи о секретах богатства из древнего Вавилона. Классика финансовой грамотности, которая учит простым принципам накопления и инвестирования.',
-    img: 'img/klejson-bogatyj-chelovek.jpg',
-    source: '@girlsmoneymind',
-    status: 'wishlist'
-  },
-  {
-    name: 'Думай медленно... решай быстро',
-    author: 'Даниэль Канеман (Daniel Kahneman)',
-    surname: 'Канеман',
-    original: 'Thinking, Fast and Slow (2011)',
-    genre: ['Психология', 'Наука'],
-    desc: 'Нобелевский лауреат о двух системах мышления. Про поведение людей — полезно и для финансов, и для жизни.',
-    img: 'img/kaneman-dumaj-medlenno.jpg',
-    source: '@girlsmoneymind',
-    status: 'wishlist'
-  },
-  {
-    name: 'Хулиномика',
-    author: 'Алексей Марков',
-    surname: 'Марков',
-    original: '',
-    genre: ['Финансы', 'Бизнес'],
-    desc: 'Финансовые рынки для тех, кто их в гробу видал. Доступно о рынках, с юмором и нецензурными словами.',
-    img: 'img/markov-hulinomika.jpg',
-    source: '@girlsmoneymind',
-    status: 'wishlist'
-  },
-  {
-    name: 'Фиолетовая корова',
-    author: 'Сет Годин (Seth Godin)',
-    surname: 'Годин',
-    original: 'Purple Cow (2003)',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'Как выделиться среди конкурентов. Почему безопасные продукты обречены, а только выдающиеся становятся заразительными.',
-    img: 'img/godin-fioletovaya-korova.jpg',
-    source: '@galya.melnikova',
-    status: 'wishlist'
-  },
-  {
-    name: 'Заразительный',
-    author: 'Джона Бергер (Jonah Berger)',
-    surname: 'Бергер',
-    original: 'Contagious: Why Things Catch On (2013)',
-    genre: ['Маркетинг', 'Психология'],
-    desc: 'Почему одни идеи и продукты становятся вирусными, а другие нет. Наука о сарафанном радио и социальном влиянии.',
-    img: 'img/berger-zarazitelnyj.jpg',
-    source: '@galya.melnikova',
-    status: 'wishlist'
-  },
-  {
-    name: 'Маркетинг с блэкджеком и шутками',
-    author: 'Павел Воронцов',
-    surname: 'Воронцов',
-    original: '',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'Практическое руководство по маркетингу с юмором и без занудства.',
-    img: 'img/vorontsov-marketing.jpg',
-    source: '@galya.melnikova',
-    status: 'wishlist'
-  },
-  {
-    name: 'Купи себе эти чёртовы лилии',
-    author: 'Тара Шустер (Tara Schuster)',
-    surname: 'Шустер',
-    original: 'Buy Yourself the F*cking Lilies (2020)',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Целительные ритуалы для настройки своей жизни. Как перестать себя ненавидеть и начать заботиться о себе — с юмором и нежностью.',
-    img: 'img/shuster-kupi-sebe-lilii.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'До самого рая',
-    author: 'Ханья Янагихара (Hanya Yanagihara)',
-    surname: 'Янагихара',
-    original: 'To Paradise (2022)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Три истории о любви, семье и утопии — в трёх разных Америках. Поднимает множество социальных вопросов. От автора «Маленькой жизни».',
-    img: 'img/yanagihara-do-samogo-raya.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Женщины Лазаря',
-    author: 'Марина Степнова',
-    surname: 'Степнова',
-    original: '',
-    genre: ['Художественная'],
-    desc: 'Роман-сага о трёх женщинах трёх поколений, связанных с гениальным учёным. Россия XX века — любовь, жертва и судьба.',
-    img: 'img/stepnova-zhenshiny-lazarya.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Имя мне — Красный',
-    author: 'Орхан Памук (Orhan Pamuk)',
-    surname: 'Памук',
-    original: 'Benim Adım Kırmızı / My Name Is Red (1998)',
-    genre: ['Художественная', 'Классика'],
-    desc: 'Нобелевский лауреат. Детективный роман об убийстве в мире османских миниатюристов XVI века. Искусство, вера и тайна.',
-    img: 'img/pamuk-imya-mne-krasnyj.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Marry Him',
-    author: 'Лори Готтлиб (Lori Gottlieb)',
-    surname: 'Готтлиб',
-    original: 'Marry Him: The Case for Settling for Mr. Good Enough (2010)',
-    genre: ['Психология', 'Отношения'],
-    desc: 'Недооценённая книга о «хорошистах» в отношениях. Как перестать ждать идеал и найти настоящее счастье. Рекомендация Экспоненты.',
-    img: 'img/gottlieb-marry-him.jpg',
-    source: 'Экспонента',
-    status: 'wishlist'
-  },
-  {
-    name: 'The Power of the Pussy',
-    author: 'Кара Кинг (Kara King)',
-    surname: 'Кинг',
-    original: '',
-    genre: ['Саморазвитие', 'Отношения'],
-    desc: 'Как получить от мужчин то, что ты хочешь: любовь, уважение, преданность и больше.',
-    img: 'img/king-power-of-pussy.jpg',
-    source: 'headway_app',
-    status: 'wishlist'
-  },
-  {
-    name: 'Маркетинг менеджмент',
-    author: 'Филип Котлер, Кевин Келлер, Александр Чернев',
-    surname: 'Котлер',
-    original: 'Marketing Management, 16-е издание',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'Классический фундаментальный учебник по маркетингу: анализ, стратегия, брендинг, ценообразование и управление ростом.',
-    img: 'img/kotler-marketing-menedzhment.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Позиционирование. Битва за умы',
-    author: 'Джек Траут, Эл Райс (Jack Trout, Al Ries)',
-    surname: 'Траут',
-    original: 'Positioning: The Battle for Your Mind (1981)',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'Классика маркетинга о том, как занять уникальную позицию в сознании клиента и выиграть конкурентную борьбу.',
-    img: 'img/trout-ries-pozicionirovanie-bitva-za-umy.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Построение бизнес-моделей',
-    author: 'Александр Остервальдер, Ив Пинье (Alexander Osterwalder, Yves Pigneur)',
-    surname: 'Остервальдер',
-    original: 'Business Model Generation (2010)',
+    name: 'Великие по собственному выбору',
+    author: 'Джим Коллинз, Мортен Хансен (Jim Collins, Morten T. Hansen)',
+    surname: 'Коллинз',
+    original: 'Great by Choice (2011)',
     genre: ['Бизнес', 'Стратегия'],
-    desc: 'Практический визуальный гид по созданию и трансформации бизнес-моделей с помощью Canvas.',
-    img: 'img/ostervalder-pinje-postroenie-biznes-modeley.jpg',
+    desc: 'Исследование компаний, которые показывают выдающиеся результаты в условиях хаоса и неопределённости. О дисциплине, подготовке и стратегической устойчивости.',
+    img: 'img/collins-hansen-velikie-po-sobstvennomu-vyboru.jpg',
     source: 'канал Книги',
     status: 'wishlist'
-  },
+  }
+  ,
   {
-    name: 'Давай поговорим о твоих доходах и расходах',
-    author: 'Карл Ричардс (Carl Richards)',
-    surname: 'Ричардс',
-    original: 'The One-Page Financial Plan',
-    genre: ['Финансы', 'Саморазвитие'],
-    desc: 'Простым языком о личных финансах: как тратить осознанно, уменьшать тревогу из-за денег и строить понятный финансовый план.',
-    img: 'img/richards-davay-pogovorim-o-dohodah-i-rashodah.jpg',
+    name: 'Дыхание богов',
+    author: 'Бернар Вербер (Bernard Werber)',
+    surname: 'Вербер',
+    original: 'Le Souffle des Dieux (2005)',
+    genre: ['Художественная', 'Фантастика'],
+    desc: 'Третий роман цикла «Мы, боги». Герои продолжают путь становления богами, наблюдая и направляя судьбы человеческих цивилизаций.',
+    img: 'img/verber-dyhanie-bogov.jpg',
     source: 'канал Книги',
     status: 'wishlist'
-  },
+  }
+  ,
   {
-    name: 'Бессознательное использование своего тела женщиной',
-    author: 'Динора Пайнз (Dinora Pines)',
-    surname: 'Пайнз',
-    original: 'A Woman\'s Unconscious Use of Her Body',
-    genre: ['Психология', 'Телесная психология'],
-    desc: 'Психоаналитический взгляд на связь тела, эмоций и внутреннего опыта женщины.',
-    img: 'img/pines-bessoznatelnoe-ispolzovanie-svoego-tela-zhenshchinoy.jpg',
+    name: 'Анатомия мира',
+    author: 'Институт Арбингера (The Arbinger Institute)',
+    surname: 'Арбингер',
+    original: 'The Anatomy of Peace (2006)',
+    genre: ['Психология', 'Коммуникации'],
+    desc: 'Книга о том, как устранять корневые причины конфликтов в семье, команде и обществе. Про переход от обвинений к ответственному диалогу.',
+    img: 'img/arbinger-anatomiya-mira.jpg',
     source: 'канал Книги',
     status: 'wishlist'
-  },
+  }
+  ,
   {
-    name: 'Фактор латте',
-    author: 'Дэвид Бах, Джон Дэвид Манн (David Bach, John David Mann)',
-    surname: 'Бах',
-    original: 'The Latte Factor (2019)',
-    genre: ['Финансы', 'Саморазвитие'],
-    desc: 'Книга о маленьких финансовых привычках, которые со временем дают большую свободу и капитал.',
-    img: 'img/bach-faktor-latte.jpg',
+    name: 'Икона по воле случая',
+    author: 'Айрис Апфель (Iris Apfel)',
+    surname: 'Апфель',
+    original: 'Accidental Icon (2018)',
+    genre: ['Биография', 'Саморазвитие'],
+    desc: 'Автобиографическая книга Айрис Апфель о стиле, смелости быть собой и жизни вне шаблонов. Лёгкий и вдохновляющий мемуар модной легенды.',
+    img: 'img/apfel-ikona-po-vole-sluchaya.jpg',
     source: 'канал Книги',
     status: 'wishlist'
-  },
+  }
+  ,
   {
-    name: 'Дети деньги не зарабатывают',
-    author: 'Ирина Марьевич',
-    surname: 'Марьевич',
-    original: '',
-    genre: ['Финансы', 'Воспитание'],
-    desc: 'О финансовом взрослении и формировании здорового отношения к деньгам в семье.',
-    img: 'img/marievich-deti-dengi-ne-zarabatyvayut.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Как стать богатым. Учебник',
-    author: 'Макс Гюнтер (Max Gunther)',
-    surname: 'Гюнтер',
-    original: 'How to Get Rich',
-    genre: ['Финансы', 'Бизнес'],
-    desc: 'Практические принципы и стратегии накопления капитала, основанные на реальных кейсах и финансовой дисциплине.',
-    img: 'img/gunter-kak-stat-bogatym.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Живи с чувством',
-    author: 'Даниэлла Лапорт (Danielle LaPorte)',
-    surname: 'Лапорт',
-    original: 'The Desire Map',
+    name: 'Большое волшебство',
+    author: 'Элизабет Гилберт (Elizabeth Gilbert)',
+    surname: 'Гилберт',
+    original: 'Big Magic: Creative Living Beyond Fear (2015)',
     genre: ['Саморазвитие', 'Психология'],
-    desc: 'О том, как ставить цели через желаемые чувства, а не через внешние достижения.',
-    img: 'img/laporte-zhivi-s-chuvstvom.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Невроз и личностный рост',
-    author: 'Карен Хорни (Karen Horney)',
-    surname: 'Хорни',
-    original: 'Neurosis and Human Growth (1950)',
-    genre: ['Психология', 'Психотерапия'],
-    desc: 'Название восстановлено по контексту пользовательской пометки «... и невроз». Классическая работа о внутренних конфликтах, неврозе и пути к личностному росту.',
-    img: 'img/horney-nevroz-i-lichnostnyy-rost.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Да пребудет с вами вселенская терапия',
-    author: 'Леонид Тальпис',
-    surname: 'Тальпис',
-    original: '',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'Книга о внутренней трансформации и психологическом исцелении, с практическим и образным подходом к работе с состояниями и жизненными сценариями.',
-    img: 'img/talpis-vselenskaya-terapiya.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Второй пол',
-    author: 'Симона де Бовуар (Simone de Beauvoir)',
-    surname: 'де Бовуар',
-    original: 'Le Deuxième Sexe / The Second Sex (1949)',
-    genre: ['Философия', 'Психология', 'Классика'],
-    desc: 'Фундаментальный труд о положении женщины в обществе и природе гендерных ролей. Одна из ключевых книг в истории феминистской мысли.',
-    img: 'img/beauvoir-vtoroy-pol.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Скорбь Сатаны',
-    author: 'Мария Корелли (Marie Corelli)',
-    surname: 'Корелли',
-    original: 'The Sorrows of Satan (1895)',
-    genre: ['Художественная', 'Классика', 'Мистика'],
-    desc: 'Готический роман о писателе, который получает внезапное богатство и знакомится с таинственным князем Лючо — воплощением искушения и морального выбора.',
-    img: 'img/corelli-skorb-satany.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Алмазный огранщик',
-    author: 'Майкл Роуч (Michael Roach)',
-    surname: 'Роуч',
-    original: 'The Diamond Cutter (2000)',
-    genre: ['Бизнес', 'Саморазвитие', 'Духовность'],
-    desc: 'О применении буддийских принципов в бизнесе и жизни: как соединить личный успех, этику и внутреннюю устойчивость.',
-    img: 'img/roach-almaznyy-ogranshchik.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Карма любви. Вопросы о личных отношениях',
-    author: 'Майкл Роуч (Michael Roach)',
-    surname: 'Роуч',
-    original: 'Karmic Relationships / Karma of Love',
-    genre: ['Психология', 'Отношения', 'Саморазвитие'],
-    desc: 'Книга о том, как кармические принципы влияют на отношения и почему повторяются одни и те же сценарии в любви.',
-    img: 'img/roach-karma-lyubvi.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Психология лжи. Обмани меня, если сможешь',
-    author: 'Пол Экман (Paul Ekman)',
-    surname: 'Экман',
-    original: 'Telling Lies: Clues to Deceit in the Marketplace, Politics, and Marriage',
-    genre: ['Психология', 'Нон-фикшн'],
-    desc: 'Классическая работа о том, как распознавать ложь по речи, мимике и поведению, и где проходят этические границы правды и обмана.',
-    img: 'img/ekman-psihologiya-lzhi.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Ловушки жизни. Типичные автоматизмы психики',
-    author: 'Геннадий Малейчук',
-    surname: 'Малейчук',
-    original: '',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'По отзыву из поста, книга читается легко и очень точно описывает автоматизмы психики, в которых легко узнать себя. Помогает замечать повторяющиеся жизненные ловушки и менять привычные реакции.',
-    img: 'img/maleychuk-lovushki-zhizni.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Бог красит губы',
-    author: 'Карен Берг (Karen Berg)',
-    surname: 'Берг',
-    original: 'God Wears Lipstick',
-    genre: ['Саморазвитие', 'Духовность', 'Отношения'],
-    desc: 'Книга о женственности, любви и внутреннем развитии в каббалистическом подходе — как принимать, любить и выстраивать зрелые отношения.',
-    img: 'img/berg-bog-krasit-guby.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Уютный секс. Просто о неочевидно частых вещах',
-    author: 'Саша Корица',
-    surname: 'Корица',
-    original: '',
-    genre: ['Психология', 'Отношения', 'Сексология'],
-    desc: 'Нон-фикшн о телесности, близости и сексуальной коммуникации без стыда — простым языком и с практическим фокусом.',
-    img: 'img/korica-uyutnyy-seks.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Как очаровывать людей. Искусство влиять на умы и поступки',
-    author: 'Гай Кавасаки (Guy Kawasaki)',
-    surname: 'Кавасаки',
-    original: 'Enchantment: The Art of Changing Hearts, Minds, and Actions',
-    genre: ['Бизнес', 'Психология', 'Коммуникация'],
-    desc: 'Практическая книга о личном влиянии: как вызывать доверие, вдохновлять людей и убеждать без давления.',
-    img: 'img/kawasaki-kak-ocharovyvat-lyudey.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Запуск',
-    author: 'Джефф Уокер (Jeff Walker)',
-    surname: 'Уокер',
-    original: 'Launch',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'Пошаговая система запуска продуктов и услуг: как выстраивать интерес аудитории и стабильно продавать через продуманные кампании.',
-    img: 'img/walker-zapusk.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Новый нейрокопирайтинг',
-    author: 'Майя Богданова',
-    surname: 'Богданова',
-    original: 'Новый нейрокопирайтинг. 99 способов влиять на людей с помощью текста',
-    genre: ['Маркетинг', 'Копирайтинг', 'Бизнес'],
-    desc: 'Практическое руководство по текстам для соцсетей и продаж: как захватывать внимание и влиять на аудиторию через структуру и психологию текста.',
-    img: 'img/bogdanova-neyro-kopirayting.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Подумайте еще раз',
-    author: 'Адам Грант',
-    surname: 'Грант',
-    original: 'Think Again (2021)',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'О силе переосмысления и умении менять мнение, чтобы принимать более точные решения в жизни и работе.',
-    img: 'img/grant-podumayte-eshche-raz.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Никаких компромиссов',
-    author: 'Крис Восс',
-    surname: 'Восс',
-    original: 'Never Split the Difference (2016)',
-    genre: ['Переговоры', 'Психология'],
-    desc: 'Практическое руководство по переговорам от бывшего переговорщика ФБР: как слышать собеседника и добиваться нужного результата.',
-    img: 'img/voss-nikakih-kompromissov.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Манифест инвестора',
-    author: 'Уильям Бернстайн',
-    surname: 'Бернстайн',
-    original: 'The Investor\'s Manifesto (2010)',
-    genre: ['Финансы', 'Инвестиции'],
-    desc: 'Книга о базовых принципах долгосрочного инвестирования: риск, диверсификация, дисциплина и личная стратегия.',
-    img: 'img/bernstein-manifest-investora.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Любимчик эпохи',
-    author: 'Катя Качур',
-    surname: 'Качур',
-    original: 'Любимчик эпохи (2023)',
-    genre: ['Роман', 'Современная проза'],
-    desc: 'Современный роман о человеческих отношениях, личном выборе и цене эмоциональной близости.',
-    img: 'img/kachur-lyubimchik-epohi.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Экономика впечатлений',
-    author: 'Дэн Хилл',
-    surname: 'Хилл',
-    original: 'Emotionomics (2010)',
-    genre: ['Маркетинг', 'Бизнес'],
-    desc: 'О том, как эмоции влияют на решения людей и как использовать это понимание в продажах, брендинге и клиентском опыте.',
-    img: 'img/hill-ekonomika-vpechatleniy.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: '12 недель в году',
-    author: 'Брайан Моран, Майкл Леннингтон',
-    surname: 'Моран',
-    original: 'The 12 Week Year (2013)',
-    genre: ['Продуктивность', 'Бизнес'],
-    desc: 'Метод планирования, где год сжимается до 12 недель, чтобы фокусироваться на главном и быстрее достигать целей.',
-    img: 'img/moran-12-nedel-v-godu.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Психология сарафанного радио',
-    author: 'Йона Бергер',
-    surname: 'Бергер',
-    original: 'Contagious (2013)',
-    genre: ['Маркетинг', 'Коммуникации'],
-    desc: 'Почему одни идеи становятся вирусными, а другие нет: шесть принципов, которые заставляют людей делиться информацией.',
-    img: 'img/berger-psihologiya-sarafannogo-radio.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Неудобные разговоры',
-    author: 'Дуглас Стоун, Брюс Паттон, Шейла Хин',
-    surname: 'Стоун',
-    original: 'Difficult Conversations (1999)',
-    genre: ['Коммуникации', 'Психология'],
-    desc: 'Как вести сложные разговоры без разрушения отношений: структура, вопросы и приёмы для конфликтных тем.',
-    img: 'img/stone-neudobnye-razgovory.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Эссенциализм',
-    author: 'Грег МакКеон',
-    surname: 'МакКеон',
-    original: 'Essentialism (2014)',
-    genre: ['Саморазвитие', 'Продуктивность'],
-    desc: 'Философия осознанного выбора: меньше, но лучше. Как убирать лишнее и вкладываться в действительно важное.',
-    img: 'img/mckeown-essencializm.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Сила воли',
-    author: 'Келли Макгонигал',
-    surname: 'Макгонигал',
-    original: 'The Willpower Instinct (2011)',
-    genre: ['Психология', 'Саморазвитие'],
-    desc: 'Научный взгляд на самоконтроль и формирование устойчивых привычек: как работать с импульсами и не срываться.',
-    img: 'img/mcgonigal-sila-voli.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Компас питания',
-    author: 'Бас Каст',
-    surname: 'Каст',
-    original: 'Der Ernährungskompass (2018)',
-    genre: ['Здоровье', 'Питание'],
-    desc: 'Обзор исследований о питании: какие продукты и подходы реально связаны с долгой и здоровой жизнью.',
-    img: 'img/kast-kompas-pitaniya.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Почему мне плохо, когда всё вроде хорошо?',
-    author: 'Андерс Хансен',
-    surname: 'Хансен',
-    original: 'Depphjärnan (2021)',
-    genre: ['Психология', 'Нейронаука'],
-    desc: 'О том, как мозг реагирует на современный образ жизни и почему тревога и усталость могут возникать даже при внешнем благополучии.',
-    img: 'img/hansen-pochemu-mne-ploho.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Атомные привычки',
-    author: 'Джеймс Клир',
-    surname: 'Клир',
-    original: 'Atomic Habits (2018)',
-    genre: ['Саморазвитие', 'Продуктивность'],
-    desc: 'Пошаговая система формирования полезных привычек и отказа от вредных через маленькие ежедневные изменения.',
-    img: 'img/clear-atomnye-privychki.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Накопительный эффект',
-    author: 'Даррен Харди',
-    surname: 'Харди',
-    original: 'The Compound Effect (2010)',
-    genre: ['Саморазвитие', 'Мотивация'],
-    desc: 'О силе маленьких повторяющихся действий, которые со временем дают непропорционально большой результат.',
-    img: 'img/hardy-nakopitelnyy-effekt.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Украденный фокус',
-    author: 'Йоханн Хари',
-    surname: 'Хари',
-    original: 'Stolen Focus (2022)',
-    genre: ['Психология', 'Продуктивность'],
-    desc: 'Исследование причин потери концентрации в цифровую эпоху и способов вернуть глубину внимания.',
-    img: 'img/hari-ukradennyy-fokus.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Зачем мы спим',
-    author: 'Мэттью Уокер',
-    surname: 'Уокер',
-    original: 'Why We Sleep (2017)',
-    genre: ['Здоровье', 'Нейронаука'],
-    desc: 'О роли сна для памяти, иммунитета, эмоций и долголетия, а также о рисках хронического недосыпа.',
-    img: 'img/walker-zachem-my-spim.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Код искателя',
-    author: 'Донни Эпстин',
-    surname: 'Эпстин',
-    original: 'The Seeker\'s Code (2024)',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Книга о личной трансформации, поиске внутренней опоры и практиках выхода на новый уровень восприятия и действий.',
-    img: 'img/epstin-kod-iskatelya.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Я хочу хотеть',
-    author: 'Виктория Вебер',
-    surname: 'Вебер',
-    original: 'Я хочу хотеть (2024)',
-    genre: ['Саморазвитие', 'Психология'],
-    desc: 'Книга-тренинг о контакте со своими желаниями, внутренней мотивации и мягком возвращении энергии к жизни.',
-    img: 'img/veber-ya-hochu-hotet.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  },
-  {
-    name: 'Лилла',
-    author: 'Карина Кокрэлл-Ферре',
-    surname: 'Кокрэлл-Ферре',
-    original: 'Лилла (2024)',
-    genre: ['Роман', 'Современная проза'],
-    desc: 'Роман о женщине в поиске себя, любви и права на собственный путь.',
-    img: 'img/kokrell-ferre-lilla.jpg',
+    desc: 'Книга о творчестве без страха: как разрешить себе пробовать, ошибаться и создавать. Поддерживающий манифест для тех, кто хочет больше живости в деле и жизни.',
+    img: 'img/gilbert-bolshoe-volshebstvo.jpg',
     source: 'канал Книги',
     status: 'wishlist'
   }
 
   ,
   {
-    name: 'Завет воды',
-    author: 'Абрахам Вергезе (Abraham Verghese)',
-    surname: 'Вергезе',
-    original: 'The Covenant of Water (2023)',
-    genre: ['Художественная', 'Семейная сага', 'Современная проза'],
-    desc: 'Большая семейная сага, разворачивающаяся в Южной Индии на протяжении нескольких поколений. Медицинская драма, любовь, утраты и тайны рода.',
-    img: 'img/verghese-zavet-vody.jpg',
-    source: 'канал Книги',
-    status: 'wishlist'
-  }
-
-  ,
-  {
-    name: 'Выход из операционки «Есть»',
-    author: 'Татьяна Демина',
-    surname: 'Демина',
-    original: '',
-    genre: ['Бизнес', 'Менеджмент'],
-    desc: 'Практическая книга для предпринимателей о выходе из операционной рутины и возврате свободы владельцу бизнеса.',
-    img: 'img/demina-vyhod-iz-operacionki-est.jpg',
+    name: 'Сверхчувствительность как суперсила',
+    author: 'Дженн Граннеман, Андре Соло',
+    surname: 'Граннеман',
+    original: 'Sensitive: The Power of a Thoughtful Mind in an Overwhelming World (2023)',
+    genre: ['Психология', 'Саморазвитие'],
+    desc: 'О том, как высокая чувствительность может быть силой, а не слабостью: практики для жизни в перегруженном мире без потери себя.',
+    img: 'img/graneman-solo-sverhchuvstvitelnost.jpg',
     source: 'канал Книги',
     status: 'wishlist'
   }

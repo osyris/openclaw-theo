@@ -2129,5 +2129,210 @@
       "менеджмент"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 134,
+    "file": "books/books-2026-04-05-01-nonfiction-selection.jpg",
+    "category": "books",
+    "title": "Подборка нон-фикшн из сторис",
+    "description": "Коллаж из нон-фикшн рекомендаций.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "подборка",
+      "нон-фикшн"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 135,
+    "file": "books/books-2026-04-05-02-tennis-psychology.jpg",
+    "category": "books",
+    "title": "Теннис. Психология успешной игры",
+    "description": "У. Тимоти Голлуэй — обложка книги.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "спорт",
+      "психология"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 136,
+    "file": "books/books-2026-04-05-03-authentic-happiness.jpg",
+    "category": "books",
+    "title": "В поисках счастья",
+    "description": "Мартин Селигман, слайд с русским и оригинальным изданием.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "позитивная психология"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 137,
+    "file": "books/books-2026-04-05-04-a-thousand-names-for-joy.jpg",
+    "category": "books",
+    "title": "У радости тысяча имён",
+    "description": "Байрон Кейти, слайд подборки.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "осознанность",
+      "психология"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 138,
+    "file": "books/books-2026-04-05-05-big-magic.jpg",
+    "category": "books",
+    "title": "Большое волшебство",
+    "description": "Элизабет Гилберт, слайд подборки.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "творчество"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 139,
+    "file": "books/books-2026-04-05-06-marry-him.jpg",
+    "category": "books",
+    "title": "Мне нужен самый лучший",
+    "description": "Лори Готтлиб, слайд подборки.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "отношения"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 140,
+    "file": "books/books-2026-04-05-07-when-nietzsche-wept.jpg",
+    "category": "books",
+    "title": "Когда Ницше плакал",
+    "description": "Ирвин Ялом, слайд подборки.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "психология",
+      "роман"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 141,
+    "file": "books/books-2026-04-05-08-leave-comfort-zone.jpg",
+    "category": "books",
+    "title": "Выйди из зоны комфорта",
+    "description": "Фото бумажной книги в поездке.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "саморазвитие",
+      "продуктивность"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 142,
+    "file": "books/books-2026-04-05-09-book-stack.jpg",
+    "category": "books",
+    "title": "Стопка книг (несколько названий)",
+    "description": "На фото видны Atomic Habits, The Daily Stoic, The Obstacle Is the Way и др.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "подборка"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 143,
+    "file": "books/books-2026-04-05-10-teen-psychology-selection.jpg",
+    "category": "books",
+    "title": "Подборка книг по подростковой психологии",
+    "description": "Рекламный пост с несколькими книгами.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "подростки",
+      "психология"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 144,
+    "file": "books/books-2026-04-05-11-rop-book-ad.jpg",
+    "category": "books",
+    "title": "Обязанности руководителя отдела продаж",
+    "description": "Сторис с рекламой книги для РОПов.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "бизнес",
+      "продажи"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 145,
+    "file": "books/books-2026-04-05-12-ego-is-the-enemy.jpg",
+    "category": "books",
+    "title": "Ego Is the Enemy",
+    "description": "Фото книги Райана Холидея.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "stoicism",
+      "self-help"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 146,
+    "file": "books/books-2026-04-05-13-the-compound-effect.jpg",
+    "category": "books",
+    "title": "Накопительный эффект",
+    "description": "Книга Даррена Харди в кадре.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 147,
+    "file": "books/graneman-solo-sverhchuvstvitelnost.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Сверхчувствительность как суперсила",
+    "description": "Дженн Граннеман, Андре Соло",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
