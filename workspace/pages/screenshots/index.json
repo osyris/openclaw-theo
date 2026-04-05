@@ -4816,5 +4816,19 @@
     ],
     "added": "2026-04-05",
     "catalog": "books"
+  },
+  {
+    "id": 320,
+    "file": "books/books-2024-list-8-11.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Книги 2024: 8-11/52",
+    "description": "Гандапас, Харди, Тиль, Ремарк",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "self-help"
+    ],
+    "added": "2026-04-05"
   }
 ]
