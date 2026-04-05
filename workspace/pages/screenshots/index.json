@@ -4215,5 +4215,20 @@
     ],
     "added": "2026-04-05",
     "catalog": "books"
+  },
+  {
+    "id": 280,
+    "file": "books/2026-04-05-pocketbook-books-5.jpg",
+    "category": "books",
+    "title": "PocketBook: подборка книг (Эфрон, Брэдбери, Джеффрис, Мюррей)",
+    "description": "Скриншот PocketBook из сторис с подборкой книг.",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "pocketbook"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
   }
 ]
