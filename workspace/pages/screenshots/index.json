@@ -4620,5 +4620,20 @@
       "психология"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 307,
+    "file": "books/shelf-estonia-new-books.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Полка: новые книги из Эстонии",
+    "description": "Скрин с полки: Working Backwards, «Нет эго, нет проблем», «Видеомаркетинг» и др.",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "полка",
+      "новинки"
+    ],
+    "added": "2026-04-05"
   }
 ]
