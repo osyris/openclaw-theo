@@ -4291,5 +4291,20 @@
       "психология"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 285,
+    "file": "books/bellos-kapusta-nevernye-muzhya-i-zebra.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Капуста, неверные мужья и зебра",
+    "description": "Алекс Беллос",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "головоломки",
+      "критическое мышление"
+    ],
+    "added": "2026-04-05"
   }
 ]
