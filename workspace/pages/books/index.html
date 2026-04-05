@@ -1730,6 +1730,10 @@ const items = [
 const grid = document.getElementById('grid');
 const search = document.getElementById('search');
 const countEl = document.getElementById('count');
+
+// Защита от автоподстановки/восстановления прошлого поиска браузером
+search.setAttribute('autocomplete', 'off');
+search.value = '';
 const modalOverlay = document.getElementById('modalOverlay');
 const modal = document.getElementById('modal');
 const alphabetBar = document.getElementById('alphabetBar');
@@ -1867,6 +1871,19 @@ modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) clo
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 search.addEventListener('input', render);
+
+// На случай BFCache/восстановления вкладки — всегда показываем полный список
+window.addEventListener('pageshow', () => {
+  search.value = '';
+  activeLetter = null;
+  activeGenre = null;
+  activeStatus = null;
+  alphabetBar.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+  genreBar.querySelectorAll('.genre-btn').forEach((b, i) => b.classList.toggle('active', i === 0));
+  statusBar.querySelectorAll('.status-btn').forEach((b, i) => b.classList.toggle('active', i === 0));
+  render();
+});
+
 render();
 </script>
 </body>
