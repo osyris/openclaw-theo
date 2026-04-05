@@ -4605,5 +4605,20 @@
       "нейронаука"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 306,
+    "file": "books/harvey-postupay-kak-zhenschina-dumay-kak-muzhchina.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Поступай как женщина, думай как мужчина",
+    "description": "Стив Харви",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "отношения",
+      "психология"
+    ],
+    "added": "2026-04-05"
   }
 ]
