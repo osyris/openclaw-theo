@@ -4380,5 +4380,20 @@
       "биография"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 291,
+    "file": "books/lugavere-eda-dlya-geniev.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Еда для гениев",
+    "description": "Макс Лугавер",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "питание",
+      "здоровье"
+    ],
+    "added": "2026-04-05"
   }
 ]
