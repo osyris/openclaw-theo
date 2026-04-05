@@ -4650,5 +4650,20 @@
       "питание"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 309,
+    "file": "books/leahy-svoboda-ot-trevogi.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Свобода от тревоги",
+    "description": "Роберт Лихи",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "тревога"
+    ],
+    "added": "2026-04-05"
   }
 ]
