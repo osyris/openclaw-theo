@@ -1719,5 +1719,20 @@
     "added": "2026-04-05",
     "catalog": "books",
     "id": 107
+  },
+  {
+    "id": 108,
+    "file": "books/talpis-vselenskaya-terapiya.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Да пребудет с вами вселенская терапия",
+    "description": "Леонид Тальпис",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
