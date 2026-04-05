@@ -4665,5 +4665,20 @@
       "тревога"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 310,
+    "file": "books/elliot-perehodi-na-temnuyu-storonu.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Переходи на тёмную сторону",
+    "description": "Кэролин Эллиот",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
