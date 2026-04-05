@@ -4425,5 +4425,20 @@
       "саморазвитие"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 294,
+    "file": "books/streleki-bolshaya-pyaterka-dlya-zhizni.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Большая пятерка для жизни",
+    "description": "Джон П. Стрелеки",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "саморазвитие",
+      "цели"
+    ],
+    "added": "2026-04-05"
   }
 ]
