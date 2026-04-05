@@ -4845,5 +4845,20 @@
       "нейронаука"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 322,
+    "file": "books/dansembour-hvatit-byt-horoshim-story.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Хватит быть хорошим!",
+    "description": "Тома д’Ансембур",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-05"
   }
 ]
