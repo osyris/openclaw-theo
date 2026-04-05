@@ -4860,5 +4860,19 @@
       "отношения"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 323,
+    "file": "books/melchizedek-drevnyaya-tayna-story.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Древняя тайна Цветка Жизни",
+    "description": "Друнвало Мельхиседек",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "духовность"
+    ],
+    "added": "2026-04-05"
   }
 ]
