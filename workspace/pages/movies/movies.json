@@ -904,5 +904,20 @@
     "liked": false,
     "type": "series",
     "description": "Испанский мини-сериал о семье, тайнах и общественном давлении в консервативной Испании 1950-х."
+  },
+  {
+    "title": "Taare Zameen Par",
+    "titleRu": "Звёздочки на земле",
+    "year": 2007,
+    "genre": [
+      "Family",
+      "Drama",
+      "Music"
+    ],
+    "poster": "img/like-stars-on-earth.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Индийская драма о мальчике с дислексией и учителе, который помогает ему раскрыть талант и поверить в себя."
   }
 ]
