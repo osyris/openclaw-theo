@@ -4335,5 +4335,20 @@
       "проза"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 288,
+    "file": "books/nagoski-kak-hochet-zhenschina-praktika.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Как хочет женщина. Практика",
+    "description": "Эмили Нагоски",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "отношения",
+      "психология"
+    ],
+    "added": "2026-04-05"
   }
 ]
