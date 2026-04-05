@@ -2430,5 +2430,53 @@
       "рекомендация"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 154,
+    "file": "books/2026-04-05-melchizedek-drevnyaya-tayna-cvetka-zhizni.jpg",
+    "category": "books",
+    "title": "Древняя тайна Цветка Жизни",
+    "author": "Друнвало Мельхиседек",
+    "description": "Скриншот рекомендации книги «Древняя тайна Цветка Жизни».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "рекомендация"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 155,
+    "file": "books/2026-04-05-dansembour-hvatit-byt-horoshim.jpg",
+    "category": "books",
+    "title": "Хватит быть хорошим!",
+    "author": "Тома д’Ансембур",
+    "description": "Скриншот рекомендации книги «Хватит быть хорошим!».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "рекомендация"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
+  },
+  {
+    "id": 156,
+    "file": "books/2026-04-05-rand-atlant-raspravil-plechi.jpg",
+    "category": "books",
+    "title": "Атлант расправил плечи",
+    "author": "Айн Рэнд",
+    "description": "Скриншот рекомендации книги «Атлант расправил плечи».",
+    "source": "канал Книги",
+    "tags": [
+      "книга",
+      "скриншот",
+      "рекомендация"
+    ],
+    "added": "2026-04-05",
+    "catalog": "books"
   }
 ]
