@@ -4440,5 +4440,20 @@
       "цели"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 295,
+    "file": "books/kazantseva-rezhisser-skazal.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Режиссёр сказал: одевайся теплее, тут холодно",
+    "description": "Алеся Петровна Казанцева",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "проза",
+      "юмор"
+    ],
+    "added": "2026-04-05"
   }
 ]
