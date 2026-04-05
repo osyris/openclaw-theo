@@ -4276,5 +4276,20 @@
       "япония"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 284,
+    "file": "books/johnson-chuvstvo-lyubvi.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Чувство любви",
+    "description": "Сью Джонсон",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "отношения",
+      "психология"
+    ],
+    "added": "2026-04-05"
   }
 ]
