@@ -4246,5 +4246,20 @@
     ],
     "added": "2026-04-05",
     "catalog": "books"
+  },
+  {
+    "id": 282,
+    "file": "books/zeland-prostranstvo-variantov.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Трансёрфинг реальности. Пространство вариантов",
+    "description": "Вадим Зеланд",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "саморазвитие"
+    ],
+    "added": "2026-04-05"
   }
 ]
