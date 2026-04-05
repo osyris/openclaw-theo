@@ -1024,5 +1024,20 @@
     "liked": false,
     "type": "movie",
     "description": "Трогательная документальная история о дружбе человека и дикой выдры на побережье Шотландии."
+  },
+  {
+    "title": "Maria",
+    "titleRu": "Мария",
+    "year": 2024,
+    "genre": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "poster": "img/maria.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Биографическая драма Пабло Ларраина о Марии Каллас в исполнении Анджелины Джоли."
   }
 ]
