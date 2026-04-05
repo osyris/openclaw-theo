@@ -4261,5 +4261,20 @@
       "саморазвитие"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 283,
+    "file": "books/murakami-norvezhskiy-les.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Норвежский лес",
+    "description": "Харуки Мураками",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "художественная",
+      "япония"
+    ],
+    "added": "2026-04-05"
   }
 ]
