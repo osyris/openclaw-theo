@@ -4830,5 +4830,20 @@
       "self-help"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 321,
+    "file": "books/dispenza-razvivay-svoy-mozg.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Развивай свой мозг",
+    "description": "Джо Диспенза",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "саморазвитие",
+      "нейронаука"
+    ],
+    "added": "2026-04-05"
   }
 ]
