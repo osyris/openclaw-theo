@@ -890,5 +890,19 @@
     "liked": false,
     "type": "series",
     "description": "Сериал Тейлора Шеридана о нефтяном бизнесе Западного Техаса: большие деньги, риски и жесткие корпоративные игры."
+  },
+  {
+    "title": "Someone Has to Die",
+    "titleRu": "Кто-то должен умереть",
+    "year": 2020,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "poster": "img/someone-has-to-die.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series",
+    "description": "Испанский мини-сериал о семье, тайнах и общественном давлении в консервативной Испании 1950-х."
   }
 ]
