@@ -2099,5 +2099,20 @@
       "рекомендация"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 132,
+    "file": "books/verghese-zavet-vody.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Завет воды",
+    "description": "Абрахам Вергезе",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "художественная",
+      "сага"
+    ],
+    "added": "2026-04-05"
   }
 ]
