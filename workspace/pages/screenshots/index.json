@@ -1861,5 +1861,20 @@
     ],
     "added": "2026-04-05",
     "catalog": "books"
+  },
+  {
+    "id": 117,
+    "file": "books/walker-zapusk.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Запуск",
+    "description": "Джефф Уокер",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "маркетинг",
+      "бизнес"
+    ],
+    "added": "2026-04-05"
   }
 ]
