@@ -985,5 +985,18 @@
     "liked": false,
     "type": "movie",
     "description": "Первый в мире полнометражный фильм, полностью написанный масляными красками, посвящённый жизни и тайне смерти Винсента Ван Гога."
+  },
+  {
+    "title": "God Is in the Neurons",
+    "titleRu": "Бог в нейронах",
+    "year": 2020,
+    "genre": [
+      "Documentary"
+    ],
+    "poster": "img/god-is-in-the-neurons.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Документальный фильм о мозге, сознании и нейробиологии, поданный в научно-популярном формате."
   }
 ]
