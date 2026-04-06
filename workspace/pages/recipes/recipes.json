@@ -1630,17 +1630,17 @@
     ]
   },
   {
-    "title": "Пышные оладьи на кефире",
-    "titleEn": "Fluffy Kefir Pancakes",
+    "title": "Пышные оладьи на греческом йогурте",
+    "titleEn": "Fluffy Greek Yogurt Pancakes",
     "category": "breakfast",
     "time": "20 мин",
     "servings": 4,
     "difficulty": "easy",
-    "description": "Пышные оладьи на кефире: воздушные внутри, с мягкой кисломолочной ноткой.",
-    "image": "img/pyshnye-oladi-na-kefire.jpg",
+    "description": "Пышные оладьи на греческом йогурте: воздушные внутри, с мягкой кисломолочной ноткой.",
+    "image": "img/yablochnye-oladi-na-kefire.jpg",
     "source": "Не Гордон Рамзи / Виктория Исакова",
     "ingredients": [
-      "Кефир — 230 г",
+      "Греческий йогурт — 230 г",
       "Яйца — 2 шт",
       "Сахар — 60 г",
       "Сода или разрыхлитель — 1 ч. л.",
@@ -1661,7 +1661,7 @@
     "tags": [
       "завтрак",
       "оладьи",
-      "кефир",
+      "йогурт",
       "быстро"
     ]
   },
