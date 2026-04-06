@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775271720104,
+      "updatedAtMs": 1775358009931,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775358000000,
-        "lastRunAtMs": 1775271600052,
-        "lastStatus": "error",
-        "lastDurationMs": 120052,
-        "consecutiveErrors": 3,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "lastErrorReason": "timeout",
-        "lastError": "cron: job execution timed out"
+        "nextRunAtMs": 1775444400000,
+        "lastRunAtMs": 1775358000025,
+        "lastStatus": "ok",
+        "lastDurationMs": 9906,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false
       }
     },
     {
@@ -42,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775330901001,
+      "updatedAtMs": 1775365227398,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -59,15 +58,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775365200000,
-        "lastRunAtMs": 1775278800023,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 300013,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 3,
-        "lastErrorReason": "timeout",
-        "lastError": "cron: job execution timed out"
+        "nextRunAtMs": 1775451600000,
+        "lastRunAtMs": 1775365200015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 27383,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     },
     {
@@ -103,7 +101,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1775327474190,
+      "updatedAtMs": 1775413855931,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -119,11 +117,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775413800000,
-        "lastRunAtMs": 1775327400059,
+        "nextRunAtMs": 1775500200000,
+        "lastRunAtMs": 1775413800088,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 74131,
+        "lastDurationMs": 55843,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

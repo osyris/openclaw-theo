@@ -318,8 +318,8 @@
       "Comedy"
     ],
     "poster": "img/joy.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "description": "История Джой Мангано — матери-одиночки, которая изобрела самоотжимающуюся швабру и построила бизнес-империю. С Дженнифер Лоуренс."
   },
@@ -501,8 +501,8 @@
       "Drama"
     ],
     "poster": "img/grace-of-monaco.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "movie",
     "description": "Бывшая голливудская звезда Грейс Келли борется за спасение Монако от политического кризиса. Николь Кидман в роли легендарной княгини."
   },
