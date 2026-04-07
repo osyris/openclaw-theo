@@ -62,7 +62,7 @@
       "Comedy"
     ],
     "poster": "img/uvolit-zhoru.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "HR-специалист Макс получает задание уволить тихого программиста Жору, но тот оказывается человеком, которого невозможно уволить ни хитростью, ни по правилам."
@@ -818,8 +818,8 @@
       "Romance"
     ],
     "poster": "img/and-just-like-that.jpg",
-    "status": "watchlist",
-    "liked": false,
+    "status": "watched",
+    "liked": true,
     "type": "series",
     "description": "Продолжение «Секса в большом городе» о жизни Кэрри, Миранды и Шарлотты в Нью-Йорке."
   },
