@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775444414978,
+      "updatedAtMs": 1775530821433,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775530800000,
-        "lastRunAtMs": 1775444400022,
+        "nextRunAtMs": 1775617200000,
+        "lastRunAtMs": 1775530800043,
         "lastStatus": "ok",
-        "lastDurationMs": 14956,
+        "lastDurationMs": 21390,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1775530800008
+        "runningAtMs": 1775617200021
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775451625048,
+      "updatedAtMs": 1775538028929,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -59,14 +59,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775538000000,
-        "lastRunAtMs": 1775451600054,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 24994,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "GrammyError: Call to 'sendMessage' failed! (400: Bad Request: text must be non-empty)"
+        "nextRunAtMs": 1775624400000,
+        "lastRunAtMs": 1775538000037,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 28892,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     },
     {
@@ -102,7 +102,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1775500276351,
+      "updatedAtMs": 1775586673720,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -118,11 +118,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775586600000,
-        "lastRunAtMs": 1775500200130,
+        "nextRunAtMs": 1775673000000,
+        "lastRunAtMs": 1775586600016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 76221,
+        "lastDurationMs": 73704,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
