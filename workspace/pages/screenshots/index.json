@@ -4889,5 +4889,95 @@
       "саморазвитие"
     ],
     "added": "2026-04-05"
+  },
+  {
+    "id": 325,
+    "file": "books/psych-books-relationships-1.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #1",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
+  },
+  {
+    "id": 326,
+    "file": "books/psych-books-selfesteem-2.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #2",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
+  },
+  {
+    "id": 327,
+    "file": "books/psych-books-family-3.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #3",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
+  },
+  {
+    "id": 328,
+    "file": "books/psych-books-sexology-4.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #4",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
+  },
+  {
+    "id": 329,
+    "file": "books/psych-books-parenting-5.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #5",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
+  },
+  {
+    "id": 330,
+    "file": "books/psych-books-couples-6.jpg",
+    "category": "books",
+    "catalog": "books",
+    "title": "Подборка книг по психологии и отношениям #6",
+    "description": "Добавлено из скрин-подборки Наталии",
+    "source": "канал Книги",
+    "tags": [
+      "книги",
+      "психология",
+      "отношения"
+    ],
+    "added": "2026-04-09"
   }
 ]
