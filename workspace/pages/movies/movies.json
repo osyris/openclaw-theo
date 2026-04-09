@@ -1039,5 +1039,16 @@
     "liked": false,
     "type": "movie",
     "description": "Биографическая драма Пабло Ларраина о Марии Каллас в исполнении Анджелины Джоли."
+  },
+  {
+    "title": "Как Деревянко Чехова играл",
+    "year": 2026,
+    "genre": [
+      "Comedy"
+    ],
+    "poster": "img/kak-derevyanko-chehova-igral.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
