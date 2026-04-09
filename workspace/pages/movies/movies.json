@@ -1198,5 +1198,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Супруги Роуз",
+    "year": 2025,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/suprugi-rouz.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
