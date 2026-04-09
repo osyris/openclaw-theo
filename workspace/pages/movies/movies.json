@@ -1010,7 +1010,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "description": "Документальный фильм Грега Колса (Greg Kohs) об ИИ и исследователях, которые меняют наше представление о будущем технологий."
+    "description": "Документальный фильм Грега Колса (Greg Kohs) об ИИ и исследователях, которые меняют наше представление о будущем технологий.",
+    "img": "img/the-thinking-game.jpg"
   },
   {
     "title": "Billy & Molly: An Otter Love Story",
@@ -1023,7 +1024,8 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie",
-    "description": "Трогательная документальная история о дружбе человека и дикой выдры на побережье Шотландии."
+    "description": "Трогательная документальная история о дружбе человека и дикой выдры на побережье Шотландии.",
+    "img": "img/billy-molly-an-otter-love-story.jpg"
   },
   {
     "title": "Maria",
