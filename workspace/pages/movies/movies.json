@@ -629,7 +629,8 @@
     "liked": false,
     "type": "movie",
     "description": "Мрачная переосмысленная история Невесты Франкенштейна. Созданная учёным женщина обретает сознание и борется за свою свободу.",
-    "titleEn": "The Bride"
+    "titleEn": "The Bride",
+    "titleRu": "Невеста!"
   },
   {
     "title": "Beef (Season 2)",
@@ -659,7 +660,8 @@
     "liked": false,
     "type": "movie",
     "description": "Фантастический боевик о людях, попавших в смертельную игру, где нужно выжить любой ценой. Напряжённый экшн с элементами sci-fi.",
-    "titleEn": "Good Luck, Have Fun, Don't Die"
+    "titleEn": "Good Luck, Have Fun, Don't Die",
+    "titleRu": "Удачи, веселья, не сдохни"
   },
   {
     "title": "Project Hail Mary",
