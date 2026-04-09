@@ -527,35 +527,54 @@ render();
     if(items.length<=24) return;
 
     let page=1; const pageSize=24; const pages=Math.ceil(items.length/pageSize);
-    const pager=document.createElement('div'); pager.className='oc-pager';
-    const prev=document.createElement('button'); prev.textContent='← Назад';
-    const nums=document.createElement('div'); nums.className='oc-pager-nums';
-    const next=document.createElement('button'); next.textContent='Вперёд →';
-    const meta=document.createElement('span'); meta.className='oc-pager-meta';
-    pager.append(prev,nums,next,meta);
-    container.after(pager);
 
-    const renderNums=()=>{
-      nums.innerHTML='';
+    const makePager = () => {
+      const pager=document.createElement('div'); pager.className='oc-pager';
+      const prev=document.createElement('button'); prev.textContent='← Назад';
+      const nums=document.createElement('div'); nums.className='oc-pager-nums';
+      const next=document.createElement('button'); next.textContent='Вперёд →';
+      const meta=document.createElement('span'); meta.className='oc-pager-meta';
+      pager.append(prev,nums,next,meta);
+      return {pager,prev,nums,next,meta};
+    };
+
+    const topPager = makePager();
+    const bottomPager = makePager();
+    container.before(topPager.pager);
+    container.after(bottomPager.pager);
+
+    const renderNums=(numsEl)=>{
+      numsEl.innerHTML='';
       for(let i=1;i<=pages;i++){
         const b=document.createElement('button');
         b.textContent=String(i);
         b.className='oc-page-num'+(i===page?' active':'');
         b.addEventListener('click',()=>{page=i;render();});
-        nums.appendChild(b);
+        numsEl.appendChild(b);
       }
+    };
+
+    const syncPager=(p)=>{
+      p.meta.textContent=`Страница ${page} / ${pages}`;
+      p.prev.disabled=page===1; p.next.disabled=page===pages;
+      renderNums(p.nums);
     };
 
     const render=()=>{
       const start=(page-1)*pageSize, end=start+pageSize;
       items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
-      meta.textContent=`Страница ${page} / ${pages}`;
-      prev.disabled=page===1; next.disabled=page===pages;
-      renderNums();
+      syncPager(topPager);
+      syncPager(bottomPager);
       window.scrollTo({top:0,behavior:'smooth'});
     };
-    prev.onclick=()=>{if(page>1){page--;render();}};
-    next.onclick=()=>{if(page<pages){page++;render();}};
+
+    const bindPager=(p)=>{
+      p.prev.onclick=()=>{if(page>1){page--;render();}};
+      p.next.onclick=()=>{if(page<pages){page++;render();}};
+    };
+
+    bindPager(topPager);
+    bindPager(bottomPager);
     render();
   };
 
