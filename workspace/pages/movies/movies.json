@@ -1150,7 +1150,9 @@
     "poster": "img/metod-isklyucheniya.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Метод исключения",
+    "titleEn": "Out of the Way"
   },
   {
     "title": "Умри моя любовь",
@@ -1162,7 +1164,9 @@
     "poster": "img/umri-moya-lyubov.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Умри моя любовь",
+    "titleEn": "Die, My Love"
   },
   {
     "title": "Я бы тебя пнула, если бы могла",
@@ -1174,7 +1178,9 @@
     "poster": "img/ya-by-tebya-pnula-esli-by-mogla.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Я бы тебя пнула, если бы могла",
+    "titleEn": "If I Had Legs I'd Kick You"
   },
   {
     "title": "Rental Family",
@@ -1186,7 +1192,9 @@
     "poster": "img/rental-family.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Семья напрокат",
+    "titleEn": "Rental Family"
   },
   {
     "title": "Соленая тропа",
@@ -1197,7 +1205,9 @@
     "poster": "img/solenaya-tropa.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Соленая тропа",
+    "titleEn": "The Salt Path"
   },
   {
     "title": "Супруги Роуз",
@@ -1209,6 +1219,8 @@
     "poster": "img/suprugi-rouz.jpg",
     "status": "watchlist",
     "liked": false,
-    "type": "movie"
+    "type": "movie",
+    "titleRu": "Супруги Роуз",
+    "titleEn": "The Roses"
   }
 ]
