@@ -3446,6 +3446,9 @@ render();
   .oc-pager{display:flex;gap:8px;justify-content:center;align-items:center;margin:18px 0 8px;flex-wrap:wrap}
   .oc-pager button{border:1px solid #ddd;background:#fff;padding:6px 10px;border-radius:10px;cursor:pointer}
   .oc-pager button:disabled{opacity:.45;cursor:not-allowed}
+  .oc-pager-nums{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+  .oc-page-num.active{background:#111;color:#fff;border-color:#111}
+  .oc-pager-meta{font-size:12px;color:#666}
 </style>
 <script id="oc-pager-top-script">
 (function(){
@@ -3480,16 +3483,29 @@ render();
     let page=1; const pageSize=24; const pages=Math.ceil(items.length/pageSize);
     const pager=document.createElement('div'); pager.className='oc-pager';
     const prev=document.createElement('button'); prev.textContent='← Назад';
+    const nums=document.createElement('div'); nums.className='oc-pager-nums';
     const next=document.createElement('button'); next.textContent='Вперёд →';
-    const meta=document.createElement('span');
-    pager.append(prev,meta,next);
+    const meta=document.createElement('span'); meta.className='oc-pager-meta';
+    pager.append(prev,nums,next,meta);
     container.after(pager);
+
+    const renderNums=()=>{
+      nums.innerHTML='';
+      for(let i=1;i<=pages;i++){
+        const b=document.createElement('button');
+        b.textContent=String(i);
+        b.className='oc-page-num'+(i===page?' active':'');
+        b.addEventListener('click',()=>{page=i;render();});
+        nums.appendChild(b);
+      }
+    };
 
     const render=()=>{
       const start=(page-1)*pageSize, end=start+pageSize;
       items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
       meta.textContent=`Страница ${page} / ${pages}`;
       prev.disabled=page===1; next.disabled=page===pages;
+      renderNums();
       window.scrollTo({top:0,behavior:'smooth'});
     };
     prev.onclick=()=>{if(page>1){page--;render();}};
