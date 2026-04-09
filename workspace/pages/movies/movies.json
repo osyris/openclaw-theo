@@ -1163,5 +1163,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Я бы тебя пнула, если бы могла",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/ya-by-tebya-pnula-esli-by-mogla.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
