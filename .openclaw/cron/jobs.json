@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775530821433,
+      "updatedAtMs": 1775617213992,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,15 +24,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1775617200000,
-        "lastRunAtMs": 1775530800043,
+        "nextRunAtMs": 1775703600000,
+        "lastRunAtMs": 1775617200033,
         "lastStatus": "ok",
-        "lastDurationMs": 21390,
+        "lastDurationMs": 13959,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1775617200021
+        "runningAtMs": 1775703600018
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775538028929,
+      "updatedAtMs": 1775624427099,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -59,11 +59,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775624400000,
-        "lastRunAtMs": 1775538000037,
+        "nextRunAtMs": 1775710800000,
+        "lastRunAtMs": 1775624400013,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 28892,
+        "lastDurationMs": 27086,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
@@ -102,7 +102,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1775586673720,
+      "updatedAtMs": 1775673065104,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -118,11 +118,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775673000000,
-        "lastRunAtMs": 1775586600016,
+        "nextRunAtMs": 1775759400000,
+        "lastRunAtMs": 1775673000033,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 73704,
+        "lastDurationMs": 65071,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -152,32 +152,6 @@
       },
       "state": {
         "nextRunAtMs": 1779723000000
-      }
-    },
-    {
-      "id": "38a82b9c-98b2-441a-a68a-5742d65f0878",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Tele2: смена пакета 55468482",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1774528710035,
-      "updatedAtMs": 1774529059908,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-04-08T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: активировать смену пакета на номере 55468482 (Tele2)."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1775635200000
       }
     },
     {
