@@ -1151,5 +1151,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Умри моя любовь",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "poster": "img/umri-moya-lyubov.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
