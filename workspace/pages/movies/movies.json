@@ -1175,5 +1175,17 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Rental Family",
+    "year": 2025,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/rental-family.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
