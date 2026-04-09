@@ -546,5 +546,70 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 // App initialized via fetch callback above
 </script>
 
+
+<style id="oc-pager-top-style">
+  .oc-top-btn{position:fixed;right:18px;bottom:18px;z-index:9999;border:none;border-radius:999px;padding:10px 14px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.18);background:#111;color:#fff;opacity:0;pointer-events:none;transition:.2s}
+  .oc-top-btn.show{opacity:1;pointer-events:auto}
+  .oc-pager{display:flex;gap:8px;justify-content:center;align-items:center;margin:18px 0 8px;flex-wrap:wrap}
+  .oc-pager button{border:1px solid #ddd;background:#fff;padding:6px 10px;border-radius:10px;cursor:pointer}
+  .oc-pager button:disabled{opacity:.45;cursor:not-allowed}
+</style>
+<script id="oc-pager-top-script">
+(function(){
+  // Back to top button for every page
+  const topBtn=document.createElement('button');
+  topBtn.className='oc-top-btn';
+  topBtn.textContent='↑ Наверх';
+  topBtn.setAttribute('aria-label','Наверх');
+  topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  document.body.appendChild(topBtn);
+  const onScroll=()=>topBtn.classList.toggle('show',window.scrollY>320);
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Generic DOM pagination for long catalog pages
+  const findContainer=()=>{
+    const candidates=['.grid','.cards','.items','#grid','#cards','.catalog-grid','.products','.list'];
+    for(const sel of candidates){
+      const el=document.querySelector(sel);
+      if(el && el.children && el.children.length>24) return el;
+    }
+    const all=[...document.querySelectorAll('main section, main div, section, .container > div')];
+    return all.find(el=>el.children && el.children.length>24) || null;
+  };
+
+  const setupPager=()=>{
+    if(document.querySelector('.oc-pager')) return;
+    const container=findContainer();
+    if(!container) return;
+    const items=[...container.children].filter(el=>!el.classList.contains('oc-pager'));
+    if(items.length<=24) return;
+
+    let page=1; const pageSize=24; const pages=Math.ceil(items.length/pageSize);
+    const pager=document.createElement('div'); pager.className='oc-pager';
+    const prev=document.createElement('button'); prev.textContent='← Назад';
+    const next=document.createElement('button'); next.textContent='Вперёд →';
+    const meta=document.createElement('span');
+    pager.append(prev,meta,next);
+    container.after(pager);
+
+    const render=()=>{
+      const start=(page-1)*pageSize, end=start+pageSize;
+      items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
+      meta.textContent=`Страница ${page} / ${pages}`;
+      prev.disabled=page===1; next.disabled=page===pages;
+      window.scrollTo({top:0,behavior:'smooth'});
+    };
+    prev.onclick=()=>{if(page>1){page--;render();}};
+    next.onclick=()=>{if(page<pages){page++;render();}};
+    render();
+  };
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>setTimeout(setupPager,250));
+  else setTimeout(setupPager,250);
+  const mo=new MutationObserver(()=>setTimeout(setupPager,100));
+  mo.observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+
 </body>
 </html>
