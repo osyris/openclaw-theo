@@ -130,7 +130,7 @@
     font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700;
     line-height:1.3; color:#fff;
   }
-  .card-title-ru {
+  .card-title-en {
     font-size:0.78rem; color:var(--muted); font-style:italic; font-weight:300;
     line-height:1.3;
   }
@@ -225,7 +225,7 @@
     font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:700;
     color:#fff; line-height:1.3; margin-bottom:0.2rem;
   }
-  .modal-title-ru {
+  .modal-title-en {
     font-size:0.9rem; color:var(--muted); font-style:italic; margin-bottom:0.6rem;
   }
   .modal-year {
@@ -380,6 +380,26 @@ function renderGenreButtons() {
   });
 }
 
+function hasCyrillic(text = '') {
+  return /[А-Яа-яЁё]/.test(text);
+}
+
+function getTitleRu(m) {
+  if (m.titleRu) return m.titleRu;
+  if (m.title && hasCyrillic(m.title)) return m.title;
+  return '';
+}
+
+function getTitleEn(m) {
+  if (m.titleEn) return m.titleEn;
+  if (m.title && !hasCyrillic(m.title)) return m.title;
+  return '';
+}
+
+function getMainTitle(m) {
+  return getTitleRu(m) || m.title || '';
+}
+
 function filterMovies() {
   return movies.filter(m => {
     if (activeFilter === 'watched' && m.status !== 'watched') return false;
@@ -387,7 +407,12 @@ function filterMovies() {
     if (activeFilter === 'liked' && !m.liked) return false;
     if (activeGenre === '__series__' && m.type !== 'series') return false;
     if (activeGenre && activeGenre !== '__series__' && !(m.genre || []).includes(activeGenre)) return false;
-    if (searchQuery && !m.title.toLowerCase().includes(searchQuery) && !(m.titleRu && m.titleRu.toLowerCase().includes(searchQuery))) return false;
+
+    if (searchQuery) {
+      const haystack = [m.title, m.titleRu, m.titleEn].filter(Boolean).join(' ').toLowerCase();
+      if (!haystack.includes(searchQuery)) return false;
+    }
+
     return true;
   });
 }
@@ -404,8 +429,12 @@ function renderMovies() {
 
   grid.innerHTML = filtered.map((m, fi) => {
     const idx = movies.indexOf(m);
+    const titleRu = getTitleRu(m);
+    const titleEn = getTitleEn(m);
+    const mainTitle = getMainTitle(m);
+
     const posterHTML = m.poster
-      ? `<img src="${m.poster}" alt="${m.title}" loading="lazy">`
+      ? `<img src="${m.poster}" alt="${mainTitle}" loading="lazy">`
       : `<div class="no-poster">🎬</div>`;
     const genres = (m.genre || []).map(g => `<span class="card-genre-tag">${g}</span>`).join('');
     const watchedClass = m.status === 'watched' ? 'active' : '';
@@ -417,8 +446,8 @@ function renderMovies() {
       <div class="card">
         <div class="card-poster">${typeBadge}${posterHTML}</div>
         <div class="card-body">
-          <div class="card-title">${m.title}</div>
-          ${m.titleRu ? `<div class="card-title-ru">${m.titleRu}</div>` : ''}
+          <div class="card-title">${mainTitle}</div>
+          ${titleEn ? `<div class="card-title-en">${titleEn}</div>` : ''}
           <div class="card-year">${m.year || ''}</div>
           <div class="card-genres">${genres}</div>
           <div class="card-icons">
@@ -472,8 +501,12 @@ function openModal(idx) {
   if (!m) return;
   currentModalIdx = idx;
 
+  const titleRu = getTitleRu(m);
+  const titleEn = getTitleEn(m);
+  const mainTitle = getMainTitle(m);
+
   const posterHTML = m.poster
-    ? `<img class="modal-poster" src="${m.poster}" alt="${m.title}">`
+    ? `<img class="modal-poster" src="${m.poster}" alt="${mainTitle}">`
     : `<div class="modal-no-poster">🎬</div>`;
 
   const genres = (m.genre || []).map(g => `<span class="modal-genre-tag">${g}</span>`).join('');
@@ -487,8 +520,8 @@ function openModal(idx) {
 
   document.getElementById('modalBody').innerHTML = `
     ${posterHTML}
-    <div class="modal-title">${m.title}</div>
-    ${m.titleRu ? `<div class="modal-title-ru">${m.titleRu}</div>` : ''}
+    <div class="modal-title">${mainTitle}</div>
+    ${titleEn ? `<div class="modal-title-en">${titleEn}</div>` : ''}
     ${m.year ? `<div class="modal-year">${m.year}</div>` : ''}
     <div class="modal-genres">${genres}</div>
     ${m.description ? `<div class="modal-description">${m.description}</div>` : ''}
