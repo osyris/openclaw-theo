@@ -1138,5 +1138,18 @@
     "liked": false,
     "type": "series",
     "titleRu": "Как Деревянко Чехова играл"
+  },
+  {
+    "title": "Метод исключения",
+    "year": 2025,
+    "genre": [
+      "Thriller",
+      "Crime",
+      "Drama"
+    ],
+    "poster": "img/metod-isklyucheniya.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
