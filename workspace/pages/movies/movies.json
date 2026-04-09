@@ -1187,5 +1187,16 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Соленая тропа",
+    "year": 2024,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/solenaya-tropa.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
   }
 ]
