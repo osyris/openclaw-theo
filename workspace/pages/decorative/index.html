@@ -288,7 +288,9 @@ render();
     const items=[...container.children].filter(el=>!el.classList.contains('oc-pager'));
     if(items.length<=24) return;
 
-    let page=1; const pageSize=24; const pages=Math.ceil(items.length/pageSize);
+    const pageSize=24; const pages=Math.ceil(items.length/pageSize);
+    const pageKey='oc:page:'+location.pathname;
+    let page=Math.max(1, Math.min(pages, Number(localStorage.getItem(pageKey) || 1)));
 
     const makePager = () => {
       const pager=document.createElement('div'); pager.className='oc-pager';
@@ -327,6 +329,7 @@ render();
       items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
       syncPager(topPager);
       syncPager(bottomPager);
+      localStorage.setItem(pageKey, String(page));
       window.scrollTo({top:0,behavior:'smooth'});
     };
 
