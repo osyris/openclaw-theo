@@ -1,5 +1,5 @@
 {
-  "updated": "03.04.2026",
+  "updated": "12.04.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -160,6 +160,27 @@
       "deadline": "2026-05-03",
       "status": "active",
       "notes": "Напоминание за 2 дня (1 мая)"
+    },
+    {
+      "id": "55902649",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "11342991",
+      "service": "Закрыть страховку (2 шт, reg 11342991)",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55501283",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active"
     }
   ]
 }
