@@ -166,21 +166,27 @@
       "service": "Закрыть телевидение",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active"
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
     },
     {
       "id": "11342991",
       "service": "Закрыть страховку (2 шт, reg 11342991)",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active"
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
     },
     {
       "id": "55501283",
       "service": "Закрыть телевидение",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active"
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
     }
   ]
 }
