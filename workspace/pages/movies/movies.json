@@ -579,7 +579,7 @@
       "Comedy"
     ],
     "poster": "img/kommentiruy-eto.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Российская комедия о мире интернет-комментариев и блогеров, где виртуальная жизнь переплетается с реальной самым неожиданным образом.",
@@ -1134,7 +1134,7 @@
       "Comedy"
     ],
     "poster": "img/kak-derevyanko-chehova-igral.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series",
     "titleRu": "Как Деревянко Чехова играл"
