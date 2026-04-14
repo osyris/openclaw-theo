@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1775962809519,
+      "updatedAtMs": 1776049217993,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -24,10 +24,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1776049200000,
-        "lastRunAtMs": 1775962800012,
+        "nextRunAtMs": 1776135600000,
+        "lastRunAtMs": 1776049200012,
         "lastStatus": "ok",
-        "lastDurationMs": 9507,
+        "lastDurationMs": 17981,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -41,7 +41,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1775970024910,
+      "updatedAtMs": 1776056425911,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -58,14 +58,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776056400000,
-        "lastRunAtMs": 1775970000014,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 24896,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
+        "nextRunAtMs": 1776142800000,
+        "lastRunAtMs": 1776056400078,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 25833,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "GrammyError: Call to 'sendMessage' failed! (400: Bad Request: text must be non-empty)"
       }
     },
     {
@@ -101,7 +101,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1776018656792,
+      "updatedAtMs": 1776105070943,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -117,11 +117,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776105000000,
-        "lastRunAtMs": 1776018600044,
+        "nextRunAtMs": 1776191400000,
+        "lastRunAtMs": 1776105000042,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 56748,
+        "lastDurationMs": 70901,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
