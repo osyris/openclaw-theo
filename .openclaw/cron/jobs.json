@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1776049217993,
+      "updatedAtMs": 1776681365881,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -18,21 +18,22 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Run: cd /data && git add -A && git diff --cached --quiet && echo 'No changes' || git commit -m 'Daily backup' && echo 'Done'. Do NOT push. Do NOT announce anything.",
-        "timeoutSeconds": 120
+        "timeoutSeconds": 120,
+        "model": "claude-opus-4-6"
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1776135600000,
-        "lastRunAtMs": 1776049200012,
-        "lastStatus": "ok",
-        "lastDurationMs": 17981,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false,
-        "runningAtMs": 1776135600012
+        "nextRunAtMs": 1776740400000,
+        "lastRunAtMs": 1776654000015,
+        "lastStatus": "error",
+        "lastDurationMs": 338,
+        "consecutiveErrors": 6,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastErrorReason": "auth",
+        "runningAtMs": 1776681429952
       }
     },
     {
@@ -42,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1776056425911,
+      "updatedAtMs": 1776681374117,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -53,20 +54,21 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Проверка ДР на сегодня.\n\n1) Из файла /data/workspace/memory/birthdays.md: найди записи с сегодняшними днём и месяцем.\n2) Из iCloud Calendar: выполни\ncd /data/workspace/skills/icloud-calendar && TODAY=$(date +%F) && uv run --with caldav --with vobject python3 ical.py list --from \"$TODAY\" --to \"$TODAY\"\nи среди событий ищи ключевые слова: 'день рождения', 'birthday', 'др', 'sünnipäev', 'bday'.\n3) Объедини результаты без дублей.\n\nЕсли есть совпадения — отправь: 🎂 Сегодня ДР у [имя]! Не забудь поздравить!\nЕсли совпадений нет — завершись молча (без сообщения).",
-        "timeoutSeconds": 420
+        "timeoutSeconds": 420,
+        "model": "claude-opus-4-6"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776142800000,
-        "lastRunAtMs": 1776056400078,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 25833,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "GrammyError: Call to 'sendMessage' failed! (400: Bad Request: text must be non-empty)"
+        "nextRunAtMs": 1776747600000,
+        "lastRunAtMs": 1776681371173,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 2944,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -102,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1776105070943,
+      "updatedAtMs": 1776681433508,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -112,20 +114,21 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/pages/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой\n5. Weekly Planner — задачи на СЕГОДНЯ\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'"
+        "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/pages/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой\n5. Weekly Planner — задачи на СЕГОДНЯ\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'",
+        "model": "claude-opus-4-6"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776191400000,
-        "lastRunAtMs": 1776105000042,
+        "nextRunAtMs": 1776709800000,
+        "lastRunAtMs": 1776681429892,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 70901,
-        "lastDelivered": true,
+        "lastDurationMs": 3616,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -155,40 +158,6 @@
       }
     },
     {
-      "id": "7409a497-d79a-40ad-ae17-28847fb8a77b",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Узнать по поводу А36",
-      "enabled": false,
-      "deleteAfterRun": true,
-      "createdAtMs": 1774549064446,
-      "updatedAtMs": 1774598886768,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-27T08:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "🔔 Напоминание для Наталии: узнать по поводу А36."
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1774598861994,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 24774,
-        "lastErrorReason": "overloaded",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 4,
-        "lastError": "The AI service is temporarily overloaded. Please try again in a moment."
-      }
-    },
-    {
       "id": "09965398-820c-485c-8a87-0398b26db8fd",
       "agentId": "main",
       "sessionKey": "agent:main:main",
@@ -212,6 +181,39 @@
       },
       "state": {
         "nextRunAtMs": 1777618800000
+      }
+    },
+    {
+      "id": "a1ff29c4-90f1-487b-9926-fad134eab9b6",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Reminder: check July vacation (15.07–22.07)",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1776178720352,
+      "updatedAtMs": 1776324600652,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-16T07:30:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Напоминание: сегодня (четверг) проверь отпуск в июле на даты 15.07–22.07."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1776324600034,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 618,
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
+        "lastErrorReason": "auth",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
