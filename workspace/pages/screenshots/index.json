@@ -5102,5 +5102,24 @@
     ],
     "added": "2026-04-21",
     "catalog": "skincare"
+  },
+  {
+    "id": 338,
+    "file": "cosmetics-skincare/triple-treat-blackheads-lotion.jpg",
+    "category": "cosmetics-skincare",
+    "title": "Triple Treat — лосьон от чёрных точек",
+    "description": "Отшелушивающий лосьон с тремя формами салициловой кислоты (BHA) против чёрных точек и высыпаний.",
+    "source": "скриншот Наталии",
+    "tags": [
+      "уход",
+      "черные точки",
+      "акне",
+      "лосьон",
+      "bha",
+      "салициловая кислота",
+      "triple treat"
+    ],
+    "added": "2026-04-21",
+    "catalog": "skincare"
   }
 ]
