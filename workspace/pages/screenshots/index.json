@@ -5141,5 +5141,23 @@
     ],
     "added": "2026-04-21",
     "catalog": "skincare"
+  },
+  {
+    "id": 340,
+    "file": "hair/kevin-murphy-color-me-activator.jpg",
+    "category": "hair",
+    "title": "Kevin.Murphy COLOR.ME (Liquid Activator 3.5% + оттеночные кремы)",
+    "description": "Набор для окрашивания/тонирования волос Kevin.Murphy COLOR.ME, упоминание более холодного вымывания оттенка.",
+    "source": "@catherine_knz",
+    "tags": [
+      "волосы",
+      "окрашивание",
+      "тонирование",
+      "kevin murphy",
+      "color.me",
+      "активатор"
+    ],
+    "added": "2026-04-21",
+    "catalog": "hair"
   }
 ]
