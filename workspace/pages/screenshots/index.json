@@ -5066,5 +5066,22 @@
     ],
     "added": "2026-04-21",
     "catalog": "hair"
+  },
+  {
+    "id": 336,
+    "file": "cosmetics-skincare/noreva-exfoliac-lotion.jpg",
+    "category": "cosmetics-skincare",
+    "title": "Noreva Exfoliac Lotion",
+    "description": "Лосьон для лица/спины/груди для кожи с акне-склонностью.",
+    "source": "скриншот Наталии",
+    "tags": [
+      "уход",
+      "акне",
+      "лосьон",
+      "noreva",
+      "exfoliac"
+    ],
+    "added": "2026-04-21",
+    "catalog": "skincare"
   }
 ]
