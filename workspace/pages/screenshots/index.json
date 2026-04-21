@@ -5033,5 +5033,20 @@
     ],
     "added": "2026-04-21",
     "catalog": "skincare"
+  },
+  {
+    "id": 334,
+    "file": "cosmetics-skincare/skincare-item-2026-04-21.jpg",
+    "category": "cosmetics-skincare",
+    "title": "Skincare item (from screenshot)",
+    "description": "Добавлено из скриншота Наталии.",
+    "source": "Наталия",
+    "tags": [
+      "уход",
+      "skincare",
+      "скриншот"
+    ],
+    "added": "2026-04-21",
+    "catalog": "skincare"
   }
 ]
