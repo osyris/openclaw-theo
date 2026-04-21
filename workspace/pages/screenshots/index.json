@@ -4997,5 +4997,23 @@
     ],
     "added": "2026-04-21",
     "catalog": null
+  },
+  {
+    "id": 332,
+    "file": "finds/sbs-track-lock-find-my-2.jpg",
+    "category": "finds",
+    "title": "SBS Track Lock (Find My)",
+    "description": "Багажный замок с трекером, работает с Apple Find My. Есть звуковая сигнализация.",
+    "source": "скриншот Наталии",
+    "tags": [
+      "находки",
+      "#девайс",
+      "#для_себя",
+      "путешествия",
+      "багаж",
+      "Apple Find My"
+    ],
+    "added": "2026-04-21",
+    "catalog": null
   }
 ]
