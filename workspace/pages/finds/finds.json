@@ -38,5 +38,16 @@
     ],
     "url": "",
     "date": "2026-03-19"
+  },
+  {
+    "title": "SBS Track Lock (Apple Find My)",
+    "description": "Умный багажный замок с трекером через Apple Find My и звуковым сигналом.",
+    "image": "img/sbs-track-lock-find-my.jpg",
+    "tags": [
+      "gadget",
+      "travel"
+    ],
+    "url": "",
+    "date": "2026-04-21"
   }
 ]
