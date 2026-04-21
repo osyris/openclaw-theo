@@ -5015,5 +5015,23 @@
     ],
     "added": "2026-04-21",
     "catalog": null
+  },
+  {
+    "id": 333,
+    "file": "cosmetics-skincare/celimax-pore-dark-spot-brightening-pad.jpg",
+    "category": "cosmetics-skincare",
+    "title": "celimax Pore + Dark Spot Brightening Pad",
+    "description": "Осветляющие пэды для пор и тёмных пятен (Evenly Bright).",
+    "source": "@katgladkova",
+    "tags": [
+      "уход",
+      "пэды",
+      "осветление",
+      "пигментация",
+      "поры",
+      "K-beauty"
+    ],
+    "added": "2026-04-21",
+    "catalog": "skincare"
   }
 ]
