@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1776681365881,
+      "updatedAtMs": 1776740403955,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1776740400000,
-        "lastRunAtMs": 1776654000015,
-        "lastStatus": "error",
-        "lastDurationMs": 338,
-        "consecutiveErrors": 6,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "lastErrorReason": "auth",
-        "runningAtMs": 1776681429952
+        "nextRunAtMs": 1776826800000,
+        "lastRunAtMs": 1776740400076,
+        "lastStatus": "ok",
+        "lastDurationMs": 3879,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "runningAtMs": 1776826800019
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1776681374117,
+      "updatedAtMs": 1776762021469,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -53,7 +53,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Проверка ДР на сегодня.\n\n1) Из файла /data/workspace/memory/birthdays.md: найди записи с сегодняшними днём и месяцем.\n2) Из iCloud Calendar: выполни\ncd /data/workspace/skills/icloud-calendar && TODAY=$(date +%F) && uv run --with caldav --with vobject python3 ical.py list --from \"$TODAY\" --to \"$TODAY\"\nи среди событий ищи ключевые слова: 'день рождения', 'birthday', 'др', 'sünnipäev', 'bday'.\n3) Объедини результаты без дублей.\n\nЕсли есть совпадения — отправь: 🎂 Сегодня ДР у [имя]! Не забудь поздравить!\nЕсли совпадений нет — завершись молча (без сообщения).",
+        "message": "Ежедневная проверка ДР на сегодня (08:00, Europe/Tallinn).\n\n1) Из файла /data/workspace/memory/birthdays.md найди записи с сегодняшними днём и месяцем.\n2) Из iCloud Calendar: выполни\ncd /data/workspace/skills/icloud-calendar && TODAY=$(date +%F) && uv run --with caldav --with vobject python3 ical.py list --from \"$TODAY\" --to \"$TODAY\"\n3) В iCloud учитывай только персональные дни рождения (ключевые слова: 'день рождения', 'birthday', 'др', 'sünnipäev', 'bday') и только если явно указано имя человека.\n4) Объедини без дублей.\n\nКРИТИЧНО:\n- Ничего не выдумывай.\n- Всегда отправляй сообщение каждый день.\n\nФормат вывода:\n- Если есть совпадения: 🎂 Сегодня ДР у [имя]! Не забудь поздравить!\n- Если совпадений нет: 🎂 Сегодня дней рождения не найдено.",
         "timeoutSeconds": 420,
         "model": "claude-opus-4-6"
       },
@@ -61,11 +61,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776747600000,
-        "lastRunAtMs": 1776681371173,
+        "nextRunAtMs": 1776834000000,
+        "lastRunAtMs": 1776762019360,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 2944,
+        "lastDurationMs": 2109,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -104,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1776681433508,
+      "updatedAtMs": 1776796240839,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -121,11 +121,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1776709800000,
-        "lastRunAtMs": 1776681429892,
+        "nextRunAtMs": 1776882600000,
+        "lastRunAtMs": 1776796200050,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 3616,
+        "lastDurationMs": 40789,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
