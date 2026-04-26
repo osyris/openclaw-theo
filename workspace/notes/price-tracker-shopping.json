@@ -1,0 +1,16 @@
+{
+  "name": "Шоппинг",
+  "cronJobId": "9adbecc9-b019-42d6-9909-10a5794da39a",
+  "schedule": {
+    "expr": "0 8,20 * * *",
+    "tz": "Europe/Tallinn"
+  },
+  "links": [
+    "https://nsking.ee/vagabond-sabot-1111310",
+    "https://nsking.ee/foxxy-low-boots-w-1200162",
+    "https://nsking.ee/foxxy-low-boots-1200269"
+  ],
+  "mode": "current_price_only",
+  "status": "active_with_cloudflare_issue",
+  "note": "Need robust extraction path for Cloudflare-protected pages"
+}
