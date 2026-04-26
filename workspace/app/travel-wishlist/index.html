@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Wishlist</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+  :root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --card-hover: #222;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #e67e22;
+    --accent-light: #f39c12;
+    --accent-glow: rgba(230,126,34,0.4);
+    --border: #2a2a2a;
+    --surface: #141414;
+    --visited: #27ae60;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; font-weight:300; min-height:100vh; }
+
+  .hero {
+    text-align:center; padding:1.5rem 1.5rem 3rem;
+    background: linear-gradient(180deg, #1a0f05 0%, #0d0d0d 100%);
+    position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:600px; height:600px; border-radius:50%;
+    background:radial-gradient(circle, rgba(230,126,34,0.15) 0%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero h1 {
+    font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:4rem;
+    letter-spacing:0.12em; color:var(--accent-light);
+    text-transform:uppercase; text-shadow:0 0 60px var(--accent-glow);
+    position:relative;
+  }
+  .hero p {
+    color:var(--muted); font-size:0.85rem; letter-spacing:0.2em;
+    text-transform:uppercase; margin-top:0.5rem; position:relative;
+  }
+
+  .controls {
+    max-width:900px; margin:0 auto; padding:1.5rem 1.5rem 0.5rem;
+    display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;
+  }
+  .search-box {
+    flex:1; min-width:200px; padding:0.7rem 1.2rem;
+    border:1px solid var(--border); border-radius:2rem;
+    font-size:0.85rem; font-family:inherit;
+    background:var(--surface); color:var(--text); outline:none;
+    transition:border-color 0.2s;
+  }
+  .search-box:focus { border-color:var(--accent); }
+  .search-box::placeholder { color:#555; }
+
+  .filter-btn {
+    padding:0.55rem 1.3rem; border:1px solid var(--border); border-radius:2rem;
+    background:var(--surface); font-size:0.95rem; font-family:'Bebas Neue',sans-serif;
+    cursor:pointer; transition:all 0.2s; color:#777;
+    text-transform:uppercase; letter-spacing:0.1em;
+  }
+  .filter-btn:hover { border-color:var(--accent); color:var(--accent-light); }
+  .filter-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+
+  .count {
+    width:100%; text-align:right; font-size:0.75rem; color:var(--muted);
+    padding:0.3rem 1.5rem; max-width:900px; margin:0 auto;
+  }
+
+  .grid {
+    max-width:900px; margin:0 auto; padding:0.5rem 1.5rem 4rem;
+    display:grid; grid-template-columns:1fr; gap:1rem;
+  }
+
+  .card {
+    background:var(--card); border:1px solid var(--border); border-radius:0.8rem;
+    padding:1.2rem 1.5rem; transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;
+    cursor:default; position:relative;
+    display:flex; flex-direction:column; gap:0.5rem;
+  }
+  .card:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 40px rgba(230,126,34,0.1);
+    border-color:rgba(230,126,34,0.3);
+  }
+  .card.visited { border-left:3px solid var(--visited); }
+
+  .card-header {
+    display:flex; justify-content:space-between; align-items:flex-start; gap:0.8rem;
+  }
+  .card-title-block { flex:1; }
+  .card-emoji { font-size:1.8rem; }
+  .card-title {
+    font-family:'Playfair Display',serif; font-size:1.2rem; font-weight:700; color:#fff;
+  }
+  .card-country {
+    font-size:0.78rem; color:var(--accent-light); font-weight:400;
+    text-transform:uppercase; letter-spacing:0.08em; margin-top:0.1rem;
+  }
+  .card-desc {
+    font-size:0.85rem; color:var(--muted); line-height:1.5;
+  }
+  .card-how {
+    font-size:0.78rem; color:#666; font-style:italic;
+  }
+  .card-how::before { content:'🚀 '; }
+  .card-tags {
+    display:flex; flex-wrap:wrap; gap:0.25rem;
+  }
+  .card-tag {
+    font-size:0.62rem; padding:0.12rem 0.45rem; border-radius:2rem;
+    background:rgba(230,126,34,0.12); color:var(--accent-light);
+    text-transform:uppercase; letter-spacing:0.04em;
+  }
+  .card-footer {
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:0.3rem;
+  }
+  .card-date {
+    font-size:0.7rem; color:#444;
+  }
+  .card-links {
+    display:flex; gap:0.5rem;
+  }
+  .card-links a {
+    font-size:0.75rem; color:var(--accent-light); text-decoration:none; opacity:0.7;
+    transition:opacity 0.2s;
+  }
+  .card-links a:hover { opacity:1; }
+  .card-icon {
+    font-size:1.1rem; opacity:0.3; transition:all 0.2s;
+    user-select:none; padding:0.3rem; border-radius:50%; cursor:pointer;
+  }
+  .card-icon:hover { opacity:0.7; transform:scale(1.15); }
+  .card-icon.active { opacity:1; }
+  .card-icon.visited-icon { color:var(--visited); }
+
+  .spots { margin-top:0.3rem; }
+  .spots-title {
+    font-size:0.78rem; color:var(--accent-light); cursor:pointer;
+    padding:0.4rem 0; user-select:none; transition:opacity 0.2s;
+  }
+  .spots-title:hover { opacity:0.8; }
+  .spots-list { display:flex; flex-direction:column; gap:0.5rem; padding:0.3rem 0; }
+  .spot {
+    display:flex; align-items:flex-start; justify-content:space-between; gap:0.5rem;
+    padding:0.6rem 0.8rem; background:rgba(230,126,34,0.05); border-radius:0.5rem;
+    border-left:2px solid var(--border);
+  }
+  .spot-visited { border-left-color:var(--visited); }
+  .spot-info { flex:1; }
+  .spot-name { font-size:0.88rem; font-weight:500; color:#ddd; }
+  .spot-desc { font-size:0.78rem; color:#777; margin-top:0.2rem; line-height:1.4; }
+
+  .empty {
+    text-align:center; padding:4rem 1rem; color:#444; font-size:0.9rem;
+  }
+  .empty-icon { font-size:3rem; margin-bottom:1rem; opacity:0.3; }
+
+  .footer {
+    text-align:center; padding:2rem; color:#333; font-size:0.7rem;
+    letter-spacing:0.1em; text-transform:uppercase;
+  }
+
+  @media(max-width:600px) {
+    .hero h1 { font-size:2.8rem; }
+    .hero { padding:1.2rem 1rem 2rem; }
+    .grid { padding:0.5rem 1rem 3rem; }
+    .controls { padding:1rem 1rem 0.5rem; }
+    .count { padding:0.3rem 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div style="max-width:900px;margin:0 auto;padding:0 1.5rem;text-align:left;">
+    <a href="/pages/" style="display:inline-block;padding:0.4rem 1rem;border:1px solid rgba(255,255,255,0.3);border-radius:2rem;font-family:'Inter',sans-serif;font-size:0.75rem;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:0.08em;transition:all 0.2s;opacity:0.7;" onmouseover="this.style.opacity='1';this.style.borderColor='rgba(255,255,255,0.6)'" onmouseout="this.style.opacity='0.7';this.style.borderColor='rgba(255,255,255,0.3)'">← Back</a>
+  </div>
+  <h1>✈️ TRAVEL WISHLIST</h1>
+  <p>Места, в которых хочется побывать</p>
+</div>
+
+<div class="controls">
+  <input type="text" class="search-box" placeholder="Поиск..." id="search">
+  <button class="filter-btn active" data-filter="all">Все</button>
+  <button class="filter-btn" data-filter="wishlist">🌟 Хочу</button>
+  <button class="filter-btn" data-filter="visited">✅ Побывали</button>
+</div>
+
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+<div class="footer">Travel Wishlist · 2026</div>
+
+<script>
+let places = [];
+let activeFilter = 'all';
+let searchQuery = '';
+
+fetch('/pages-api/travel')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => { places = data; initApp(); })
+  .catch(() => {
+    fetch('/pages/travel-wishlist/places.json')
+      .then(r => r.json())
+      .then(data => { places = data; initApp(); })
+      .catch(() => { places = []; initApp(); });
+  });
+
+function initApp() {
+  renderPlaces();
+  document.getElementById('search').addEventListener('input', e => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    renderPlaces();
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      renderPlaces();
+    });
+  });
+}
+
+function filterPlaces() {
+  return places.filter(p => {
+    if (activeFilter === 'wishlist' && p.visited) return false;
+    if (activeFilter === 'visited' && !p.visited) return false;
+    if (searchQuery) {
+      const s = searchQuery;
+      if (!p.name.toLowerCase().includes(s) &&
+          !p.country.toLowerCase().includes(s) &&
+          !(p.tags || []).some(t => t.toLowerCase().includes(s)) &&
+          !(p.desc || '').toLowerCase().includes(s)) return false;
+    }
+    return true;
+  });
+}
+
+function renderSpots(spots, parentIdx) {
+  let html = '<div class="spots">';
+  html += '<div class="spots-title" data-idx="' + parentIdx + '">📍 Места (' + spots.length + ') ▾</div>';
+  html += '<div class="spots-list" id="spots-' + parentIdx + '" style="display:none;">';
+  spots.forEach(function(s, si) {
+    const sVisited = s.visited ? 'active' : '';
+    const spotClass = s.visited ? 'spot spot-visited' : 'spot';
+    let sLinks = '';
+    if (s.instagram) sLinks = ' <a href="' + s.instagram + '" target="_blank" style="font-size:0.75rem;color:var(--accent-light);text-decoration:none;opacity:0.7;">📸</a>';
+    html += '<div class="' + spotClass + '">';
+    html += '<div class="spot-info">';
+    html += '<span class="spot-name">' + s.name + '</span>' + sLinks;
+    html += '<div class="spot-desc">' + (s.desc || '') + '</div>';
+    html += '</div>';
+    html += '<span class="card-icon visited-icon ' + sVisited + '" data-idx="' + parentIdx + '" data-spot="' + si + '" title="Побывали">✅</span>';
+    html += '</div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
+function renderPlaces() {
+  const filtered = filterPlaces();
+  const grid = document.getElementById('grid');
+  document.getElementById('count').textContent = `${filtered.length} из ${places.length}`;
+
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty"><div class="empty-icon">✈️</div>Пока пусто — мир ждёт!</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(p => {
+    const idx = places.indexOf(p);
+    const tags = (p.tags || []).map(t => `<span class="card-tag">${t}</span>`).join('');
+    const visitedClass = p.visited ? 'active' : '';
+    const cardClass = p.visited ? 'card visited' : 'card';
+    const hasSpots = (p.spots || []).length > 0;
+
+    const spotsHTML = !hasSpots ? '' : renderSpots(p.spots, idx);
+
+    return `
+      <div class="${cardClass}">
+        <div class="card-header">
+          <div class="card-title-block">
+            <div class="card-title">${p.emoji || '📍'} ${p.name}</div>
+            <div class="card-country">${p.country || ''}</div>
+          </div>
+          <span class="card-icon visited-icon ${visitedClass}" data-idx="${idx}" title="Побывали">✅</span>
+        </div>
+        <div class="card-desc">${p.desc || ''}</div>
+        ${p.howToGet ? `<div class="card-how">${p.howToGet}</div>` : ''}
+        <div class="card-tags">${tags}</div>
+        ${spotsHTML}
+        <div class="card-footer">
+          <div class="card-date">Добавлено: ${p.addedDate || ''}</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  // Toggle spots visibility
+  grid.querySelectorAll('.spots-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const idx = title.dataset.idx;
+      const list = document.getElementById('spots-' + idx);
+      if (list.style.display === 'none') {
+        list.style.display = 'block';
+        title.textContent = title.textContent.replace('▾', '▴');
+      } else {
+        list.style.display = 'none';
+        title.textContent = title.textContent.replace('▴', '▾');
+      }
+    });
+  });
+
+  // Toggle visited for destinations
+  grid.querySelectorAll('.card-icon[data-idx]:not([data-spot])').forEach(icon => {
+    icon.addEventListener('click', e => {
+      e.stopPropagation();
+      const idx = parseInt(icon.dataset.idx);
+      places[idx].visited = !places[idx].visited;
+      renderPlaces();
+
+      fetch('/pages-api/travel/toggle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ index: idx })
+      }).catch(() => {});
+    });
+  });
+
+  // Toggle visited for spots
+  grid.querySelectorAll('.card-icon[data-spot]').forEach(icon => {
+    icon.addEventListener('click', e => {
+      e.stopPropagation();
+      const idx = parseInt(icon.dataset.idx);
+      const si = parseInt(icon.dataset.spot);
+      places[idx].spots[si].visited = !places[idx].spots[si].visited;
+      renderPlaces();
+
+      fetch('/pages-api/travel/toggle-spot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ index: idx, spotIndex: si })
+      }).catch(() => {});
+    });
+  });
+}
+</script>
+
+<style id="oc-pager-top-style">
+  .oc-top-btn{position:fixed;right:18px;bottom:18px;z-index:9999;border:none;border-radius:999px;padding:10px 14px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.18);background:#111;color:#fff;opacity:0;pointer-events:none;transition:.2s}
+  .oc-top-btn.show{opacity:1;pointer-events:auto}
+  .oc-pager{display:flex;gap:8px;justify-content:center;align-items:center;margin:18px 0 8px;flex-wrap:wrap}
+  .oc-pager button{border:1px solid #ddd;background:#fff;padding:6px 10px;border-radius:10px;cursor:pointer}
+  .oc-pager button:disabled{opacity:.45;cursor:not-allowed}
+  .oc-pager-nums{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+  .oc-page-num.active{background:#111;color:#fff;border-color:#111}
+  .oc-pager-meta{font-size:12px;color:#666}
+</style>
+<script id="oc-pager-top-script">
+(function(){
+  // Back to top button for every page
+  const topBtn=document.createElement('button');
+  topBtn.className='oc-top-btn';
+  topBtn.textContent='↑ Наверх';
+  topBtn.setAttribute('aria-label','Наверх');
+  topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  document.body.appendChild(topBtn);
+  const onScroll=()=>topBtn.classList.toggle('show',window.scrollY>320);
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Generic DOM pagination for long catalog pages
+  const findContainer=()=>{
+    const candidates=['.grid','.cards','.items','#grid','#cards','.catalog-grid','.products','.list'];
+    for(const sel of candidates){
+      const el=document.querySelector(sel);
+      if(el && el.children && el.children.length>24) return el;
+    }
+    const all=[...document.querySelectorAll('main section, main div, section, .container > div')];
+    return all.find(el=>el.children && el.children.length>24) || null;
+  };
+
+  const setupPager=()=>{
+    if(document.querySelector('.oc-pager')) return;
+    const container=findContainer();
+    if(!container) return;
+    const items=[...container.children].filter(el=>!el.classList.contains('oc-pager'));
+    if(items.length<=24) return;
+
+    const pageSize=24; const pages=Math.ceil(items.length/pageSize);
+    const pageKey='oc:page:'+location.pathname;
+    let page=Math.max(1, Math.min(pages, Number(localStorage.getItem(pageKey) || 1)));
+
+    const makePager = () => {
+      const pager=document.createElement('div'); pager.className='oc-pager';
+      const prev=document.createElement('button'); prev.textContent='← Назад';
+      const nums=document.createElement('div'); nums.className='oc-pager-nums';
+      const next=document.createElement('button'); next.textContent='Вперёд →';
+      const meta=document.createElement('span'); meta.className='oc-pager-meta';
+      pager.append(prev,nums,next,meta);
+      return {pager,prev,nums,next,meta};
+    };
+
+    const topPager = makePager();
+    const bottomPager = makePager();
+    container.before(topPager.pager);
+    container.after(bottomPager.pager);
+
+    const renderNums=(numsEl)=>{
+      numsEl.innerHTML='';
+      for(let i=1;i<=pages;i++){
+        const b=document.createElement('button');
+        b.textContent=String(i);
+        b.className='oc-page-num'+(i===page?' active':'');
+        b.addEventListener('click',()=>{page=i;render();});
+        numsEl.appendChild(b);
+      }
+    };
+
+    const syncPager=(p)=>{
+      p.meta.textContent=`Страница ${page} / ${pages}`;
+      p.prev.disabled=page===1; p.next.disabled=page===pages;
+      renderNums(p.nums);
+    };
+
+    const render=()=>{
+      const start=(page-1)*pageSize, end=start+pageSize;
+      items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
+      syncPager(topPager);
+      syncPager(bottomPager);
+      localStorage.setItem(pageKey, String(page));
+      window.scrollTo({top:0,behavior:'smooth'});
+    };
+
+    const bindPager=(p)=>{
+      p.prev.onclick=()=>{if(page>1){page--;render();}};
+      p.next.onclick=()=>{if(page<pages){page++;render();}};
+    };
+
+    bindPager(topPager);
+    bindPager(bottomPager);
+    render();
+  };
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>setTimeout(setupPager,250));
+  else setTimeout(setupPager,250);
+  const mo=new MutationObserver(()=>setTimeout(setupPager,100));
+  mo.observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Shopping List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter',sans-serif;
+            background: #f5f0eb;
+            min-height: 100vh;
+            padding: 0;
+        }
+        .header {
+            background: #4a0e1c;
+            padding: 16px 24px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: 'Bebas Neue',sans-serif;
+            font-weight: 400;
+            font-size: 2.8rem;
+            color: #f5f0eb;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            font-family: 'Inter',sans-serif;
+            font-size: 0.8rem;
+            color: rgba(245, 240, 235, 0.5);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+        .container {
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+        }
+        .category {
+            margin-bottom: 28px;
+        }
+        .category-title {
+            font-family: 'Playfair Display',serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #4a0e1c;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #4a0e1c;
+            margin-bottom: 14px;
+        }
+        .items {
+            list-style: none;
+        }
+        .items li {
+            padding: 12px 0;
+            font-size: 1rem;
+            color: #2a2025;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid rgba(74, 14, 28, 0.08);
+            transition: all 0.2s;
+        }
+        .items li:last-child {
+            border-bottom: none;
+        }
+        .items li:active {
+            background: rgba(74, 14, 28, 0.03);
+        }
+        .items li .checkbox {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #4a0e1c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.25s ease;
+        }
+        .items li.checked .checkbox {
+            background: #4a0e1c;
+            border-color: #4a0e1c;
+        }
+        .items li.checked .checkbox::after {
+            content: '✓';
+            color: #f5f0eb;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .items li.checked .item-text {
+            text-decoration: line-through;
+            color: #b5a99d;
+        }
+        .item-text {
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .item-qty {
+            color: #8a7268;
+            font-size: 0.82rem;
+            margin-left: auto;
+            font-weight: 400;
+        }
+        .empty-message {
+            color: #8a7268;
+            font-style: italic;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.95rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: rgba(74, 14, 28, 0.25);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: 'Playfair Display',serif;
+        }
+        .clear-btn {
+            display: block;
+            margin: 8px auto 0;
+            background: none;
+            border: 1px solid rgba(74, 14, 28, 0.2);
+            color: #8a7268;
+            font-family: 'Inter',sans-serif;
+            font-size: 0.8rem;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+        }
+        .clear-btn:hover {
+            border-color: #4a0e1c;
+            color: #4a0e1c;
+        }
+        @media (max-width: 480px) {
+            .header { padding: 36px 20px 32px; }
+            .header h1 { font-size: 2.2rem; letter-spacing: 4px; }
+            .container { padding: 20px 16px 32px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+      <div style="max-width:900px;margin:0 auto;padding:0 1.5rem;text-align:left;">
+        <a href="/pages/" style="display:inline-block;padding:0.4rem 1rem;border:1px solid rgba(255,255,255,0.3);border-radius:2rem;font-family:'Inter',sans-serif;font-size:0.75rem;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:0.08em;transition:all 0.2s;opacity:0.7;" onmouseover="this.style.opacity='1';this.style.borderColor='rgba(255,255,255,0.6)'" onmouseout="this.style.opacity='0.7';this.style.borderColor='rgba(255,255,255,0.3)'">← Back</a>
+      </div>
+        <h1>Shopping</h1>
+        <div class="subtitle">список покупок</div>
+    </div>
+
+    <div class="container">
+        <div id="shopping-list"></div>
+        <button class="clear-btn" id="clear-btn" onclick="clearChecked()" style="display:none">Очистить отмеченные</button>
+    </div>
+
+    <div class="footer">updated <span id="updated"></span></div>
+
+    <script>
+        let SHOPPING_DATA = { updated: '', categories: [] };
+
+        async function loadData() {
+            const urls = ['/pages-api/shopping', '/app-api/shopping', '/pages/shopping/shopping.json'];
+            for (const url of urls) {
+                try {
+                    const resp = await fetch(url);
+                    if (resp.ok) {
+                        SHOPPING_DATA = await resp.json();
+                        break;
+                    }
+                } catch(e) {}
+            }
+            render();
+        }
+
+        function render() {
+            const container = document.getElementById('shopping-list');
+            const updatedEl = document.getElementById('updated');
+            const clearBtn = document.getElementById('clear-btn');
+
+            if (!SHOPPING_DATA.categories.length) {
+                container.innerHTML = '<div class="empty-message">Список пуст — скажи Тео, что добавить ☀️</div>';
+                clearBtn.style.display = 'none';
+                return;
+            }
+
+            let hasChecked = false;
+            let html = '';
+            SHOPPING_DATA.categories.forEach((cat, catIdx) => {
+                html += `<div class="category">`;
+                html += `<div class="category-title">${cat.name}</div>`;
+                html += `<ul class="items">`;
+                cat.items.forEach((item, itemIdx) => {
+                    const isChecked = item.checked ? 'checked' : '';
+                    if (item.checked) hasChecked = true;
+                    html += `<li class="${isChecked}" onclick="toggleItem(${catIdx}, ${itemIdx}, this)">
+                        <span class="checkbox"></span>
+                        <span class="item-text">${item.text}</span>
+                        ${item.qty ? `<span class="item-qty">${item.qty}</span>` : ''}
+                    </li>`;
+                });
+                html += `</ul></div>`;
+            });
+
+            container.innerHTML = html;
+            updatedEl.textContent = SHOPPING_DATA.updated;
+            clearBtn.style.display = hasChecked ? 'block' : 'none';
+        }
+
+        async function toggleItem(catIdx, itemIdx, el) {
+            el.classList.toggle('checked');
+            // Optimistic update
+            SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+
+            try {
+                let resp = await fetch('/pages-api/shopping/toggle', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ category: catIdx, item: itemIdx })
+                });
+                if (resp.status === 403) {
+                    resp = await fetch('/app-api/shopping/toggle', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ category: catIdx, item: itemIdx })
+                    });
+                }
+                if (!resp.ok) {
+                    // Revert on error
+                    SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                        !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+                    render();
+                }
+            } catch(e) {
+                SHOPPING_DATA.categories[catIdx].items[itemIdx].checked =
+                    !SHOPPING_DATA.categories[catIdx].items[itemIdx].checked;
+                render();
+            }
+
+            const hasChecked = SHOPPING_DATA.categories.some(c => c.items.some(i => i.checked));
+            document.getElementById('clear-btn').style.display = hasChecked ? 'block' : 'none';
+        }
+
+        async function clearChecked() {
+            try {
+                let resp = await fetch('/pages-api/shopping/clear', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                if (resp.status === 403) {
+                    resp = await fetch('/app-api/shopping/clear', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                }
+                if (resp.ok) {
+                    await loadData();
+                }
+            } catch(e) {}
+        }
+
+        loadData();
+    </script>
+
+<style id="oc-pager-top-style">
+  .oc-top-btn{position:fixed;right:18px;bottom:18px;z-index:9999;border:none;border-radius:999px;padding:10px 14px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.18);background:#111;color:#fff;opacity:0;pointer-events:none;transition:.2s}
+  .oc-top-btn.show{opacity:1;pointer-events:auto}
+  .oc-pager{display:flex;gap:8px;justify-content:center;align-items:center;margin:18px 0 8px;flex-wrap:wrap}
+  .oc-pager button{border:1px solid #ddd;background:#fff;padding:6px 10px;border-radius:10px;cursor:pointer}
+  .oc-pager button:disabled{opacity:.45;cursor:not-allowed}
+  .oc-pager-nums{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+  .oc-page-num.active{background:#111;color:#fff;border-color:#111}
+  .oc-pager-meta{font-size:12px;color:#666}
+</style>
+<script id="oc-pager-top-script">
+(function(){
+  // Back to top button for every page
+  const topBtn=document.createElement('button');
+  topBtn.className='oc-top-btn';
+  topBtn.textContent='↑ Наверх';
+  topBtn.setAttribute('aria-label','Наверх');
+  topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  document.body.appendChild(topBtn);
+  const onScroll=()=>topBtn.classList.toggle('show',window.scrollY>320);
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // Generic DOM pagination for long catalog pages
+  const findContainer=()=>{
+    const candidates=['.grid','.cards','.items','#grid','#cards','.catalog-grid','.products','.list'];
+    for(const sel of candidates){
+      const el=document.querySelector(sel);
+      if(el && el.children && el.children.length>24) return el;
+    }
+    const all=[...document.querySelectorAll('main section, main div, section, .container > div')];
+    return all.find(el=>el.children && el.children.length>24) || null;
+  };
+
+  const setupPager=()=>{
+    if(document.querySelector('.oc-pager')) return;
+    const container=findContainer();
+    if(!container) return;
+    const items=[...container.children].filter(el=>!el.classList.contains('oc-pager'));
+    if(items.length<=24) return;
+
+    const pageSize=24; const pages=Math.ceil(items.length/pageSize);
+    const pageKey='oc:page:'+location.pathname;
+    let page=Math.max(1, Math.min(pages, Number(localStorage.getItem(pageKey) || 1)));
+
+    const makePager = () => {
+      const pager=document.createElement('div'); pager.className='oc-pager';
+      const prev=document.createElement('button'); prev.textContent='← Назад';
+      const nums=document.createElement('div'); nums.className='oc-pager-nums';
+      const next=document.createElement('button'); next.textContent='Вперёд →';
+      const meta=document.createElement('span'); meta.className='oc-pager-meta';
+      pager.append(prev,nums,next,meta);
+      return {pager,prev,nums,next,meta};
+    };
+
+    const topPager = makePager();
+    const bottomPager = makePager();
+    container.before(topPager.pager);
+    container.after(bottomPager.pager);
+
+    const renderNums=(numsEl)=>{
+      numsEl.innerHTML='';
+      for(let i=1;i<=pages;i++){
+        const b=document.createElement('button');
+        b.textContent=String(i);
+        b.className='oc-page-num'+(i===page?' active':'');
+        b.addEventListener('click',()=>{page=i;render();});
+        numsEl.appendChild(b);
+      }
+    };
+
+    const syncPager=(p)=>{
+      p.meta.textContent=`Страница ${page} / ${pages}`;
+      p.prev.disabled=page===1; p.next.disabled=page===pages;
+      renderNums(p.nums);
+    };
+
+    const render=()=>{
+      const start=(page-1)*pageSize, end=start+pageSize;
+      items.forEach((el,i)=>{el.style.display=(i>=start && i<end)?'':'none';});
+      syncPager(topPager);
+      syncPager(bottomPager);
+      localStorage.setItem(pageKey, String(page));
+      window.scrollTo({top:0,behavior:'smooth'});
+    };
+
+    const bindPager=(p)=>{
+      p.prev.onclick=()=>{if(page>1){page--;render();}};
+      p.next.onclick=()=>{if(page<pages){page++;render();}};
+    };
+
+    bindPager(topPager);
+    bindPager(bottomPager);
+    render();
+  };
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>setTimeout(setupPager,250));
+  else setTimeout(setupPager,250);
+  const mo=new MutationObserver(()=>setTimeout(setupPager,100));
+  mo.observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+
+</body>
+</html>

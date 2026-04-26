@@ -1,0 +1,38 @@
+[
+  {
+    "name": "chique.photos",
+    "category": "photo",
+    "specialty": "Фотограф, контент для Instagram",
+    "location": "Таллин",
+    "contact": "https://www.instagram.com/chique.photos/",
+    "contactType": "instagram",
+    "note": ""
+  },
+  {
+    "name": "Kristiina Popovich",
+    "category": "dance",
+    "specialty": "Jazz Funk, Street Dance, Contemporary. Ripple Dance Company, Onda Dance.",
+    "location": "Таллин",
+    "contact": "https://www.instagram.com/krismilla_/",
+    "contactType": "instagram",
+    "note": "Танцор/хореограф"
+  },
+  {
+    "name": "BePerfect Beauty Studio (MR)",
+    "category": "beauty",
+    "specialty": "Nails, brows, massage, eyelashes",
+    "location": "Narva mnt 59, Tallinn",
+    "contact": "https://www.instagram.com/beperfect.beautystuudio/",
+    "contactType": "instagram",
+    "note": "Пн-Вс 9:00-21:00. Онлайн запись: dikidi.net/998606"
+  },
+  {
+    "name": "Mon Reflets — Театр-бутик",
+    "category": "entertainment",
+    "specialty": "Театр в стиле Ар Деко. Спектакли, шоу-кабаре, арт-пространство.",
+    "location": "Roseni 9, Tallinn",
+    "contact": "https://www.instagram.com/monreflets/",
+    "contactType": "instagram",
+    "note": "Билеты: fienta.com. Шоу Кабаре «Timeless Cabaret»."
+  }
+]

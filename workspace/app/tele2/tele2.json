@@ -1,0 +1,201 @@
+{
+  "updated": "12.04.2026",
+  "trials": [
+    {
+      "id": "4721080328",
+      "service": "Страховка",
+      "startDate": "2026-02-05",
+      "status": "closed"
+    },
+    {
+      "id": "58518075",
+      "service": "Закрыть номер",
+      "startDate": "2026-02-07",
+      "status": "closed"
+    },
+    {
+      "id": "56831273",
+      "service": "Телевидение + DigiKaitse",
+      "startDate": "2026-02-13",
+      "status": "closed"
+    },
+    {
+      "id": "55997790",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-13",
+      "status": "closed"
+    },
+    {
+      "id": "5229913",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-17",
+      "status": "closed"
+    },
+    {
+      "id": "58507365",
+      "service": "Закрыть телевидение + DigiKaitse",
+      "startDate": "2026-02-17",
+      "status": "closed"
+    },
+    {
+      "id": "50305150025",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-20",
+      "status": "closed"
+    },
+    {
+      "id": "60306224925",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-20",
+      "status": "closed"
+    },
+    {
+      "id": "55953690",
+      "service": "Закрыть DigiKaitse",
+      "startDate": "2026-02-21",
+      "status": "closed"
+    },
+    {
+      "id": "39901070232",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-21",
+      "status": "closed"
+    },
+    {
+      "id": "38111100233",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-21",
+      "status": "closed"
+    },
+    {
+      "id": "11903610",
+      "service": "Закрыть страховку (фирма)",
+      "startDate": "2026-02-23",
+      "status": "closed"
+    },
+    {
+      "id": "58508061",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-02-23",
+      "status": "closed"
+    },
+    {
+      "id": "35902140258",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-23",
+      "status": "closed"
+    },
+    {
+      "id": "56941671",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-02-02",
+      "status": "closed"
+    },
+    {
+      "id": "35178836957504",
+      "service": "Закрыть страховку",
+      "startDate": "2026-02-02",
+      "status": "closed"
+    },
+    {
+      "id": "55974862",
+      "service": "Закрыть DigiKaitse (3 мес)",
+      "startDate": "2026-02-25",
+      "trialDays": 90,
+      "status": "active"
+    },
+    {
+      "id": "45404280277",
+      "service": "Перепроверить ТВ + DigiBox (с/н 500061327)",
+      "startDate": "2026-02-14",
+      "status": "active"
+    },
+    {
+      "id": "38306240348",
+      "service": "Закрыть страховку",
+      "startDate": "2026-03-21",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55636718",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-03-23",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55500196",
+      "service": "Закрыть страховку",
+      "startDate": "2026-03-25",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "55468482",
+      "service": "Смена пакета",
+      "startDate": "2026-03-26",
+      "deadline": "2026-04-08",
+      "status": "active"
+    },
+    {
+      "id": "39303002/0",
+      "service": "Закрыть DigiKaitse + телевидение",
+      "startDate": "2026-03-29",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "5227927",
+      "service": "Закрыть страховку",
+      "startDate": "2026-03-31",
+      "trialDays": 30,
+      "status": "active"
+    },
+    {
+      "id": "50007010076",
+      "service": "Закрыть страховку",
+      "personalCode": "50007010076",
+      "startDate": "2026-04-03",
+      "deadline": "2026-05-03",
+      "status": "active",
+      "notes": "Напоминание за 2 дня (1 мая)"
+    },
+    {
+      "id": "55902649",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
+    },
+    {
+      "id": "11342991",
+      "service": "Закрыть страховку (2 шт, reg 11342991)",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
+    },
+    {
+      "id": "55501283",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-04-08",
+      "trialDays": 30,
+      "status": "active",
+      "deadline": "2026-05-08",
+      "notes": "Напоминание за 2 дня (6 мая)"
+    },
+    {
+      "id": "56233963",
+      "service": "Закрыть телевидение",
+      "startDate": "2026-04-11",
+      "trialDays": 30,
+      "deadline": "2026-05-11",
+      "status": "active",
+      "notes": "Напоминание за 2 дня (9 мая)"
+    }
+  ]
+}

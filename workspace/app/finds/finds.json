@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Magwink — MagSafe аксессуары",
+    "description": "Магнитные линзы, фильтры, держатели для телефона. Крутые MagSafe-аксессуары для фотографии.",
+    "image": "img/magwink-magsafe.jpg",
+    "tags": [
+      "gadget"
+    ],
+    "url": "https://www.instagram.com/magwink.uk/",
+    "date": "2026-03-06"
+  },
+  {
+    "title": "dariya.kvl — Handmade украшения",
+    "description": "Авторская бижутерия — плетёные колье, чокеры, блестящие аксессуары. Пост от @_marsianka_lala.",
+    "image": "img/dariya-kvl-jewelry.jpg",
+    "tags": [
+      "selfcare"
+    ],
+    "url": "https://www.instagram.com/dariya.kvl/",
+    "date": "2026-03-19"
+  },
+  {
+    "title": "Foodin Riisi Proteiini — рисовый белок",
+    "description": "Органический рисовый протеин, 650г. После тренировок и каждый день. Организм воспринимает отлично. Куплено в Prisma.",
+    "image": "img/foodin-rice-protein.jpg",
+    "tags": [
+      "selfcare"
+    ],
+    "url": "",
+    "date": "2026-03-19"
+  },
+  {
+    "title": "Nõgel Superraud — железо с ацеролой",
+    "description": "Железо (rauddiglütsinaat 60mg) + натуральный витамин C из ацеролы. 70 таблеток. Эстонский продукт, самое большое кол-во пожеланий по @irecommend.",
+    "image": "img/nogel-superraud.jpg",
+    "tags": [
+      "selfcare"
+    ],
+    "url": "",
+    "date": "2026-03-19"
+  },
+  {
+    "title": "SBS Track Lock (Apple Find My)",
+    "description": "Умный багажный замок с трекером через Apple Find My и звуковым сигналом.",
+    "image": "img/sbs-track-lock-find-my.jpg",
+    "tags": [
+      "gadget",
+      "travel"
+    ],
+    "url": "",
+    "date": "2026-04-21"
+  }
+]
