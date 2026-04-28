@@ -5,7 +5,7 @@
  * POST /tele2/toggle  { id: "<trial-id>" }  — toggle active/closed
  */
 module.exports = function(app, { readJSON, writeJSON }) {
-    const DATA_PATH = 'pages/tele2/tele2.json';
+    const DATA_PATH = 'app/tele2/tele2.json';
 
     app.get('/tele2', (req, res) => {
         const data = readJSON(DATA_PATH);
