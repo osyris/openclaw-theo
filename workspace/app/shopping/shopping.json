@@ -15,6 +15,14 @@
         {
           "text": "Пакеты для мусора",
           "checked": true
+        },
+        {
+          "text": "Крышки для коробочек (IKEA)",
+          "checked": false
+        },
+        {
+          "text": "Шоколадка для воды",
+          "checked": false
         }
       ]
     },
