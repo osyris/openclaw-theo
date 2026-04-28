@@ -293,7 +293,7 @@
 
         // Load data from server API (try pages-api, then app-api, then static fallback)
         async function loadData() {
-            const urls = ['/pages-api/tele2', '/app-api/tele2', '/pages/tele2/tele2.json'];
+            const urls = ['/pages-api/tele2', '/app-api/tele2', '/app/tele2/tele2.json'];
             for (const url of urls) {
                 try {
                     const resp = await fetch(url);
