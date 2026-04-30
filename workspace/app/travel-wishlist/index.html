@@ -207,7 +207,7 @@ fetch('/pages-api/travel')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => { places = data; initApp(); })
   .catch(() => {
-    fetch('/pages/travel-wishlist/places.json')
+    fetch('/app/travel-wishlist/places.json')
       .then(r => r.json())
       .then(data => { places = data; initApp(); })
       .catch(() => { places = []; initApp(); });

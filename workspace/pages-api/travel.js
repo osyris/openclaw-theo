@@ -5,7 +5,7 @@
  * POST /travel/toggle       { index: <number> }
  */
 module.exports = function(app, { readJSON, writeJSON }) {
-    const PLACES_PATH = 'pages/travel-wishlist/places.json';
+    const PLACES_PATH = 'app/travel-wishlist/places.json';
 
     app.get('/travel', (req, res) => {
         const places = readJSON(PLACES_PATH);
