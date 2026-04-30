@@ -170,7 +170,7 @@
         let SHOPPING_DATA = { updated: '', categories: [] };
 
         async function loadData() {
-            const urls = ['/pages-api/shopping', '/app-api/shopping', '/pages/shopping/shopping.json'];
+            const urls = ['/pages-api/shopping', '/app-api/shopping', '/app/shopping/shopping.json'];
             for (const url of urls) {
                 try {
                     const resp = await fetch(url);

@@ -6,7 +6,7 @@
  * POST /shopping/clear        — remove all checked items
  */
 module.exports = function(app, { readJSON, writeJSON }) {
-    const DATA_PATH = 'pages/shopping/shopping.json';
+    const DATA_PATH = 'app/shopping/shopping.json';
 
     app.get('/shopping', (req, res) => {
         const data = readJSON(DATA_PATH);
