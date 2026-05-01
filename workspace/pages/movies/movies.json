@@ -625,7 +625,7 @@
       "Sci-Fi"
     ],
     "poster": "img/the-bride.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Мрачная переосмысленная история Невесты Франкенштейна. Созданная учёным женщина обретает сознание и борется за свою свободу.",
@@ -1234,21 +1234,5 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
-  },
-  {
-    "title": "Bright",
-    "titleRu": "Брайт",
-    "year": 2017,
-    "genre": [
-      "Action",
-      "Fantasy",
-      "Crime"
-    ],
-    "poster": "",
-    "status": "watched",
-    "liked": false,
-    "type": "movie",
-    "description": "Фэнтези-боевик Netflix: полицейский-человек и его напарник-орк расследуют дело вокруг магического артефакта.",
-    "titleEn": "Bright"
   }
 ]
