@@ -1017,7 +1017,7 @@
       "Thriller"
     ],
     "poster": "img/kak-priruchit-lisu.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series",
     "description": "OKKO Original: история дочери маньяка и попытки вырваться из травматичного прошлого.",
@@ -1045,7 +1045,7 @@
       "Drama"
     ],
     "poster": "img/kupi-menya.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Российская драма о трех девушках, которые выбирают путь легких денег и сталкиваются с жесткой ценой этого выбора.",
@@ -1234,5 +1234,21 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Bright",
+    "titleRu": "Брайт",
+    "year": 2017,
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Crime"
+    ],
+    "poster": "",
+    "status": "watched",
+    "liked": false,
+    "type": "movie",
+    "description": "Фэнтези-боевик Netflix: полицейский-человек и его напарник-орк расследуют дело вокруг магического артефакта.",
+    "titleEn": "Bright"
   }
 ]

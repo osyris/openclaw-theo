@@ -113,7 +113,9 @@
     background:#111; flex-shrink:0; overflow:hidden; position:relative;
   }
   .card-poster img {
-    width:100%; height:100%; object-fit:cover;
+    width:100%; height:100%; object-fit:contain;
+    background:#0f0f10;
+    image-rendering:auto;
     transition:transform 0.3s;
   }
   .card:hover .card-poster img { transform:scale(1.05); }
