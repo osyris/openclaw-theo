@@ -39,7 +39,7 @@
       "Drama"
     ],
     "poster": "img/jay-kelly.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Новый фильм Йоргоса Лантимоса с Колином Фарреллом. Загадочная драмеди о мужчине, чья жизнь принимает абсурдный оборот.",
@@ -492,7 +492,7 @@
       "Comedy"
     ],
     "poster": "img/i-dont-know-how-she-does-it.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "description": "Финансистка с Уолл-стрит пытается совмещать карьеру и семью, балансируя между встречами, детьми и чувством вины. С Сарой Джессикой Паркер.",
@@ -566,7 +566,7 @@
       "Drama"
     ],
     "poster": "img/karta-zhelaniy.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series",
     "description": "Российский сериал о людях, которые составляют карту желаний и пытаются воплотить мечты в реальность, сталкиваясь с забавными и трогательными ситуациями.",
@@ -702,7 +702,7 @@
       "Drama"
     ],
     "poster": "img/zdes-byl-yura.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "titleRu": "Здесь был Юра",
@@ -731,7 +731,7 @@
       "Mystery"
     ],
     "poster": "img/cinga.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "titleRu": "Цинга",
@@ -1222,5 +1222,17 @@
     "type": "movie",
     "titleRu": "Супруги Роуз",
     "titleEn": "The Roses"
+  },
+  {
+    "title": "Первая ракетка",
+    "year": 2025,
+    "genre": [
+      "Драма",
+      "Спорт"
+    ],
+    "poster": "img/pervaya-raketka-2025.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
