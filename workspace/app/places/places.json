@@ -1,0 +1,29 @@
+{
+  "updated": "2026-05-03",
+  "categories": [
+    {
+      "id": "food",
+      "name": "🍽 Рестораны и кафе",
+      "items": [
+        {
+          "name": "Manna La Roosa",
+          "area": "Tallinn",
+          "type": "restaurant",
+          "price": "€€",
+          "notes": "Атмосферное место для ужина/встреч",
+          "map": ""
+        }
+      ]
+    },
+    {
+      "id": "beauty",
+      "name": "💆‍♀️ Beauty / Self-care",
+      "items": []
+    },
+    {
+      "id": "activities",
+      "name": "🎯 Досуг и активности",
+      "items": []
+    }
+  ]
+}

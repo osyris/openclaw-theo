@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Куда сходить</title>
+  <style>
+    body{font-family:Inter,system-ui;background:#0f0f10;color:#f3f3f3;margin:0}
+    .hero{padding:28px 18px 22px;background:#161618}
+    .hero h1{margin:0;font-size:34px}.hero p{margin:6px 0 0;color:#aaa}
+    .wrap{max-width:980px;margin:0 auto;padding:16px}
+    .cat{margin:18px 0}.cat h2{font-size:20px;margin:0 0 10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+    .card{background:#1b1b1e;border:1px solid #2a2a2e;border-radius:14px;padding:12px}
+    .name{font-weight:700}.meta{color:#bbb;font-size:13px;margin-top:4px}
+    .notes{color:#d5d5d5;font-size:14px;margin-top:8px}
+    .map{display:inline-block;margin-top:8px;color:#8bc5ff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="hero"><div class="wrap"><h1>Куда сходить</h1><p>Личные подборки мест: еда, self-care, активности</p></div></div>
+  <div class="wrap" id="app"></div>
+<script>
+fetch('places.json').then(r=>r.json()).then(data=>{
+  const app=document.getElementById('app');
+  app.innerHTML=(data.categories||[]).map(c=>`<section class="cat"><h2>${c.name}</h2><div class="grid">${(c.items||[]).map(i=>`<article class="card"><div class="name">${i.name}</div><div class="meta">${i.area||''} ${i.price?`• ${i.price}`:''}</div><div class="notes">${i.notes||''}</div>${i.map?`<a class="map" target="_blank" href="${i.map}">Открыть карту</a>`:''}</article>`).join('')}</div></section>`).join('');
+});
+</script>
+</body>
+</html>
