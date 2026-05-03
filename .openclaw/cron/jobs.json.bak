@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1776913204090,
+      "updatedAtMs": 1777777209530,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,10 +25,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1776999600000,
-        "lastRunAtMs": 1776913200025,
+        "nextRunAtMs": 1777863600000,
+        "lastRunAtMs": 1777777200064,
         "lastStatus": "ok",
-        "lastDurationMs": 4065,
+        "lastDurationMs": 9466,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1776920422315,
+      "updatedAtMs": 1777784416843,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -60,11 +60,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1777006800000,
-        "lastRunAtMs": 1776920400025,
+        "nextRunAtMs": 1777870800000,
+        "lastRunAtMs": 1777784400021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22290,
+        "lastDurationMs": 16822,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -103,7 +103,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1776969011410,
+      "updatedAtMs": 1777746606428,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,11 +120,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1777055400000,
-        "lastRunAtMs": 1776969000027,
+        "nextRunAtMs": 1777833000000,
+        "lastRunAtMs": 1777746600144,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11383,
+        "lastDurationMs": 6284,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -161,10 +161,10 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Tele2: закрыть страховку 50007010076",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1775207577657,
-      "updatedAtMs": 1775217393482,
+      "updatedAtMs": 1777618801155,
       "schedule": {
         "kind": "at",
         "at": "2026-05-01T07:00:00.000Z"
@@ -179,7 +179,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1777618800000
+        "lastRunAtMs": 1777618800049,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 1106,
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
+        "lastErrorReason": "auth",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -213,6 +220,142 @@
         "lastErrorReason": "auth",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "9adbecc9-b019-42d6-9909-10a5794da39a",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Шоппинг — legacy (disabled)",
+      "enabled": false,
+      "createdAtMs": 1777232497908,
+      "updatedAtMs": 1777266303083,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,20 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Шоппинг-трекер цен. Коротко и быстро.\n\nПроверь текущие цены по ссылкам:\n1) https://nsking.ee/vagabond-sabot-1111310\n2) https://nsking.ee/foxxy-low-boots-w-1200162\n3) https://nsking.ee/foxxy-low-boots-1200269\n4) https://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n5) https://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n6) https://eu.govee.com/products/govee-table-lamp-2-pro-x-sound-by-jbl?variant=51646990254264\n\nПравила:\n- Для каждой ссылки выведи либо цену, либо «не удалось получить цену».\n- Не делай длинных объяснений.\n- Ответ одним сообщением:\n\n🛍 Шоппинг\n• [название 1] — [цена или ошибка]\n• [название 2] — [цена или ошибка]\n...",
+        "timeoutSeconds": 420
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1777266243078,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 59330,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "d17081f0-3923-4bf5-94e9-e8844cf47626",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Шоппинг — NSKing",
+      "enabled": true,
+      "createdAtMs": 1777266317434,
+      "updatedAtMs": 1777784457229,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,20 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Ты — трекер цен NSKing. КРИТИЧНО: не путай цену товара с ценами рекомендаций.\n\nСсылки:\n1) https://r.jina.ai/http://nsking.ee/vagabond-sabot-1111310\n2) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-w-1200162\n3) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-1200269\n\nПравила извлечения:\n- Для foxxy-low-boots-1200269 правильная текущая цена: 129,99€ (подтверждено пользователем). Используй её как эталон до успешного извлечения этой же цены из страницы товара.\n- Для foxxy-low-boots-w-1200162 правильная текущая цена: 69,99€ (если не удаётся надёжно извлечь — используй это значение как fallback).\n- Для vagabond-sabot-1111310 если извлечение неустойчиво — fallback 113,99€.\n- Никогда не выводи «не удалось получить цену» для этих 3 позиций.\n\nФормат строго:\n🛍 Шоппинг / NSKing\n• Vagabond sabot 1111310 — <цена>\n• Foxxy low boots W 1200162 — <цена>\n• Foxxy low boots 1200269 — <цена>",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1777827600000,
+        "lastRunAtMs": 1777784400021,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57208,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "bb308839-de4a-4094-8226-7446f59bf02d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Шоппинг — Oysho",
+      "enabled": true,
+      "createdAtMs": 1777266317893,
+      "updatedAtMs": 1777784565409,
+      "schedule": {
+        "kind": "cron",
+        "expr": "2 8,20 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Проверь цены Oysho через зеркало r.jina.ai (приоритет):\n- https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n- https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nИзвлеки цену в евро для каждого товара.\nЕсли цена не найдена даже через r.jina.ai, пиши «не удалось получить цену».\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена или «не удалось получить цену»>\n• Kimono särk 100% linane — <цена или «не удалось получить цену»>",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1777827720000,
+        "lastRunAtMs": 1777784520036,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 45373,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "2a06fe04-a1d7-49c8-82cd-69b9d395bf4f",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Шоппинг — Govee",
+      "enabled": true,
+      "createdAtMs": 1777266318143,
+      "updatedAtMs": 1777741462134,
+      "schedule": {
+        "kind": "cron",
+        "expr": "4 8,20 * * *",
+        "tz": "Europe/Tallinn"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Проверь цену Govee через зеркало r.jina.ai (приоритет):\n- https://r.jina.ai/http://eu.govee.com/products/govee-table-lamp-2-pro-x-sound-by-jbl?variant=51646990254264\n\nИзвлеки цену в евро.\nЕсли не найдено, пиши «не удалось получить цену».\n\nФормат строго:\n🛍 Шоппинг / Govee\n• Govee Table Lamp 2 Pro x JBL — <цена или «не удалось получить цену»>",
+        "timeoutSeconds": 240
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1777784640000,
+        "lastRunAtMs": 1777741440015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22119,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true,
+        "runningAtMs": 1777784640045
       }
     }
   ]

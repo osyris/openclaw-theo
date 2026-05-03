@@ -1,5 +1,5 @@
 {
-  "updated": "29.03.2026",
+  "updated": "30.04.2026",
   "categories": [
     {
       "name": "🧹 Для дома",
@@ -22,7 +22,7 @@
         },
         {
           "text": "Шоколадка для воды",
-          "checked": false
+          "checked": true
         },
         {
           "text": "Форма для льда (IKEA)",
@@ -43,7 +43,7 @@
         },
         {
           "text": "Молоко для кофе",
-          "checked": false
+          "checked": true
         }
       ]
     }
