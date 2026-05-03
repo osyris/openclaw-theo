@@ -40,7 +40,7 @@
 
 <script>
 let DATA={categories:[]};
-fetch('places.json').then(r=>r.json()).then(data=>{DATA=data;render();});
+fetch('places.json?v=' + Date.now()).then(r=>r.json()).then(data=>{DATA=data;render();});
 
 function esc(s){return (s||'').toString()}
 
