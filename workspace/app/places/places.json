@@ -11,15 +11,17 @@
           "type": "restaurant",
           "price": "€€",
           "notes": "Атмосферное место для ужина/встреч",
-          "map": ""
+          "map": "",
+          "image": ""
         },
         {
-          "name": "Новое место (из ссылки)",
+          "name": "Место из Google Maps",
           "area": "Tallinn",
           "type": "restaurant",
           "price": "",
-          "notes": "Добавлено из отправленной карты, можно позже уточнить название/комментарий.",
-          "map": "https://maps.app.goo.gl/a1Rn12buisnNVKobA?g_st=it"
+          "notes": "Добавлено из твоей ссылки. Можно открыть карточку и перейти в Google Maps.",
+          "map": "https://maps.app.goo.gl/a1Rn12buisnNVKobA?g_st=it",
+          "image": ""
         }
       ]
     },
