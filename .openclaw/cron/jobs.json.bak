@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1778122805886,
+      "updatedAtMs": 1778209205932,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,10 +25,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1778209200000,
-        "lastRunAtMs": 1778122800043,
+        "nextRunAtMs": 1778295600000,
+        "lastRunAtMs": 1778209200088,
         "lastStatus": "ok",
-        "lastDurationMs": 5843,
+        "lastDurationMs": 5844,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1778130025958,
+      "updatedAtMs": 1778216431258,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -60,11 +60,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778216400000,
-        "lastRunAtMs": 1778130000038,
+        "nextRunAtMs": 1778302800000,
+        "lastRunAtMs": 1778216400097,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25920,
+        "lastDurationMs": 31161,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -103,7 +103,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1778178634339,
+      "updatedAtMs": 1778265005250,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,11 +120,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778265000000,
-        "lastRunAtMs": 1778178600062,
+        "nextRunAtMs": 1778351400000,
+        "lastRunAtMs": 1778265000020,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 34277,
+        "lastDurationMs": 5230,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -262,7 +262,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1778173244063,
+      "updatedAtMs": 1778259639445,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -279,11 +279,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778216400000,
-        "lastRunAtMs": 1778173200369,
+        "nextRunAtMs": 1778302800000,
+        "lastRunAtMs": 1778259600066,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 43694,
+        "lastDurationMs": 39379,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -296,7 +296,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1778173357244,
+      "updatedAtMs": 1778259757643,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -313,11 +313,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778216520000,
-        "lastRunAtMs": 1778173320053,
+        "nextRunAtMs": 1778302920000,
+        "lastRunAtMs": 1778259720055,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 37191,
+        "lastDurationMs": 37588,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -330,7 +330,7 @@
       "name": "Шоппинг — Govee",
       "enabled": true,
       "createdAtMs": 1777266318143,
-      "updatedAtMs": 1778173467202,
+      "updatedAtMs": 1778259866243,
       "schedule": {
         "kind": "cron",
         "expr": "4 8,20 * * *",
@@ -347,11 +347,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778216640000,
-        "lastRunAtMs": 1778173440031,
+        "nextRunAtMs": 1778303040000,
+        "lastRunAtMs": 1778259840015,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 27171,
+        "lastDurationMs": 26228,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
