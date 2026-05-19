@@ -67,6 +67,15 @@
           "checked": false
         }
       ]
+    },
+    {
+      "name": "👕 Уход за одеждой",
+      "items": [
+        {
+          "text": "Universal Stain Remover (100 ml)",
+          "checked": false
+        }
+      ]
     }
   ]
 }
