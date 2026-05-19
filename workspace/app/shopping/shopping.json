@@ -44,9 +44,18 @@
         {
           "text": "Молоко для кофе",
           "checked": true
-        },
+        }
+      ]
+    },
+    {
+      "name": "💡 Продуктовые находки (хочу попробовать)",
+      "items": [
         {
           "text": "Мороженое La Muu (черничное)",
+          "checked": false
+        },
+        {
+          "text": "Сидр Brothers Premium Cider Toffee Apple (500 мл)",
           "checked": false
         }
       ]
