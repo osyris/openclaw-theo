@@ -44,6 +44,10 @@
         {
           "text": "Молоко для кофе",
           "checked": true
+        },
+        {
+          "text": "Мороженое Premia mustikas (черника)",
+          "checked": false
         }
       ]
     }
