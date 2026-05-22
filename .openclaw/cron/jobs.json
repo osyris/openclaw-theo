@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1778209205932,
+      "updatedAtMs": 1779470908748,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -17,7 +17,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run: cd /data && git add -A && git diff --cached --quiet && echo 'No changes' || git commit -m 'Daily backup' && echo 'Done'. Do NOT push. Do NOT announce anything.",
+        "message": "Run this exact bash command verbatim and report only its final output line: cd /data && git add -A && if git diff --cached --quiet; then echo No-changes-to-commit; else git commit -m \"Daily backup $(date -u +%F)\"; fi && git push origin main && echo Done. Do NOT announce anything to any channel.",
         "timeoutSeconds": 120,
         "model": "claude-opus-4-6"
       },
@@ -25,15 +25,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1778295600000,
-        "lastRunAtMs": 1778209200088,
+        "nextRunAtMs": 1779505200000,
+        "lastRunAtMs": 1779418800016,
         "lastStatus": "ok",
-        "lastDurationMs": 5844,
+        "lastDurationMs": 2853,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false,
-        "runningAtMs": 1778295600047
+        "lastDelivered": false
       }
     },
     {
@@ -43,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1778216431258,
+      "updatedAtMs": 1779426026498,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,14 +60,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778302800000,
-        "lastRunAtMs": 1778216400097,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 31161,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779512400000,
+        "lastRunAtMs": 1779426000010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 26488,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -104,7 +103,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1778265005250,
+      "updatedAtMs": 1779388897790,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -114,18 +113,18 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/pages/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой\n5. Weekly Planner — задачи на СЕГОДНЯ\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'",
+        "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/app/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой (ищи в /data/workspace/memory/)\n5. Weekly Planner — задачи на СЕГОДНЯ (источник: /data/workspace/app/planner/index.html)\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'",
         "model": "claude-opus-4-6"
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778351400000,
-        "lastRunAtMs": 1778265000020,
+        "nextRunAtMs": 1779474600000,
+        "lastRunAtMs": 1779388200013,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5230,
+        "lastDurationMs": 26690,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -263,7 +262,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1778259639445,
+      "updatedAtMs": 1779469223887,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -280,14 +279,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778302800000,
-        "lastRunAtMs": 1778259600066,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 39379,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779512400000,
+        "lastRunAtMs": 1779469200018,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 23869,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -297,7 +296,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1778259757643,
+      "updatedAtMs": 1779469352754,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -314,14 +313,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778302920000,
-        "lastRunAtMs": 1778259720055,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 37588,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779512520000,
+        "lastRunAtMs": 1779469320010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 32744,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -331,7 +330,7 @@
       "name": "Шоппинг — Govee",
       "enabled": true,
       "createdAtMs": 1777266318143,
-      "updatedAtMs": 1778259866243,
+      "updatedAtMs": 1779469455496,
       "schedule": {
         "kind": "cron",
         "expr": "4 8,20 * * *",
@@ -348,14 +347,46 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1778303040000,
-        "lastRunAtMs": 1778259840015,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 26228,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779512640000,
+        "lastRunAtMs": 1779469440011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 15485,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Error: Outbound not configured for channel: telegram"
+      }
+    },
+    {
+      "id": "3a21437a-accb-4778-a95d-2455eb006f76",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Напоминание: написать поддержке по урокам английского",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1779390391755,
+      "updatedAtMs": 1779438606338,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-22T08:30:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "🔔 Напоминание: сегодня в 11:30 ты хотела написать команде поддержки по поводу уроков английского. Не откладывай 💛"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "lastRunAtMs": 1779438600010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 6328,
+        "lastError": "Error: Outbound not configured for channel: telegram",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]

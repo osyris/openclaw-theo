@@ -1,5 +1,5 @@
 {
-  "updated": "01.05.2026",
+  "updated": "19.05.2026",
   "trials": [
     {
       "id": "4721080328",
@@ -166,7 +166,7 @@
       "service": "Закрыть телевидение",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active",
+      "status": "closed",
       "deadline": "2026-05-08",
       "notes": "Напоминание за 2 дня (6 мая)"
     },
@@ -175,7 +175,7 @@
       "service": "Закрыть страховку (2 шт, reg 11342991)",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active",
+      "status": "closed",
       "deadline": "2026-05-08",
       "notes": "Напоминание за 2 дня (6 мая)"
     },
@@ -184,7 +184,7 @@
       "service": "Закрыть телевидение",
       "startDate": "2026-04-08",
       "trialDays": 30,
-      "status": "active",
+      "status": "closed",
       "deadline": "2026-05-08",
       "notes": "Напоминание за 2 дня (6 мая)"
     },
@@ -194,7 +194,7 @@
       "startDate": "2026-04-11",
       "trialDays": 30,
       "deadline": "2026-05-11",
-      "status": "active",
+      "status": "closed",
       "notes": "Напоминание за 2 дня (9 мая)"
     },
     {

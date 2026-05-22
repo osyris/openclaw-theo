@@ -36,3 +36,19 @@ Thumbs.db
 .openclaw/workspace/tmp-*
 .openclaw/cron/jobs.json.bak
 skills/scrapingbee/.env
+
+# === SSH (private key MUST never be committed) ===
+.ssh/
+
+# === Snapshot files from instance resets ===
+*.vanilla.*
+
+# === Local manual edit backups ===
+*.pre-push-fix
+
+# === OpenClaw runtime logs ===
+.openclaw/logs/
+
+# === Coolify-generated deploy metadata (regenerates each deploy) ===
+/README.md
+/docker-compose.yaml
