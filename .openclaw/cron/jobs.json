@@ -32,7 +32,8 @@
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false
+        "lastDelivered": false,
+        "runningAtMs": 1779505200002
       }
     },
     {
@@ -103,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1779388897790,
+      "updatedAtMs": 1779474615457,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,11 +121,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779474600000,
-        "lastRunAtMs": 1779388200013,
+        "nextRunAtMs": 1779561000000,
+        "lastRunAtMs": 1779474600006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26690,
+        "lastDurationMs": 15451,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
