@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1779470908748,
+      "updatedAtMs": 1779505208382,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1779505200000,
-        "lastRunAtMs": 1779418800016,
+        "nextRunAtMs": 1779591600000,
+        "lastRunAtMs": 1779505200006,
         "lastStatus": "ok",
-        "lastDurationMs": 2853,
+        "lastDurationMs": 8376,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1779505200002
+        "runningAtMs": 1779591600004
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1779426026498,
+      "updatedAtMs": 1779512403546,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,14 +61,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779512400000,
-        "lastRunAtMs": 1779426000010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 26488,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "nextRunAtMs": 1779598800000,
+        "lastRunAtMs": 1779512400008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 3538,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -104,7 +104,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1779474615457,
+      "updatedAtMs": 1779561011432,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -121,11 +121,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779561000000,
-        "lastRunAtMs": 1779474600006,
+        "nextRunAtMs": 1779647400000,
+        "lastRunAtMs": 1779561000010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15451,
+        "lastDurationMs": 11422,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -263,7 +263,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1779469223887,
+      "updatedAtMs": 1779555629632,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -273,21 +273,21 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Ты — трекер цен NSKing. КРИТИЧНО: не путай цену товара с ценами рекомендаций.\n\nСсылки:\n1) https://r.jina.ai/http://nsking.ee/vagabond-sabot-1111310\n2) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-w-1200162\n3) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-1200269\n\nПравила извлечения:\n- Для foxxy-low-boots-1200269 правильная текущая цена: 129,99€ (подтверждено пользователем). Используй её как эталон до успешного извлечения этой же цены из страницы товара.\n- Для foxxy-low-boots-w-1200162 правильная текущая цена: 69,99€ (если не удаётся надёжно извлечь — используй это значение как fallback).\n- Для vagabond-sabot-1111310 если извлечение неустойчиво — fallback 113,99€.\n- Никогда не выводи «не удалось получить цену» для этих 3 позиций.\n\nФормат строго:\n🛍 Шоппинг / NSKing\n• Vagabond sabot 1111310 — <цена>\n• Foxxy low boots W 1200162 — <цена>\n• Foxxy low boots 1200269 — <цена>",
+        "message": "Ты — трекер цен NSKing. КРИТИЧНО: не путай цену товара с ценами рекомендаций.\n\nСсылки:\n1) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-w-1200162\n2) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-1200269\n\nПравила извлечения:\n- Для foxxy-low-boots-1200269 правильная текущая цена: 129,99€ (подтверждено пользователем). Используй её как эталон до успешного извлечения этой же цены из страницы товара.\n- Для foxxy-low-boots-w-1200162 правильная текущая цена: 69,99€ (если не удаётся надёжно извлечь — используй это значение как fallback).\n- Никогда не выводи «не удалось получить цену» для этих 2 позиций.\n\nФормат строго:\n🛍 Шоппинг / NSKing\n• Foxxy low boots W 1200162 — <цена>\n• Foxxy low boots 1200269 — <цена>",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779512400000,
-        "lastRunAtMs": 1779469200018,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 23869,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "nextRunAtMs": 1779598800000,
+        "lastRunAtMs": 1779555600015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 29617,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -297,7 +297,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1779469352754,
+      "updatedAtMs": 1779555748472,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -307,21 +307,21 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Проверь цены Oysho через зеркало r.jina.ai (приоритет):\n- https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n- https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nИзвлеки цену в евро для каждого товара.\nЕсли цена не найдена даже через r.jina.ai, пиши «не удалось получить цену».\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена или «не удалось получить цену»>\n• Kimono särk 100% linane — <цена или «не удалось получить цену»>",
+        "message": "Ты — стабильный трекер цен Oysho. Цель: всегда присылать аккуратный отчёт даже если сайт временно не отдаёт цену.\n\nПроверь страницы (в порядке приоритета):\n1) https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n2) https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nЕсли r.jina.ai вернул cookie/privacy текст и цена не извлекается — попробуй прямые URL:\n3) https://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n4) https://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nПравила извлечения:\n- Ищи цену форматов вроде: 59.99 €, 59,99 €, €59.99.\n- Если цена не найдена надёжно, используй fallback (последнее подтверждённое значение):\n  • 100% linased bloomerpüksid — 59.99 €\n  • Kimono särk 100% linane — 59.99 €\n- Никогда не выводи «не удалось получить цену» для этих двух позиций.\n- Если использован fallback, добавь пометку «(fallback)» рядом с ценой.\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена>\n• Kimono särk 100% linane — <цена>",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779512520000,
-        "lastRunAtMs": 1779469320010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 32744,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "nextRunAtMs": 1779598920000,
+        "lastRunAtMs": 1779555720017,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 28455,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -329,9 +329,9 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Шоппинг — Govee",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1777266318143,
-      "updatedAtMs": 1779469455496,
+      "updatedAtMs": 1779533925161,
       "schedule": {
         "kind": "cron",
         "expr": "4 8,20 * * *",
@@ -348,14 +348,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779512640000,
-        "lastRunAtMs": 1779469440011,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 15485,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "lastRunAtMs": 1779512640005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22212,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {

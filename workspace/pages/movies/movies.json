@@ -1162,7 +1162,7 @@
       "Thriller"
     ],
     "poster": "img/umri-moya-lyubov.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "movie",
     "titleRu": "Умри моя любовь",
@@ -1231,7 +1231,7 @@
       "Спорт"
     ],
     "poster": "img/pervaya-raketka-2025-official.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series"
   }
