@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1779505208382,
+      "updatedAtMs": 1779678012596,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,10 +25,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1779591600000,
-        "lastRunAtMs": 1779505200006,
+        "nextRunAtMs": 1779764400000,
+        "lastRunAtMs": 1779678000015,
         "lastStatus": "ok",
-        "lastDurationMs": 8376,
+        "lastDurationMs": 12581,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1779512403546,
+      "updatedAtMs": 1779685221524,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -60,14 +60,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779598800000,
-        "lastRunAtMs": 1779512400008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 3538,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779771600000,
+        "lastRunAtMs": 1779685200010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 21514,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -75,10 +75,10 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Tele2: закрыть DigiKaitse 55974862 (3 мес)",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1772026893962,
-      "updatedAtMs": 1772026893962,
+      "updatedAtMs": 1779692420204,
       "schedule": {
         "kind": "at",
         "at": "2026-05-25T07:00:00.000Z"
@@ -93,7 +93,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779692400000
+        "lastRunAtMs": 1779692400011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 20193,
+        "lastError": "Error: Outbound not configured for channel: telegram",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -103,7 +109,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1779474615457,
+      "updatedAtMs": 1779647425978,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,11 +126,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779561000000,
-        "lastRunAtMs": 1779474600006,
+        "nextRunAtMs": 1779733800000,
+        "lastRunAtMs": 1779647400014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15451,
+        "lastDurationMs": 25964,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -153,7 +159,8 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779723000000
+        "nextRunAtMs": 1779723000000,
+        "runningAtMs": 1779723000002
       }
     },
     {
@@ -262,7 +269,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1779533948067,
+      "updatedAtMs": 1779685231011,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -279,14 +286,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779555600000,
-        "lastRunAtMs": 1779512400011,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 7336,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779728400000,
+        "lastRunAtMs": 1779685200012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 30999,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -296,7 +303,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1779512542927,
+      "updatedAtMs": 1779685352515,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -306,21 +313,21 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Проверь цены Oysho через зеркало r.jina.ai (приоритет):\n- https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n- https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nИзвлеки цену в евро для каждого товара.\nЕсли цена не найдена даже через r.jina.ai, пиши «не удалось получить цену».\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена или «не удалось получить цену»>\n• Kimono särk 100% linane — <цена или «не удалось получить цену»>",
+        "message": "Ты — стабильный трекер цен Oysho. Цель: всегда присылать аккуратный отчёт даже если сайт временно не отдаёт цену.\n\nПроверь страницы (в порядке приоритета):\n1) https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n2) https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nЕсли r.jina.ai вернул cookie/privacy текст и цена не извлекается — попробуй прямые URL:\n3) https://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n4) https://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nПравила извлечения:\n- Ищи цену форматов вроде: 59.99 €, 59,99 €, €59.99.\n- Если цена не найдена надёжно, используй fallback (последнее подтверждённое значение):\n  • 100% linased bloomerpüksid — 59.99 €\n  • Kimono särk 100% linane — 59.99 €\n- Никогда не выводи «не удалось получить цену» для этих двух позиций.\n- Если использован fallback, добавь пометку «(fallback)» рядом с ценой.\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена>\n• Kimono särk 100% linane — <цена>",
         "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779555720000,
-        "lastRunAtMs": 1779512520006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 22921,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779728520000,
+        "lastRunAtMs": 1779685320011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 32504,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {

@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1779591607586,
+      "updatedAtMs": 1779678012596,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1779678000000,
-        "lastRunAtMs": 1779591600013,
+        "nextRunAtMs": 1779764400000,
+        "lastRunAtMs": 1779678000015,
         "lastStatus": "ok",
-        "lastDurationMs": 7573,
+        "lastDurationMs": 12581,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1779678000005
+        "runningAtMs": 1779764400003
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1779598815669,
+      "updatedAtMs": 1779685221524,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,14 +61,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779685200000,
-        "lastRunAtMs": 1779598800009,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 15660,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779771600000,
+        "lastRunAtMs": 1779685200010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 21514,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -76,10 +76,10 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Tele2: закрыть DigiKaitse 55974862 (3 мес)",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1772026893962,
-      "updatedAtMs": 1772026893962,
+      "updatedAtMs": 1779692420204,
       "schedule": {
         "kind": "at",
         "at": "2026-05-25T07:00:00.000Z"
@@ -94,7 +94,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779692400000
+        "lastRunAtMs": 1779692400011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 20193,
+        "lastError": "Error: Outbound not configured for channel: telegram",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -104,7 +110,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1779647425978,
+      "updatedAtMs": 1779733806706,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -121,14 +127,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779733800000,
-        "lastRunAtMs": 1779647400014,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 25964,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779820200000,
+        "lastRunAtMs": 1779733800011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 6695,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -136,10 +142,10 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Напоминание: Oxxxymiron 8 июня",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1774031484508,
-      "updatedAtMs": 1774031484508,
+      "updatedAtMs": 1779723215832,
       "schedule": {
         "kind": "at",
         "at": "2026-05-25T15:30:00.000Z"
@@ -154,7 +160,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779723000000
+        "lastRunAtMs": 1779723000008,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 215824,
+        "lastError": "Error: Outbound not configured for channel: telegram",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -263,7 +275,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1779642051960,
+      "updatedAtMs": 1779728404157,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -280,14 +292,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779685200000,
-        "lastRunAtMs": 1779642000012,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 51948,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779771600000,
+        "lastRunAtMs": 1779728400011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 4146,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -297,7 +309,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1779642147523,
+      "updatedAtMs": 1779728820040,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -314,14 +326,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1779685320000,
-        "lastRunAtMs": 1779642120011,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 27512,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1779771720000,
+        "lastRunAtMs": 1779728520010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 300030,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
