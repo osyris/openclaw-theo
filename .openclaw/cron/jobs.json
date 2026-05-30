@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1779937207515,
+      "updatedAtMs": 1780023607647,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1780023600000,
-        "lastRunAtMs": 1779937200008,
+        "nextRunAtMs": 1780110000000,
+        "lastRunAtMs": 1780023600009,
         "lastStatus": "ok",
-        "lastDurationMs": 7507,
+        "lastDurationMs": 7638,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1780023600003
+        "runningAtMs": 1780110000002
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1779944406800,
+      "updatedAtMs": 1780030803297,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,13 +61,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780030800000,
-        "lastRunAtMs": 1779944400012,
+        "nextRunAtMs": 1780117200000,
+        "lastRunAtMs": 1780030800013,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 6788,
+        "lastDurationMs": 3284,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 5,
         "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
@@ -110,7 +110,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1779993005546,
+      "updatedAtMs": 1780079411713,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -127,13 +127,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780079400000,
-        "lastRunAtMs": 1779993000010,
+        "nextRunAtMs": 1780165800000,
+        "lastRunAtMs": 1780079400010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 5536,
+        "lastDurationMs": 11703,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 5,
         "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
@@ -275,7 +275,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1779987604500,
+      "updatedAtMs": 1780074003757,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -292,13 +292,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780030800000,
-        "lastRunAtMs": 1779987600010,
+        "nextRunAtMs": 1780117200000,
+        "lastRunAtMs": 1780074000011,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 4490,
+        "lastDurationMs": 3746,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 8,
+        "consecutiveErrors": 10,
         "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
@@ -309,7 +309,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1779987748441,
+      "updatedAtMs": 1780074145293,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -326,13 +326,13 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780030920000,
-        "lastRunAtMs": 1779987720012,
+        "nextRunAtMs": 1780117320000,
+        "lastRunAtMs": 1780074120010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 28429,
+        "lastDurationMs": 25283,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 8,
+        "consecutiveErrors": 10,
         "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
