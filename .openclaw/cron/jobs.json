@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1780110006476,
+      "updatedAtMs": 1781838000365,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1780196400000,
-        "lastRunAtMs": 1780110000007,
-        "lastStatus": "ok",
-        "lastDurationMs": 6469,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false,
-        "runningAtMs": 1780196400002
+        "nextRunAtMs": 1781924400000,
+        "lastRunAtMs": 1781838000014,
+        "lastStatus": "error",
+        "lastDurationMs": 351,
+        "consecutiveErrors": 19,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastErrorReason": "auth",
+        "runningAtMs": 1781924400007
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1780117219758,
+      "updatedAtMs": 1781845200368,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,14 +61,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780203600000,
-        "lastRunAtMs": 1780117200013,
+        "nextRunAtMs": 1781931600000,
+        "lastRunAtMs": 1781845200016,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 19745,
+        "lastDurationMs": 352,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 6,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 26,
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (2): openrouter/openrouter/claude-opus-4-6: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/openai/gpt-5.4: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)"
       }
     },
     {
@@ -110,7 +111,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1780165806113,
+      "updatedAtMs": 1781893800363,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -127,14 +128,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780252200000,
-        "lastRunAtMs": 1780165800007,
+        "nextRunAtMs": 1781980200000,
+        "lastRunAtMs": 1781893800013,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 6106,
+        "lastDurationMs": 350,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 6,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 26,
+        "lastErrorReason": "auth",
+        "lastError": "Error: All models failed (2): openrouter/openrouter/claude-opus-4-6: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/openai/gpt-5.4: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)"
       }
     },
     {
@@ -275,7 +277,7 @@
       "name": "Шоппинг — NSKing",
       "enabled": true,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1780160407620,
+      "updatedAtMs": 1781888400134,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -292,14 +294,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780203600000,
-        "lastRunAtMs": 1780160400010,
+        "nextRunAtMs": 1781931600000,
+        "lastRunAtMs": 1781888400015,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 7610,
+        "lastDurationMs": 119,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 12,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 52,
+        "lastErrorReason": "auth",
+        "lastError": "FailoverError: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir."
       }
     },
     {
@@ -309,7 +312,7 @@
       "name": "Шоппинг — Oysho",
       "enabled": true,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1780160541006,
+      "updatedAtMs": 1781888520099,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -326,14 +329,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1780203720000,
-        "lastRunAtMs": 1780160520015,
+        "nextRunAtMs": 1781931720000,
+        "lastRunAtMs": 1781888520015,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 20991,
+        "lastDurationMs": 84,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 12,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 52,
+        "lastErrorReason": "auth",
+        "lastError": "FailoverError: No API key found for provider \"openrouter\". Auth store: /data/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /data/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir."
       }
     },
     {
