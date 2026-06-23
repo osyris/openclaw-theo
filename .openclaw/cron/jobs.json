@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1782010811106,
+      "updatedAtMs": 1782097211807,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1782097200000,
-        "lastRunAtMs": 1782010800016,
+        "nextRunAtMs": 1782183600000,
+        "lastRunAtMs": 1782097200014,
         "lastStatus": "ok",
-        "lastDurationMs": 11090,
+        "lastDurationMs": 11793,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1782097200004
+        "runningAtMs": 1782183600006
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1782018017920,
+      "updatedAtMs": 1782104420354,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,11 +61,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782104400000,
-        "lastRunAtMs": 1782018000019,
+        "nextRunAtMs": 1782190800000,
+        "lastRunAtMs": 1782104400014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 17901,
+        "lastDurationMs": 20340,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -110,7 +110,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1782066636293,
+      "updatedAtMs": 1782153037483,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -127,14 +127,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782153000000,
-        "lastRunAtMs": 1782066600010,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 36283,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1782239400000,
+        "lastRunAtMs": 1782153000012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 37471,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -273,9 +273,9 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Шоппинг — NSKing",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1777266317434,
-      "updatedAtMs": 1782061216746,
+      "updatedAtMs": 1782150769682,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -292,11 +292,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782104400000,
-        "lastRunAtMs": 1782061200011,
+        "lastRunAtMs": 1782147600016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 16735,
+        "lastDurationMs": 13066,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -307,9 +306,9 @@
       "agentId": "main",
       "sessionKey": "agent:main:main",
       "name": "Шоппинг — Oysho",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1777266317893,
-      "updatedAtMs": 1782061347440,
+      "updatedAtMs": 1782150769698,
       "schedule": {
         "kind": "cron",
         "expr": "2 8,20 * * *",
@@ -326,11 +325,10 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782104520000,
-        "lastRunAtMs": 1782061320013,
+        "lastRunAtMs": 1782147720014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 27427,
+        "lastDurationMs": 30380,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -343,7 +341,7 @@
       "name": "Шоппинг — Govee",
       "enabled": false,
       "createdAtMs": 1777266318143,
-      "updatedAtMs": 1779533925161,
+      "updatedAtMs": 1782150769720,
       "schedule": {
         "kind": "cron",
         "expr": "4 8,20 * * *",
@@ -399,6 +397,32 @@
         "lastError": "Error: Outbound not configured for channel: telegram",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "06f3f754-03ca-4a5f-ab28-d4cfcbc12778",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Напоминание на 23 июня 09:00",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1782163292354,
+      "updatedAtMs": 1782163292354,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-06-23T06:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Это напоминание на сегодня, 23 июня, 09:00 по Эстонии. Напомни Наталии её план на день коротко и тепло:\n- с утра прогуляться\n- зайти в Depo за бытовой химией\n- обязательно напомнить: найти карточку Depo\n- проверить, что там по карточке PromoCash\n- зайти в PromoCash: купить рыбу для супа, креветки — под вопросом\n- сделать маникюр и педикюр\n- привести в порядок ноги / пятки\n- обязательно позаниматься спортом\n- спросить у Кости по поводу велосипеда\n- пособирать сумку"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1782194400000
       }
     }
   ]
