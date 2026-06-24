@@ -351,6 +351,18 @@
       "method": null,
       "enabled": true,
       "last_status": "failed"
+    },
+    {
+      "id": "knoll-shoulder-bag-suede-ebony-1329651001",
+      "url": "https://www.cos.com/en-eu-e/women/accessories/bags/leather/product/knoll-shoulder-bag-suede-ebony-1329651001",
+      "title": "COS Knoll shoulder bag suede ebony",
+      "currency": "EUR",
+      "baseline_price": 150.0,
+      "last_price": 150.0,
+      "last_checked": "2026-06-24T20:10:50.742238+00:00",
+      "method": "cffi",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
