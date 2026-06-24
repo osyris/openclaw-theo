@@ -315,6 +315,18 @@
           "price": 39.99
         }
       ]
+    },
+    {
+      "id": "suede-bag-brown-1229541009",
+      "url": "https://www.arket.com/en-eu/product/suede-bag-brown-1229541009/",
+      "title": "Arket suede bag brown",
+      "currency": "EUR",
+      "baseline_price": 159.0,
+      "last_price": 159.0,
+      "last_checked": "2026-06-24T19:52:46.927684+00:00",
+      "method": "chromium",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
