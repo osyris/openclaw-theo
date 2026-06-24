@@ -339,6 +339,18 @@
       "method": null,
       "enabled": true,
       "last_status": "failed"
+    },
+    {
+      "id": "wool-blend-high-neck-sweater-l05613593",
+      "url": "https://www.massimodutti.com/ee/ru/wool-blend-high-neck-sweater-l05613593?%3Fpelement=57715044",
+      "title": "Massimo Dutti wool blend high neck sweater",
+      "currency": "EUR",
+      "baseline_price": null,
+      "last_price": null,
+      "last_checked": "2026-06-24T20:04:58.455088+00:00",
+      "method": null,
+      "enabled": true,
+      "last_status": "failed"
     }
   ]
 }
