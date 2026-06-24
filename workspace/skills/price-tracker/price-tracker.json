@@ -363,6 +363,18 @@
       "method": "cffi",
       "enabled": true,
       "last_status": "ok"
+    },
+    {
+      "id": "00",
+      "url": "https://shop.mango.com/ee/en/p/women/bags/leather-bags/large-suede-bucket-bag-with-buckle/27061225/32/00",
+      "title": "Mango large suede bucket bag with buckle",
+      "currency": "EUR",
+      "baseline_price": 79.99,
+      "last_price": 79.99,
+      "last_checked": "2026-06-24T20:16:39.273587+00:00",
+      "method": "cffi",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
