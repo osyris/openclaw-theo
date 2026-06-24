@@ -327,6 +327,18 @@
       "method": "chromium",
       "enabled": true,
       "last_status": "ok"
+    },
+    {
+      "id": "split-suede-leather-bag-with-eyelets-l06915630",
+      "url": "https://www.massimodutti.com/ee/ru/split-suede-leather-bag-with-eyelets-l06915630",
+      "title": "Massimo Dutti split suede leather bag with eyelets",
+      "currency": "EUR",
+      "baseline_price": null,
+      "last_price": null,
+      "last_checked": "2026-06-24T19:54:57.211652+00:00",
+      "method": null,
+      "enabled": true,
+      "last_status": "failed"
     }
   ]
 }
