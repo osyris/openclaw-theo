@@ -371,6 +371,18 @@
           "price": 59.99
         }
       ]
+    },
+    {
+      "id": "00-2",
+      "url": "https://shop.mango.com/ee/en/p/women/bags/leather-bags/suede-bucket-bag-with-buckle/27031212/32/00",
+      "title": "Mango suede bucket bag with buckle",
+      "currency": "EUR",
+      "baseline_price": 49.99,
+      "last_price": 49.99,
+      "last_checked": "2026-06-24T20:25:10.759881+00:00",
+      "method": "cffi",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
