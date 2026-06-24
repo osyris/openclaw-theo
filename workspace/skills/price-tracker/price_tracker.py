@@ -447,6 +447,36 @@ def extract_microdata(body):
                 return p, "EUR"
     return None
 
+def extract_site_visible_price(body, url):
+    host = urllib.parse.urlsplit(url).netloc.lower()
+    text = re.sub(r"<[^>]+>", " ", body)
+    text = re.sub(r"\s+", " ", text)
+
+    if "shop.mango.com" in host:
+        # Mango sale pages often expose the stale/original price in meta/JSON-LD,
+        # while the real discounted value appears in rendered copy as
+        # “Current price [€ 59,99]”. Prefer the visible current price.
+        m = re.search(r"Current price\s*\[?\s*€\s*([0-9.,]+)", text, re.I)
+        if m:
+            p = parse_price(m.group(1))
+            if p:
+                return p, "EUR"
+
+    if "massimodutti.com" in host:
+        # Massimo Dutti sale pages render the live value like “-20% 200 €”.
+        m = re.search(r"-\s*\d+%\s*([0-9.,]+)\s*€", text, re.I)
+        if m:
+            p = parse_price(m.group(1))
+            if p:
+                return p, "EUR"
+        # Fallback for non-sale pages: first visible euro price in the product block.
+        m = re.search(r"([0-9.,]+)\s*€", text, re.I)
+        if m:
+            p = parse_price(m.group(1))
+            if p:
+                return p, "EUR"
+    return None
+
 def extract_price(body, url):
     if not body:
         return None
@@ -455,8 +485,8 @@ def extract_price(body, url):
         r = extract_shopify_json(body, url)
         if r:
             return r
-    for fn in (extract_jsonld, extract_meta, extract_microdata):
-        r = fn(body)
+    for fn in (extract_site_visible_price, extract_jsonld, extract_meta, extract_microdata):
+        r = fn(body, url) if fn is extract_site_visible_price else fn(body)
         if r:
             return r
     return None

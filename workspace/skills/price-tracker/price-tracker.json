@@ -311,24 +311,36 @@
       "url": "https://www.massimodutti.com/ee/ru/split-suede-leather-bag-with-eyelets-l06915630",
       "title": "Massimo Dutti split suede leather bag with eyelets",
       "currency": "EUR",
-      "baseline_price": null,
-      "last_price": null,
-      "last_checked": "2026-06-24T19:54:57.211652+00:00",
-      "method": null,
+      "baseline_price": 200.0,
+      "last_price": 200.0,
+      "last_checked": "2026-06-24T20:24:12.640951+00:00",
+      "method": "chromium",
       "enabled": true,
-      "last_status": "failed"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:24:12.640951+00:00",
+          "price": 200.0
+        }
+      ]
     },
     {
       "id": "wool-blend-high-neck-sweater-l05613593",
       "url": "https://www.massimodutti.com/ee/ru/wool-blend-high-neck-sweater-l05613593?%3Fpelement=57715044",
       "title": "Massimo Dutti wool blend high neck sweater",
       "currency": "EUR",
-      "baseline_price": null,
-      "last_price": null,
-      "last_checked": "2026-06-24T20:04:58.455088+00:00",
-      "method": null,
+      "baseline_price": 40.0,
+      "last_price": 40.0,
+      "last_checked": "2026-06-24T20:24:30.560133+00:00",
+      "method": "chromium",
       "enabled": true,
-      "last_status": "failed"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:24:30.560133+00:00",
+          "price": 40.0
+        }
+      ]
     },
     {
       "id": "knoll-shoulder-bag-suede-ebony-1329651001",
@@ -348,11 +360,17 @@
       "title": "Mango large suede bucket bag with buckle",
       "currency": "EUR",
       "baseline_price": 79.99,
-      "last_price": 79.99,
-      "last_checked": "2026-06-24T20:16:39.273587+00:00",
+      "last_price": 59.99,
+      "last_checked": "2026-06-24T20:24:12.180317+00:00",
       "method": "cffi",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:24:12.180317+00:00",
+          "price": 59.99
+        }
+      ]
     }
   ]
 }
