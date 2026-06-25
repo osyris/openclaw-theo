@@ -481,6 +481,18 @@
       "method": null,
       "enabled": true,
       "last_status": "failed"
+    },
+    {
+      "id": "pink-panther-rain-coat",
+      "url": "https://rainkiss.com/products/pink-panther-rain-coat",
+      "title": "Rainkiss Pink Panther rain coat",
+      "currency": "EUR",
+      "baseline_price": 119.0,
+      "last_price": 119.0,
+      "last_checked": "2026-06-25T09:05:29.439398+00:00",
+      "method": "cffi",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
