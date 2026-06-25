@@ -517,6 +517,18 @@
       "method": "social",
       "enabled": true,
       "last_status": "ok"
+    },
+    {
+      "id": "productpage-1343506001-html",
+      "url": "https://www2.hm.com/en_eur/productpage.1343506001.html",
+      "title": "H&M tracked item 1343506001",
+      "currency": "EUR",
+      "baseline_price": null,
+      "last_price": null,
+      "last_checked": "2026-06-25T09:16:37.587305+00:00",
+      "method": null,
+      "enabled": true,
+      "last_status": "failed"
     }
   ]
 }
