@@ -493,6 +493,18 @@
       "method": "cffi",
       "enabled": true,
       "last_status": "ok"
+    },
+    {
+      "id": "on-cloudmonster-3-running-shoes-3wg10032852",
+      "url": "https://sportland.ee/product/on_cloudmonster_3_running_shoes_3wg10032852",
+      "title": "On Cloudmonster 3 running shoes",
+      "currency": "EUR",
+      "baseline_price": 200.0,
+      "last_price": 200.0,
+      "last_checked": "2026-06-25T09:09:38.651321+00:00",
+      "method": "social",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
