@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1782183611746,
+      "updatedAtMs": 1782270009256,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1782270000000,
-        "lastRunAtMs": 1782183600017,
+        "nextRunAtMs": 1782356400000,
+        "lastRunAtMs": 1782270000015,
         "lastStatus": "ok",
-        "lastDurationMs": 11729,
+        "lastDurationMs": 9241,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1782270000005
+        "runningAtMs": 1782356400003
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1782190820051,
+      "updatedAtMs": 1782277220775,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,14 +61,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782277200000,
-        "lastRunAtMs": 1782190800014,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 20037,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "nextRunAtMs": 1782363600000,
+        "lastRunAtMs": 1782277200019,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 20756,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -110,7 +110,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1782239437072,
+      "updatedAtMs": 1782325837497,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -127,11 +127,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782325800000,
-        "lastRunAtMs": 1782239400018,
+        "nextRunAtMs": 1782412200000,
+        "lastRunAtMs": 1782325800014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 37054,
+        "lastDurationMs": 37483,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -236,138 +236,6 @@
       }
     },
     {
-      "id": "9adbecc9-b019-42d6-9909-10a5794da39a",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Шоппинг — legacy (disabled)",
-      "enabled": false,
-      "createdAtMs": 1777232497908,
-      "updatedAtMs": 1777266303083,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8,20 * * *",
-        "tz": "Europe/Tallinn"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Шоппинг-трекер цен. Коротко и быстро.\n\nПроверь текущие цены по ссылкам:\n1) https://nsking.ee/vagabond-sabot-1111310\n2) https://nsking.ee/foxxy-low-boots-w-1200162\n3) https://nsking.ee/foxxy-low-boots-1200269\n4) https://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n5) https://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n6) https://eu.govee.com/products/govee-table-lamp-2-pro-x-sound-by-jbl?variant=51646990254264\n\nПравила:\n- Для каждой ссылки выведи либо цену, либо «не удалось получить цену».\n- Не делай длинных объяснений.\n- Ответ одним сообщением:\n\n🛍 Шоппинг\n• [название 1] — [цена или ошибка]\n• [название 2] — [цена или ошибка]\n...",
-        "timeoutSeconds": 420
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1777266243078,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 59330,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
-    },
-    {
-      "id": "d17081f0-3923-4bf5-94e9-e8844cf47626",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Шоппинг — NSKing",
-      "enabled": false,
-      "createdAtMs": 1777266317434,
-      "updatedAtMs": 1782150769682,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8,20 * * *",
-        "tz": "Europe/Tallinn"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Ты — трекер цен NSKing. КРИТИЧНО: не путай цену товара с ценами рекомендаций.\n\nСсылки:\n1) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-w-1200162\n2) https://r.jina.ai/http://nsking.ee/foxxy-low-boots-1200269\n\nПравила извлечения:\n- Для foxxy-low-boots-1200269 правильная текущая цена: 129,99€ (подтверждено пользователем). Используй её как эталон до успешного извлечения этой же цены из страницы товара.\n- Для foxxy-low-boots-w-1200162 правильная текущая цена: 69,99€ (если не удаётся надёжно извлечь — используй это значение как fallback).\n- Никогда не выводи «не удалось получить цену» для этих 2 позиций.\n\nФормат строго:\n🛍 Шоппинг / NSKing\n• Foxxy low boots W 1200162 — <цена>\n• Foxxy low boots 1200269 — <цена>",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1782147600016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 13066,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
-    },
-    {
-      "id": "bb308839-de4a-4094-8226-7446f59bf02d",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Шоппинг — Oysho",
-      "enabled": false,
-      "createdAtMs": 1777266317893,
-      "updatedAtMs": 1782150769698,
-      "schedule": {
-        "kind": "cron",
-        "expr": "2 8,20 * * *",
-        "tz": "Europe/Tallinn"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Ты — стабильный трекер цен Oysho. Цель: всегда присылать аккуратный отчёт даже если сайт временно не отдаёт цену.\n\nПроверь страницы (в порядке приоритета):\n1) https://r.jina.ai/http://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n2) https://r.jina.ai/http://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nЕсли r.jina.ai вернул cookie/privacy текст и цена не извлекается — попробуй прямые URL:\n3) https://www.oysho.com/ee/100-linased-bloomerpuksid-l34085134\n4) https://www.oysho.com/ee/kimono-sark-100-linane-l33444109\n\nПравила извлечения:\n- Ищи цену форматов вроде: 59.99 €, 59,99 €, €59.99.\n- Если цена не найдена надёжно, используй fallback (последнее подтверждённое значение):\n  • 100% linased bloomerpüksid — 59.99 €\n  • Kimono särk 100% linane — 59.99 €\n- Никогда не выводи «не удалось получить цену» для этих двух позиций.\n- Если использован fallback, добавь пометку «(fallback)» рядом с ценой.\n\nФормат строго:\n🛍 Шоппинг / Oysho\n• 100% linased bloomerpüksid — <цена>\n• Kimono särk 100% linane — <цена>",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1782147720014,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 30380,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
-    },
-    {
-      "id": "2a06fe04-a1d7-49c8-82cd-69b9d395bf4f",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "Шоппинг — Govee",
-      "enabled": false,
-      "createdAtMs": 1777266318143,
-      "updatedAtMs": 1782150769720,
-      "schedule": {
-        "kind": "cron",
-        "expr": "4 8,20 * * *",
-        "tz": "Europe/Tallinn"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Проверь цену Govee через зеркало r.jina.ai (приоритет):\n- https://r.jina.ai/http://eu.govee.com/products/govee-table-lamp-2-pro-x-sound-by-jbl?variant=51646990254264\n\nИзвлеки цену в евро.\nЕсли не найдено, пиши «не удалось получить цену».\n\nФормат строго:\n🛍 Шоппинг / Govee\n• Govee Table Lamp 2 Pro x JBL — <цена или «не удалось получить цену»>",
-        "timeoutSeconds": 240
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "lastRunAtMs": 1779512640005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 22212,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
-      }
-    },
-    {
       "id": "3a21437a-accb-4778-a95d-2455eb006f76",
       "agentId": "main",
       "sessionKey": "agent:main:main",
@@ -429,6 +297,40 @@
         "lastError": "Error: Outbound not configured for channel: telegram",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "d8042204-f82f-49e9-88ae-b9c5daadf307",
+      "name": "Цены 08:00 и 20:00",
+      "enabled": true,
+      "createdAtMs": 1782302494524,
+      "updatedAtMs": 1782320450132,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,20 * * *",
+        "tz": "Europe/Tallinn",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Выполни ровно эту команду и больше ничего, ответ не пересылай: python3 /data/workspace/skills/price-tracker/price_tracker.py check --send",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1782363600000,
+        "lastRunAtMs": 1782320400010,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 50122,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
       }
     }
   ]

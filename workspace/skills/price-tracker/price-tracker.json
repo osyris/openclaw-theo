@@ -13,7 +13,7 @@
       "currency": "EUR",
       "baseline_price": 129.99,
       "last_price": 109.99,
-      "last_checked": "2026-06-24T18:33:17.428859+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -76,6 +76,10 @@
         },
         {
           "t": "2026-06-24T18:33:17.428859+00:00",
+          "price": 109.99
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
           "price": 109.99
         }
       ],
@@ -88,7 +92,7 @@
       "currency": "EUR",
       "baseline_price": 69.99,
       "last_price": 69.99,
-      "last_checked": "2026-06-24T18:33:17.428859+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -152,6 +156,10 @@
         {
           "t": "2026-06-24T18:33:17.428859+00:00",
           "price": 69.99
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 69.99
         }
       ],
       "last_status": "ok"
@@ -163,7 +171,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-24T18:33:17.428859+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -219,6 +227,10 @@
         {
           "t": "2026-06-24T18:33:17.428859+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -230,7 +242,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-24T18:33:17.428859+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -290,6 +302,10 @@
         {
           "t": "2026-06-24T18:33:17.428859+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -301,10 +317,16 @@
       "currency": "EUR",
       "baseline_price": 159.0,
       "last_price": 159.0,
-      "last_checked": "2026-06-24T19:52:46.927684+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "chromium",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 159.0
+        }
+      ]
     },
     {
       "id": "split-suede-leather-bag-with-eyelets-l06915630",
@@ -313,13 +335,17 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-24T20:24:12.640951+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
       "history": [
         {
           "t": "2026-06-24T20:24:12.640951+00:00",
+          "price": 200.0
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
           "price": 200.0
         }
       ]
@@ -331,13 +357,17 @@
       "currency": "EUR",
       "baseline_price": 40.0,
       "last_price": 40.0,
-      "last_checked": "2026-06-24T20:24:30.560133+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
       "history": [
         {
           "t": "2026-06-24T20:24:30.560133+00:00",
+          "price": 40.0
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
           "price": 40.0
         }
       ]
@@ -349,10 +379,16 @@
       "currency": "EUR",
       "baseline_price": 150.0,
       "last_price": 150.0,
-      "last_checked": "2026-06-24T20:10:50.742238+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "cffi",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 150.0
+        }
+      ]
     },
     {
       "id": "00",
@@ -361,13 +397,17 @@
       "currency": "EUR",
       "baseline_price": 79.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-24T20:24:12.180317+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
       "history": [
         {
           "t": "2026-06-24T20:24:12.180317+00:00",
+          "price": 59.99
+        },
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
           "price": 59.99
         }
       ]
@@ -379,10 +419,16 @@
       "currency": "EUR",
       "baseline_price": 49.99,
       "last_price": 49.99,
-      "last_checked": "2026-06-24T20:25:10.759881+00:00",
+      "last_checked": "2026-06-24T20:59:08.010371+00:00",
       "method": "cffi",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-24T20:59:08.010371+00:00",
+          "price": 49.99
+        }
+      ]
     }
   ]
 }
