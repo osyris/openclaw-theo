@@ -13,7 +13,7 @@
       "currency": "EUR",
       "baseline_price": 129.99,
       "last_price": 109.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -84,6 +84,10 @@
         },
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
+          "price": 109.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
           "price": 109.99
         }
       ],
@@ -96,7 +100,7 @@
       "currency": "EUR",
       "baseline_price": 69.99,
       "last_price": 69.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -168,6 +172,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 69.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 69.99
         }
       ],
       "last_status": "ok"
@@ -179,7 +187,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -243,6 +251,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -254,7 +266,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -322,6 +334,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -333,7 +349,7 @@
       "currency": "EUR",
       "baseline_price": 159.0,
       "last_price": 159.0,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -345,6 +361,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 159.0
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 159.0
         }
       ]
     },
@@ -355,7 +375,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -371,6 +391,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 200.0
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 200.0
         }
       ]
     },
@@ -381,7 +405,7 @@
       "currency": "EUR",
       "baseline_price": 40.0,
       "last_price": 40.0,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -397,6 +421,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 40.0
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 40.0
         }
       ]
     },
@@ -407,7 +435,7 @@
       "currency": "EUR",
       "baseline_price": 150.0,
       "last_price": 150.0,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -419,6 +447,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 150.0
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 150.0
         }
       ]
     },
@@ -429,7 +461,7 @@
       "currency": "EUR",
       "baseline_price": 79.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -445,6 +477,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 59.99
         }
       ]
     },
@@ -455,7 +491,7 @@
       "currency": "EUR",
       "baseline_price": 49.99,
       "last_price": 49.99,
-      "last_checked": "2026-06-25T05:00:27.158633+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -467,6 +503,10 @@
         {
           "t": "2026-06-25T05:00:27.158633+00:00",
           "price": 49.99
+        },
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 49.99
         }
       ]
     },
@@ -477,7 +517,7 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-06-25T08:52:08.856472+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
@@ -489,10 +529,16 @@
       "currency": "EUR",
       "baseline_price": 119.0,
       "last_price": 119.0,
-      "last_checked": "2026-06-25T09:05:29.439398+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "cffi",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 119.0
+        }
+      ]
     },
     {
       "id": "on-cloudmonster-3-running-shoes-3wg10032852",
@@ -501,10 +547,16 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-25T09:09:38.651321+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "social",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 200.0
+        }
+      ]
     },
     {
       "id": "on-cloudmonster-3-running-shoes-3wg10034469",
@@ -513,10 +565,16 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-25T09:10:11.001499+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": "social",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-25T17:00:07.616926+00:00",
+          "price": 200.0
+        }
+      ]
     },
     {
       "id": "productpage-1343506001-html",
@@ -525,7 +583,7 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-06-25T09:16:37.587305+00:00",
+      "last_checked": "2026-06-25T17:00:07.616926+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
