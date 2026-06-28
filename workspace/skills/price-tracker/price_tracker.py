@@ -475,6 +475,28 @@ def extract_site_visible_price(body, url):
             p = parse_price(m.group(1))
             if p:
                 return p, "EUR"
+
+    if "douglas.ee" in host:
+        # Douglas pages contain many distracting prices (delivery threshold,
+        # price-per-gram, similar products). The real product price sits in the
+        # main product block after the selected variation / size / unit price.
+        block = None
+        for pat in (
+            r"Selected variation\s+(.*?)\s+LISA OSTUKORVI",
+            r"Selected variation\s+(.*?)\s+BRONEERI",
+        ):
+            m = re.search(pat, text, re.I)
+            if m:
+                block = m.group(1)
+                break
+        if block:
+            prices = re.findall(r"([0-9]+(?:[.,][0-9]{2})?)\s*€", block)
+            parsed = [parse_price(x) for x in prices]
+            parsed = [p for p in parsed if p and p >= 5]
+            # Usually block contains size price-per-unit + actual price; choose the last
+            # reasonable euro amount in the product block.
+            if parsed:
+                return parsed[-1], "EUR"
     return None
 
 def extract_price(body, url):

@@ -801,24 +801,36 @@
       "url": "https://www.douglas.ee/ee/kataloog/about-face-beach-freak-bronzer-stick/?item=78393",
       "title": "about-face beach freak bronzer stick",
       "currency": "EUR",
-      "baseline_price": null,
-      "last_price": null,
-      "last_checked": "2026-06-28T13:05:16.930561+00:00",
-      "method": null,
+      "baseline_price": 23.99,
+      "last_price": 23.99,
+      "last_checked": "2026-06-28T13:19:00.525601+00:00",
+      "method": "chromium",
       "enabled": true,
-      "last_status": "failed"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-28T13:19:00.525601+00:00",
+          "price": 23.99
+        }
+      ]
     },
     {
       "id": "about-face-the-curtain-call-loose-powder",
       "url": "https://www.douglas.ee/ee/kataloog/about-face-the-curtain-call-loose-powder/?item=78366",
       "title": "about-face the curtain call loose powder",
       "currency": "EUR",
-      "baseline_price": null,
-      "last_price": null,
-      "last_checked": "2026-06-28T13:05:53.266159+00:00",
-      "method": null,
+      "baseline_price": 24.99,
+      "last_price": 24.99,
+      "last_checked": "2026-06-28T13:19:21.228076+00:00",
+      "method": "chromium",
       "enabled": true,
-      "last_status": "failed"
+      "last_status": "ok",
+      "history": [
+        {
+          "t": "2026-06-28T13:19:21.228076+00:00",
+          "price": 24.99
+        }
+      ]
     }
   ]
 }
