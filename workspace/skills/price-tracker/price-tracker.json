@@ -807,6 +807,18 @@
       "method": null,
       "enabled": true,
       "last_status": "failed"
+    },
+    {
+      "id": "about-face-the-curtain-call-loose-powder",
+      "url": "https://www.douglas.ee/ee/kataloog/about-face-the-curtain-call-loose-powder/?item=78366",
+      "title": "about-face the curtain call loose powder",
+      "currency": "EUR",
+      "baseline_price": null,
+      "last_price": null,
+      "last_checked": "2026-06-28T13:05:53.266159+00:00",
+      "method": null,
+      "enabled": true,
+      "last_status": "failed"
     }
   ]
 }
