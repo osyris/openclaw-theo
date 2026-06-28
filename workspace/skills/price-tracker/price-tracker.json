@@ -13,7 +13,7 @@
       "currency": "EUR",
       "baseline_price": 129.99,
       "last_price": 109.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -100,6 +100,10 @@
         },
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
+          "price": 109.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
           "price": 109.99
         }
       ],
@@ -112,7 +116,7 @@
       "currency": "EUR",
       "baseline_price": 69.99,
       "last_price": 69.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -200,6 +204,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 69.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 69.99
         }
       ],
       "last_status": "ok"
@@ -211,7 +219,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -291,6 +299,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -302,7 +314,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -386,6 +398,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -397,7 +413,7 @@
       "currency": "EUR",
       "baseline_price": 159.0,
       "last_price": 159.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -425,6 +441,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 159.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 159.0
         }
       ]
     },
@@ -435,7 +455,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -467,6 +487,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 200.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 200.0
         }
       ]
     },
@@ -477,7 +501,7 @@
       "currency": "EUR",
       "baseline_price": 40.0,
       "last_price": 40.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -509,6 +533,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 40.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 40.0
         }
       ]
     },
@@ -519,7 +547,7 @@
       "currency": "EUR",
       "baseline_price": 150.0,
       "last_price": 150.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -547,6 +575,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 150.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 150.0
         }
       ]
     },
@@ -557,7 +589,7 @@
       "currency": "EUR",
       "baseline_price": 79.99,
       "last_price": 59.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -589,6 +621,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 59.99
         }
       ]
     },
@@ -599,7 +635,7 @@
       "currency": "EUR",
       "baseline_price": 49.99,
       "last_price": 49.99,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -627,6 +663,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 49.99
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 49.99
         }
       ]
     },
@@ -637,7 +677,7 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
@@ -649,7 +689,7 @@
       "currency": "EUR",
       "baseline_price": 119.0,
       "last_price": 119.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -669,6 +709,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 119.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 119.0
         }
       ]
     },
@@ -679,7 +723,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "social",
       "enabled": true,
       "last_status": "ok",
@@ -698,6 +742,10 @@
         },
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
+          "price": 200.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
           "price": 200.0
         }
       ]
@@ -709,7 +757,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
       "method": "social",
       "enabled": true,
       "last_status": "ok",
@@ -729,6 +777,10 @@
         {
           "t": "2026-06-27T17:00:06.645448+00:00",
           "price": 200.0
+        },
+        {
+          "t": "2026-06-28T05:00:27.682935+00:00",
+          "price": 200.0
         }
       ]
     },
@@ -739,7 +791,19 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-06-27T17:00:06.645448+00:00",
+      "last_checked": "2026-06-28T05:00:27.682935+00:00",
+      "method": null,
+      "enabled": true,
+      "last_status": "failed"
+    },
+    {
+      "id": "about-face-beach-freak-bronzer-stick",
+      "url": "https://www.douglas.ee/ee/kataloog/about-face-beach-freak-bronzer-stick/?item=78393",
+      "title": "about-face beach freak bronzer stick",
+      "currency": "EUR",
+      "baseline_price": null,
+      "last_price": null,
+      "last_checked": "2026-06-28T13:05:16.930561+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
