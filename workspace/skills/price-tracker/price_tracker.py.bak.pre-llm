@@ -11,11 +11,8 @@ price_tracker — детерминированный трекер цен (agent-
 
 Одна точка входа на весь функционал отслеживания цен. Вся «грязь» транспорта
 (Chrome-impersonating curl, social-UA, локальный headless chromium для JS-сайтов)
-и извлечения цены спрятана внутри. По умолчанию цена берётся ДЕТЕРМИНИРОВАННО
-(Shopify JSON / JSON-LD / OpenGraph-meta / микроданные) — модель не участвует.
-Исключение — товары с заданным `extract_prompt` (команда `prompt`): для трудных
-сайтов их цену извлекает модель (через одноразовую изолированную сессию), с
-проверкой на вменяемость; в отчёте такие цены помечены «*».
+и извлечения цены спрятана внутри. Цены извлекаются ДЕТЕРМИНИРОВАННО (Shopify JSON
+/ JSON-LD / OpenGraph-meta / микроданные) — модель НИКОГДА не выбирает цену.
 Конфиг правится ТОЛЬКО этими командами — руками JSON не трогать.
 
 Команды:
@@ -36,9 +33,6 @@ price_tracker — детерминированный трекер цен (agent-
   remove <id>                  Убрать товар.
   enable <id> | disable <id>   Включить/приостановить отслеживание товара.
   set <id> <price>             Вручную записать цену (если страница не поддаётся).
-  prompt <id> "<подсказка>"    Включить извлечение цены моделью для трудного сайта
-                               (подсказка — что именно искать). `prompt <id> --clear`
-                               возвращает товар на детерминированное извлечение.
   list                         Список отслеживаемых товаров.
   methods                      Какой метод фетча сейчас рабочий по каждому товару.
   schedule [status|install|off]
@@ -71,9 +65,6 @@ import os
 import sys
 import re
 import json
-import glob
-import time
-import uuid
 import shutil
 import subprocess
 import urllib.parse
@@ -111,10 +102,6 @@ CHROMIUM_PATH = os.environ.get("PT_CHROMIUM", "/usr/bin/chromium")
 # Chrome fingerprint passes from a plain datacenter IP — no proxy/ScrapingBee.
 CHROME_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
              "(KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36")
-# Where `openclaw agent --session-id <id>` drops throwaway transcripts. We clean
-# our own after each call; override with PT_SESSIONS_DIR if the layout changes.
-SESSIONS_DIR = os.environ.get(
-    "PT_SESSIONS_DIR", "/data/.openclaw/agents/main/sessions")
 
 JOB_NAME = "Цены 08:00 и 20:00"
 SCHED_EXPR = "0 8,20 * * *"
@@ -526,102 +513,9 @@ def extract_price(body, url):
             return r
     return None
 
-# --------------------------------------------------------------- model extractor
-
-# Used only for items that carry an explicit `extract_prompt`. The fetch and the
-# HTML→text cleanup are deterministic; only the final pick is the model's, and it
-# runs in a throwaway, isolated openclaw session (the main chat is never touched).
-MODEL_EXTRACT_INSTR = (
-    'Найди ТЕКУЩУЮ цену этого товара — ту, что покупатель платит сейчас (если есть '
-    'скидка, бери цену со скидкой, а не зачёркнутую старую). Игнорируй цену доставки, '
-    'цену за единицу/грамм и цены других товаров. Ответь СТРОГО одним JSON-объектом '
-    'без пояснений и текста вокруг: {"price": <число или null>, "currency": "<ISO, '
-    'напр. EUR>"}.')
-
-def html_to_text(body, cap=14000):
-    """Strip rendered HTML to plain text deterministically (no model involved)."""
-    if not body:
-        return ""
-    s = re.sub(r"(?is)<(script|style|noscript|svg|template)\b.*?</\1>", " ", body)
-    s = re.sub(r"(?s)<!--.*?-->", " ", s)
-    s = re.sub(r"(?s)<[^>]+>", " ", s)
-    s = (s.replace("&nbsp;", " ").replace("&euro;", "€").replace("&#8364;", "€")
-          .replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-          .replace("&quot;", '"').replace("&#39;", "'"))
-    s = re.sub(r"\s+", " ", s).strip()
-    return s[:cap]
-
-def _loads_loose(s):
-    try:
-        return json.loads(s)
-    except Exception:
-        m = re.search(r"\{.*\}", s, re.S)
-        if m:
-            try:
-                return json.loads(m.group(0))
-            except Exception:
-                return None
-    return None
-
-def sweep_throwaway_sessions(max_age_s=7200):
-    """Best-effort cleanup of orphaned throwaway transcripts left by crashes."""
-    try:
-        for f in glob.glob(os.path.join(SESSIONS_DIR, "pricetrack-*.jsonl")):
-            try:
-                if time.time() - os.path.getmtime(f) > max_age_s:
-                    os.remove(f)
-            except OSError:
-                pass
-    except Exception:
-        pass
-
-def extract_via_model(body, url, prompt, last_price=None):
-    """Extract a price with the model, for sites that defeat structured parsing.
-
-    Runs one turn in a fresh, isolated openclaw session (unique --session-id, no
-    --deliver → clean stdout, main chat untouched), then deletes that throwaway
-    transcript. Guards against garbage (≤0, or wildly off the last price) but NOT
-    against legitimate discounts. Returns (price, currency) or None.
-    """
-    text = html_to_text(body)
-    if not text:
-        return None
-    sid = "pricetrack-" + uuid.uuid4().hex
-    msg = prompt.strip() + "\n\n" + MODEL_EXTRACT_INSTR + "\n\nТЕКСТ СТРАНИЦЫ:\n" + text
-    rc, out, _ = oc(["agent", "--session-id", sid, "--thinking", "off",
-                     "--timeout", "60", "--message", msg], timeout=90)
-    try:                                   # always drop the throwaway transcript
-        os.remove(os.path.join(SESSIONS_DIR, sid + ".jsonl"))
-    except OSError:
-        pass
-    if rc != 0 or not out.strip():
-        return None
-    data = _loads_loose(out.strip())
-    if not isinstance(data, dict):
-        return None
-    price = parse_price(data.get("price"))
-    if price is None:
-        return None
-    cur = (str(data.get("currency") or "EUR").upper()[:3]) or "EUR"
-    # plausibility guard: reject only garbage, never a real discount.
-    if last_price and (price < last_price / 10 or price > last_price * 10):
-        return None
-    return price, cur
-
 def resolve(item, cfg):
-    """Return (price, currency, method) or None. Remembers the working method.
-
-    Items with a non-empty `extract_prompt` are resolved by the model (rendered
-    page → openclaw agent); everything else stays fully deterministic.
-    """
+    """Return (price, currency, method) or None. Remembers the working method."""
     url = item["url"]
-    prompt = (item.get("extract_prompt") or "").strip()
-    if prompt:
-        body = t_chromium(url) or t_cffi(url) or t_plain(url)
-        if not body:
-            return None
-        r = extract_via_model(body, url, prompt, item.get("last_price"))
-        return (r[0], r[1], "model") if r else None
     methods = transports(cfg)
     pref = item.get("method")
     methods.sort(key=lambda m: 0 if m[0] == pref else 1)
@@ -669,7 +563,6 @@ def build_text(rows):
     # only ▲/▼ when the price actually moved.
     lines = ["\U0001F6CD️ Цены — " + now_tallinn().strftime("%d.%m %H:%M")]
     marks = {"up": " ▲", "down": " ▼", "same": "", "new": "", "fail": ""}
-    has_model = False
     for r in rows:
         name = ("[%s](%s)" % (r["title"], r["url"])) if r.get("url") else r["title"]
         if r["price"] is None:
@@ -678,13 +571,7 @@ def build_text(rows):
         line = "• " + name + " — " + fmt_money(r["price"], r["currency"]) + marks[r["change"]]
         if r["change"] in ("up", "down") and r["prev"] is not None:
             line += " (было " + fmt_money(r["prev"], r["currency"]) + ")"
-        if r.get("method") == "model":
-            line += " *"
-            has_model = True
         lines.append(line)
-    if has_model:
-        lines.append("")
-        lines.append("* цена распознана моделью со страницы")
     return "\n".join(lines)
 
 # --------------------------------------------------------------- openclaw glue
@@ -713,7 +600,6 @@ def send_telegram(cfg, text):
 
 def cmd_check(args):
     cfg = load_config()
-    sweep_throwaway_sessions()
     as_json = "--json" in args
     do_send = "--send" in args
     only = args[args.index("--only") + 1] if "--only" in args else None
@@ -842,27 +728,6 @@ def cmd_set(args):
             hist.append({"t": now_iso, "price": price}); del hist[:-60]
             save_config(cfg)
             print("set %s -> %s" % (iid, fmt_money(price, i.get("currency", "EUR"))))
-            return OK
-    return fail(E_NOTFOUND, "not_found", "нет товара с id: " + iid)
-
-def cmd_prompt(args):
-    # prompt <id> <текст подсказки...>   |   prompt <id> --clear
-    if len(args) < 2:
-        return fail(E_INPUT, "usage",
-                    'prompt <id> "<подсказка>"  |  prompt <id> --clear')
-    iid = args[0]
-    cfg = load_config()
-    for i in cfg.get("items", []):
-        if i.get("id") == iid:
-            if args[1] == "--clear":
-                i.pop("extract_prompt", None)
-                save_config(cfg)
-                print("очищен extract_prompt у %s — снова детерминированное извлечение" % iid)
-                return OK
-            i["extract_prompt"] = " ".join(args[1:]).strip()
-            save_config(cfg)
-            print("extract_prompt задан у %s — цену будет извлекать модель.\n"
-                  "Проверь: check --only %s" % (iid, iid))
             return OK
     return fail(E_NOTFOUND, "not_found", "нет товара с id: " + iid)
 
@@ -1015,7 +880,7 @@ def main(argv):
         return cmd_help(argv)
     cmd, rest = argv[0], argv[1:]
     table = {"help": cmd_help, "doctor": cmd_doctor, "check": cmd_check, "add": cmd_add,
-             "set": cmd_set, "prompt": cmd_prompt, "list": cmd_list, "methods": cmd_methods,
+             "set": cmd_set, "list": cmd_list, "methods": cmd_methods,
              "remove": cmd_remove, "schedule": cmd_schedule,
              "enable": lambda a: cmd_toggle(a, True),
              "disable": lambda a: cmd_toggle(a, False)}
