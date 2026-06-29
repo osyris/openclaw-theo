@@ -365,7 +365,15 @@ render();
       const el=document.querySelector(sel);
       if(el && el.children && el.children.length>24) return el;
     }
-    const all=[...document.querySelectorAll('main section, main div, section, .container > div')];
+    const all=[...document.querySelectorAll('main section, main div, section, .container > div'),
+  {
+    name: 'Botavikos Hydrating Hair Mask',
+    desc: 'Увлажняющая маска для сухих и ослабленных волос с гиалуроновой кислотой.',
+    fullDesc: 'Botavikos Hydrating Hair Mask — увлажняющая маска для сухих и ослабленных волос. В составе гиалуроновая кислота, заявлено 98.5% натуральных ингредиентов. Подходит как вариант для мягкого увлажнения и восстановления более сухого полотна волос.',
+    img: 'img/botavikos-hydrating-hair-mask.jpg',
+    source: 'скрин'
+  }
+];
     return all.find(el=>el.children && el.children.length>24) || null;
   };
 
