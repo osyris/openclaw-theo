@@ -119,6 +119,10 @@ SESSIONS_DIR = os.environ.get(
 JOB_NAME = "Цены 08:00 и 20:00"
 SCHED_EXPR = "0 8,20 * * *"
 SCHED_TZ = "Europe/Tallinn"
+# Agent-turn ceiling for the scheduled check. A full check renders several JS
+# pages and makes a model call per extract_prompt item, so it runs a few minutes;
+# keep generous headroom (real long-term fix for growth is parallel fetches).
+SCHED_TIMEOUT = "360"
 
 # Runtime health of the ScrapingBee tier, surfaced in `check` output.
 SB_STATUS = {"tried": False, "ok": False, "reason": None}
@@ -984,7 +988,7 @@ def cmd_schedule(args):
                "python3 %s check --send" % SCRIPT_PATH)
         rc, out, err = oc(["cron", "add", "--name", JOB_NAME, "--cron", SCHED_EXPR,
                            "--tz", SCHED_TZ, "--session", "isolated", "--no-deliver",
-                           "--exact", "--timeout-seconds", "180", "--message", msg],
+                           "--exact", "--timeout-seconds", SCHED_TIMEOUT, "--message", msg],
                           timeout=60)
         if rc != 0:
             return fail(E_NET, "cron_add_failed", (err or out).strip()[:300])

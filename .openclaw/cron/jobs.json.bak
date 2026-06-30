@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1782270009256,
+      "updatedAtMs": 1782702008802,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,10 +25,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1782356400000,
-        "lastRunAtMs": 1782270000015,
+        "nextRunAtMs": 1782788400000,
+        "lastRunAtMs": 1782702000013,
         "lastStatus": "ok",
-        "lastDurationMs": 9241,
+        "lastDurationMs": 8789,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -42,7 +42,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1782277220775,
+      "updatedAtMs": 1782709221514,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -60,14 +60,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782363600000,
-        "lastRunAtMs": 1782277200019,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 20756,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1782795600000,
+        "lastRunAtMs": 1782709200008,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 21506,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 5,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
@@ -109,7 +109,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1782239437072,
+      "updatedAtMs": 1782671450566,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -126,14 +126,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1782325800000,
-        "lastRunAtMs": 1782239400018,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 37054,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1782757800000,
+        "lastRunAtMs": 1782671400014,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 50552,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 4,
+        "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
     {
