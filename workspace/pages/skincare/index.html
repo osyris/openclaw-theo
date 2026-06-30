@@ -505,7 +505,17 @@ render();
       const el=document.querySelector(sel);
       if(el && el.children && el.children.length>24) return el;
     }
-    const all=[...document.querySelectorAll('main section, main div, section, .container > div')];
+    const all=[...document.querySelectorAll('main section, main div, section, .container > div'),
+  {
+    name: 'Dr. Melaxin Peel Shot P5',
+    desc: 'Мягкий пилинг, бережный к кожному барьеру, но дающий очень красивую кожу после использования.',
+    fullDesc: 'Dr. Melaxin Peel Shot P5 — мягкий пилинг, который по отзыву очень бережно относится к кожному барьеру, но при этом заметно улучшает вид кожи после использования. Отмечен как сильная рекомендация. На скрине также отмечен @healthyskin.ee.',
+    img: 'img/dr-melaxin-peel-shot-p5.jpg',
+    imgs: [],
+    price: '',
+    source: 'Скрин, @healthyskin.ee'
+  }
+];
     return all.find(el=>el.children && el.children.length>24) || null;
   };
 
