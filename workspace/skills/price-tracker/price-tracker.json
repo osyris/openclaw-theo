@@ -13,7 +13,7 @@
       "currency": "EUR",
       "baseline_price": 129.99,
       "last_price": 94.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -129,6 +129,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 94.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 94.99
         }
       ],
       "last_status": "ok"
@@ -140,7 +144,7 @@
       "currency": "EUR",
       "baseline_price": 69.99,
       "last_price": 69.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "hint": null,
       "enabled": true,
       "method": "cffi",
@@ -256,6 +260,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 69.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 69.99
         }
       ],
       "last_status": "ok"
@@ -267,7 +275,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -375,6 +383,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -386,7 +398,7 @@
       "currency": "EUR",
       "baseline_price": 59.99,
       "last_price": 59.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "hint": null,
       "enabled": true,
       "method": "chromium",
@@ -498,6 +510,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 59.99
         }
       ],
       "last_status": "ok"
@@ -509,7 +525,7 @@
       "currency": "EUR",
       "baseline_price": 159.0,
       "last_price": 159.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -565,6 +581,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 159.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 159.0
         }
       ]
     },
@@ -575,7 +595,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "model",
       "enabled": true,
       "last_status": "ok",
@@ -635,6 +655,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 200.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 200.0
         }
       ],
       "extract_prompt": "Страница товара Massimo Dutti. Возьми текущую цену товара в евро; если есть скидка — итоговую цену со скидкой."
@@ -646,7 +670,7 @@
       "currency": "EUR",
       "baseline_price": 40.0,
       "last_price": 40.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "model",
       "enabled": true,
       "last_status": "ok",
@@ -706,6 +730,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 40.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 40.0
         }
       ],
       "extract_prompt": "Страница товара Massimo Dutti. Возьми текущую цену товара в евро; если есть скидка — итоговую цену со скидкой."
@@ -717,7 +745,7 @@
       "currency": "EUR",
       "baseline_price": 150.0,
       "last_price": 150.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -773,6 +801,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 150.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 150.0
         }
       ]
     },
@@ -783,7 +815,7 @@
       "currency": "EUR",
       "baseline_price": 79.99,
       "last_price": 59.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "model",
       "enabled": true,
       "last_status": "ok",
@@ -847,6 +879,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 59.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 59.99
         }
       ],
       "extract_prompt": "Страница товара Mango. Возьми текущую цену товара в евро; если есть скидка — цену со скидкой."
@@ -858,7 +894,7 @@
       "currency": "EUR",
       "baseline_price": 49.99,
       "last_price": 49.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "model",
       "enabled": true,
       "last_status": "ok",
@@ -914,6 +950,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 49.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 49.99
         }
       ],
       "extract_prompt": "Страница товара Mango. Возьми текущую цену товара в евро; если есть скидка — цену со скидкой."
@@ -925,7 +965,7 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
@@ -937,7 +977,7 @@
       "currency": "EUR",
       "baseline_price": 119.0,
       "last_price": 119.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "cffi",
       "enabled": true,
       "last_status": "ok",
@@ -985,6 +1025,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 119.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 119.0
         }
       ]
     },
@@ -995,7 +1039,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "social",
       "enabled": true,
       "last_status": "ok",
@@ -1042,6 +1086,10 @@
         },
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
+          "price": 200.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
           "price": 200.0
         }
       ]
@@ -1053,7 +1101,7 @@
       "currency": "EUR",
       "baseline_price": 200.0,
       "last_price": 200.0,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "social",
       "enabled": true,
       "last_status": "ok",
@@ -1101,6 +1149,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 200.0
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 200.0
         }
       ]
     },
@@ -1111,7 +1163,7 @@
       "currency": "EUR",
       "baseline_price": null,
       "last_price": null,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": null,
       "enabled": true,
       "last_status": "failed"
@@ -1123,7 +1175,7 @@
       "currency": "EUR",
       "baseline_price": 23.99,
       "last_price": 23.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -1155,6 +1207,10 @@
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
           "price": 23.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
+          "price": 23.99
         }
       ]
     },
@@ -1165,7 +1221,7 @@
       "currency": "EUR",
       "baseline_price": 24.99,
       "last_price": 24.99,
-      "last_checked": "2026-07-01T17:00:06.736660+00:00",
+      "last_checked": "2026-07-02T05:00:52.024775+00:00",
       "method": "chromium",
       "enabled": true,
       "last_status": "ok",
@@ -1200,6 +1256,10 @@
         },
         {
           "t": "2026-07-01T17:00:06.736660+00:00",
+          "price": 24.99
+        },
+        {
+          "t": "2026-07-02T05:00:52.024775+00:00",
           "price": 24.99
         }
       ]
