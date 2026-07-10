@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1782702008802,
+      "updatedAtMs": 1783593762937,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -19,20 +19,21 @@
         "kind": "agentTurn",
         "message": "Run this exact bash command verbatim and report only its final output line: cd /data && git add -A && if git diff --cached --quiet; then echo No-changes-to-commit; else git commit -m \"Daily backup $(date -u +%F)\"; fi && git push origin main && echo Done. Do NOT announce anything to any channel.",
         "timeoutSeconds": 120,
-        "model": "claude-opus-4-6"
+        "model": "openai-codex/gpt-5.4"
       },
       "delivery": {
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1782788400000,
-        "lastRunAtMs": 1782702000013,
-        "lastStatus": "ok",
-        "lastDurationMs": 8789,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false
+        "nextRunAtMs": 1783652400000,
+        "lastRunAtMs": 1783566000016,
+        "lastStatus": "error",
+        "lastDurationMs": 338,
+        "consecutiveErrors": 2,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastErrorReason": "model_not_found",
+        "lastError": "Error: All models failed (2): openai-codex/claude-opus-4-6: Unknown model: openai-codex/claude-opus-4-6 (model_not_found) | openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -42,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1782709221514,
+      "updatedAtMs": 1783593760187,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -54,20 +55,23 @@
         "kind": "agentTurn",
         "message": "Ежедневная проверка ДР на сегодня (08:00, Europe/Tallinn).\n\n1) Из файла /data/workspace/memory/birthdays.md найди записи с сегодняшними днём и месяцем.\n2) Из iCloud Calendar: выполни\ncd /data/workspace/skills/icloud-calendar && TODAY=$(date +%F) && uv run --with caldav --with vobject python3 ical.py list --from \"$TODAY\" --to \"$TODAY\"\n3) В iCloud учитывай только персональные дни рождения (ключевые слова: 'день рождения', 'birthday', 'др', 'sünnipäev', 'bday') и только если явно указано имя человека.\n4) Объедини без дублей.\n\nКРИТИЧНО:\n- Ничего не выдумывай.\n- Всегда отправляй сообщение каждый день.\n\nФормат вывода:\n- Если есть совпадения: 🎂 Сегодня ДР у [имя]! Не забудь поздравить!\n- Если совпадений нет: 🎂 Сегодня дней рождения не найдено.",
         "timeoutSeconds": 420,
-        "model": "claude-opus-4-6"
+        "model": "openai-codex/gpt-5.4"
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1782795600000,
-        "lastRunAtMs": 1782709200008,
+        "nextRunAtMs": 1783659600000,
+        "lastRunAtMs": 1783573200015,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 21506,
+        "lastDurationMs": 343,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 5,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 15,
+        "lastErrorReason": "model_not_found",
+        "lastError": "Error: All models failed (2): openai-codex/claude-opus-4-6: Unknown model: openai-codex/claude-opus-4-6 (model_not_found) | openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -109,7 +113,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1782671450566,
+      "updatedAtMs": 1783593757306,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -120,20 +124,23 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Вечерний чекпоинт (21:30 Эстония). СТРОГОЕ ПРАВИЛО: показывай ТОЛЬКО то, что относится к СЕГОДНЯШНЕМУ дню. ЗАПРЕЩЕНО упоминать завтра, послезавтра, будущие дни, ближайшие дедлайны. НИКАКИХ фраз типа 'завтра', 'послезавтра', 'ближайшие', 'через N дней'. Только СЕГОДНЯ.\n\nПроверь:\n1. iCloud Calendar — события СЕГОДНЯ\n2. Cron jobs (cron list) — напоминания, которые сработали СЕГОДНЯ\n3. Tele2 Tracker (/data/workspace/app/tele2/tele2.json) — ТОЛЬКО триалы с дедлайном СЕГОДНЯ (сравни дату дедлайна с сегодняшней датой, если не совпадает — НЕ упоминай)\n4. memory/ файлы — задачи с СЕГОДНЯШНЕЙ датой (ищи в /data/workspace/memory/)\n5. Weekly Planner — задачи на СЕГОДНЯ (источник: /data/workspace/app/planner/index.html)\n\nФормат: короткий, с эмодзи ✅/❌/⚠️. На русском, тепло и по делу. Если на сегодня ничего нет — так и скажи: 'Сегодня всё чисто! Спокойного вечера 🌙'",
-        "model": "claude-opus-4-6"
+        "model": "openai-codex/gpt-5.4"
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1782757800000,
-        "lastRunAtMs": 1782671400014,
+        "nextRunAtMs": 1783621800000,
+        "lastRunAtMs": 1783535400020,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 50552,
+        "lastDurationMs": 367,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 14,
+        "lastErrorReason": "model_not_found",
+        "lastError": "Error: All models failed (2): openai-codex/claude-opus-4-6: Unknown model: openai-codex/claude-opus-4-6 (model_not_found) | openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
       }
     },
     {
@@ -296,6 +303,41 @@
         "lastError": "Error: Outbound not configured for channel: telegram",
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "fcc0b730-8ae2-471d-8632-35de18850593",
+      "name": "Цены 08:00 и 20:00",
+      "enabled": true,
+      "createdAtMs": 1782721821024,
+      "updatedAtMs": 1783573200581,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,20 * * *",
+        "tz": "Europe/Tallinn",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Выполни ровно эту команду и больше ничего, ответ не пересылай: python3 /data/workspace/skills/price-tracker/price_tracker.py check --send",
+        "timeoutSeconds": 360
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1783616400000,
+        "lastRunAtMs": 1783573200015,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 566,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 4,
+        "lastErrorReason": "auth",
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate."
       }
     }
   ]
