@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1783593762937,
+      "updatedAtMs": 1783652413599,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1783652400000,
-        "lastRunAtMs": 1783566000016,
-        "lastStatus": "error",
-        "lastDurationMs": 338,
-        "consecutiveErrors": 2,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "lastErrorReason": "model_not_found",
-        "runningAtMs": 1783652400005
+        "nextRunAtMs": 1783738800000,
+        "lastRunAtMs": 1783652400013,
+        "lastStatus": "ok",
+        "lastDurationMs": 13586,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "runningAtMs": 1783738800004
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1783593760187,
+      "updatedAtMs": 1783659623574,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -63,15 +63,14 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1783659600000,
-        "lastRunAtMs": 1783573200015,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 343,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 15,
-        "lastErrorReason": "model_not_found",
-        "lastError": "Error: All models failed (2): openai-codex/claude-opus-4-6: Unknown model: openai-codex/claude-opus-4-6 (model_not_found) | openai-codex/gpt-5.4: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate. (auth)"
+        "nextRunAtMs": 1783746000000,
+        "lastRunAtMs": 1783659600013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 23561,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -113,7 +112,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1783621842143,
+      "updatedAtMs": 1783708245014,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -132,11 +131,11 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1783708200000,
-        "lastRunAtMs": 1783621800012,
+        "nextRunAtMs": 1783794600000,
+        "lastRunAtMs": 1783708200011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 42131,
+        "lastDurationMs": 45003,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -309,27 +308,33 @@
       "name": "Цены 08:00 и 20:00",
       "enabled": true,
       "createdAtMs": 1782721821024,
-      "updatedAtMs": 1783616494717,
+      "updatedAtMs": 1783702924654,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
         "tz": "Europe/Tallinn",
         "staggerMs": 0
       },
-      "sessionTarget": "main",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "kind": "systemEvent",
-        "text": "Это автоматическая проверка цен по расписанию (08:00 и 20:00 по Europe/Tallinn). Выполни ровно эту команду и больше ничего: python3 /data/workspace/skills/price-tracker/price_tracker.py check --send . Не пересылай служебные пояснения, если команда сработала."
+        "kind": "agentTurn",
+        "message": "Выполни ровно эту команду и больше ничего, ответ не пересылай: python3 /data/workspace/skills/price-tracker/price_tracker.py check --send",
+        "timeoutSeconds": 360
       },
       "state": {
-        "nextRunAtMs": 1783659600000,
-        "lastRunAtMs": 1783616400013,
+        "nextRunAtMs": 1783746000000,
+        "lastRunAtMs": 1783702800015,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 94704,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "lastDurationMs": 124639,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
       }
     }
   ]
