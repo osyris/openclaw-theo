@@ -2141,6 +2141,18 @@
       "method": "cffi",
       "enabled": true,
       "last_status": "ok"
+    },
+    {
+      "id": "xiaomi-self-install-smart-lock",
+      "url": "https://mi-home.ee/products/xiaomi-self-install-smart-lock",
+      "title": "Xiaomi Self-Install Smart Lock",
+      "currency": "EUR",
+      "baseline_price": 129.99,
+      "last_price": 129.99,
+      "last_checked": "2026-07-15T15:10:10.921116+00:00",
+      "method": "cffi",
+      "enabled": true,
+      "last_status": "ok"
     }
   ]
 }
