@@ -149,3 +149,7 @@
 2026-07-16T12:00:13Z level=ok hours=42.2 (no send)
 2026-07-16T18:00:14Z level=ok hours=36.2 (no send)
 2026-07-17T00:00:16Z level=ok hours=30.2 (no send)
+2026-07-17T06:00:13Z level=ok hours=24.2 (no send)
+2026-07-17T12:00:17Z level=warn hours=18.2 sent=True
+2026-07-17T18:00:12Z level=warn hours=12.2 (no send)
+2026-07-18T00:00:13Z level=warn hours=6.2 (no send)
