@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Гордость</title>
+  <desc id="desc">Минималистичная временная обложка для сериала «Гордость».</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b1716"/>
+      <stop offset="55%" stop-color="#6a2f28"/>
+      <stop offset="100%" stop-color="#d8b48a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4df" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#fff4df" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <circle cx="770" cy="310" r="230" fill="#f3d8b5" opacity="0.18"/>
+  <circle cx="220" cy="1140" r="320" fill="#ffffff" opacity="0.05"/>
+  <rect x="118" y="132" width="764" height="1236" rx="28" fill="none" stroke="rgba(255,245,230,0.35)"/>
+  <rect x="190" y="210" width="620" height="2" fill="url(#glow)"/>
+  <text x="500" y="625" text-anchor="middle" fill="#fff6eb" font-size="182" font-family="Georgia, 'Times New Roman', serif" letter-spacing="8">ГОРДОСТЬ</text>
+  <text x="500" y="735" text-anchor="middle" fill="#f0d5ba" font-size="42" font-family="Inter, Arial, sans-serif" letter-spacing="14">СЕРИАЛ</text>
+  <text x="500" y="805" text-anchor="middle" fill="#e7c8ab" font-size="28" font-family="Inter, Arial, sans-serif" letter-spacing="7">временная нейтральная обложка</text>
+  <text x="500" y="1245" text-anchor="middle" fill="#fff3e3" font-size="34" font-family="Inter, Arial, sans-serif" letter-spacing="10">2026</text>
+</svg>

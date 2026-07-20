@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Фейерверки днём</title>
+  <desc id="desc">Минималистичная временная обложка для фильма «Фейерверки днём».</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff2ff"/>
+      <stop offset="58%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#ffe0c2"/>
+    </linearGradient>
+    <radialGradient id="burst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff8a3d" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#sky)"/>
+  <circle cx="230" cy="250" r="110" fill="url(#burst)"/>
+  <circle cx="770" cy="280" r="140" fill="url(#burst)"/>
+  <circle cx="650" cy="430" r="88" fill="url(#burst)" opacity="0.8"/>
+  <circle cx="340" cy="430" r="78" fill="url(#burst)" opacity="0.75"/>
+  <g stroke="#8e6cd1" stroke-width="5" stroke-linecap="round" opacity="0.55">
+    <path d="M230 250 l-95 0 M230 250 l95 0 M230 250 l0 -95 M230 250 l0 95 M230 250 l-68 -68 M230 250 l68 -68 M230 250 l-68 68 M230 250 l68 68"/>
+    <path d="M770 280 l-120 0 M770 280 l120 0 M770 280 l0 -120 M770 280 l0 120 M770 280 l-84 -84 M770 280 l84 -84 M770 280 l-84 84 M770 280 l84 84"/>
+    <path d="M650 430 l-70 0 M650 430 l70 0 M650 430 l0 -70 M650 430 l0 70 M650 430 l-50 -50 M650 430 l50 -50 M650 430 l-50 50 M650 430 l50 50"/>
+    <path d="M340 430 l-60 0 M340 430 l60 0 M340 430 l0 -60 M340 430 l0 60 M340 430 l-42 -42 M340 430 l42 -42 M340 430 l-42 42 M340 430 l42 42"/>
+  </g>
+  <rect x="118" y="132" width="764" height="1236" rx="28" fill="none" stroke="rgba(80,85,110,0.25)"/>
+  <text x="500" y="760" text-anchor="middle" fill="#3f2d56" font-size="124" font-family="Georgia, 'Times New Roman', serif" letter-spacing="5">ФЕЙЕРВЕРКИ</text>
+  <text x="500" y="882" text-anchor="middle" fill="#3f2d56" font-size="124" font-family="Georgia, 'Times New Roman', serif" letter-spacing="5">ДНЁМ</text>
+  <text x="500" y="980" text-anchor="middle" fill="#6d6284" font-size="28" font-family="Inter, Arial, sans-serif" letter-spacing="8">временная нейтральная обложка</text>
+  <text x="500" y="1245" text-anchor="middle" fill="#54485e" font-size="34" font-family="Inter, Arial, sans-serif" letter-spacing="10">2026</text>
+</svg>

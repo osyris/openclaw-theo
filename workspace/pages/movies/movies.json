@@ -1281,7 +1281,7 @@
       "Romance",
       "Comedy"
     ],
-    "poster": "img/gordost.jpg",
+    "poster": "img/gordost.svg",
     "status": "watchlist",
     "liked": false,
     "type": "series"
@@ -1330,7 +1330,7 @@
       "Drama",
       "Comedy"
     ],
-    "poster": "img/feyerverki-dnem.jpeg",
+    "poster": "img/feyerverki-dnem.svg",
     "status": "watchlist",
     "liked": false,
     "type": "movie"
