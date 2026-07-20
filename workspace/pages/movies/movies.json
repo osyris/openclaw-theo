@@ -1234,5 +1234,117 @@
     "status": "watched",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Отпечатки",
+    "year": 2026,
+    "genre": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "poster": "img/otpechatki.webp",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Резервация",
+    "year": 2026,
+    "genre": [
+      "Sci-Fi",
+      "Thriller",
+      "Mystery"
+    ],
+    "poster": "img/rezervaciya.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Майор Гром: Игра",
+    "year": 2024,
+    "genre": [
+      "Action",
+      "Adventure",
+      "Crime"
+    ],
+    "poster": "img/major-grom-igra.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Гордость",
+    "year": 2026,
+    "genre": [
+      "Romance",
+      "Comedy"
+    ],
+    "poster": "img/gordost.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Радар",
+    "year": 2026,
+    "genre": [
+      "Sci-Fi",
+      "Thriller",
+      "Adventure"
+    ],
+    "poster": "img/radar.webp",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Емельяненко",
+    "year": 2026,
+    "genre": [
+      "Documentary",
+      "Biography",
+      "Sport"
+    ],
+    "poster": "img/emelyanenko.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Космос засыпает",
+    "year": 2026,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/kosmos-zasypaet.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Фейерверки днём",
+    "year": 2026,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "poster": "img/feyerverki-dnem.jpeg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie"
+  },
+  {
+    "title": "Коммерсант",
+    "year": 2026,
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "poster": "img/kommersant.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
