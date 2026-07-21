@@ -54,7 +54,7 @@
       "Drama"
     ],
     "poster": "img/posle-fishera.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series",
     "description": "Российский криминальный триллер — продолжение серии «После Фишера». Детектив расследует серию загадочных преступлений, выходя на след опасного маньяка.",
@@ -1282,7 +1282,7 @@
       "Comedy"
     ],
     "poster": "img/gordost.jpg",
-    "status": "watchlist",
+    "status": "watched",
     "liked": false,
     "type": "series"
   },
