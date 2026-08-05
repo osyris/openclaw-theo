@@ -1357,5 +1357,18 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Хрустальный",
+    "year": 2021,
+    "genre": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "poster": "img/hrustalnyy.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
