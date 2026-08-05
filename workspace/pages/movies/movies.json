@@ -1370,5 +1370,65 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "Нулевой пациент",
+    "year": 2022,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/nulevoy-pacient.png",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Золотое дно",
+    "year": 2024,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/zolotoe-dno.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Химера",
+    "year": 2022,
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "poster": "img/himera.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Вегетация",
+    "year": 2026,
+    "genre": [
+      "Sci-Fi",
+      "Drama"
+    ],
+    "poster": "img/vegetaciya.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
+  },
+  {
+    "title": "Райцентр",
+    "year": 2023,
+    "genre": [
+      "Comedy",
+      "Crime",
+      "Mystery"
+    ],
+    "poster": "img/raycentr.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
