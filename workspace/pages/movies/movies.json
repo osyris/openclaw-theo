@@ -1346,5 +1346,16 @@
     "status": "watchlist",
     "liked": false,
     "type": "movie"
+  },
+  {
+    "title": "Большая фарма",
+    "year": 2026,
+    "genre": [
+      "Drama"
+    ],
+    "poster": "img/bolshaya-farma.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "series"
   }
 ]
