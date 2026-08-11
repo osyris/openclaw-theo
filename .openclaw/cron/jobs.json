@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1786244400288,
+      "updatedAtMs": 1786330813762,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1786330800000,
-        "lastRunAtMs": 1786244400015,
-        "lastStatus": "error",
-        "lastDurationMs": 273,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "lastErrorReason": "auth",
-        "runningAtMs": 1786330800002
+        "nextRunAtMs": 1786417200000,
+        "lastRunAtMs": 1786330800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 13756,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false,
+        "runningAtMs": 1786417200005
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1786251600351,
+      "updatedAtMs": 1786338027629,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -63,15 +63,14 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1786338000000,
-        "lastRunAtMs": 1786251600012,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 339,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
-        "lastErrorReason": "auth"
+        "nextRunAtMs": 1786424400000,
+        "lastRunAtMs": 1786338000009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 27620,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -113,7 +112,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1786300264232,
+      "updatedAtMs": 1786386652490,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -132,11 +131,11 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1786386600000,
-        "lastRunAtMs": 1786300200008,
+        "nextRunAtMs": 1786473000000,
+        "lastRunAtMs": 1786386600011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 64224,
+        "lastDurationMs": 52479,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -309,7 +308,7 @@
       "name": "Цены 08:00 и 20:00",
       "enabled": true,
       "createdAtMs": 1782721821024,
-      "updatedAtMs": 1786294916724,
+      "updatedAtMs": 1786381315392,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -324,11 +323,11 @@
         "timeoutSeconds": 360
       },
       "state": {
-        "nextRunAtMs": 1786338000000,
-        "lastRunAtMs": 1786294800009,
+        "nextRunAtMs": 1786424400000,
+        "lastRunAtMs": 1786381200014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 116715,
+        "lastDurationMs": 115378,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
