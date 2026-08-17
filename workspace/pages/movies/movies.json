@@ -1441,5 +1441,161 @@
     "status": "watchlist",
     "liked": false,
     "type": "series"
+  },
+  {
+    "title": "The Big Short",
+    "titleRu": "Игра на понижение",
+    "titleEn": "The Big Short",
+    "year": 2015,
+    "genre": [
+      "Drama",
+      "Comedy",
+      "Biography"
+    ],
+    "poster": "img/the-big-short.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "О нескольких финансистах, которые заранее увидели крах ипотечного рынка США и решили сыграть против системы. Остроумная драма Адама Маккея с Кристианом Бейлом, Стивом Кареллом и Райаном Гослингом."
+  },
+  {
+    "title": "The Longest Ride",
+    "titleRu": "Дальняя дорога",
+    "titleEn": "The Longest Ride",
+    "year": 2015,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "poster": "img/the-longest-ride.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Романтическая драма по Николасу Спарксу о любви молодой пары, чья история неожиданно переплетается с воспоминаниями пожилого мужчины о его большой любви."
+  },
+  {
+    "title": "Stonehearst Asylum",
+    "titleRu": "Обитель проклятых",
+    "titleEn": "Stonehearst Asylum",
+    "year": 2014,
+    "genre": [
+      "Thriller",
+      "Mystery",
+      "Drama"
+    ],
+    "poster": "img/stonehearst-asylum.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Молодой врач приезжает на практику в удалённую психиатрическую клинику и постепенно понимает, что в её стенах скрывается опасная тайна. По мотивам рассказа Эдгара Аллана По."
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "titleRu": "Волк с Уолл-стрит",
+    "titleEn": "The Wolf of Wall Street",
+    "year": 2013,
+    "genre": [
+      "Biography",
+      "Comedy",
+      "Crime"
+    ],
+    "poster": "img/the-wolf-of-wall-street.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "История взлёта и падения брокера Джордана Белфорта — роскошь, жадность, мошенничество и безумный ритм Уолл-стрит в фильме Мартина Скорсезе."
+  },
+  {
+    "title": "The Secret Life of Walter Mitty",
+    "titleRu": "Невероятная жизнь Уолтера Митти",
+    "titleEn": "The Secret Life of Walter Mitty",
+    "year": 2013,
+    "genre": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/the-secret-life-of-walter-mitty.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Скромный сотрудник журнала, привыкший жить в мечтах, отправляется в настоящее большое путешествие. Вдохновляющая история о смелости и выходе за рамки привычного."
+  },
+  {
+    "title": "The Book Thief",
+    "titleRu": "Воровка книг",
+    "titleEn": "The Book Thief",
+    "year": 2013,
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "poster": "img/the-book-thief.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Во время Второй мировой войны девочка находит утешение в книгах и словах, пока вокруг рушится мир. Экранизация романа Маркуса Зузака."
+  },
+  {
+    "title": "The Great Gatsby",
+    "titleRu": "Великий Гэтсби",
+    "titleEn": "The Great Gatsby",
+    "year": 2013,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "poster": "img/the-great-gatsby.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Ник Каррауэй знакомится с таинственным миллионером Джеем Гэтсби, чьи роскошные вечеринки скрывают болезненную одержимость прошлым и великой любовью."
+  },
+  {
+    "title": "Life of Pi",
+    "titleRu": "Жизнь Пи",
+    "titleEn": "Life of Pi",
+    "year": 2012,
+    "genre": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "poster": "img/life-of-pi.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Юный Пи после кораблекрушения остаётся в спасательной шлюпке вместе с бенгальским тигром. Зрелищная притча Энга Ли о вере, выживании и силе истории."
+  },
+  {
+    "title": "Les Misérables",
+    "titleRu": "Отверженные",
+    "titleEn": "Les Misérables",
+    "year": 2012,
+    "genre": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "poster": "img/les-miserables.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Музыкальная экранизация классического романа Виктора Гюго о Жане Вальжане, милосердии, любви и революционной Франции XIX века."
+  },
+  {
+    "title": "The Rum Diary",
+    "titleRu": "Ромовый дневник",
+    "titleEn": "The Rum Diary",
+    "year": 2011,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "poster": "img/the-rum-diary.jpg",
+    "status": "watchlist",
+    "liked": false,
+    "type": "movie",
+    "description": "Журналист Пол Кэмп бросает Нью-Йорк и едет в Пуэрто-Рико, где погружается в алкоголь, хаос и сомнительные авантюры. Экранизация романа Хантера С. Томпсона с Джонни Деппом."
   }
 ]
