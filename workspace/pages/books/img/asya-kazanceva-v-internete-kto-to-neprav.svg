@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+<rect width="600" height="900" fill="#2563eb"/>
+<rect x="28" y="28" width="544" height="844" rx="24" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.28)"/>
+<text x="52" y="120" fill="white" font-family="Inter,Arial,sans-serif" font-size="50" font-weight="700">В интернете
+кто-то неправ!</text>
+<text x="52" y="780" fill="white" font-family="Inter,Arial,sans-serif" font-size="30" opacity="0.9">Ася Казанцева</text>
+</svg>
