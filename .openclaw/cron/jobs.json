@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1787022012388,
+      "updatedAtMs": 1787194800339,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1787108400000,
-        "lastRunAtMs": 1787022000012,
-        "lastStatus": "ok",
-        "lastDurationMs": 12376,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDeliveryStatus": "not-delivered",
-        "lastDelivered": false,
-        "runningAtMs": 1787108400005
+        "nextRunAtMs": 1787281200000,
+        "lastRunAtMs": 1787194800015,
+        "lastStatus": "error",
+        "lastDurationMs": 324,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastErrorReason": "auth",
+        "runningAtMs": 1787281200004
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1787029222185,
+      "updatedAtMs": 1787202000361,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -63,14 +63,15 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1787115600000,
-        "lastRunAtMs": 1787029200009,
+        "nextRunAtMs": 1787288400000,
+        "lastRunAtMs": 1787202000012,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 22176,
+        "lastDurationMs": 349,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 5,
-        "lastError": "Error: Outbound not configured for channel: telegram"
+        "consecutiveErrors": 7,
+        "lastError": "FailoverError: OAuth token refresh failed for openai-codex: Failed to refresh OAuth token for openai-codex. Please try again or re-authenticate.",
+        "lastErrorReason": "auth"
       }
     },
     {
@@ -112,7 +113,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1787077838859,
+      "updatedAtMs": 1787250654130,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -131,13 +132,13 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1787164200000,
-        "lastRunAtMs": 1787077800014,
+        "nextRunAtMs": 1787337000000,
+        "lastRunAtMs": 1787250600021,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 38845,
+        "lastDurationMs": 54109,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 6,
+        "consecutiveErrors": 8,
         "lastError": "Error: Outbound not configured for channel: telegram"
       }
     },
@@ -308,7 +309,7 @@
       "name": "Цены 08:00 и 20:00",
       "enabled": true,
       "createdAtMs": 1782721821024,
-      "updatedAtMs": 1787072477377,
+      "updatedAtMs": 1787245273469,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -323,11 +324,11 @@
         "timeoutSeconds": 360
       },
       "state": {
-        "nextRunAtMs": 1787115600000,
-        "lastRunAtMs": 1787072400011,
+        "nextRunAtMs": 1787288400000,
+        "lastRunAtMs": 1787245200021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 77366,
+        "lastDurationMs": 73448,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false

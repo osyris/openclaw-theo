@@ -281,3 +281,11 @@
 2026-08-18T12:00:13Z level=warn hours=21.8 sent=True
 2026-08-18T18:00:09Z level=warn hours=15.8 (no send)
 2026-08-19T00:00:11Z level=warn hours=9.8 (no send)
+2026-08-19T06:00:08Z level=warn hours=3.8 (no send)
+2026-08-19T12:00:14Z level=expired hours=-2.2 sent=True
+2026-08-19T18:00:08Z level=expired hours=-8.2 (no send)
+2026-08-20T00:00:11Z level=expired hours=-14.2 (no send)
+2026-08-20T06:00:09Z level=expired hours=-20.2 (no send)
+2026-08-20T12:00:14Z level=expired hours=-26.2 sent=True
+2026-08-20T18:00:14Z level=ok hours=235.3 sent=True
+2026-08-21T00:00:10Z level=ok hours=229.3 (no send)
