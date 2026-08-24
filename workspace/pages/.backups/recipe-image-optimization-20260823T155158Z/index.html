@@ -323,45 +323,12 @@ let recipes = [];
 let favorites = JSON.parse(localStorage.getItem('recipe-favorites') || '{}');
 let currentCat = 'all';
 let searchQuery = '';
-let cardImageObserver = null;
 
 async function init() {
   const res = await fetch('recipes.json');
   recipes = await res.json();
   render();
   setupEvents();
-}
-
-function thumbnailFor(image) {
-  if (!image) return '';
-  const slash = image.lastIndexOf('/');
-  const directory = slash >= 0 ? image.slice(0, slash + 1) : '';
-  const filename = (slash >= 0 ? image.slice(slash + 1) : image).replace(/\.[^.]+$/, '.jpg');
-  return `${directory}thumbs/${filename}`;
-}
-
-function setupCardImageLoading() {
-  if (cardImageObserver) cardImageObserver.disconnect();
-  const deferred = [...document.querySelectorAll('.card-photo img[data-src]')];
-  const loadImage = img => {
-    img.src = img.dataset.src;
-    delete img.dataset.src;
-  };
-
-  if (!('IntersectionObserver' in window)) {
-    deferred.forEach(loadImage);
-    return;
-  }
-
-  cardImageObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      loadImage(entry.target);
-      cardImageObserver.unobserve(entry.target);
-    });
-  }, { rootMargin: '300px 0px' });
-
-  deferred.forEach(img => cardImageObserver.observe(img));
 }
 
 function render() {
@@ -387,16 +354,10 @@ function render() {
     const isFav = favorites[r.title];
     const diffClass = 'diff-' + r.difficulty;
     const photoHtml = `<div class="no-photo">🍽</div>`;
-    const imageLoadAttrs = i < 6
-      ? 'loading="eager" fetchpriority="high"'
-      : 'loading="lazy" fetchpriority="low"';
-    const imageSourceAttr = i < 6
-      ? `src="${thumbnailFor(r.image)}"`
-      : `data-src="${thumbnailFor(r.image)}"`;
     return `
       <div class="card" data-idx="${idx}">
         <div class="card-photo">
-          ${r.image ? `<img ${imageSourceAttr} data-full="${r.image}" alt="${r.titleEn}" width="240" height="360" ${imageLoadAttrs} decoding="async" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src=this.dataset.full}else{this.parentElement.innerHTML='<div class=no-photo>🍽</div>'}">` : photoHtml}
+          ${r.image ? `<img src="${r.image}" alt="${r.titleEn}" onerror="this.parentElement.innerHTML='<div class=no-photo>🍽</div>'">` : photoHtml}
         </div>
         <div class="card-body">
           <div class="card-title">${r.title}</div>
@@ -413,14 +374,13 @@ function render() {
       </div>
     `;
   }).join('');
-  setupCardImageLoading();
 }
 
 function openModal(r) {
   const isFav = favorites[r.title];
   const diffClass = 'diff-' + r.difficulty;
   const photoHtml = r.image
-    ? `<img class="modal-photo" src="${r.image}" alt="${r.titleEn}" loading="eager" fetchpriority="high" decoding="async" onerror="this.outerHTML='<div class=modal-no-photo>🍽</div>'">`
+    ? `<img class="modal-photo" src="${r.image}" alt="${r.titleEn}" onerror="this.outerHTML='<div class=modal-no-photo>🍽</div>'">`
     : '<div class="modal-no-photo">🍽</div>';
 
   document.getElementById('modalBody').innerHTML = `

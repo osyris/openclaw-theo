@@ -2420,7 +2420,7 @@
     "servings": 2,
     "difficulty": "easy",
     "description": "Лёгкий холодный летний суп из арбуза, огурца и лайма — свежий, яркий и очень освежающий.",
-    "image": "img/watermelon-gazpacho.jpg",
+    "image": "img/watermelon-gazpacho.png",
     "ingredients": [
       "500 г мякоти арбуза",
       "1 огурец",
@@ -3116,7 +3116,7 @@
     "servings": 2,
     "difficulty": "easy",
     "description": "Быстрый свежий салат из кейла с пармезаном, лимоном, чесноком и лёгкой остринкой чили.",
-    "image": "img/salat-iz-keyla-final.jpg",
+    "image": "img/salat-iz-keyla-final.png",
     "ingredients": [
       "150 г кейла",
       "3 ст. л. оливкового масла",
@@ -3149,7 +3149,7 @@
     "servings": 4,
     "difficulty": "medium",
     "description": "Хрустящая курица на несладкой бельгийской вафле с кремовым салатом из красной капусты, пряными маринованными огурцами и мангово-карри майонезом.",
-    "image": "img/hrustyashchaya-kurica-belgiyskaya-vaflya-final.jpg",
+    "image": "img/hrustyashchaya-kurica-belgiyskaya-vaflya-final.png",
     "ingredients": [
       "— Для курицы: —",
       "600 г филе куриных бёдер без кожи и костей",
