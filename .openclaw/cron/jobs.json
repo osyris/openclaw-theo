@@ -7,7 +7,7 @@
       "name": "Daily git backup",
       "enabled": true,
       "createdAtMs": 1771077062421,
-      "updatedAtMs": 1787540411395,
+      "updatedAtMs": 1787626809473,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
@@ -25,15 +25,15 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1787626800000,
-        "lastRunAtMs": 1787540400008,
+        "nextRunAtMs": 1787713200000,
+        "lastRunAtMs": 1787626800014,
         "lastStatus": "ok",
-        "lastDurationMs": 11387,
+        "lastDurationMs": 9459,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
         "lastDelivered": false,
-        "runningAtMs": 1787626800003
+        "runningAtMs": 1787713200004
       }
     },
     {
@@ -43,7 +43,7 @@
       "name": "Проверка дней рождения 08:00",
       "enabled": true,
       "createdAtMs": 1771851067505,
-      "updatedAtMs": 1787547622077,
+      "updatedAtMs": 1787634019220,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -63,11 +63,11 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1787634000000,
-        "lastRunAtMs": 1787547600009,
+        "nextRunAtMs": 1787720400000,
+        "lastRunAtMs": 1787634000014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22068,
+        "lastDurationMs": 19206,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -112,7 +112,7 @@
       "name": "Вечерний чекпоинт 21:30",
       "enabled": true,
       "createdAtMs": 1774013614902,
-      "updatedAtMs": 1787596239973,
+      "updatedAtMs": 1787682638366,
       "schedule": {
         "kind": "cron",
         "expr": "30 21 * * *",
@@ -131,11 +131,11 @@
         "to": "448934333"
       },
       "state": {
-        "nextRunAtMs": 1787682600000,
-        "lastRunAtMs": 1787596200015,
+        "nextRunAtMs": 1787769000000,
+        "lastRunAtMs": 1787682600011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 39958,
+        "lastDurationMs": 38355,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -308,7 +308,7 @@
       "name": "Цены 08:00 и 20:00",
       "enabled": true,
       "createdAtMs": 1782721821024,
-      "updatedAtMs": 1787590856190,
+      "updatedAtMs": 1787677278789,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,20 * * *",
@@ -323,11 +323,11 @@
         "timeoutSeconds": 360
       },
       "state": {
-        "nextRunAtMs": 1787634000000,
-        "lastRunAtMs": 1787590800013,
+        "nextRunAtMs": 1787720400000,
+        "lastRunAtMs": 1787677200007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 56177,
+        "lastDurationMs": 78782,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
